@@ -17,22 +17,3 @@ C:\Users\amir\Desktop\CafeApplication\bin\Debug\Telerik.WinControls.UI.xml
 C:\Users\amir\Desktop\CafeApplication\obj\Debug\CafeApplication.exe.config
 C:\Users\amir\Desktop\CafeApplication\obj\Debug\CafeApplication.MainForm.resources
 C:\Users\amir\Desktop\CafeApplication\obj\Debug\CafeAppl.7F5A0DF8.Up2Date
-D:\Cafee Project\CafeAccountingApp\bin\Debug\CafeApplication.exe.config
-D:\Cafee Project\CafeAccountingApp\bin\Debug\CafeApplication.exe
-D:\Cafee Project\CafeAccountingApp\bin\Debug\CafeApplication.pdb
-D:\Cafee Project\CafeAccountingApp\bin\Debug\Telerik.WinControls.dll
-D:\Cafee Project\CafeAccountingApp\bin\Debug\Telerik.WinControls.Themes.TelerikMetro.dll
-D:\Cafee Project\CafeAccountingApp\bin\Debug\Telerik.WinControls.Themes.TelerikMetroTouch.dll
-D:\Cafee Project\CafeAccountingApp\bin\Debug\Telerik.WinControls.UI.dll
-D:\Cafee Project\CafeAccountingApp\bin\Debug\TelerikCommon.dll
-D:\Cafee Project\CafeAccountingApp\bin\Debug\Telerik.WinControls.xml
-D:\Cafee Project\CafeAccountingApp\bin\Debug\Telerik.WinControls.UI.xml
-D:\Cafee Project\CafeAccountingApp\obj\Debug\CafeApplication.csproj.AssemblyReference.cache
-D:\Cafee Project\CafeAccountingApp\obj\Debug\CafeApplication.exe.config
-D:\Cafee Project\CafeAccountingApp\obj\Debug\CafeApplication.MainForm.resources
-D:\Cafee Project\CafeAccountingApp\obj\Debug\CafeApplication.Properties.Resources.resources
-D:\Cafee Project\CafeAccountingApp\obj\Debug\CafeApplication.csproj.GenerateResource.cache
-D:\Cafee Project\CafeAccountingApp\obj\Debug\CafeApplication.csproj.CoreCompileInputs.cache
-D:\Cafee Project\CafeAccountingApp\obj\Debug\CafeAppl.7F5A0DF8.Up2Date
-D:\Cafee Project\CafeAccountingApp\obj\Debug\CafeApplication.exe
-D:\Cafee Project\CafeAccountingApp\obj\Debug\CafeApplication.pdb
