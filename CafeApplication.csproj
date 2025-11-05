@@ -72,6 +72,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\PublicClasses\BackBlur.cs" />
     <Compile Include="Classes\TimingClasses\DateTimeClass.cs" />
     <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
@@ -159,7 +160,6 @@
     <Folder Include="Assets\Images\" />
     <Folder Include="Assets\Posters\" />
     <Folder Include="Classes\MainForm\" />
-    <Folder Include="Classes\PublicClasses\" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">
