@@ -34,10 +34,12 @@
             this.btnCancel = new Telerik.WinControls.UI.RadButton();
             this.btnNo = new Telerik.WinControls.UI.RadButton();
             this.iconBox = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.BtnOK)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCancel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnNo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconBox)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -70,7 +72,7 @@
             this.BtnOK.DisplayStyle = Telerik.WinControls.DisplayStyle.Text;
             this.BtnOK.Font = new System.Drawing.Font("Rokh Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.BtnOK.ForeColor = System.Drawing.Color.White;
-            this.BtnOK.Location = new System.Drawing.Point(13, 141);
+            this.BtnOK.Location = new System.Drawing.Point(3, 2);
             this.BtnOK.Name = "BtnOK";
             this.BtnOK.Size = new System.Drawing.Size(110, 36);
             this.BtnOK.TabIndex = 2;
@@ -82,7 +84,7 @@
             this.btnCancel.DisplayStyle = Telerik.WinControls.DisplayStyle.Text;
             this.btnCancel.Font = new System.Drawing.Font("Rokh Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(245, 141);
+            this.btnCancel.Location = new System.Drawing.Point(230, 2);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(110, 36);
             this.btnCancel.TabIndex = 3;
@@ -94,7 +96,7 @@
             this.btnNo.DisplayStyle = Telerik.WinControls.DisplayStyle.Text;
             this.btnNo.Font = new System.Drawing.Font("Rokh Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btnNo.ForeColor = System.Drawing.Color.White;
-            this.btnNo.Location = new System.Drawing.Point(129, 141);
+            this.btnNo.Location = new System.Drawing.Point(117, 2);
             this.btnNo.Name = "btnNo";
             this.btnNo.Size = new System.Drawing.Size(110, 36);
             this.btnNo.TabIndex = 4;
@@ -109,16 +111,25 @@
             this.iconBox.TabIndex = 5;
             this.iconBox.TabStop = false;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.BtnOK);
+            this.panel1.Controls.Add(this.btnNo);
+            this.panel1.Controls.Add(this.btnCancel);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(10, 139);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(348, 41);
+            this.panel1.TabIndex = 6;
+            // 
             // CustomMessage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(368, 190);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.iconBox);
-            this.Controls.Add(this.btnNo);
-            this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.BtnOK);
             this.Controls.Add(this.lbltext);
             this.Controls.Add(this.lblTitle);
             this.DoubleBuffered = true;
@@ -131,6 +142,7 @@
             this.Name = "CustomMessage";
             this.Padding = new System.Windows.Forms.Padding(10);
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.ShowIcon = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "پیغام";
@@ -138,6 +150,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnCancel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnNo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconBox)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,5 +163,6 @@
         private Telerik.WinControls.UI.RadButton btnCancel;
         private Telerik.WinControls.UI.RadButton btnNo;
         private System.Windows.Forms.PictureBox iconBox;
+        private System.Windows.Forms.Panel panel1;
     }
 }

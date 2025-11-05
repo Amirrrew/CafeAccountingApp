@@ -22,36 +22,18 @@ namespace CafeApplication
         public MainForm()
         {
             InitializeComponent();
-            SetPanelBackColor();
-            blur.SetBlurBack(this);
-            SetCurrentTime();
-            SetFont();
-
-            this.Opacity = 1;          // باید 1 باشه
-
+            SetPanelBackColor(); //----- sets mainpanel background
+            blur.SetBlurBack(this); //-----> sets a blurry background
+            fontSet.SetFont(this); //----> sets font of the form
+            SetCurrentTime(); //------> sets current time for mainform labels
+            
         }
 
         //--------------- importing classes and needed files ----------------- 
         GetTime gt = new GetTime();
         BackBlur blur = new BackBlur();
+        FontSet fontSet = new FontSet();
 
-        //-------------------------- set custom fonts -----------------------------
-        PrivateFontCollection pf = new PrivateFontCollection();
-        public void SetFont()
-        {
-            pf.AddFontFile(Application.StartupPath + @"/Assets/Fonts/Rokh-Normal.ttf");
-
-            FontFamily ff = pf.Families[0];
-            Font rokh = new Font(ff, 12, FontStyle.Regular);
-
-            this.Font = rokh;
-        }
-
-        //-------------------------- set custom fonts - END -----------------------------
-
-
-
-        //-------------------------- blur panel code - END ---------------------------
         public void SetPanelBackColor()
         {
             MainPanel.BackColor = Color.FromArgb(30, 0, 0, 1);
@@ -92,8 +74,13 @@ namespace CafeApplication
         private void button2_Click(object sender, EventArgs e)
         {
             CustomMessage msg = new CustomMessage();
-            msg.SetMessageText("سلام" ,"این یک تست برای مسج باکس کاستوم شده است" ,"YNC" , "warning");
+            msg.SetMessageText("سلام", "این یک تست برای مسج باکس کاستوم شده است", "Y", "success" ,"med");
             msg.ShowDialog();
+        }
+
+        public void ClosFunc()
+        {
+            Application.Exit();
         }
     }
 }

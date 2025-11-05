@@ -9,6 +9,8 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Telerik.WinControls.UI;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip;
 
 namespace CafeApplication.Forms.PublicForms
 {
@@ -17,12 +19,15 @@ namespace CafeApplication.Forms.PublicForms
         public CustomMessage()
         {
             InitializeComponent();
-            blur.SetBlurBack(this);
+            blur.SetBlurBack(this);//sets a blurry background
+            fontSet.SetFont(this);// set message default font
+            this.Size = new Size(384, 229);
         }
 
         BackBlur blur = new BackBlur();
+        FontSet fontSet = new FontSet();
 
-        public void SetMessageText(string title ,string text ,string buttons , string icon)
+        public void SetMessageText(string title ,string text ,string buttons , string icon ,string size ,Action YesClick = null ,Action NoClick = null ,Action CancelClick = null)
         {
             lblTitle.Text = title;
             lbltext.Text = text;
@@ -44,15 +49,43 @@ namespace CafeApplication.Forms.PublicForms
 
             }
 
-            //switch (icon)
-            //{
-            //    case "error":
-            //        iconBox.Load(Application.StartupPath + @"Assets/Icons/MsgIcons/fatalerror-Icon.png");
-            //        break;
-            //    case "warning":
-            //        iconBox.Load(Application.StartupPath + @"Assets/Icons/MsgIcons/error-Icon.png");
-            //        break;
-            //}
+            switch (size)
+            {
+                case "big":
+                    this.Size = new Size(384, 493); break;
+                case "med":
+                    this.Size = new Size(384, 311); break;
+                default:
+                    this.Size = new Size(384, 229);
+                    break;
+
+            }
+
+
+            BtnOK.Click += (s, e) => { YesClick?.Invoke(); }; //set yes button click event
+            btnNo.Click += (s, e) => { NoClick?.Invoke();  }; //set no button click event
+            btnCancel.Click += (s, e) => { CancelClick?.Invoke(); }; //set cancel button click event
+
+
+            //---- icon paths ---------
+            switch (icon)
+            {
+                case "error":
+                    iconBox.Load(Application.StartupPath + @"/Assets/Icons/MsgIcons/fatalerror-Icon.png");
+                    break;
+                case "warning":
+                    iconBox.Load(Application.StartupPath + @"/Assets/Icons/MsgIcons/error-Icon.png");
+                    break;
+                case "info":
+                    iconBox.Load(Application.StartupPath + @"/Assets/Icons/MsgIcons/info-Icon.png");
+                    break;
+                case "success":
+                    iconBox.Load(Application.StartupPath + @"/Assets/Icons/MsgIcons/success-Icon.png");
+                    break;
+                default:
+                    iconBox.Load(Application.StartupPath + @"/Assets/Icons/MsgIcons/message-Icon.png");
+                    break;
+            }
 
         }
 

@@ -202,11 +202,10 @@
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Rokh Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.ForeColor = System.Drawing.Color.White;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1525, 796);
-            this.MinimumSize = new System.Drawing.Size(1170, 796);
+            this.MinimumSize = new System.Drawing.Size(1270, 796);
             this.Name = "MainForm";
             this.Padding = new System.Windows.Forms.Padding(10);
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;

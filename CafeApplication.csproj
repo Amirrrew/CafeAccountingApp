@@ -49,7 +49,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System">
-      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
+      <HintPath>..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -73,6 +73,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\PublicClasses\BackBlur.cs" />
+    <Compile Include="Classes\PublicClasses\FontSet.cs" />
     <Compile Include="Classes\TimingClasses\DateTimeClass.cs" />
     <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
