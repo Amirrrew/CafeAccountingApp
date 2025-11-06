@@ -9,6 +9,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Interop;
 using Telerik.WinControls.UI;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip;
 
@@ -22,14 +23,16 @@ namespace CafeApplication.Forms.PublicForms
             blur.SetBlurBack(this);//sets a blurry background
             fontSet.SetFont(this);// set message default font
             this.Size = new Size(384, 229);
+            lbltext.Size = new Size(345, 78);
         }
 
         BackBlur blur = new BackBlur();
         FontSet fontSet = new FontSet();
 
-        public void SetMessageText(string title ,string text ,string buttons , string icon ,string size ,Action YesClick = null ,Action NoClick = null ,Action CancelClick = null)
+        public void NewMessage(string title ,string text ,string buttons , string icon ,string size ,Action YesClick = null ,Action NoClick = null ,Action CancelClick = null)
         {
             lblTitle.Text = title;
+            this.Text = title;
             lbltext.Text = text;
             switch (buttons)
             {
@@ -40,9 +43,9 @@ namespace CafeApplication.Forms.PublicForms
                 case "YNC":
                     YesNoCancel(); break;
                 case "YC":
-                    YesCancel(); break;
+                    YesCancel(); btnCancel.Left = 120; break;
                 default:
-                    BtnOK.Visible = false;
+                    BtnOK.Visible = true;
                     btnCancel.Visible = false;
                     btnNo.Visible = false;
                     break;
@@ -52,19 +55,20 @@ namespace CafeApplication.Forms.PublicForms
             switch (size)
             {
                 case "big":
-                    this.Size = new Size(384, 493); break;
+                    this.Size = new Size(384, 493); lbltext.Size = new Size(345, 342); break;
                 case "med":
-                    this.Size = new Size(384, 311); break;
+                    this.Size = new Size(384, 311); lbltext.Size = new Size(345, 156); break;
                 default:
                     this.Size = new Size(384, 229);
+                    lbltext.Size = new Size(345, 78);
                     break;
 
             }
 
 
-            BtnOK.Click += (s, e) => { YesClick?.Invoke(); }; //set yes button click event
-            btnNo.Click += (s, e) => { NoClick?.Invoke();  }; //set no button click event
-            btnCancel.Click += (s, e) => { CancelClick?.Invoke(); }; //set cancel button click event
+            BtnOK.Click += (s, e) => { YesClick?.Invoke(); this.Close(); }; //set yes button click event
+            btnNo.Click += (s, e) => { NoClick?.Invoke(); this.Close(); }; //set no button click event
+            btnCancel.Click += (s, e) => { CancelClick?.Invoke(); this.Close(); }; //set cancel button click event
 
 
             //---- icon paths ---------
@@ -86,6 +90,8 @@ namespace CafeApplication.Forms.PublicForms
                     iconBox.Load(Application.StartupPath + @"/Assets/Icons/MsgIcons/message-Icon.png");
                     break;
             }
+
+            this.ShowDialog();
 
         }
 
@@ -117,5 +123,6 @@ namespace CafeApplication.Forms.PublicForms
             btnCancel.Visible = true;
             btnNo.Visible = false;
         }
+
     }
 }

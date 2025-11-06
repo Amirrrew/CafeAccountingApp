@@ -26,13 +26,13 @@ namespace CafeApplication
             blur.SetBlurBack(this); //-----> sets a blurry background
             fontSet.SetFont(this); //----> sets font of the form
             SetCurrentTime(); //------> sets current time for mainform labels
-            
         }
 
         //--------------- importing classes and needed files ----------------- 
         GetTime gt = new GetTime();
         BackBlur blur = new BackBlur();
         FontSet fontSet = new FontSet();
+        CustomMessage msg = new CustomMessage();
 
         public void SetPanelBackColor()
         {
@@ -73,14 +73,14 @@ namespace CafeApplication
 
         private void button2_Click(object sender, EventArgs e)
         {
-            CustomMessage msg = new CustomMessage();
-            msg.SetMessageText("سلام", "این یک تست برای مسج باکس کاستوم شده است", "Y", "success" ,"med");
-            msg.ShowDialog();
+            msg.BtnOK.Text = "باشه";
+            msg.NewMessage("سلام", "این یک تست برای مسج باکس شده است", "YC", "success" ,"small");
         }
 
-        public void ClosFunc()
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            //msg.BtnOK.Text = "بله";
+            //msg.NewMessage("خروج؟", "آیا واقعا میخواهید از برنامه خارج شوید؟", "YN", "info", "small", YesClick: () => this.Hide() ,NoClick: ()=> e.Cancel = true);
         }
     }
 }

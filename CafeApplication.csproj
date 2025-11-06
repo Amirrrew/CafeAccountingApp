@@ -108,6 +108,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Assets\Fonts\Rokh-Black.ttf" />
     <None Include="Assets\Fonts\Rokh-Bold.ttf" />
@@ -146,6 +147,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Icons\Mainmenu\receipt-Icon.png" />
     <Content Include="Assets\Wallpaper\DefaultWallpaper.jpg" />
     <Content Include="Assets\Wallpaper\Default_Wallpaper.jpeg" />
     <Content Include="Data\Base\CafeAccountingDB.mdf">
@@ -157,7 +159,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Assets\Icons\" />
     <Folder Include="Assets\Images\" />
     <Folder Include="Assets\Posters\" />
     <Folder Include="Classes\MainForm\" />

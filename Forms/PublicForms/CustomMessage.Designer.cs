@@ -56,13 +56,12 @@
             // 
             // lbltext
             // 
-            this.lbltext.AutoSize = true;
             this.lbltext.Font = new System.Drawing.Font("Rokh Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lbltext.ForeColor = System.Drawing.Color.White;
             this.lbltext.Location = new System.Drawing.Point(13, 58);
             this.lbltext.Name = "lbltext";
             this.lbltext.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lbltext.Size = new System.Drawing.Size(65, 21);
+            this.lbltext.Size = new System.Drawing.Size(345, 78);
             this.lbltext.TabIndex = 1;
             this.lbltext.Text = "متن پیام";
             // 
@@ -77,6 +76,7 @@
             this.BtnOK.Size = new System.Drawing.Size(110, 36);
             this.BtnOK.TabIndex = 2;
             this.BtnOK.Text = "بله";
+            ((Telerik.WinControls.Primitives.FocusPrimitive)(this.BtnOK.GetChildAt(0).GetChildAt(3))).Enabled = false;
             // 
             // btnCancel
             // 
@@ -157,12 +157,12 @@
         }
 
         #endregion
-        private Telerik.WinControls.UI.RadButton BtnOK;
         public System.Windows.Forms.Label lblTitle;
         public System.Windows.Forms.Label lbltext;
-        private Telerik.WinControls.UI.RadButton btnCancel;
-        private Telerik.WinControls.UI.RadButton btnNo;
         private System.Windows.Forms.PictureBox iconBox;
         private System.Windows.Forms.Panel panel1;
+        public Telerik.WinControls.UI.RadButton BtnOK;
+        public Telerik.WinControls.UI.RadButton btnCancel;
+        public Telerik.WinControls.UI.RadButton btnNo;
     }
 }
