@@ -34,8 +34,8 @@
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\MainForm.cs",
               "RelativeDocumentMoniker": "Forms\\MainForm.cs",
-              "ToolTip": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\MainForm.cs [Design]",
-              "RelativeToolTip": "Forms\\MainForm.cs [Design]",
+              "ToolTip": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\MainForm.cs [Design]*",
+              "RelativeToolTip": "Forms\\MainForm.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-05T20:31:23.042Z",
               "IsPinned": true,
@@ -52,8 +52,7 @@
               "ViewState": "AgIAAEcAAAAAAAAAAAAQwFQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-03T20:50:57.21Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -65,8 +64,7 @@
               "RelativeToolTip": "Forms\\PublicForms\\CustomMessage.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAAABgAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T12:14:20.446Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-05T12:14:20.446Z"
             },
             {
               "$type": "Document",
@@ -77,8 +75,7 @@
               "ToolTip": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\PublicForms\\CustomMessage.cs [Design]",
               "RelativeToolTip": "Forms\\PublicForms\\CustomMessage.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T12:01:19.465Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-11-05T12:01:19.465Z"
             }
           ]
         }

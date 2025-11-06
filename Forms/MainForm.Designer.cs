@@ -171,7 +171,7 @@
             // 
             // btn_transaction
             // 
-            this.btn_transaction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_transaction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
             this.btn_transaction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_transaction.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_transaction.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
@@ -216,7 +216,7 @@
             // 
             // btn_employee
             // 
-            this.btn_employee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_employee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
             this.btn_employee.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_employee.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_employee.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
@@ -261,7 +261,7 @@
             // 
             // btn_DailyFactor
             // 
-            this.btn_DailyFactor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_DailyFactor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
             this.btn_DailyFactor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_DailyFactor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_DailyFactor.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
@@ -306,7 +306,7 @@
             // 
             // btn_ConfirmDaily
             // 
-            this.btn_ConfirmDaily.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_ConfirmDaily.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
             this.btn_ConfirmDaily.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_ConfirmDaily.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_ConfirmDaily.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
@@ -351,7 +351,7 @@
             // 
             // btn_products
             // 
-            this.btn_products.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_products.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
             this.btn_products.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_products.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_products.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
@@ -396,7 +396,7 @@
             // 
             // btn_CustomerManage
             // 
-            this.btn_CustomerManage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_CustomerManage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
             this.btn_CustomerManage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_CustomerManage.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_CustomerManage.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
@@ -441,7 +441,7 @@
             // 
             // btn_warehouse
             // 
-            this.btn_warehouse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_warehouse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
             this.btn_warehouse.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_warehouse.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_warehouse.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
@@ -486,7 +486,7 @@
             // 
             // btn_deals
             // 
-            this.btn_deals.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_deals.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
             this.btn_deals.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_deals.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_deals.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
@@ -531,7 +531,7 @@
             // 
             // btn_reports
             // 
-            this.btn_reports.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_reports.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
             this.btn_reports.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_reports.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_reports.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
@@ -600,7 +600,7 @@
             // 
             // btn_userSettings
             // 
-            this.btn_userSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_userSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
             this.btn_userSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_userSettings.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_userSettings.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
