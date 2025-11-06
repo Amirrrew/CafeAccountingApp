@@ -29,6 +29,16 @@ namespace CafeApplication.Forms.PublicForms
         BackBlur blur = new BackBlur();
         FontSet fontSet = new FontSet();
 
+        //discription ----------
+        // برای استفاده از مسج باکس کاستوم چند اور لود وجود دارد که باید استفاده از آن را بلد بود
+        // اورلود title برای عنوان پیفام بصورت استرینگ
+        // اورلود تکست برای تکست پیغام بصورت استرینگ
+        // استرینگ آیکون که نمونه های آن شامل
+        // (error ,warning ,info ,success)
+        // استرینگ سایز برای تایین اندازه (کوجک بصورت پیشفرض ) ----> (big ,med ,small)
+        // اکشن های YesClick ,Noclick ,CancelClick
+        // for example: -----> YesClick: () => youfunction();
+        // داخل اورلود نوشته میشود ولی بصورت پیشفرض بدون فانکشن فرم مسج بسته میشود
         public void NewMessage(string title ,string text ,string buttons , string icon ,string size ,Action YesClick = null ,Action NoClick = null ,Action CancelClick = null)
         {
             lblTitle.Text = title;

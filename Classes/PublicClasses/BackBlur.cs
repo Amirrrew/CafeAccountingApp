@@ -11,6 +11,7 @@ namespace CafeApplication.Classes.PublicClasses
 {
     internal class BackBlur
     {
+        //------------ usage is -----> SetBackBlur(this);
         public struct AccentPolicy
         {
             public int AccentState;

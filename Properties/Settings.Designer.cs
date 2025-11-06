@@ -33,5 +33,16 @@ namespace CafeApplication.Properties {
                 return ((string)(this["CafeAccountingDBConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\\Data\\Base\\CafeAppli" +
+            "cation.accdb;Persist Security Info=True")]
+        public string CafeApplicationSetupDone {
+            get {
+                return ((string)(this["CafeApplicationSetupDone"]));
+            }
+        }
     }
 }

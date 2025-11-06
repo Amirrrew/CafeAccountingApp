@@ -80,3 +80,15 @@ C:\Users\amir\Desktop\CafeAccountingApp\obj\Debug\CafeApplication.csproj.CoreCom
 C:\Users\amir\Desktop\CafeAccountingApp\obj\Debug\CafeAppl.7F5A0DF8.Up2Date
 C:\Users\amir\Desktop\CafeAccountingApp\obj\Debug\CafeApplication.exe
 C:\Users\amir\Desktop\CafeAccountingApp\obj\Debug\CafeApplication.pdb
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Data\Base\CafeApplication.accdb
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\receipt-Icon.png
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\box-Icon.png
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\buy-Icon.png
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\confirm-Icon.png
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\customer-Icon.png
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\employee-Icon.png
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\more-Icon.png
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\report-Icon.png
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\transaction-Icon.png
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\user-Icon.png
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\warehouse-Icon.png

@@ -74,14 +74,16 @@
             this.Iconbox_userPic = new System.Windows.Forms.PictureBox();
             this.btn_userSettings = new Telerik.WinControls.UI.RadButton();
             this.lbl_userName = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.lblCurrentTime = new System.Windows.Forms.Label();
             this.TimerTimeUpdate = new System.Windows.Forms.Timer(this.components);
             this.lblDate = new System.Windows.Forms.Label();
             this.lblDayTitle = new System.Windows.Forms.Label();
             this.lbl_today = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.radThemeManager1 = new Telerik.WinControls.RadThemeManager();
+            this.setupBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dsCafe = new CafeApplication.Data.DataSet.DsCafe();
+            this.setupTableAdapter = new CafeApplication.Data.DataSet.DsCafeTableAdapters.SetupTableAdapter();
+            this.tableAdapterManager = new CafeApplication.Data.DataSet.DsCafeTableAdapters.TableAdapterManager();
             this.MainPanel.SuspendLayout();
             this.InnerPanel.SuspendLayout();
             this.Pnl_transaction.SuspendLayout();
@@ -115,6 +117,8 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Iconbox_userPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_userSettings)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.setupBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).BeginInit();
             this.SuspendLayout();
             // 
             // MainPanel
@@ -122,7 +126,7 @@
             this.MainPanel.BackColor = System.Drawing.Color.Black;
             this.MainPanel.Controls.Add(this.InnerPanel);
             this.MainPanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.MainPanel.Location = new System.Drawing.Point(1127, 10);
+            this.MainPanel.Location = new System.Drawing.Point(1129, 10);
             this.MainPanel.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.MainPanel.Name = "MainPanel";
             this.MainPanel.Padding = new System.Windows.Forms.Padding(10);
@@ -177,11 +181,13 @@
             this.btn_transaction.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
             this.btn_transaction.Image = ((System.Drawing.Image)(resources.GetObject("btn_transaction.Image")));
             this.btn_transaction.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_transaction.Location = new System.Drawing.Point(22, 24);
+            this.btn_transaction.Location = new System.Drawing.Point(21, 20);
+            this.btn_transaction.Margin = new System.Windows.Forms.Padding(4);
             this.btn_transaction.Name = "btn_transaction";
-            this.btn_transaction.Size = new System.Drawing.Size(27, 27);
+            this.btn_transaction.Size = new System.Drawing.Size(34, 34);
             this.btn_transaction.TabIndex = 8;
             this.btn_transaction.Text = "-";
+            this.btn_transaction.Click += new System.EventHandler(this.btn_transaction_Click);
             // 
             // lbl_transaction
             // 
@@ -222,11 +228,13 @@
             this.btn_employee.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
             this.btn_employee.Image = ((System.Drawing.Image)(resources.GetObject("btn_employee.Image")));
             this.btn_employee.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_employee.Location = new System.Drawing.Point(22, 24);
+            this.btn_employee.Location = new System.Drawing.Point(21, 20);
+            this.btn_employee.Margin = new System.Windows.Forms.Padding(4);
             this.btn_employee.Name = "btn_employee";
-            this.btn_employee.Size = new System.Drawing.Size(27, 27);
+            this.btn_employee.Size = new System.Drawing.Size(34, 34);
             this.btn_employee.TabIndex = 8;
             this.btn_employee.Text = "-";
+            this.btn_employee.Click += new System.EventHandler(this.btn_employee_Click);
             // 
             // lbl_employee
             // 
@@ -267,11 +275,13 @@
             this.btn_DailyFactor.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
             this.btn_DailyFactor.Image = ((System.Drawing.Image)(resources.GetObject("btn_DailyFactor.Image")));
             this.btn_DailyFactor.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_DailyFactor.Location = new System.Drawing.Point(22, 24);
+            this.btn_DailyFactor.Location = new System.Drawing.Point(21, 20);
+            this.btn_DailyFactor.Margin = new System.Windows.Forms.Padding(4);
             this.btn_DailyFactor.Name = "btn_DailyFactor";
-            this.btn_DailyFactor.Size = new System.Drawing.Size(27, 27);
+            this.btn_DailyFactor.Size = new System.Drawing.Size(34, 34);
             this.btn_DailyFactor.TabIndex = 8;
             this.btn_DailyFactor.Text = "-";
+            this.btn_DailyFactor.Click += new System.EventHandler(this.btn_DailyFactor_Click);
             // 
             // lbl_DailyFactor
             // 
@@ -312,11 +322,13 @@
             this.btn_ConfirmDaily.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
             this.btn_ConfirmDaily.Image = ((System.Drawing.Image)(resources.GetObject("btn_ConfirmDaily.Image")));
             this.btn_ConfirmDaily.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_ConfirmDaily.Location = new System.Drawing.Point(22, 24);
+            this.btn_ConfirmDaily.Location = new System.Drawing.Point(21, 20);
+            this.btn_ConfirmDaily.Margin = new System.Windows.Forms.Padding(4);
             this.btn_ConfirmDaily.Name = "btn_ConfirmDaily";
-            this.btn_ConfirmDaily.Size = new System.Drawing.Size(27, 27);
+            this.btn_ConfirmDaily.Size = new System.Drawing.Size(34, 34);
             this.btn_ConfirmDaily.TabIndex = 8;
             this.btn_ConfirmDaily.Text = "-";
+            this.btn_ConfirmDaily.Click += new System.EventHandler(this.btn_ConfirmDaily_Click);
             // 
             // lbl_ConfirmDaily
             // 
@@ -357,11 +369,13 @@
             this.btn_products.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
             this.btn_products.Image = ((System.Drawing.Image)(resources.GetObject("btn_products.Image")));
             this.btn_products.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_products.Location = new System.Drawing.Point(22, 24);
+            this.btn_products.Location = new System.Drawing.Point(21, 20);
+            this.btn_products.Margin = new System.Windows.Forms.Padding(4);
             this.btn_products.Name = "btn_products";
-            this.btn_products.Size = new System.Drawing.Size(27, 27);
+            this.btn_products.Size = new System.Drawing.Size(34, 34);
             this.btn_products.TabIndex = 8;
             this.btn_products.Text = "-";
+            this.btn_products.Click += new System.EventHandler(this.btn_products_Click);
             // 
             // lbl_products
             // 
@@ -402,11 +416,13 @@
             this.btn_CustomerManage.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
             this.btn_CustomerManage.Image = ((System.Drawing.Image)(resources.GetObject("btn_CustomerManage.Image")));
             this.btn_CustomerManage.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_CustomerManage.Location = new System.Drawing.Point(22, 24);
+            this.btn_CustomerManage.Location = new System.Drawing.Point(21, 20);
+            this.btn_CustomerManage.Margin = new System.Windows.Forms.Padding(4);
             this.btn_CustomerManage.Name = "btn_CustomerManage";
-            this.btn_CustomerManage.Size = new System.Drawing.Size(27, 27);
+            this.btn_CustomerManage.Size = new System.Drawing.Size(34, 34);
             this.btn_CustomerManage.TabIndex = 8;
             this.btn_CustomerManage.Text = "-";
+            this.btn_CustomerManage.Click += new System.EventHandler(this.btn_CustomerManage_Click);
             // 
             // lbl_CustomerManage
             // 
@@ -447,11 +463,13 @@
             this.btn_warehouse.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
             this.btn_warehouse.Image = ((System.Drawing.Image)(resources.GetObject("btn_warehouse.Image")));
             this.btn_warehouse.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_warehouse.Location = new System.Drawing.Point(22, 24);
+            this.btn_warehouse.Location = new System.Drawing.Point(21, 20);
+            this.btn_warehouse.Margin = new System.Windows.Forms.Padding(4);
             this.btn_warehouse.Name = "btn_warehouse";
-            this.btn_warehouse.Size = new System.Drawing.Size(27, 27);
+            this.btn_warehouse.Size = new System.Drawing.Size(34, 34);
             this.btn_warehouse.TabIndex = 8;
             this.btn_warehouse.Text = "-";
+            this.btn_warehouse.Click += new System.EventHandler(this.btn_warehouse_Click);
             // 
             // lbl_warehouse
             // 
@@ -492,11 +510,13 @@
             this.btn_deals.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
             this.btn_deals.Image = ((System.Drawing.Image)(resources.GetObject("btn_deals.Image")));
             this.btn_deals.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_deals.Location = new System.Drawing.Point(22, 24);
+            this.btn_deals.Location = new System.Drawing.Point(21, 20);
+            this.btn_deals.Margin = new System.Windows.Forms.Padding(4);
             this.btn_deals.Name = "btn_deals";
-            this.btn_deals.Size = new System.Drawing.Size(27, 27);
+            this.btn_deals.Size = new System.Drawing.Size(34, 34);
             this.btn_deals.TabIndex = 8;
             this.btn_deals.Text = "-";
+            this.btn_deals.Click += new System.EventHandler(this.btn_deals_Click);
             // 
             // lbl_deals
             // 
@@ -537,11 +557,13 @@
             this.btn_reports.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
             this.btn_reports.Image = ((System.Drawing.Image)(resources.GetObject("btn_reports.Image")));
             this.btn_reports.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_reports.Location = new System.Drawing.Point(22, 24);
+            this.btn_reports.Location = new System.Drawing.Point(21, 20);
+            this.btn_reports.Margin = new System.Windows.Forms.Padding(4);
             this.btn_reports.Name = "btn_reports";
-            this.btn_reports.Size = new System.Drawing.Size(27, 27);
+            this.btn_reports.Size = new System.Drawing.Size(34, 34);
             this.btn_reports.TabIndex = 8;
             this.btn_reports.Text = "-";
+            this.btn_reports.Click += new System.EventHandler(this.btn_reports_Click);
             // 
             // lbl_reports
             // 
@@ -606,9 +628,10 @@
             this.btn_userSettings.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
             this.btn_userSettings.Image = ((System.Drawing.Image)(resources.GetObject("btn_userSettings.Image")));
             this.btn_userSettings.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_userSettings.Location = new System.Drawing.Point(22, 24);
+            this.btn_userSettings.Location = new System.Drawing.Point(18, 20);
+            this.btn_userSettings.Margin = new System.Windows.Forms.Padding(4);
             this.btn_userSettings.Name = "btn_userSettings";
-            this.btn_userSettings.Size = new System.Drawing.Size(27, 27);
+            this.btn_userSettings.Size = new System.Drawing.Size(34, 34);
             this.btn_userSettings.TabIndex = 8;
             this.btn_userSettings.Text = "-";
             // 
@@ -621,18 +644,6 @@
             this.lbl_userName.TabIndex = 8;
             this.lbl_userName.Text = "نام کاربر";
             this.lbl_userName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Rokh SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(11, 362);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(197, 64);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "PanelTester";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // lblCurrentTime
             // 
@@ -681,30 +692,52 @@
             this.lbl_today.TabIndex = 7;
             this.lbl_today.Text = "- امروز -----------------";
             // 
-            // button2
+            // setupBindingSource
             // 
-            this.button2.Font = new System.Drawing.Font("Rokh SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(13, 292);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(197, 64);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Message Test";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.setupBindingSource.DataMember = "Setup";
+            this.setupBindingSource.DataSource = this.dsCafe;
+            // 
+            // dsCafe
+            // 
+            this.dsCafe.DataSetName = "DsCafe";
+            this.dsCafe.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // setupTableAdapter
+            // 
+            this.setupTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.CafeTablesTableAdapter = null;
+            this.tableAdapterManager.CategoriesTableAdapter = null;
+            this.tableAdapterManager.CustomersTableAdapter = null;
+            this.tableAdapterManager.EmployeesTableAdapter = null;
+            this.tableAdapterManager.ExpensesTableAdapter = null;
+            this.tableAdapterManager.IncomesTableAdapter = null;
+            this.tableAdapterManager.ProductsTableAdapter = null;
+            this.tableAdapterManager.PurchaseItemsTableAdapter = null;
+            this.tableAdapterManager.PurchasesTableAdapter = null;
+            this.tableAdapterManager.SaleItemsTableAdapter = null;
+            this.tableAdapterManager.SalesTableAdapter = null;
+            this.tableAdapterManager.SetupTableAdapter = this.setupTableAdapter;
+            this.tableAdapterManager.SuppliersTableAdapter = null;
+            this.tableAdapterManager.TransactionsTableAdapter = null;
+            this.tableAdapterManager.TrashBinTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = CafeApplication.Data.DataSet.DsCafeTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UsersTableAdapter = null;
             // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1507, 757);
-            this.Controls.Add(this.button2);
+            this.ClientSize = new System.Drawing.Size(1509, 757);
             this.Controls.Add(this.lbl_today);
             this.Controls.Add(this.lblDayTitle);
             this.Controls.Add(this.lblDate);
             this.Controls.Add(this.lblCurrentTime);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.UserPanel);
             this.Controls.Add(this.MainPanel);
             this.DoubleBuffered = true;
@@ -720,6 +753,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "salam";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.MainPanel.ResumeLayout(false);
             this.InnerPanel.ResumeLayout(false);
             this.Pnl_transaction.ResumeLayout(false);
@@ -753,6 +787,8 @@
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Iconbox_userPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_userSettings)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.setupBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -762,7 +798,6 @@
 
         private System.Windows.Forms.Panel MainPanel;
         private System.Windows.Forms.Panel UserPanel;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel InnerPanel;
         private System.Windows.Forms.Label lblCurrentTime;
         public System.Windows.Forms.Timer TimerTimeUpdate;
@@ -771,7 +806,6 @@
         private System.Windows.Forms.Label lbl_today;
         private System.Windows.Forms.Panel Pnl_DailyFactor;
         private System.Windows.Forms.Label lbl_DailyFactor;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox Iconbox_DailyFactor;
         private Telerik.WinControls.RadThemeManager radThemeManager1;
         public Telerik.WinControls.UI.RadButton btn_DailyFactor;
@@ -812,6 +846,10 @@
         private System.Windows.Forms.PictureBox Iconbox_userPic;
         private System.Windows.Forms.Label lbl_userName;
         private System.Windows.Forms.Label lbl_userRole;
+        private Data.DataSet.DsCafe dsCafe;
+        private System.Windows.Forms.BindingSource setupBindingSource;
+        private Data.DataSet.DsCafeTableAdapters.SetupTableAdapter setupTableAdapter;
+        private Data.DataSet.DsCafeTableAdapters.TableAdapterManager tableAdapterManager;
     }
 }
 
