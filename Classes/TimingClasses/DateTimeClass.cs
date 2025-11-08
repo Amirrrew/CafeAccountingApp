@@ -56,6 +56,13 @@ namespace Calendar
             return time;
         }
 
+        public string GetTimeWithoutSeconds()
+        {
+            string time;
+            time = DateTime.Now.ToString("HH:mm");
+            return time;
+        }
+
         public string GetDayTitle()
         {
             string daytitle = "";

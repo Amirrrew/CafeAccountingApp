@@ -1,4 +1,5 @@
 ﻿using CafeApplication.Classes.PublicClasses;
+using Calendar;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,12 +19,20 @@ namespace CafeApplication.Forms.DailyInvoice
             InitializeComponent();
             blur.SetBlurBack(this);
             font.SetFont(this);
+            PrepareForInvoice();
         }
 
         //-------------- import classes ----------------- 
         BackBlur blur = new BackBlur();
         FontSet font = new FontSet();
         NumberSeperate seperate = new NumberSeperate();
+        GetTime gt = new GetTime();
+
+        public void PrepareForInvoice()
+        {
+            lbl_InvoiceTime.Text = gt.GetTimeWithoutSeconds();
+            txt_InvoiceDate.Text = ($"{gt.GetYear()}{gt.GetMonth()}{gt.GetDay()}");
+        }
 
         private void ConfirmPurchase_Load(object sender, EventArgs e)
         {
@@ -33,6 +42,12 @@ namespace CafeApplication.Forms.DailyInvoice
         private void txt_totalInvoice_TextChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void Timer_CheckTime_Tick(object sender, EventArgs e)
+        {
+            lbl_InvoiceTime.Text = gt.GetTimeWithoutSeconds();
+            txt_InvoiceDate.Text = ($"{gt.GetYear()}{gt.GetMonth()}{gt.GetDay()}");
         }
     }
 }

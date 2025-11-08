@@ -9656,8 +9656,8 @@ namespace CafeApplication.Data.DataSet.DsCafeTableAdapters {
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO [CafeTables] ([Name], [Capacity], [Status]) VALUES (@Name, @Capacity," +
-                " @Status);\nSELECT TableID, Name, Capacity, Status FROM CafeTables WHERE (TableID" +
-                " = SCOPE_IDENTITY())";
+                " @Status);\r\nSELECT TableID, Name, Capacity, Status FROM CafeTables WHERE (TableI" +
+                "D = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Capacity", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Capacity", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -9692,7 +9692,7 @@ SELECT TableID, Name, Capacity, Status FROM CafeTables WHERE (TableID = @TableID
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT        TableID, Name, Capacity, Status\nFROM            CafeTables";
+            this._commandCollection[0].CommandText = "SELECT        TableID, Name, Capacity, Status\r\nFROM            CafeTables";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -10032,8 +10032,8 @@ SELECT TableID, Name, Capacity, Status FROM CafeTables WHERE (TableID = @TableID
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO [Categories] ([Name], [ParentID], [IsActive]) VALUES (@Name, @ParentI" +
-                "D, @IsActive);\nSELECT CategoryID, Name, ParentID, IsActive FROM Categories WHERE" +
-                " (CategoryID = SCOPE_IDENTITY())";
+                "D, @IsActive);\r\nSELECT CategoryID, Name, ParentID, IsActive FROM Categories WHER" +
+                "E (CategoryID = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ParentID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ParentID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -10068,7 +10068,7 @@ SELECT CategoryID, Name, ParentID, IsActive FROM Categories WHERE (CategoryID = 
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT        CategoryID, Name, ParentID, IsActive\nFROM            Categories";
+            this._commandCollection[0].CommandText = "SELECT        CategoryID, Name, ParentID, IsActive\r\nFROM            Categories";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -10459,8 +10459,8 @@ SELECT CustomerID, Name, Phone, Address, Balance, CreatedAt FROM Customers WHERE
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT        CustomerID, Name, Phone, Address, Balance, CreatedAt\nFROM          " +
-                "  Customers";
+            this._commandCollection[0].CommandText = "SELECT        CustomerID, Name, Phone, Address, Balance, CreatedAt\r\nFROM         " +
+                "   Customers";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
@@ -10953,7 +10953,7 @@ SELECT EmployeeID, FullName, NationalCode, Phone, Position, Salary, HireDate, Is
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT        EmployeeID, FullName, NationalCode, Phone, Position, Salary, HireDa" +
-                "te, IsActive\nFROM            Employees";
+                "te, IsActive\r\nFROM            Employees";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -11425,8 +11425,8 @@ SELECT EmployeeID, FullName, NationalCode, Phone, Position, Salary, HireDate, Is
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO [Expenses] ([Title], [Amount], [Date], [Description]) VALUES (@Title," +
-                " @Amount, @Date, @Description);\nSELECT ExpenseID, Title, Amount, Date, Descripti" +
-                "on FROM Expenses WHERE (ExpenseID = SCOPE_IDENTITY())";
+                " @Amount, @Date, @Description);\r\nSELECT ExpenseID, Title, Amount, Date, Descript" +
+                "ion FROM Expenses WHERE (ExpenseID = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Title", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Title", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Amount", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 2, "Amount", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -11466,7 +11466,7 @@ SELECT ExpenseID, Title, Amount, Date, Description FROM Expenses WHERE (ExpenseI
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT        Expenses.*\nFROM            Expenses";
+            this._commandCollection[0].CommandText = "SELECT        Expenses.*\r\nFROM            Expenses";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -11842,8 +11842,8 @@ SELECT ExpenseID, Title, Amount, Date, Description FROM Expenses WHERE (ExpenseI
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO [Incomes] ([Title], [Amount], [Date], [Description]) VALUES (@Title, " +
-                "@Amount, @Date, @Description);\nSELECT IncomeID, Title, Amount, Date, Description" +
-                " FROM Incomes WHERE (IncomeID = SCOPE_IDENTITY())";
+                "@Amount, @Date, @Description);\r\nSELECT IncomeID, Title, Amount, Date, Descriptio" +
+                "n FROM Incomes WHERE (IncomeID = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Title", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Title", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Amount", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 2, "Amount", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -11883,7 +11883,7 @@ SELECT IncomeID, Title, Amount, Date, Description FROM Incomes WHERE (IncomeID =
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT        Incomes.*\nFROM            Incomes";
+            this._commandCollection[0].CommandText = "SELECT        Incomes.*\r\nFROM            Incomes";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -12332,7 +12332,7 @@ SELECT ProductID, Code, Name, CategoryID, UnitPrice, CostPrice, Tax, Unit, IsAct
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT        Products.*\nFROM            Products";
+            this._commandCollection[0].CommandText = "SELECT        Products.*\r\nFROM            Products";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -12924,7 +12924,7 @@ SELECT PurchaseItemID, PurchaseID, ProductID, Quantity, UnitCost, Total FROM Pur
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT        PurchaseItems.*\nFROM            PurchaseItems";
+            this._commandCollection[0].CommandText = "SELECT        PurchaseItems.*\r\nFROM            PurchaseItems";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -13315,7 +13315,7 @@ SELECT PurchaseID, SupplierID, Date, TotalAmount, Description, CreatedBy FROM Pu
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT        Purchases.*\nFROM            Purchases";
+            this._commandCollection[0].CommandText = "SELECT        Purchases.*\r\nFROM            Purchases";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -13767,7 +13767,7 @@ SELECT SaleItemID, SaleID, ProductID, Quantity, UnitPrice, Discount, Total FROM 
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT        SaleItems.*\nFROM            SaleItems";
+            this._commandCollection[0].CommandText = "SELECT        SaleItems.*\r\nFROM            SaleItems";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -14228,7 +14228,7 @@ SELECT SaleID, Code, TableID, UserID, CustomerID, Date, PaymentMethod, TotalAmou
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT        Sales.*\nFROM            Sales";
+            this._commandCollection[0].CommandText = "SELECT        Sales.*\r\nFROM            Sales";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -14846,8 +14846,8 @@ SELECT SaleID, Code, TableID, UserID, CustomerID, Date, PaymentMethod, TotalAmou
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO [Suppliers] ([Name], [Phone], [Address], [CreatedAt]) VALUES (@Name, " +
-                "@Phone, @Address, @CreatedAt);\nSELECT SupplierID, Name, Phone, Address, CreatedA" +
-                "t FROM Suppliers WHERE (SupplierID = SCOPE_IDENTITY())";
+                "@Phone, @Address, @CreatedAt);\r\nSELECT SupplierID, Name, Phone, Address, Created" +
+                "At FROM Suppliers WHERE (SupplierID = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Phone", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Phone", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -14886,7 +14886,7 @@ SELECT SupplierID, Name, Phone, Address, CreatedAt FROM Suppliers WHERE (Supplie
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT        Suppliers.*\nFROM            Suppliers";
+            this._commandCollection[0].CommandText = "SELECT        Suppliers.*\r\nFROM            Suppliers";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -15259,9 +15259,9 @@ SELECT SupplierID, Name, Phone, Address, CreatedAt FROM Suppliers WHERE (Supplie
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO [Transactions] ([RefID], [Type], [Amount], [Date], [Description]) VAL" +
-                "UES (@RefID, @Type, @Amount, @Date, @Description);\nSELECT TransactionID, RefID, " +
-                "Type, Amount, Date, Description FROM Transactions WHERE (TransactionID = SCOPE_I" +
-                "DENTITY())";
+                "UES (@RefID, @Type, @Amount, @Date, @Description);\r\nSELECT TransactionID, RefID," +
+                " Type, Amount, Date, Description FROM Transactions WHERE (TransactionID = SCOPE_" +
+                "IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RefID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "RefID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Type", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Type", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -15303,7 +15303,7 @@ SELECT TransactionID, RefID, Type, Amount, Date, Description FROM Transactions W
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT        Transactions.*\nFROM            Transactions";
+            this._commandCollection[0].CommandText = "SELECT        Transactions.*\r\nFROM            Transactions";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -15718,7 +15718,7 @@ SELECT TrashID, TableName, EntityID, DeletedBy, DeletedAt, DataJson FROM TrashBi
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT        TrashBin.*\nFROM            TrashBin";
+            this._commandCollection[0].CommandText = "SELECT        TrashBin.*\r\nFROM            TrashBin";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -16133,7 +16133,7 @@ SELECT UserID, Username, PasswordHash, Salt, FullName, Role, CreatedAt, IsActive
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT        Users.*\nFROM            Users";
+            this._commandCollection[0].CommandText = "SELECT        Users.*\r\nFROM            Users";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
