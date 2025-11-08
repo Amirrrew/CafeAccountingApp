@@ -63,6 +63,7 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Telerik.WinControls, Version=2024.4.1113.462, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2024.4.1113.462, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
     <Reference Include="Telerik.WinControls.Themes.TelerikMetro, Version=2024.4.1113.462, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
     <Reference Include="Telerik.WinControls.Themes.TelerikMetroTouch, Version=2024.4.1113.462, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
     <Reference Include="Telerik.WinControls.UI, Version=2024.4.1113.462, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
@@ -76,10 +77,19 @@
     <Compile Include="Classes\PublicClasses\BackBlur.cs" />
     <Compile Include="Classes\PublicClasses\FontSet.cs" />
     <Compile Include="Classes\TimingClasses\DateTimeClass.cs" />
-    <Compile Include="Forms\MainForm.cs">
+    <Compile Include="Data\DataSet\DsCafe.cs">
+      <DependentUpon>DsCafe.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DailyFactor\DailyInvoice.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\MainForm.Designer.cs">
+    <Compile Include="Forms\DailyFactor\DailyInvoice.Designer.cs">
+      <DependentUpon>DailyInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForm\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Data\DataSet\DsCafe.Designer.cs">
@@ -95,7 +105,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\MainForm.resx">
+    <EmbeddedResource Include="Forms\DailyFactor\DailyInvoice.resx">
+      <DependentUpon>DailyInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PublicForms\CustomMessage.resx">
@@ -182,6 +195,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Assets\Icons\Mainmenu\warehouse-Icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Assets\Icons\FormTopIcon\receipt-Icon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Assets\Icons\Public\adduser-Icon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <Content Include="Assets\Wallpaper\DefaultWallpaper.jpg" />

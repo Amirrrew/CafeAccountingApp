@@ -10414,9 +10414,9 @@ SELECT CategoryID, Name, ParentID, IsActive FROM Categories WHERE (CategoryID = 
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO [Customers] ([Name], [Phone], [Address], [Balance], [CreatedAt]) VALU" +
-                "ES (@Name, @Phone, @Address, @Balance, @CreatedAt);\nSELECT CustomerID, Name, Pho" +
-                "ne, Address, Balance, CreatedAt FROM Customers WHERE (CustomerID = SCOPE_IDENTIT" +
-                "Y())";
+                "ES (@Name, @Phone, @Address, @Balance, @CreatedAt);\r\nSELECT CustomerID, Name, Ph" +
+                "one, Address, Balance, CreatedAt FROM Customers WHERE (CustomerID = SCOPE_IDENTI" +
+                "TY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Phone", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Phone", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
