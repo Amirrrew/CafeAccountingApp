@@ -49,7 +49,7 @@ namespace CafeApplication
 
 
         //-------------- import forms ---------------
-        DailyInvoice DailyInvoice = new DailyInvoice();
+
 
         public void CheckSetupDone()
         {
@@ -116,7 +116,8 @@ namespace CafeApplication
         //--------------------------- Opening menu events -------------------
         private void btn_DailyFactor_Click(object sender, EventArgs e)
         {
-            DailyInvoice.ShowDialog();
+            DailyInvoice DailyInvoice = new DailyInvoice();
+            DailyInvoice.Show();
         } //--------------- open Daily factor
 
         private void btn_ConfirmDaily_Click(object sender, EventArgs e)
