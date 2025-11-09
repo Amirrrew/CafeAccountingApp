@@ -57,19 +57,26 @@ namespace CafeApplication.Forms.DailyInvoice
             Int32 i;
             try
             {
-                if (this.dsCafe != null) { }
-                this.customersBindingSource.EndEdit();
-                i = this.customersTableAdapter.Update(this.dsCafe.Customers);
-                if (i > 0)
+                if (txt_CustomerID.Text != string.Empty && txt_CustomerName.Text != string.Empty && txt_CustomerPhone.Text != string.Empty)
                 {
-                    //MessageBox.Show("کاربر گرامی اطلاعات با موفقیت ذخیره شد");
-                    customMessage.NewMessage("Success", "کاربر گرامی اطلاعات با موفقیت ذخیره شد", "Y", "success", null);
+                    this.customersBindingSource.EndEdit();
+                    i = this.customersTableAdapter.Update(this.dsCafe.Customers);
+                    if (i > 0)
+                    {
+                        //MessageBox.Show("کاربر گرامی اطلاعات با موفقیت ذخیره شد");
+                        customMessage.NewMessage("Success", "کاربر گرامی اطلاعات با موفقیت ذخیره شد", "Y", "success", null);
+                    }
+                    //------------
+                    else
+                    {
+                        customMessage.NewMessage("Error", "متاسفانه ما نتوانستیم اطلاعات را  با موفقیت ذخیره کنیم", "Y", "error", null);
+                    }
                 }
-                //------------
                 else
                 {
-                    customMessage.NewMessage("Error", "متاسفانه ما نتوانستیم اطلاعات را  با موفقیت ذخیره کنیم", "Y", "error", null);
+                    customMessage.NewMessage("warning", "نام و نام خوانوادگی و شماره تلفن باید نوشته شود!", "Y", "error", null);
                 }
+                
             }
             catch
             {
