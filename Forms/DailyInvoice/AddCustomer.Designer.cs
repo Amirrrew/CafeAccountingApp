@@ -55,7 +55,8 @@
             // lbl_CustomerID
             // 
             this.lbl_CustomerID.AutoSize = true;
-            this.lbl_CustomerID.Location = new System.Drawing.Point(378, 77);
+            this.lbl_CustomerID.Location = new System.Drawing.Point(309, 82);
+            this.lbl_CustomerID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_CustomerID.Name = "lbl_CustomerID";
             this.lbl_CustomerID.Size = new System.Drawing.Size(75, 21);
             this.lbl_CustomerID.TabIndex = 0;
@@ -66,12 +67,13 @@
             // 
             this.txt_CustomerID.BackColor = System.Drawing.Color.Black;
             this.txt_CustomerID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_CustomerID.Font = new System.Drawing.Font("Rokh", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_CustomerID.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_CustomerID.ForeColor = System.Drawing.Color.White;
-            this.txt_CustomerID.Location = new System.Drawing.Point(357, 101);
+            this.txt_CustomerID.Location = new System.Drawing.Point(250, 106);
+            this.txt_CustomerID.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txt_CustomerID.Name = "txt_CustomerID";
             this.txt_CustomerID.ReadOnly = true;
-            this.txt_CustomerID.Size = new System.Drawing.Size(96, 34);
+            this.txt_CustomerID.Size = new System.Drawing.Size(134, 31);
             this.txt_CustomerID.TabIndex = 0;
             this.txt_CustomerID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -115,11 +117,12 @@
             this.txt_CustomerName.BackColor = System.Drawing.Color.Black;
             this.txt_CustomerName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_CustomerName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "Name", true));
-            this.txt_CustomerName.Font = new System.Drawing.Font("Rokh", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_CustomerName.Font = new System.Drawing.Font("RokhFaNum", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_CustomerName.ForeColor = System.Drawing.Color.White;
-            this.txt_CustomerName.Location = new System.Drawing.Point(234, 180);
+            this.txt_CustomerName.Location = new System.Drawing.Point(164, 189);
+            this.txt_CustomerName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txt_CustomerName.Name = "txt_CustomerName";
-            this.txt_CustomerName.Size = new System.Drawing.Size(219, 32);
+            this.txt_CustomerName.Size = new System.Drawing.Size(220, 32);
             this.txt_CustomerName.TabIndex = 0;
             this.txt_CustomerName.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -128,11 +131,12 @@
             this.txt_CustomerPhone.BackColor = System.Drawing.Color.Black;
             this.txt_CustomerPhone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_CustomerPhone.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "Phone", true));
-            this.txt_CustomerPhone.Font = new System.Drawing.Font("Rokh", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_CustomerPhone.Font = new System.Drawing.Font("RokhFaNum", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_CustomerPhone.ForeColor = System.Drawing.Color.White;
-            this.txt_CustomerPhone.Location = new System.Drawing.Point(73, 180);
+            this.txt_CustomerPhone.Location = new System.Drawing.Point(51, 189);
+            this.txt_CustomerPhone.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txt_CustomerPhone.Name = "txt_CustomerPhone";
-            this.txt_CustomerPhone.Size = new System.Drawing.Size(155, 32);
+            this.txt_CustomerPhone.Size = new System.Drawing.Size(109, 32);
             this.txt_CustomerPhone.TabIndex = 1;
             this.txt_CustomerPhone.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txt_CustomerPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_CustomerPhone_KeyPress);
@@ -142,28 +146,31 @@
             this.txt_CustomerAddress.BackColor = System.Drawing.Color.Black;
             this.txt_CustomerAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_CustomerAddress.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "Address", true));
-            this.txt_CustomerAddress.Font = new System.Drawing.Font("Rokh", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_CustomerAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_CustomerAddress.ForeColor = System.Drawing.Color.White;
-            this.txt_CustomerAddress.Location = new System.Drawing.Point(11, 257);
+            this.txt_CustomerAddress.Location = new System.Drawing.Point(8, 270);
+            this.txt_CustomerAddress.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txt_CustomerAddress.Multiline = true;
             this.txt_CustomerAddress.Name = "txt_CustomerAddress";
-            this.txt_CustomerAddress.Size = new System.Drawing.Size(441, 71);
+            this.txt_CustomerAddress.Size = new System.Drawing.Size(376, 74);
             this.txt_CustomerAddress.TabIndex = 2;
             this.txt_CustomerAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txt_CustomerCreationDate
             // 
             this.txt_CustomerCreationDate.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.customersBindingSource, "CreatedAt", true));
-            this.txt_CustomerCreationDate.Location = new System.Drawing.Point(12, 101);
+            this.txt_CustomerCreationDate.Location = new System.Drawing.Point(8, 106);
+            this.txt_CustomerCreationDate.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txt_CustomerCreationDate.Name = "txt_CustomerCreationDate";
-            this.txt_CustomerCreationDate.Size = new System.Drawing.Size(107, 28);
+            this.txt_CustomerCreationDate.Size = new System.Drawing.Size(76, 28);
             this.txt_CustomerCreationDate.TabIndex = 8;
             this.txt_CustomerCreationDate.Visible = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(337, 156);
+            this.label1.Location = new System.Drawing.Point(268, 164);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(116, 21);
             this.label1.TabIndex = 9;
@@ -173,7 +180,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(143, 156);
+            this.label2.Location = new System.Drawing.Point(77, 164);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 21);
             this.label2.TabIndex = 10;
@@ -183,7 +191,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(411, 233);
+            this.label3.Location = new System.Drawing.Point(342, 246);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 21);
             this.label3.TabIndex = 11;
@@ -195,7 +204,8 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Rokh", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(204, 10);
+            this.label4.Location = new System.Drawing.Point(134, 8);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(259, 41);
             this.label4.TabIndex = 12;
@@ -204,32 +214,38 @@
             // 
             // btn_save
             // 
+            this.btn_save.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_save.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_save.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_save.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
             this.btn_save.Image = ((System.Drawing.Image)(resources.GetObject("btn_save.Image")));
             this.btn_save.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_save.Location = new System.Drawing.Point(11, 338);
+            this.btn_save.Location = new System.Drawing.Point(8, 354);
             this.btn_save.Margin = new System.Windows.Forms.Padding(4);
             this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(56, 53);
+            this.btn_save.Size = new System.Drawing.Size(54, 48);
             this.btn_save.TabIndex = 3;
             this.btn_save.Text = "-";
             this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
             // btn_cancel
             // 
+            this.btn_cancel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_cancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_cancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_cancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_cancel.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
             this.btn_cancel.Image = ((System.Drawing.Image)(resources.GetObject("btn_cancel.Image")));
             this.btn_cancel.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_cancel.Location = new System.Drawing.Point(73, 338);
+            this.btn_cancel.Location = new System.Drawing.Point(66, 354);
             this.btn_cancel.Margin = new System.Windows.Forms.Padding(4);
             this.btn_cancel.Name = "btn_cancel";
-            this.btn_cancel.Size = new System.Drawing.Size(56, 53);
+            this.btn_cancel.Size = new System.Drawing.Size(54, 48);
             this.btn_cancel.TabIndex = 4;
             this.btn_cancel.Text = "-";
             this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
@@ -239,7 +255,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(464, 401);
+            this.ClientSize = new System.Drawing.Size(393, 416);
             this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.btn_save);
             this.Controls.Add(this.label4);
@@ -257,10 +273,10 @@
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.MaximizeBox = false;
             this.Name = "AddCustomer";
-            this.Padding = new System.Windows.Forms.Padding(10);
+            this.Padding = new System.Windows.Forms.Padding(7, 10, 7, 10);
             this.ShowIcon = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

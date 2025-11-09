@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfirmPurchase));
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition2 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
             this.lbl_Title = new System.Windows.Forms.Label();
             this.lbl_totalLabel = new System.Windows.Forms.Label();
             this.txt_TotalPrice = new System.Windows.Forms.TextBox();
@@ -87,7 +87,7 @@
             // 
             this.txt_TotalPrice.BackColor = System.Drawing.Color.Black;
             this.txt_TotalPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_TotalPrice.Font = new System.Drawing.Font("RokhFaNum Medium", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_TotalPrice.Font = new System.Drawing.Font("RokhFaNum", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_TotalPrice.ForeColor = System.Drawing.Color.White;
             this.txt_TotalPrice.Location = new System.Drawing.Point(265, 92);
             this.txt_TotalPrice.MaxLength = 10;
@@ -162,7 +162,7 @@
             // 
             this.txt_Discount.BackColor = System.Drawing.Color.Black;
             this.txt_Discount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_Discount.Font = new System.Drawing.Font("RokhFaNum Medium", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_Discount.Font = new System.Drawing.Font("RokhFaNum", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_Discount.ForeColor = System.Drawing.Color.White;
             this.txt_Discount.Location = new System.Drawing.Point(132, 92);
             this.txt_Discount.MaxLength = 10;
@@ -259,7 +259,7 @@
             this.Cmb_SelectedPOS.EditorControl.MasterTemplate.AllowColumnChooser = false;
             this.Cmb_SelectedPOS.EditorControl.MasterTemplate.EnableGrouping = false;
             this.Cmb_SelectedPOS.EditorControl.MasterTemplate.ShowFilteringRow = false;
-            this.Cmb_SelectedPOS.EditorControl.MasterTemplate.ViewDefinition = tableViewDefinition2;
+            this.Cmb_SelectedPOS.EditorControl.MasterTemplate.ViewDefinition = tableViewDefinition1;
             this.Cmb_SelectedPOS.EditorControl.Name = "NestedRadGridView";
             this.Cmb_SelectedPOS.EditorControl.ReadOnly = true;
             this.Cmb_SelectedPOS.EditorControl.RightToLeft = System.Windows.Forms.RightToLeft.Yes;

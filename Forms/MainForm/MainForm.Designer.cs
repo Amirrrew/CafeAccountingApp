@@ -648,10 +648,10 @@
             // lblCurrentTime
             // 
             this.lblCurrentTime.AutoSize = true;
-            this.lblCurrentTime.Font = new System.Drawing.Font("RokhFaNum Light", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblCurrentTime.Font = new System.Drawing.Font("RokhFaNum", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lblCurrentTime.Location = new System.Drawing.Point(-1, 28);
             this.lblCurrentTime.Name = "lblCurrentTime";
-            this.lblCurrentTime.Size = new System.Drawing.Size(159, 61);
+            this.lblCurrentTime.Size = new System.Drawing.Size(147, 61);
             this.lblCurrentTime.TabIndex = 3;
             this.lblCurrentTime.Text = "00:00:00";
             // 
@@ -664,7 +664,7 @@
             // lblDate
             // 
             this.lblDate.AutoSize = true;
-            this.lblDate.Font = new System.Drawing.Font("RokhFaNum Normal", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblDate.Font = new System.Drawing.Font("RokhFaNum", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lblDate.Location = new System.Drawing.Point(7, 73);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(52, 21);

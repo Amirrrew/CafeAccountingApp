@@ -111,6 +111,7 @@ namespace CafeApplication.Forms.PublicForms
             BtnOK.Visible = true;
             btnCancel.Visible = false;
             btnNo.Visible = false;
+            BtnOK.Text = "تایید";
         }
 
         public void YesNo()
@@ -118,6 +119,7 @@ namespace CafeApplication.Forms.PublicForms
             BtnOK.Visible = true;
             btnCancel.Visible = false;
             btnNo.Visible = true;
+            BtnOK.Text = "بله";
         }
 
         public void YesNoCancel()
@@ -134,5 +136,9 @@ namespace CafeApplication.Forms.PublicForms
             btnNo.Visible = false;
         }
 
+        private void CustomMessage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

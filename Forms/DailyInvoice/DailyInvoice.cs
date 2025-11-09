@@ -70,5 +70,65 @@ namespace CafeApplication.Forms.DailyFactor
             ConfirmPurchase confirmPurchase = new ConfirmPurchase();
             confirmPurchase.ShowDialog();
         }
+
+        private void Pnl_Actions_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Pnl_ActionTitles_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_addCustomer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Pnl_ActionInner_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Cmb_customers_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void customersBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void customersBindingSource1_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_customer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fKSalesCustomerBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tooltip_AddCustomer_Popup(object sender, PopupEventArgs e)
+        {
+
+        }
     }
 }

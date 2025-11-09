@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace CafeApplication.Forms.DailyInvoice
 {
@@ -32,6 +33,9 @@ namespace CafeApplication.Forms.DailyInvoice
         //--------------------- import classes ---------------
         BackBlur blur = new BackBlur();
         FontSet font = new FontSet();
+        //---
+        CafeApplication.Forms.PublicForms.CustomMessage  customMessage = new PublicForms.CustomMessage();
+        //--------------------- import classes ---------------
 
         private void customersBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
@@ -50,7 +54,27 @@ namespace CafeApplication.Forms.DailyInvoice
 
         private void btn_save_Click(object sender, EventArgs e)
         {
-
+            Int32 i;
+            try
+            {
+                if (this.dsCafe != null) { }
+                this.customersBindingSource.EndEdit();
+                i = this.customersTableAdapter.Update(this.dsCafe.Customers);
+                if (i > 0)
+                {
+                    //MessageBox.Show("کاربر گرامی اطلاعات با موفقیت ذخیره شد");
+                    customMessage.NewMessage("success", "کاربر گرامی اطلاعات با موفقیت ذخیره شد", "Y", "success", null);
+                }
+                //------------
+                else
+                {
+                    customMessage.NewMessage("error", "متاسفانه ما نتوانستیم اطلاعات را  با موفقیت ذخیره کنیم", "Y", "Error", null);
+                }
+            }
+            catch
+            {
+                customMessage.NewMessage("Error", "در ذخیره سازی اطلاعات مشکلی پیش آمده\n دوباره تلاش کنید و در صورت لزوم با پشتیبانی تماس بگیرید", "Y", "error", null);
+            }
         }
 
         private void btn_cancel_Click(object sender, EventArgs e)
