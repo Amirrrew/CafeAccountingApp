@@ -55,7 +55,7 @@
             // lbl_CustomerID
             // 
             this.lbl_CustomerID.AutoSize = true;
-            this.lbl_CustomerID.Location = new System.Drawing.Point(309, 82);
+            this.lbl_CustomerID.Location = new System.Drawing.Point(347, 82);
             this.lbl_CustomerID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_CustomerID.Name = "lbl_CustomerID";
             this.lbl_CustomerID.Size = new System.Drawing.Size(75, 21);
@@ -73,7 +73,7 @@
             this.txt_CustomerID.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txt_CustomerID.Name = "txt_CustomerID";
             this.txt_CustomerID.ReadOnly = true;
-            this.txt_CustomerID.Size = new System.Drawing.Size(134, 31);
+            this.txt_CustomerID.Size = new System.Drawing.Size(173, 31);
             this.txt_CustomerID.TabIndex = 0;
             this.txt_CustomerID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -122,7 +122,7 @@
             this.txt_CustomerName.Location = new System.Drawing.Point(164, 189);
             this.txt_CustomerName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txt_CustomerName.Name = "txt_CustomerName";
-            this.txt_CustomerName.Size = new System.Drawing.Size(220, 32);
+            this.txt_CustomerName.Size = new System.Drawing.Size(259, 32);
             this.txt_CustomerName.TabIndex = 0;
             this.txt_CustomerName.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -152,7 +152,7 @@
             this.txt_CustomerAddress.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txt_CustomerAddress.Multiline = true;
             this.txt_CustomerAddress.Name = "txt_CustomerAddress";
-            this.txt_CustomerAddress.Size = new System.Drawing.Size(376, 74);
+            this.txt_CustomerAddress.Size = new System.Drawing.Size(415, 74);
             this.txt_CustomerAddress.TabIndex = 2;
             this.txt_CustomerAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -169,7 +169,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(268, 164);
+            this.label1.Location = new System.Drawing.Point(306, 164);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(116, 21);
@@ -191,7 +191,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(342, 246);
+            this.label3.Location = new System.Drawing.Point(380, 246);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 21);
@@ -204,7 +204,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Rokh", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(134, 8);
+            this.label4.Location = new System.Drawing.Point(170, 8);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(259, 41);
@@ -214,38 +214,32 @@
             // 
             // btn_save
             // 
-            this.btn_save.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_save.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_save.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_save.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
             this.btn_save.Image = ((System.Drawing.Image)(resources.GetObject("btn_save.Image")));
             this.btn_save.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_save.Location = new System.Drawing.Point(8, 354);
+            this.btn_save.Location = new System.Drawing.Point(8, 350);
             this.btn_save.Margin = new System.Windows.Forms.Padding(4);
             this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(54, 48);
+            this.btn_save.Size = new System.Drawing.Size(60, 57);
             this.btn_save.TabIndex = 3;
             this.btn_save.Text = "-";
             this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
             // btn_cancel
             // 
-            this.btn_cancel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_cancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_cancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_cancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_cancel.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
             this.btn_cancel.Image = ((System.Drawing.Image)(resources.GetObject("btn_cancel.Image")));
             this.btn_cancel.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_cancel.Location = new System.Drawing.Point(66, 354);
+            this.btn_cancel.Location = new System.Drawing.Point(73, 350);
             this.btn_cancel.Margin = new System.Windows.Forms.Padding(4);
             this.btn_cancel.Name = "btn_cancel";
-            this.btn_cancel.Size = new System.Drawing.Size(54, 48);
+            this.btn_cancel.Size = new System.Drawing.Size(60, 57);
             this.btn_cancel.TabIndex = 4;
             this.btn_cancel.Text = "-";
             this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
@@ -255,7 +249,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(393, 416);
+            this.ClientSize = new System.Drawing.Size(432, 417);
             this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.btn_save);
             this.Controls.Add(this.label4);
