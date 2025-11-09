@@ -46,7 +46,8 @@
               "RelativeToolTip": "Forms\\PublicForms\\CustomMessage.cs",
               "ViewState": "AgIAAEYAAAAAAAAAAAAgwFkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T14:11:55.274Z"
+              "WhenOpened": "2025-11-09T14:11:55.274Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -57,7 +58,8 @@
               "ToolTip": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\DailyInvoice\\ConfirmPurchase.cs [Design]",
               "RelativeToolTip": "Forms\\DailyInvoice\\ConfirmPurchase.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T14:08:24.935Z"
+              "WhenOpened": "2025-11-09T14:08:24.935Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -68,7 +70,8 @@
               "ToolTip": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\MainForm\\MainForm.cs [Design]",
               "RelativeToolTip": "Forms\\MainForm\\MainForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T14:06:05.184Z"
+              "WhenOpened": "2025-11-09T14:06:05.184Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
