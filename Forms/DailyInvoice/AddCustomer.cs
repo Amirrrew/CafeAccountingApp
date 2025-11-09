@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using Calendar;
 
 namespace CafeApplication.Forms.DailyInvoice
 {
@@ -20,13 +21,31 @@ namespace CafeApplication.Forms.DailyInvoice
             InitializeComponent();
             blur.SetBlurBack(this);
             font.SetFont(this);
-            txt_CustomerID.Text = (customersTableAdapter.SetLastCustomerID().GetValueOrDefault() +1 ).ToString();
+            
+
 
         }
 
+        private void Load_data()
+        {
+            int i;
+            try
+            {
+                this.customersBindingSource.AddNew();
+                i = this.customersTableAdapter.Max_Id().GetValueOrDefault();
+                i = i + 1;
+                txt_CustomerID.Text = (customersTableAdapter.Max_Id().GetValueOrDefault() + 1).ToString();
+            }
+            catch
+            {
+
+            }
+            txt_CustomerName.Focus();
+            txt_Date.Text = get_date.generateFullDate();
+        }
         private void AddCustomer_Load(object sender, EventArgs e)
         {
-            txt_CustomerName.Focus();
+            Load_data();
         }
 
 
@@ -35,6 +54,7 @@ namespace CafeApplication.Forms.DailyInvoice
         FontSet font = new FontSet();
         //---
         CafeApplication.Forms.PublicForms.CustomMessage  customMessage = new PublicForms.CustomMessage();
+        GetTime get_date = new GetTime();
         //--------------------- import classes ---------------
 
         private void customersBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -65,6 +85,10 @@ namespace CafeApplication.Forms.DailyInvoice
                     {
                         //MessageBox.Show("کاربر گرامی اطلاعات با موفقیت ذخیره شد");
                         customMessage.NewMessage("Success", "کاربر گرامی اطلاعات با موفقیت ذخیره شد", "Y", "success", null);
+                        txt_CustomerName.Text = string.Empty;
+                        txt_CustomerPhone.Text = string.Empty;
+                        txt_CustomerAddress.Text = string.Empty;
+                        Load_data();
                     }
                     //------------
                     else
@@ -91,6 +115,9 @@ namespace CafeApplication.Forms.DailyInvoice
                 //---------------------
                 this.customersBindingSource.CancelEdit();
                 this.dsCafe.Customers.RejectChanges();
+                txt_CustomerName.Text = string.Empty;
+                txt_CustomerPhone.Text = string.Empty;
+                txt_CustomerAddress.Text = string.Empty;
             }
             catch 
             {

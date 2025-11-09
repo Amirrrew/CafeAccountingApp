@@ -420,6 +420,18 @@ namespace Calendar
 
             return dayTextEng;
         }
+
+
+
+        public string generateFullDate()
+        {
+            string date_Full;
+            date_Full = pc.GetYear(DateTime.Now).ToString() + "/" +
+                pc.GetMonth(DateTime.Now).ToString() + "/" +
+                pc.GetDayOfMonth(DateTime.Now).ToString();
+            return date_Full;
+
+        }
     }
 
 

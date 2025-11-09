@@ -32,20 +32,20 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddCustomer));
             this.lbl_CustomerID = new System.Windows.Forms.Label();
             this.txt_CustomerID = new System.Windows.Forms.TextBox();
-            this.customersTableAdapter = new CafeApplication.Data.DataSet.DsCafeTableAdapters.CustomersTableAdapter();
             this.dsCafe = new CafeApplication.Data.DataSet.DsCafe();
             this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tableAdapterManager = new CafeApplication.Data.DataSet.DsCafeTableAdapters.TableAdapterManager();
             this.txt_CustomerName = new System.Windows.Forms.TextBox();
             this.txt_CustomerPhone = new System.Windows.Forms.TextBox();
             this.txt_CustomerAddress = new System.Windows.Forms.TextBox();
-            this.txt_CustomerCreationDate = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_save = new Telerik.WinControls.UI.RadButton();
             this.btn_cancel = new Telerik.WinControls.UI.RadButton();
+            this.txt_Date = new System.Windows.Forms.TextBox();
+            this.customersTableAdapter = new CafeApplication.Data.DataSet.DsCafeTableAdapters.CustomersTableAdapter();
+            this.tableAdapterManager = new CafeApplication.Data.DataSet.DsCafeTableAdapters.TableAdapterManager();
             ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_save)).BeginInit();
@@ -77,10 +77,6 @@
             this.txt_CustomerID.TabIndex = 0;
             this.txt_CustomerID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // customersTableAdapter
-            // 
-            this.customersTableAdapter.ClearBeforeFill = true;
-            // 
             // dsCafe
             // 
             this.dsCafe.DataSetName = "DsCafe";
@@ -90,27 +86,6 @@
             // 
             this.customersBindingSource.DataMember = "Customers";
             this.customersBindingSource.DataSource = this.dsCafe;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.CafeTablesTableAdapter = null;
-            this.tableAdapterManager.CategoriesTableAdapter = null;
-            this.tableAdapterManager.CustomersTableAdapter = this.customersTableAdapter;
-            this.tableAdapterManager.EmployeesTableAdapter = null;
-            this.tableAdapterManager.ExpensesTableAdapter = null;
-            this.tableAdapterManager.IncomesTableAdapter = null;
-            this.tableAdapterManager.ProductsTableAdapter = null;
-            this.tableAdapterManager.PurchaseItemsTableAdapter = null;
-            this.tableAdapterManager.PurchasesTableAdapter = null;
-            this.tableAdapterManager.SaleItemsTableAdapter = null;
-            this.tableAdapterManager.SalesTableAdapter = null;
-            this.tableAdapterManager.SetupTableAdapter = null;
-            this.tableAdapterManager.SuppliersTableAdapter = null;
-            this.tableAdapterManager.TransactionsTableAdapter = null;
-            this.tableAdapterManager.TrashBinTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = CafeApplication.Data.DataSet.DsCafeTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.UsersTableAdapter = null;
             // 
             // txt_CustomerName
             // 
@@ -155,16 +130,6 @@
             this.txt_CustomerAddress.Size = new System.Drawing.Size(415, 74);
             this.txt_CustomerAddress.TabIndex = 2;
             this.txt_CustomerAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txt_CustomerCreationDate
-            // 
-            this.txt_CustomerCreationDate.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.customersBindingSource, "CreatedAt", true));
-            this.txt_CustomerCreationDate.Location = new System.Drawing.Point(8, 106);
-            this.txt_CustomerCreationDate.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.txt_CustomerCreationDate.Name = "txt_CustomerCreationDate";
-            this.txt_CustomerCreationDate.Size = new System.Drawing.Size(76, 28);
-            this.txt_CustomerCreationDate.TabIndex = 8;
-            this.txt_CustomerCreationDate.Visible = false;
             // 
             // label1
             // 
@@ -244,19 +209,53 @@
             this.btn_cancel.Text = "-";
             this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
+            // txt_Date
+            // 
+            this.txt_Date.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "CreatedAt", true));
+            this.txt_Date.Location = new System.Drawing.Point(33, 75);
+            this.txt_Date.Name = "txt_Date";
+            this.txt_Date.ReadOnly = true;
+            this.txt_Date.Size = new System.Drawing.Size(100, 28);
+            this.txt_Date.TabIndex = 13;
+            // 
+            // customersTableAdapter
+            // 
+            this.customersTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.CafeTablesTableAdapter = null;
+            this.tableAdapterManager.CategoriesTableAdapter = null;
+            this.tableAdapterManager.CustomersTableAdapter = this.customersTableAdapter;
+            this.tableAdapterManager.EmployeesTableAdapter = null;
+            this.tableAdapterManager.ExpensesTableAdapter = null;
+            this.tableAdapterManager.IncomesTableAdapter = null;
+            this.tableAdapterManager.ProductsTableAdapter = null;
+            this.tableAdapterManager.PurchaseItemsTableAdapter = null;
+            this.tableAdapterManager.PurchasesTableAdapter = null;
+            this.tableAdapterManager.SaleItemsTableAdapter = null;
+            this.tableAdapterManager.SalesTableAdapter = null;
+            this.tableAdapterManager.SetupTableAdapter = null;
+            this.tableAdapterManager.SuppliersTableAdapter = null;
+            this.tableAdapterManager.TransactionsTableAdapter = null;
+            this.tableAdapterManager.TrashBinTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = CafeApplication.Data.DataSet.DsCafeTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UsersTableAdapter = null;
+            // 
             // AddCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(432, 417);
+            this.ClientSize = new System.Drawing.Size(433, 427);
+            this.Controls.Add(this.txt_Date);
             this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.btn_save);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txt_CustomerCreationDate);
             this.Controls.Add(this.txt_CustomerAddress);
             this.Controls.Add(this.txt_CustomerPhone);
             this.Controls.Add(this.txt_CustomerName);
@@ -289,19 +288,19 @@
 
         private System.Windows.Forms.Label lbl_CustomerID;
         private System.Windows.Forms.TextBox txt_CustomerID;
-        private Data.DataSet.DsCafeTableAdapters.CustomersTableAdapter customersTableAdapter;
         private Data.DataSet.DsCafe dsCafe;
         private System.Windows.Forms.BindingSource customersBindingSource;
-        private Data.DataSet.DsCafeTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.TextBox txt_CustomerName;
         private System.Windows.Forms.TextBox txt_CustomerPhone;
         private System.Windows.Forms.TextBox txt_CustomerAddress;
-        private System.Windows.Forms.DateTimePicker txt_CustomerCreationDate;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         public Telerik.WinControls.UI.RadButton btn_save;
         public Telerik.WinControls.UI.RadButton btn_cancel;
+        private System.Windows.Forms.TextBox txt_Date;
+        private Data.DataSet.DsCafeTableAdapters.CustomersTableAdapter customersTableAdapter;
+        private Data.DataSet.DsCafeTableAdapters.TableAdapterManager tableAdapterManager;
     }
 }
