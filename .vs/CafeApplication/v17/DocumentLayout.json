@@ -7,19 +7,19 @@
       "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\dailyinvoice\\addcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|c:\\users\\hosein\\documents\\github\\cafeaccountingapp\\forms\\mainform\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|C:\\Users\\Hosein\\Documents\\GitHub\\CafeAccountingApp\\forms\\mainform\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\mainform\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|c:\\users\\hosein\\documents\\github\\cafeaccountingapp\\forms\\dailyinvoice\\confirmpurchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|C:\\Users\\Hosein\\Documents\\GitHub\\CafeAccountingApp\\forms\\dailyinvoice\\confirmpurchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\dailyinvoice\\confirmpurchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|c:\\users\\hosein\\documents\\github\\cafeaccountingapp\\forms\\publicforms\\custommessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|C:\\Users\\Hosein\\Documents\\GitHub\\CafeAccountingApp\\forms\\publicforms\\custommessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\publicforms\\custommessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|c:\\users\\hosein\\documents\\github\\cafeaccountingapp\\forms\\publicforms\\custommessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|C:\\Users\\Hosein\\Documents\\GitHub\\CafeAccountingApp\\forms\\publicforms\\custommessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\publicforms\\custommessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -110,7 +110,7 @@
               "RelativeDocumentMoniker": "Forms\\DailyInvoice\\AddCustomer.cs",
               "ToolTip": "C:\\Users\\Hosein\\Documents\\GitHub\\CafeAccountingApp\\Forms\\DailyInvoice\\AddCustomer.cs",
               "RelativeToolTip": "Forms\\DailyInvoice\\AddCustomer.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAIwEYAAACCAAAAAAAAAA==",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAcwE4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-09T13:05:42.745Z",
               "EditorCaption": ""
@@ -124,8 +124,7 @@
               "ToolTip": "C:\\Users\\Hosein\\Documents\\GitHub\\CafeAccountingApp\\Forms\\DailyInvoice\\AddCustomer.cs [Design]",
               "RelativeToolTip": "Forms\\DailyInvoice\\AddCustomer.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T13:00:37.018Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-11-09T13:00:37.018Z"
             }
           ]
         }

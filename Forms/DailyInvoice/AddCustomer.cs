@@ -63,12 +63,12 @@ namespace CafeApplication.Forms.DailyInvoice
                 if (i > 0)
                 {
                     //MessageBox.Show("کاربر گرامی اطلاعات با موفقیت ذخیره شد");
-                    customMessage.NewMessage("success", "کاربر گرامی اطلاعات با موفقیت ذخیره شد", "Y", "success", null);
+                    customMessage.NewMessage("Success", "کاربر گرامی اطلاعات با موفقیت ذخیره شد", "Y", "success", null);
                 }
                 //------------
                 else
                 {
-                    customMessage.NewMessage("error", "متاسفانه ما نتوانستیم اطلاعات را  با موفقیت ذخیره کنیم", "Y", "Error", null);
+                    customMessage.NewMessage("Error", "متاسفانه ما نتوانستیم اطلاعات را  با موفقیت ذخیره کنیم", "Y", "error", null);
                 }
             }
             catch
@@ -79,7 +79,16 @@ namespace CafeApplication.Forms.DailyInvoice
 
         private void btn_cancel_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                //---------------------
+                this.customersBindingSource.CancelEdit();
+                this.dsCafe.Customers.RejectChanges();
+            }
+            catch 
+            {
+                customMessage.NewMessage("Error", "متاسفانه ما نتوانستیم اطلاعات را  با موفقیت ذخیره کنیم", "Y", "error", null);
+            }
         }
 
 
