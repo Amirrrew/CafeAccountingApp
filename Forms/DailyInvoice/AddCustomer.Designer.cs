@@ -67,13 +67,13 @@
             // 
             this.txt_CustomerID.BackColor = System.Drawing.Color.Black;
             this.txt_CustomerID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_CustomerID.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_CustomerID.Font = new System.Drawing.Font("RokhFaNum", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_CustomerID.ForeColor = System.Drawing.Color.White;
-            this.txt_CustomerID.Location = new System.Drawing.Point(250, 106);
+            this.txt_CustomerID.Location = new System.Drawing.Point(310, 106);
             this.txt_CustomerID.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txt_CustomerID.Name = "txt_CustomerID";
             this.txt_CustomerID.ReadOnly = true;
-            this.txt_CustomerID.Size = new System.Drawing.Size(173, 31);
+            this.txt_CustomerID.Size = new System.Drawing.Size(113, 34);
             this.txt_CustomerID.TabIndex = 0;
             this.txt_CustomerID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 

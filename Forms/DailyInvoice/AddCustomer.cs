@@ -10,7 +10,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-using Calendar;
 
 namespace CafeApplication.Forms.DailyInvoice
 {
@@ -21,31 +20,13 @@ namespace CafeApplication.Forms.DailyInvoice
             InitializeComponent();
             blur.SetBlurBack(this);
             font.SetFont(this);
-            
-
+            txt_CustomerID.Text = (customersTableAdapter.SetLastCustomerID().GetValueOrDefault() +1 ).ToString();
 
         }
 
-        private void Load_data()
-        {
-            int i;
-            try
-            {
-                this.customersBindingSource.AddNew();
-                i = this.customersTableAdapter.Max_Id().GetValueOrDefault();
-                i = i + 1;
-                txt_CustomerID.Text = (customersTableAdapter.Max_Id().GetValueOrDefault() + 1).ToString();
-            }
-            catch
-            {
-
-            }
-            txt_CustomerName.Focus();
-            txt_Date.Text = get_date.generateFullDate();
-        }
         private void AddCustomer_Load(object sender, EventArgs e)
         {
-            Load_data();
+            txt_CustomerName.Focus();
         }
 
 
@@ -54,7 +35,6 @@ namespace CafeApplication.Forms.DailyInvoice
         FontSet font = new FontSet();
         //---
         CafeApplication.Forms.PublicForms.CustomMessage  customMessage = new PublicForms.CustomMessage();
-        GetTime get_date = new GetTime();
         //--------------------- import classes ---------------
 
         private void customersBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -84,11 +64,7 @@ namespace CafeApplication.Forms.DailyInvoice
                     if (i > 0)
                     {
                         //MessageBox.Show("کاربر گرامی اطلاعات با موفقیت ذخیره شد");
-                        customMessage.NewMessage("Success", "کاربر گرامی اطلاعات با موفقیت ذخیره شد", "Y", "success", null);
-                        txt_CustomerName.Text = string.Empty;
-                        txt_CustomerPhone.Text = string.Empty;
-                        txt_CustomerAddress.Text = string.Empty;
-                        Load_data();
+                        customMessage.NewMessage("Success", "مشتری جدید با موفقیت ثبت شد.", "Y", "success", null);
                     }
                     //------------
                     else
@@ -98,7 +74,7 @@ namespace CafeApplication.Forms.DailyInvoice
                 }
                 else
                 {
-                    customMessage.NewMessage("warning", "نام و نام خوانوادگی و شماره تلفن باید نوشته شود!", "Y", "error", null);
+                    customMessage.NewMessage("فیلد های ضروری", "نام و نام خوانوادگی و شماره تلفن باید نوشته شود!", "Y", "info", null);
                 }
                 
             }
@@ -115,13 +91,13 @@ namespace CafeApplication.Forms.DailyInvoice
                 //---------------------
                 this.customersBindingSource.CancelEdit();
                 this.dsCafe.Customers.RejectChanges();
-                txt_CustomerName.Text = string.Empty;
-                txt_CustomerPhone.Text = string.Empty;
-                txt_CustomerAddress.Text = string.Empty;
+                txt_CustomerName.ResetText();
+                txt_CustomerPhone.ResetText();
+                txt_CustomerAddress.ResetText();
             }
             catch 
             {
-                customMessage.NewMessage("Error", "متاسفانه ما نتوانستیم اطلاعات را  با موفقیت ذخیره کنیم", "Y", "error", null);
+                customMessage.NewMessage("خطا", "روند ذخیره اطلاعات با خطا موجه شد!", "Y", "warning", null);
             }
         }
 
