@@ -64,7 +64,7 @@ namespace CafeApplication.Forms.DailyInvoice
                     if (i > 0)
                     {
                         //MessageBox.Show("کاربر گرامی اطلاعات با موفقیت ذخیره شد");
-                        customMessage.NewMessage("Success", "کاربر گرامی اطلاعات با موفقیت ذخیره شد", "Y", "success", null);
+                        customMessage.NewMessage("Success", "مشتری جدید با موفقیت ثبت شد.", "Y", "success", null);
                     }
                     //------------
                     else
@@ -74,7 +74,7 @@ namespace CafeApplication.Forms.DailyInvoice
                 }
                 else
                 {
-                    customMessage.NewMessage("warning", "نام و نام خوانوادگی و شماره تلفن باید نوشته شود!", "Y", "error", null);
+                    customMessage.NewMessage("فیلد های ضروری", "نام و نام خوانوادگی و شماره تلفن باید نوشته شود!", "Y", "info", null);
                 }
                 
             }
@@ -91,10 +91,13 @@ namespace CafeApplication.Forms.DailyInvoice
                 //---------------------
                 this.customersBindingSource.CancelEdit();
                 this.dsCafe.Customers.RejectChanges();
+                txt_CustomerName.ResetText();
+                txt_CustomerPhone.ResetText();
+                txt_CustomerAddress.ResetText();
             }
             catch 
             {
-                customMessage.NewMessage("Error", "متاسفانه ما نتوانستیم اطلاعات را  با موفقیت ذخیره کنیم", "Y", "error", null);
+                customMessage.NewMessage("خطا", "روند ذخیره اطلاعات با خطا موجه شد!", "Y", "warning", null);
             }
         }
 
