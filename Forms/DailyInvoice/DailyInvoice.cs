@@ -86,11 +86,6 @@ namespace CafeApplication.Forms.DailyFactor
 
         }
 
-        private void lbl_addCustomer_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Pnl_ActionInner_Paint(object sender, PaintEventArgs e)
         {
 
