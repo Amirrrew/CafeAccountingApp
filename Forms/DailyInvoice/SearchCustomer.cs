@@ -58,5 +58,11 @@ namespace CafeApplication.Forms.DailyInvoice
                 }
             }
         }
+
+        private void Cmb_SearchFrame_TextChanged(object sender, EventArgs e)
+        {
+            this.txt_SearchBox.Clear();
+            this.txt_SearchBox.Focus();
+        }
     }
 }
