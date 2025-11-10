@@ -42,6 +42,8 @@
             this.lblDate = new System.Windows.Forms.Label();
             this.lbl_dailyInvoice = new System.Windows.Forms.Label();
             this.Cmb_customers = new System.Windows.Forms.ComboBox();
+            this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dsCafe = new CafeApplication.Data.DataSet.DsCafe();
             this.lbl_customer = new System.Windows.Forms.Label();
             this.object_5df848ca_f927_4389_812f_3545e39e23ab = new Telerik.WinControls.RootRadElement();
             this.tooltip_AddCustomer = new System.Windows.Forms.ToolTip(this.components);
@@ -60,8 +62,6 @@
             this.lbl_DiscountTitle = new System.Windows.Forms.Label();
             this.lbl_totalTitle = new System.Windows.Forms.Label();
             this.TimerCurrentTime = new System.Windows.Forms.Timer(this.components);
-            this.dsCafe = new CafeApplication.Data.DataSet.DsCafe();
-            this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.customersTableAdapter = new CafeApplication.Data.DataSet.DsCafeTableAdapters.CustomersTableAdapter();
             this.tableAdapterManager = new CafeApplication.Data.DataSet.DsCafeTableAdapters.TableAdapterManager();
             this.Pnl_Actions.SuspendLayout();
@@ -70,11 +70,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_ConfirmPurchase)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_addCustomer)).BeginInit();
             this.Pnl_Top.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_ExpandPanel)).BeginInit();
             this.Pnl_AllCategories.SuspendLayout();
             this.Pnl_TotalAmount.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // Pnl_Actions
@@ -83,7 +83,7 @@
             this.Pnl_Actions.Controls.Add(this.Pnl_ActionTitles);
             this.Pnl_Actions.Controls.Add(this.Pnl_ActionInner);
             this.Pnl_Actions.Dock = System.Windows.Forms.DockStyle.Right;
-            this.Pnl_Actions.Location = new System.Drawing.Point(1297, 0);
+            this.Pnl_Actions.Location = new System.Drawing.Point(1337, 0);
             this.Pnl_Actions.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Pnl_Actions.Name = "Pnl_Actions";
             this.Pnl_Actions.Size = new System.Drawing.Size(76, 758);
@@ -180,7 +180,7 @@
             this.Pnl_Top.Location = new System.Drawing.Point(0, 0);
             this.Pnl_Top.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Pnl_Top.Name = "Pnl_Top";
-            this.Pnl_Top.Size = new System.Drawing.Size(1297, 152);
+            this.Pnl_Top.Size = new System.Drawing.Size(1337, 152);
             this.Pnl_Top.TabIndex = 1;
             this.Pnl_Top.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -210,7 +210,7 @@
             this.lbl_dailyInvoice.AutoSize = true;
             this.lbl_dailyInvoice.Font = new System.Drawing.Font("Rokh", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lbl_dailyInvoice.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_dailyInvoice.Location = new System.Drawing.Point(1050, 12);
+            this.lbl_dailyInvoice.Location = new System.Drawing.Point(1096, 12);
             this.lbl_dailyInvoice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_dailyInvoice.Name = "lbl_dailyInvoice";
             this.lbl_dailyInvoice.Size = new System.Drawing.Size(243, 41);
@@ -225,7 +225,7 @@
             this.Cmb_customers.Font = new System.Drawing.Font("Rokh", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Cmb_customers.ForeColor = System.Drawing.Color.White;
             this.Cmb_customers.FormattingEnabled = true;
-            this.Cmb_customers.Location = new System.Drawing.Point(1051, 99);
+            this.Cmb_customers.Location = new System.Drawing.Point(1089, 104);
             this.Cmb_customers.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Cmb_customers.Name = "Cmb_customers";
             this.Cmb_customers.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -233,11 +233,21 @@
             this.Cmb_customers.TabIndex = 7;
             this.Cmb_customers.SelectedIndexChanged += new System.EventHandler(this.Cmb_customers_SelectedIndexChanged);
             // 
+            // customersBindingSource
+            // 
+            this.customersBindingSource.DataMember = "Customers";
+            this.customersBindingSource.DataSource = this.dsCafe;
+            // 
+            // dsCafe
+            // 
+            this.dsCafe.DataSetName = "DsCafe";
+            this.dsCafe.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // lbl_customer
             // 
             this.lbl_customer.AutoSize = true;
             this.lbl_customer.Font = new System.Drawing.Font("Rokh", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lbl_customer.Location = new System.Drawing.Point(1191, 75);
+            this.lbl_customer.Location = new System.Drawing.Point(1225, 80);
             this.lbl_customer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_customer.Name = "lbl_customer";
             this.lbl_customer.Size = new System.Drawing.Size(98, 21);
@@ -272,10 +282,10 @@
             this.btn_ExpandPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btn_ExpandPanel.Image = ((System.Drawing.Image)(resources.GetObject("btn_ExpandPanel.Image")));
             this.btn_ExpandPanel.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_ExpandPanel.Location = new System.Drawing.Point(1279, 366);
+            this.btn_ExpandPanel.Location = new System.Drawing.Point(1317, 366);
             this.btn_ExpandPanel.Margin = new System.Windows.Forms.Padding(4);
             this.btn_ExpandPanel.Name = "btn_ExpandPanel";
-            this.btn_ExpandPanel.Size = new System.Drawing.Size(18, 27);
+            this.btn_ExpandPanel.Size = new System.Drawing.Size(20, 27);
             this.btn_ExpandPanel.TabIndex = 9;
             this.btn_ExpandPanel.Text = "-";
             this.btn_ExpandPanel.Click += new System.EventHandler(this.btn_DailyInvoice_Click);
@@ -288,7 +298,7 @@
             this.Pnl_AllCategories.Location = new System.Drawing.Point(0, 531);
             this.Pnl_AllCategories.Name = "Pnl_AllCategories";
             this.Pnl_AllCategories.Padding = new System.Windows.Forms.Padding(10);
-            this.Pnl_AllCategories.Size = new System.Drawing.Size(1297, 227);
+            this.Pnl_AllCategories.Size = new System.Drawing.Size(1337, 227);
             this.Pnl_AllCategories.TabIndex = 10;
             // 
             // Pnl_TotalAmount
@@ -437,16 +447,6 @@
             this.TimerCurrentTime.Enabled = true;
             this.TimerCurrentTime.Interval = 1000;
             // 
-            // dsCafe
-            // 
-            this.dsCafe.DataSetName = "DsCafe";
-            this.dsCafe.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // customersBindingSource
-            // 
-            this.customersBindingSource.DataMember = "Customers";
-            this.customersBindingSource.DataSource = this.dsCafe;
-            // 
             // customersTableAdapter
             // 
             this.customersTableAdapter.ClearBeforeFill = true;
@@ -477,11 +477,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1373, 758);
+            this.ClientSize = new System.Drawing.Size(1413, 758);
+            this.Controls.Add(this.btn_ExpandPanel);
             this.Controls.Add(this.Pnl_AllCategories);
             this.Controls.Add(this.Pnl_Top);
             this.Controls.Add(this.Pnl_Actions);
-            this.Controls.Add(this.btn_ExpandPanel);
             this.Font = new System.Drawing.Font("Rokh", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -502,12 +502,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_addCustomer)).EndInit();
             this.Pnl_Top.ResumeLayout(false);
             this.Pnl_Top.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_ExpandPanel)).EndInit();
             this.Pnl_AllCategories.ResumeLayout(false);
             this.Pnl_TotalAmount.ResumeLayout(false);
             this.Pnl_TotalAmount.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
