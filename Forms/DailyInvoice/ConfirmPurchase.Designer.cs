@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfirmPurchase));
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition3 = new Telerik.WinControls.UI.TableViewDefinition();
             this.lbl_Title = new System.Windows.Forms.Label();
             this.lbl_totalLabel = new System.Windows.Forms.Label();
             this.txt_TotalPrice = new System.Windows.Forms.TextBox();
@@ -41,7 +41,7 @@
             this.lbl_border = new System.Windows.Forms.Label();
             this.txt_Discount = new System.Windows.Forms.TextBox();
             this.lbl_Discount = new System.Windows.Forms.Label();
-            this.lbl_FinalPrice = new System.Windows.Forms.Label();
+            this.lbl_FinalPriceTitle = new System.Windows.Forms.Label();
             this.txt_finalPrice = new System.Windows.Forms.Label();
             this.lbl_IRRIAL = new System.Windows.Forms.Label();
             this.lbl_Credit = new System.Windows.Forms.Label();
@@ -167,11 +167,12 @@
             this.txt_Discount.Location = new System.Drawing.Point(132, 92);
             this.txt_Discount.MaxLength = 10;
             this.txt_Discount.Name = "txt_Discount";
-            this.txt_Discount.ReadOnly = true;
             this.txt_Discount.Size = new System.Drawing.Size(127, 45);
             this.txt_Discount.TabIndex = 24;
-            this.txt_Discount.Text = "1000000";
+            this.txt_Discount.Text = "0";
             this.txt_Discount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txt_Discount.Click += new System.EventHandler(this.txt_Discount_Click);
+            this.txt_Discount.TextChanged += new System.EventHandler(this.txt_Discount_TextChanged);
             // 
             // lbl_Discount
             // 
@@ -183,16 +184,16 @@
             this.lbl_Discount.Text = "تخفیف";
             this.lbl_Discount.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // lbl_FinalPrice
+            // lbl_FinalPriceTitle
             // 
-            this.lbl_FinalPrice.AutoSize = true;
-            this.lbl_FinalPrice.Location = new System.Drawing.Point(409, 246);
-            this.lbl_FinalPrice.Name = "lbl_FinalPrice";
-            this.lbl_FinalPrice.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lbl_FinalPrice.Size = new System.Drawing.Size(78, 21);
-            this.lbl_FinalPrice.TabIndex = 26;
-            this.lbl_FinalPrice.Text = "مبلغ نهایی:";
-            this.lbl_FinalPrice.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_FinalPriceTitle.AutoSize = true;
+            this.lbl_FinalPriceTitle.Location = new System.Drawing.Point(409, 246);
+            this.lbl_FinalPriceTitle.Name = "lbl_FinalPriceTitle";
+            this.lbl_FinalPriceTitle.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lbl_FinalPriceTitle.Size = new System.Drawing.Size(78, 21);
+            this.lbl_FinalPriceTitle.TabIndex = 26;
+            this.lbl_FinalPriceTitle.Text = "مبلغ نهایی:";
+            this.lbl_FinalPriceTitle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txt_finalPrice
             // 
@@ -259,7 +260,7 @@
             this.Cmb_SelectedPOS.EditorControl.MasterTemplate.AllowColumnChooser = false;
             this.Cmb_SelectedPOS.EditorControl.MasterTemplate.EnableGrouping = false;
             this.Cmb_SelectedPOS.EditorControl.MasterTemplate.ShowFilteringRow = false;
-            this.Cmb_SelectedPOS.EditorControl.MasterTemplate.ViewDefinition = tableViewDefinition1;
+            this.Cmb_SelectedPOS.EditorControl.MasterTemplate.ViewDefinition = tableViewDefinition3;
             this.Cmb_SelectedPOS.EditorControl.Name = "NestedRadGridView";
             this.Cmb_SelectedPOS.EditorControl.ReadOnly = true;
             this.Cmb_SelectedPOS.EditorControl.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -393,7 +394,7 @@
             this.Controls.Add(this.lbl_Credit);
             this.Controls.Add(this.lbl_IRRIAL);
             this.Controls.Add(this.txt_finalPrice);
-            this.Controls.Add(this.lbl_FinalPrice);
+            this.Controls.Add(this.lbl_FinalPriceTitle);
             this.Controls.Add(this.lbl_Discount);
             this.Controls.Add(this.txt_Discount);
             this.Controls.Add(this.lbl_border);
@@ -437,8 +438,7 @@
         private System.Windows.Forms.Label lbl_border;
         public System.Windows.Forms.TextBox txt_Discount;
         private System.Windows.Forms.Label lbl_Discount;
-        private System.Windows.Forms.Label lbl_FinalPrice;
-        private System.Windows.Forms.Label txt_finalPrice;
+        private System.Windows.Forms.Label lbl_FinalPriceTitle;
         private System.Windows.Forms.Label lbl_IRRIAL;
         private System.Windows.Forms.Label lbl_Credit;
         private Telerik.WinControls.RootRadElement object_314697e1_ca8d_40e8_9ebb_ea28e9003e60;
@@ -451,5 +451,6 @@
         private System.Windows.Forms.Label lbl_InvoiceDate;
         private System.Windows.Forms.Label lbl_InvoiceTime;
         public System.Windows.Forms.Timer Timer_CheckTime;
+        public System.Windows.Forms.Label txt_finalPrice;
     }
 }

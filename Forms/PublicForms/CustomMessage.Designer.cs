@@ -71,7 +71,7 @@
             // 
             this.BtnOK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BtnOK.DisplayStyle = Telerik.WinControls.DisplayStyle.Text;
-            this.BtnOK.Font = new System.Drawing.Font("Rokh", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.BtnOK.Font = new System.Drawing.Font("Rokh Normal", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.BtnOK.ForeColor = System.Drawing.Color.White;
             this.BtnOK.Location = new System.Drawing.Point(5, 2);
             this.BtnOK.Name = "BtnOK";
@@ -80,14 +80,14 @@
             this.BtnOK.Text = "بله";
             ((Telerik.WinControls.UI.RadButtonElement)(this.BtnOK.GetChildAt(0))).DisplayStyle = Telerik.WinControls.DisplayStyle.Text;
             ((Telerik.WinControls.UI.RadButtonElement)(this.BtnOK.GetChildAt(0))).Text = "بله";
-            ((Telerik.WinControls.UI.RadButtonElement)(this.BtnOK.GetChildAt(0))).Font = new System.Drawing.Font("Rokh", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            ((Telerik.WinControls.UI.RadButtonElement)(this.BtnOK.GetChildAt(0))).Font = new System.Drawing.Font("Rokh Normal", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             ((Telerik.WinControls.Primitives.FocusPrimitive)(this.BtnOK.GetChildAt(0).GetChildAt(3))).Enabled = false;
             // 
             // btnCancel
             // 
             this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnCancel.DisplayStyle = Telerik.WinControls.DisplayStyle.Text;
-            this.btnCancel.Font = new System.Drawing.Font("Rokh", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnCancel.Font = new System.Drawing.Font("Rokh Normal", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btnCancel.ForeColor = System.Drawing.Color.White;
             this.btnCancel.Location = new System.Drawing.Point(236, 2);
             this.btnCancel.Name = "btnCancel";
@@ -99,7 +99,7 @@
             // 
             this.btnNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnNo.DisplayStyle = Telerik.WinControls.DisplayStyle.Text;
-            this.btnNo.Font = new System.Drawing.Font("Rokh", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnNo.Font = new System.Drawing.Font("Rokh Normal", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btnNo.ForeColor = System.Drawing.Color.White;
             this.btnNo.Location = new System.Drawing.Point(120, 2);
             this.btnNo.Name = "btnNo";

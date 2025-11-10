@@ -20,7 +20,8 @@ namespace CafeApplication.Forms.DailyInvoice
             InitializeComponent();
             blur.SetBlurBack(this);
             font.SetFont(this);
-            LoadData();
+            customersBindingSource.AddNew();
+            txt_CustomerID.Text = (customersTableAdapter.SetLastCustomerID().GetValueOrDefault() + 1).ToString();
         }
 
         private void AddCustomer_Load(object sender, EventArgs e)
@@ -72,9 +73,11 @@ namespace CafeApplication.Forms.DailyInvoice
                     i = this.customersTableAdapter.Update(this.dsCafe.Customers);
                     if (i > 0)
                     {
+                        int lastID = int.Parse(txt_CustomerID.Text) + 1;
                         //MessageBox.Show("کاربر گرامی اطلاعات با موفقیت ذخیره شد");
                         customMessage.NewMessage("موفقیت", "مشتری جدید با موفقیت ثبت شد.", "Y", "success", null);
-                        LoadData();
+                        txt_CustomerID.Text = lastID.ToString();
+                        customersBindingSource.AddNew();
                     }
                     //------------
                     else
@@ -101,7 +104,7 @@ namespace CafeApplication.Forms.DailyInvoice
                 //---------------------
                 this.customersBindingSource.CancelEdit();
                 this.dsCafe.Customers.RejectChanges();
-                LoadData();
+                
             }
             catch 
             {

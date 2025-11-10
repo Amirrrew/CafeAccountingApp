@@ -1,4 +1,5 @@
 ﻿using CafeApplication.Classes.PublicClasses;
+using CafeApplication.Forms.PublicForms;
 using Calendar;
 using System;
 using System.Collections.Generic;
@@ -26,17 +27,21 @@ namespace CafeApplication.Forms.DailyInvoice
         BackBlur blur = new BackBlur();
         FontSet font = new FontSet();
         NumberSeperate seperate = new NumberSeperate();
+        CustomMessage msg = new CustomMessage();
         GetTime gt = new GetTime();
+        CafeApplication.Forms.DailyFactor.DailyInvoice invoice = new CafeApplication.Forms.DailyFactor.DailyInvoice();
 
         public void PrepareForInvoice()
         {
             lbl_InvoiceTime.Text = gt.GetTimeWithoutSeconds();
             txt_InvoiceDate.Text = ($"{gt.GetYear()}{gt.GetMonth()}{gt.GetDay()}");
+            SetFinalPrice();
         }
 
-        public void SetPrices()
+        public void SetFinalPrice()
         {
-            //txt_TotalPrice =
+            txt_TotalPrice.Text = invoice.lbl_total.Text;
+            txt_finalPrice.Text = (int.Parse(txt_TotalPrice.Text) - int.Parse(txt_Discount.Text)).ToString();
         }
 
         private void ConfirmPurchase_Load(object sender, EventArgs e)
@@ -52,6 +57,31 @@ namespace CafeApplication.Forms.DailyInvoice
         private void Timer_CheckTime_Tick(object sender, EventArgs e)
         {
             lbl_InvoiceTime.Text = gt.GetTimeWithoutSeconds();
+        }
+
+        private void txt_Discount_TextChanged(object sender, EventArgs e)
+        {
+            if (txt_Discount.Text != string.Empty)
+            {
+                string num = (Int64.Parse(txt_TotalPrice.Text) - Int64.Parse(txt_Discount.Text)).ToString();
+                if (int.Parse(num) > 0)
+                {
+                    txt_finalPrice.Text = num;
+
+                }
+                else
+                {
+                    txt_Discount.ResetText();
+                    txt_finalPrice.Text = "0";
+                    msg.NewMessage("خطا", "مبلغ تخفیف نمیتواند بیشتر از قیمت تمام شده باشد.", "Y", "info", null);
+                }
+            }
+
+        }
+
+        private void txt_Discount_Click(object sender, EventArgs e)
+        {
+            txt_Discount.SelectAll();
         }
     }
 }

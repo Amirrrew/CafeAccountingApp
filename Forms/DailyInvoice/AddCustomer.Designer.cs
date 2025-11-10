@@ -121,15 +121,15 @@
             this.txt_CustomerAddress.BackColor = System.Drawing.Color.Black;
             this.txt_CustomerAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_CustomerAddress.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "Address", true));
-            this.txt_CustomerAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_CustomerAddress.Font = new System.Drawing.Font("Rokh Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_CustomerAddress.ForeColor = System.Drawing.Color.White;
             this.txt_CustomerAddress.Location = new System.Drawing.Point(8, 270);
             this.txt_CustomerAddress.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txt_CustomerAddress.Multiline = true;
             this.txt_CustomerAddress.Name = "txt_CustomerAddress";
+            this.txt_CustomerAddress.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txt_CustomerAddress.Size = new System.Drawing.Size(415, 106);
             this.txt_CustomerAddress.TabIndex = 2;
-            this.txt_CustomerAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label1
             // 
