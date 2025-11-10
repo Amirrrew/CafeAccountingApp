@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfirmPurchase));
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition3 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
             this.lbl_Title = new System.Windows.Forms.Label();
             this.lbl_totalLabel = new System.Windows.Forms.Label();
             this.txt_TotalPrice = new System.Windows.Forms.TextBox();
@@ -97,6 +97,7 @@
             this.txt_TotalPrice.TabIndex = 15;
             this.txt_TotalPrice.Text = "1000000";
             this.txt_TotalPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txt_TotalPrice.TextChanged += new System.EventHandler(this.txt_TotalPrice_TextChanged);
             // 
             // lbl_TitlePayment
             // 
@@ -260,7 +261,7 @@
             this.Cmb_SelectedPOS.EditorControl.MasterTemplate.AllowColumnChooser = false;
             this.Cmb_SelectedPOS.EditorControl.MasterTemplate.EnableGrouping = false;
             this.Cmb_SelectedPOS.EditorControl.MasterTemplate.ShowFilteringRow = false;
-            this.Cmb_SelectedPOS.EditorControl.MasterTemplate.ViewDefinition = tableViewDefinition3;
+            this.Cmb_SelectedPOS.EditorControl.MasterTemplate.ViewDefinition = tableViewDefinition1;
             this.Cmb_SelectedPOS.EditorControl.Name = "NestedRadGridView";
             this.Cmb_SelectedPOS.EditorControl.ReadOnly = true;
             this.Cmb_SelectedPOS.EditorControl.RightToLeft = System.Windows.Forms.RightToLeft.Yes;

@@ -30,12 +30,15 @@ namespace CafeApplication.Forms.DailyInvoice
         CustomMessage msg = new CustomMessage();
         GetTime gt = new GetTime();
         CafeApplication.Forms.DailyFactor.DailyInvoice invoice = new CafeApplication.Forms.DailyFactor.DailyInvoice();
+        int txt_TotalPrice_value, txt_finalPrice_value;//مقدار تکست باکس رو نگه میداره که توی سیو دیتا و  فرمت ها به مشکل نخوریم
+        Number_decimal_format decimal_Format = new Number_decimal_format();
+
+        //------------------------------------------------
 
         public void PrepareForInvoice()
         {
             lbl_InvoiceTime.Text = gt.GetTimeWithoutSeconds();
-            txt_InvoiceDate.Text = ($"{gt.GetYear()}{gt.GetMonth()}{gt.GetDay()}");
-            SetFinalPrice();
+            txt_InvoiceDate.Text = gt.generateFullDate();
         }
 
         public void SetFinalPrice()
@@ -43,10 +46,15 @@ namespace CafeApplication.Forms.DailyInvoice
             txt_TotalPrice.Text = invoice.lbl_total.Text;
             txt_finalPrice.Text = (int.Parse(txt_TotalPrice.Text) - int.Parse(txt_Discount.Text)).ToString();
         }
-
+        private void load_class()
+        {
+            txt_TotalPrice_value = int.Parse(txt_TotalPrice.Text);
+            string a = decimal_Format.decimal_format(txt_TotalPrice.Text);
+            txt_TotalPrice.Text = a;
+        }
         private void ConfirmPurchase_Load(object sender, EventArgs e)
         {
-
+            load_class();
         }
 
         private void txt_totalInvoice_TextChanged(object sender, EventArgs e)
@@ -77,6 +85,12 @@ namespace CafeApplication.Forms.DailyInvoice
                 }
             }
 
+        }
+
+        private void txt_TotalPrice_TextChanged(object sender, EventArgs e)
+        {
+            string a = decimal_Format.decimal_format(txt_TotalPrice.Text);
+            txt_TotalPrice.Text = a;
         }
 
         private void txt_Discount_Click(object sender, EventArgs e)

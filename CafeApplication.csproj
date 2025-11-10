@@ -78,9 +78,11 @@
     <Compile Include="Classes\PublicClasses\BackBlur.cs" />
     <Compile Include="Classes\PublicClasses\FontSet.cs" />
     <Compile Include="Classes\PublicClasses\NumberSeperate.cs" />
+    <Compile Include="Classes\PublicClasses\Number_decimal_format.cs" />
     <Compile Include="Classes\TimingClasses\DateTimeClass.cs" />
     <Compile Include="Data\DataSet\DsCafe.cs">
       <DependentUpon>DsCafe.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Forms\DailyInvoice\AddCustomer.cs">
       <SubType>Form</SubType>
@@ -110,6 +112,7 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DsCafe.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Forms\PublicForms\CustomMessage.cs">
       <SubType>Form</SubType>
@@ -158,14 +161,17 @@
     <None Include="Assets\Fonts\Rokh-UltraBold.ttf" />
     <None Include="Data\DataSet\DsCafe.xsc">
       <DependentUpon>DsCafe.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Data\DataSet\DsCafe.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DsCafe.Designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Data\DataSet\DsCafe.xss">
       <DependentUpon>DsCafe.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
