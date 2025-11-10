@@ -39,5 +39,24 @@ namespace CafeApplication.Forms.DailyInvoice
             this.customersTableAdapter.Fill(this.dsCafe.Customers);
             txt_SearchBox.Focus();
         }
+
+        private void txt_SearchBox_TextChanged(object sender, EventArgs e)
+        {
+            if (true)
+            {
+
+            }
+        }
+
+        private void txt_SearchBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Cmb_SearchFrame.Text == "شماره تلفن" || Cmb_SearchFrame.Text == "کد")
+            {
+                if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+                {
+                    e.Handled = true;
+                }
+            }
+        }
     }
 }

@@ -172,3 +172,6 @@ C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Public\search-Ico
 C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Public\search-Icon_med.png
 C:\Users\amir\Desktop\CafeAccountingApp\obj\Debug\CafeApplication.Forms.DailyInvoice.SearchCustomer.resources
 >>>>>>> Stashed changes
+C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\bin\Debug\Assets\Icons\Public\search-Icon.png
+C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\bin\Debug\Assets\Icons\Public\search-Icon_med.png
+C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\obj\Debug\CafeApplication.Forms.DailyInvoice.SearchCustomer.resources

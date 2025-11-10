@@ -1,43 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\",
+  "WorkspaceRootPath": "C:\\Users\\Hosein\\Documents\\GitHub\\CafeAccountingApp\\",
   "Documents": [
     {
-<<<<<<< Updated upstream
-      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|c:\\users\\hosein\\documents\\github\\cafeaccountingapp\\forms\\dailyinvoice\\confirmpurchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\dailyinvoice\\confirmpurchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|c:\\users\\hosein\\documents\\github\\cafeaccountingapp\\forms\\dailyinvoice\\confirmpurchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\dailyinvoice\\confirmpurchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-=======
-      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|c:\\users\\amir\\desktop\\cafeaccountingapp\\forms\\dailyinvoice\\addcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\dailyinvoice\\addcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|c:\\users\\amir\\desktop\\cafeaccountingapp\\forms\\dailyinvoice\\addcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\dailyinvoice\\addcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|c:\\users\\amir\\desktop\\cafeaccountingapp\\forms\\dailyinvoice\\searchcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\dailyinvoice\\searchcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|c:\\users\\amir\\desktop\\cafeaccountingapp\\forms\\dailyinvoice\\dailyinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\dailyinvoice\\dailyinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|c:\\users\\amir\\desktop\\cafeaccountingapp\\forms\\dailyinvoice\\dailyinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\dailyinvoice\\dailyinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|c:\\users\\amir\\desktop\\cafeaccountingapp\\forms\\dailyinvoice\\searchcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|c:\\users\\hosein\\documents\\github\\cafeaccountingapp\\forms\\dailyinvoice\\searchcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\dailyinvoice\\searchcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|C:\\Users\\amir\\Desktop\\CafeAccountingApp\\data\\dataset\\dscafe.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
+      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|c:\\users\\hosein\\documents\\github\\cafeaccountingapp\\forms\\dailyinvoice\\searchcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\dailyinvoice\\searchcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|c:\\users\\hosein\\documents\\github\\cafeaccountingapp\\data\\dataset\\dscafe.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
       "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:data\\dataset\\dscafe.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
->>>>>>> Stashed changes
     }
   ],
   "DocumentGroupContainers": [
@@ -47,126 +22,52 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< Updated upstream
-          "SelectedChildIndex": 1,
-=======
-          "SelectedChildIndex": 2,
->>>>>>> Stashed changes
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Document",
-<<<<<<< Updated upstream
-              "DocumentIndex": 0,
-              "Title": "ConfirmPurchase.cs",
-              "DocumentMoniker": "C:\\Users\\Hosein\\Documents\\GitHub\\CafeAccountingApp\\Forms\\DailyInvoice\\ConfirmPurchase.cs",
-              "RelativeDocumentMoniker": "Forms\\DailyInvoice\\ConfirmPurchase.cs",
-              "ToolTip": "C:\\Users\\Hosein\\Documents\\GitHub\\CafeAccountingApp\\Forms\\DailyInvoice\\ConfirmPurchase.cs",
-              "RelativeToolTip": "Forms\\DailyInvoice\\ConfirmPurchase.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAApwDcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T20:32:09.396Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ConfirmPurchase.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Hosein\\Documents\\GitHub\\CafeAccountingApp\\Forms\\DailyInvoice\\ConfirmPurchase.cs",
-              "RelativeDocumentMoniker": "Forms\\DailyInvoice\\ConfirmPurchase.cs",
-              "ToolTip": "C:\\Users\\Hosein\\Documents\\GitHub\\CafeAccountingApp\\Forms\\DailyInvoice\\ConfirmPurchase.cs [Design]",
-              "RelativeToolTip": "Forms\\DailyInvoice\\ConfirmPurchase.cs [Design]",
+              "Title": "SearchCustomer.cs",
+              "DocumentMoniker": "C:\\Users\\Hosein\\Documents\\GitHub\\CafeAccountingApp\\Forms\\DailyInvoice\\SearchCustomer.cs",
+              "RelativeDocumentMoniker": "Forms\\DailyInvoice\\SearchCustomer.cs",
+              "ToolTip": "C:\\Users\\Hosein\\Documents\\GitHub\\CafeAccountingApp\\Forms\\DailyInvoice\\SearchCustomer.cs",
+              "RelativeToolTip": "Forms\\DailyInvoice\\SearchCustomer.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAASwDMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T20:06:32.397Z",
-=======
-              "DocumentIndex": 1,
-              "Title": "AddCustomer.cs",
-              "DocumentMoniker": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\DailyInvoice\\AddCustomer.cs",
-              "RelativeDocumentMoniker": "Forms\\DailyInvoice\\AddCustomer.cs",
-              "ToolTip": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\DailyInvoice\\AddCustomer.cs",
-              "RelativeToolTip": "Forms\\DailyInvoice\\AddCustomer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T20:49:43.911Z",
+              "WhenOpened": "2025-11-10T21:58:25.051Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AddCustomer.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\DailyInvoice\\AddCustomer.cs",
-              "RelativeDocumentMoniker": "Forms\\DailyInvoice\\AddCustomer.cs",
-              "ToolTip": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\DailyInvoice\\AddCustomer.cs [Design]",
-              "RelativeToolTip": "Forms\\DailyInvoice\\AddCustomer.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T20:49:25.071Z",
->>>>>>> Stashed changes
-              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "SearchCustomer.cs",
-              "DocumentMoniker": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\DailyInvoice\\SearchCustomer.cs",
-              "RelativeDocumentMoniker": "Forms\\DailyInvoice\\SearchCustomer.cs",
-              "ToolTip": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\DailyInvoice\\SearchCustomer.cs",
-              "RelativeToolTip": "Forms\\DailyInvoice\\SearchCustomer.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAgwCcAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T20:03:18.54Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SearchCustomer.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\DailyInvoice\\SearchCustomer.cs",
-              "RelativeDocumentMoniker": "Forms\\DailyInvoice\\SearchCustomer.cs",
-              "ToolTip": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\DailyInvoice\\SearchCustomer.cs [Design]",
-              "RelativeToolTip": "Forms\\DailyInvoice\\SearchCustomer.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T20:02:04.982Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DailyInvoice.cs",
-              "DocumentMoniker": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\DailyInvoice\\DailyInvoice.cs",
-              "RelativeDocumentMoniker": "Forms\\DailyInvoice\\DailyInvoice.cs",
-              "ToolTip": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\DailyInvoice\\DailyInvoice.cs",
-              "RelativeToolTip": "Forms\\DailyInvoice\\DailyInvoice.cs",
-              "ViewState": "AgIAAG8AAAAAAAAAAAA1wIQAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T19:36:08.933Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DailyInvoice.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\DailyInvoice\\DailyInvoice.cs",
-              "RelativeDocumentMoniker": "Forms\\DailyInvoice\\DailyInvoice.cs",
-              "ToolTip": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\DailyInvoice\\DailyInvoice.cs [Design]",
-              "RelativeToolTip": "Forms\\DailyInvoice\\DailyInvoice.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T19:12:34.233Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "DsCafe.xsd",
-              "DocumentMoniker": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Data\\DataSet\\DsCafe.xsd",
+              "DocumentMoniker": "C:\\Users\\Hosein\\Documents\\GitHub\\CafeAccountingApp\\Data\\DataSet\\DsCafe.xsd",
               "RelativeDocumentMoniker": "Data\\DataSet\\DsCafe.xsd",
-              "ToolTip": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Data\\DataSet\\DsCafe.xsd",
+              "ToolTip": "C:\\Users\\Hosein\\Documents\\GitHub\\CafeAccountingApp\\Data\\DataSet\\DsCafe.xsd",
               "RelativeToolTip": "Data\\DataSet\\DsCafe.xsd",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
-              "WhenOpened": "2025-11-10T18:57:25.923Z",
+              "WhenOpened": "2025-11-10T21:56:28.012Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SearchCustomer.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Hosein\\Documents\\GitHub\\CafeAccountingApp\\Forms\\DailyInvoice\\SearchCustomer.cs",
+              "RelativeDocumentMoniker": "Forms\\DailyInvoice\\SearchCustomer.cs",
+              "ToolTip": "C:\\Users\\Hosein\\Documents\\GitHub\\CafeAccountingApp\\Forms\\DailyInvoice\\SearchCustomer.cs [Design]",
+              "RelativeToolTip": "Forms\\DailyInvoice\\SearchCustomer.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T21:33:36.679Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
