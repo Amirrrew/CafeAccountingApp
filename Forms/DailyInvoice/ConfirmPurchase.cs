@@ -34,6 +34,11 @@ namespace CafeApplication.Forms.DailyInvoice
             txt_InvoiceDate.Text = ($"{gt.GetYear()}{gt.GetMonth()}{gt.GetDay()}");
         }
 
+        public void SetPrices()
+        {
+            //txt_TotalPrice =
+        }
+
         private void ConfirmPurchase_Load(object sender, EventArgs e)
         {
 
@@ -47,7 +52,6 @@ namespace CafeApplication.Forms.DailyInvoice
         private void Timer_CheckTime_Tick(object sender, EventArgs e)
         {
             lbl_InvoiceTime.Text = gt.GetTimeWithoutSeconds();
-            txt_InvoiceDate.Text = ($"{gt.GetYear()}{gt.GetMonth()}{gt.GetDay()}");
         }
     }
 }

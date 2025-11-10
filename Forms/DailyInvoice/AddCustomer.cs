@@ -20,13 +20,12 @@ namespace CafeApplication.Forms.DailyInvoice
             InitializeComponent();
             blur.SetBlurBack(this);
             font.SetFont(this);
-            txt_CustomerID.Text = (customersTableAdapter.SetLastCustomerID().GetValueOrDefault() +1 ).ToString();
-
+            LoadData();
         }
 
         private void AddCustomer_Load(object sender, EventArgs e)
         {
-            txt_CustomerName.Focus();
+
         }
 
 
@@ -42,6 +41,16 @@ namespace CafeApplication.Forms.DailyInvoice
             this.Validate();
             this.customersBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.dsCafe);
+        }
+
+        private void LoadData()
+        {
+            txt_CustomerName.ResetText();
+            txt_CustomerPhone.ResetText();
+            txt_CustomerAddress.ResetText();
+            customersBindingSource.AddNew();
+            txt_CustomerID.Text = (customersTableAdapter.SetLastCustomerID().GetValueOrDefault() +1).ToString();
+            txt_CustomerName.Focus();
         }
 
         private void txt_CustomerPhone_KeyPress(object sender, KeyPressEventArgs e)
@@ -64,12 +73,13 @@ namespace CafeApplication.Forms.DailyInvoice
                     if (i > 0)
                     {
                         //MessageBox.Show("کاربر گرامی اطلاعات با موفقیت ذخیره شد");
-                        customMessage.NewMessage("Success", "مشتری جدید با موفقیت ثبت شد.", "Y", "success", null);
+                        customMessage.NewMessage("موفقیت", "مشتری جدید با موفقیت ثبت شد.", "Y", "success", null);
+                        LoadData();
                     }
                     //------------
                     else
                     {
-                        customMessage.NewMessage("Error", "متاسفانه ما نتوانستیم اطلاعات را  با موفقیت ذخیره کنیم", "Y", "error", null);
+                        customMessage.NewMessage("خطا", "متاسفانه ما نتوانستیم اطلاعات را  با موفقیت ذخیره کنیم", "Y", "error", null);
                     }
                 }
                 else
@@ -80,7 +90,7 @@ namespace CafeApplication.Forms.DailyInvoice
             }
             catch
             {
-                customMessage.NewMessage("Error", "در ذخیره سازی اطلاعات مشکلی پیش آمده\n دوباره تلاش کنید و در صورت لزوم با پشتیبانی تماس بگیرید", "Y", "error", null);
+                customMessage.NewMessage("خطا", "در ذخیره سازی اطلاعات مشکلی پیش آمده\n دوباره تلاش کنید و در صورت لزوم با پشتیبانی تماس بگیرید", "Y", "error", null);
             }
         }
 
@@ -91,9 +101,7 @@ namespace CafeApplication.Forms.DailyInvoice
                 //---------------------
                 this.customersBindingSource.CancelEdit();
                 this.dsCafe.Customers.RejectChanges();
-                txt_CustomerName.ResetText();
-                txt_CustomerPhone.ResetText();
-                txt_CustomerAddress.ResetText();
+                LoadData();
             }
             catch 
             {

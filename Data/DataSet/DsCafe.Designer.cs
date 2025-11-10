@@ -10464,7 +10464,8 @@ SELECT CustomerID, Name, Phone, Address, Balance, CreatedAt FROM Customers WHERE
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT        MAX(CustomerID) AS Expr1\r\nFROM            Customers";
+            this._commandCollection[1].CommandText = "SELECT        MAX(CustomerID) AS Expr1, CustomerID\r\nFROM            Customers\r\nGR" +
+                "OUP BY CustomerID";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -10723,7 +10724,7 @@ SELECT CustomerID, Name, Phone, Address, Balance, CreatedAt FROM Customers WHERE
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual global::System.Nullable<int> Max_Id() {
+        public virtual global::System.Nullable<int> SetLastCustomerID() {
             global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[1];
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 

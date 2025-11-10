@@ -22,9 +22,9 @@ namespace CafeApplication.Forms.DailyFactor
             InitializeComponent();
             blur.SetBlurBack(this);
             fontSet.SetFont(this);
-            tooltip_AddCustomer.SetToolTip(btn_addCustomer , "افزودن مشتری جدید");
+            tooltip_AddCustomer.SetToolTip(btn_addCustomer, "افزودن مشتری جدید");
+            lblDate.Text = $"{gt.GetYear()}/{gt.GetMonth()}/{gt.GetDay()}";
         }
-
         //-------------- load classes ---------
         GetTime gt = new GetTime();
         BackBlur blur = new BackBlur();
@@ -33,11 +33,10 @@ namespace CafeApplication.Forms.DailyFactor
 
         private void DailyInvoice_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dsCafe.Sales' table. You can move, or remove it, as needed.
-            this.salesTableAdapter.Fill(this.dsCafe.Sales);
             // TODO: This line of code loads data into the 'dsCafe.Customers' table. You can move, or remove it, as needed.
             this.customersTableAdapter.Fill(this.dsCafe.Customers);
-
+            // TODO: This line of code loads data into the 'dsCafe.Sales' table. You can move, or remove it, as needed.
+            // TODO: This line of code loads data into the 'dsCafe.Customers' table. You can move, or remove it, as needed.
         }
 
 
@@ -47,13 +46,13 @@ namespace CafeApplication.Forms.DailyFactor
             if (Pnl_Actions.Width < 100)
             {
                 Pnl_Actions.Width += 150;
-                btn_ExpandPanel.Location = new Point(1047, 354);
+                btn_ExpandPanel.Location = new Point(1129, 354);
                 btn_ExpandPanel.Image = Image.FromFile(Application.StartupPath + @"/Assets/Icons/Public/chevron-right.png");
             }
             else
             {
                 Pnl_Actions.Width = 76;
-                btn_ExpandPanel.Location = new Point(1197, 354);
+                btn_ExpandPanel.Location = new Point(1279, 366);
                 btn_ExpandPanel.Image = Image.FromFile(Application.StartupPath + @"/Assets/Icons/Public/chevron-left.png");
             }
         }
@@ -123,6 +122,14 @@ namespace CafeApplication.Forms.DailyFactor
 
         private void tooltip_AddCustomer_Popup(object sender, PopupEventArgs e)
         {
+
+        }
+
+        private void customersBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.customersBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.dsCafe);
 
         }
     }

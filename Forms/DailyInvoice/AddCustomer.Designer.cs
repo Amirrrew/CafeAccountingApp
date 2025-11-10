@@ -127,7 +127,7 @@
             this.txt_CustomerAddress.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txt_CustomerAddress.Multiline = true;
             this.txt_CustomerAddress.Name = "txt_CustomerAddress";
-            this.txt_CustomerAddress.Size = new System.Drawing.Size(415, 74);
+            this.txt_CustomerAddress.Size = new System.Drawing.Size(415, 106);
             this.txt_CustomerAddress.TabIndex = 2;
             this.txt_CustomerAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -185,7 +185,7 @@
             this.btn_save.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
             this.btn_save.Image = ((System.Drawing.Image)(resources.GetObject("btn_save.Image")));
             this.btn_save.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_save.Location = new System.Drawing.Point(8, 350);
+            this.btn_save.Location = new System.Drawing.Point(8, 383);
             this.btn_save.Margin = new System.Windows.Forms.Padding(4);
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(60, 57);
@@ -201,7 +201,7 @@
             this.btn_cancel.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
             this.btn_cancel.Image = ((System.Drawing.Image)(resources.GetObject("btn_cancel.Image")));
             this.btn_cancel.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_cancel.Location = new System.Drawing.Point(73, 350);
+            this.btn_cancel.Location = new System.Drawing.Point(73, 383);
             this.btn_cancel.Margin = new System.Windows.Forms.Padding(4);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(60, 57);
@@ -212,11 +212,12 @@
             // txt_Date
             // 
             this.txt_Date.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "CreatedAt", true));
-            this.txt_Date.Location = new System.Drawing.Point(33, 75);
+            this.txt_Date.Location = new System.Drawing.Point(195, 109);
             this.txt_Date.Name = "txt_Date";
             this.txt_Date.ReadOnly = true;
             this.txt_Date.Size = new System.Drawing.Size(100, 28);
             this.txt_Date.TabIndex = 13;
+            this.txt_Date.Visible = false;
             // 
             // customersTableAdapter
             // 
@@ -248,7 +249,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(433, 427);
+            this.ClientSize = new System.Drawing.Size(433, 449);
             this.Controls.Add(this.txt_Date);
             this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.btn_save);

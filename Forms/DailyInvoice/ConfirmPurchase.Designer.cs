@@ -112,7 +112,7 @@
             // lbl_Cash
             // 
             this.lbl_Cash.AutoSize = true;
-            this.lbl_Cash.Location = new System.Drawing.Point(451, 273);
+            this.lbl_Cash.Location = new System.Drawing.Point(451, 294);
             this.lbl_Cash.Name = "lbl_Cash";
             this.lbl_Cash.Size = new System.Drawing.Size(34, 21);
             this.lbl_Cash.TabIndex = 19;
@@ -128,7 +128,7 @@
             this.btn_SendToPOS.ForeColor = System.Drawing.Color.White;
             this.btn_SendToPOS.Image = ((System.Drawing.Image)(resources.GetObject("btn_SendToPOS.Image")));
             this.btn_SendToPOS.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_SendToPOS.Location = new System.Drawing.Point(13, 429);
+            this.btn_SendToPOS.Location = new System.Drawing.Point(13, 450);
             this.btn_SendToPOS.Margin = new System.Windows.Forms.Padding(4);
             this.btn_SendToPOS.Name = "btn_SendToPOS";
             this.btn_SendToPOS.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
@@ -139,7 +139,7 @@
             // lbl_POS
             // 
             this.lbl_POS.AutoSize = true;
-            this.lbl_POS.Location = new System.Drawing.Point(422, 349);
+            this.lbl_POS.Location = new System.Drawing.Point(422, 370);
             this.lbl_POS.Name = "lbl_POS";
             this.lbl_POS.Size = new System.Drawing.Size(61, 21);
             this.lbl_POS.TabIndex = 22;
@@ -186,7 +186,7 @@
             // lbl_FinalPrice
             // 
             this.lbl_FinalPrice.AutoSize = true;
-            this.lbl_FinalPrice.Location = new System.Drawing.Point(409, 223);
+            this.lbl_FinalPrice.Location = new System.Drawing.Point(409, 246);
             this.lbl_FinalPrice.Name = "lbl_FinalPrice";
             this.lbl_FinalPrice.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lbl_FinalPrice.Size = new System.Drawing.Size(78, 21);
@@ -198,7 +198,7 @@
             // 
             this.txt_finalPrice.AutoSize = true;
             this.txt_finalPrice.Font = new System.Drawing.Font("RokhFaNum", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txt_finalPrice.Location = new System.Drawing.Point(278, 214);
+            this.txt_finalPrice.Location = new System.Drawing.Point(278, 237);
             this.txt_finalPrice.Name = "txt_finalPrice";
             this.txt_finalPrice.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txt_finalPrice.Size = new System.Drawing.Size(127, 35);
@@ -210,7 +210,7 @@
             // 
             this.lbl_IRRIAL.AutoSize = true;
             this.lbl_IRRIAL.Font = new System.Drawing.Font("RokhFaNum SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lbl_IRRIAL.Location = new System.Drawing.Point(235, 220);
+            this.lbl_IRRIAL.Location = new System.Drawing.Point(235, 243);
             this.lbl_IRRIAL.Name = "lbl_IRRIAL";
             this.lbl_IRRIAL.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lbl_IRRIAL.Size = new System.Drawing.Size(37, 24);
@@ -221,7 +221,7 @@
             // lbl_Credit
             // 
             this.lbl_Credit.AutoSize = true;
-            this.lbl_Credit.Location = new System.Drawing.Point(290, 273);
+            this.lbl_Credit.Location = new System.Drawing.Point(290, 294);
             this.lbl_Credit.Name = "lbl_Credit";
             this.lbl_Credit.Size = new System.Drawing.Size(44, 21);
             this.lbl_Credit.TabIndex = 30;
@@ -268,7 +268,7 @@
             this.Cmb_SelectedPOS.EditorControl.TabIndex = 0;
             this.Cmb_SelectedPOS.Font = new System.Drawing.Font("Rokh", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Cmb_SelectedPOS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Cmb_SelectedPOS.Location = new System.Drawing.Point(13, 373);
+            this.Cmb_SelectedPOS.Location = new System.Drawing.Point(13, 394);
             this.Cmb_SelectedPOS.Name = "Cmb_SelectedPOS";
             this.Cmb_SelectedPOS.Padding = new System.Windows.Forms.Padding(0, 0, 7, 0);
             this.Cmb_SelectedPOS.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -286,7 +286,7 @@
             this.txt_Cash.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             this.txt_Cash.Font = new System.Drawing.Font("RokhFaNum", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_Cash.ForeColor = System.Drawing.Color.White;
-            this.txt_Cash.Location = new System.Drawing.Point(344, 294);
+            this.txt_Cash.Location = new System.Drawing.Point(344, 315);
             this.txt_Cash.Name = "txt_Cash";
             this.txt_Cash.PromptChar = '0';
             this.txt_Cash.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -303,7 +303,7 @@
             this.txt_Credit.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             this.txt_Credit.Font = new System.Drawing.Font("RokhFaNum", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_Credit.ForeColor = System.Drawing.Color.White;
-            this.txt_Credit.Location = new System.Drawing.Point(206, 294);
+            this.txt_Credit.Location = new System.Drawing.Point(206, 315);
             this.txt_Credit.Name = "txt_Credit";
             this.txt_Credit.PromptChar = '0';
             this.txt_Credit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -320,7 +320,7 @@
             this.txt_POS.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             this.txt_POS.Font = new System.Drawing.Font("RokhFaNum", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_POS.ForeColor = System.Drawing.Color.White;
-            this.txt_POS.Location = new System.Drawing.Point(206, 373);
+            this.txt_POS.Location = new System.Drawing.Point(206, 394);
             this.txt_POS.Name = "txt_POS";
             this.txt_POS.PromptChar = '0';
             this.txt_POS.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -337,7 +337,7 @@
             this.txt_InvoiceDate.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             this.txt_InvoiceDate.Font = new System.Drawing.Font("RokhFaNum", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_InvoiceDate.ForeColor = System.Drawing.Color.White;
-            this.txt_InvoiceDate.Location = new System.Drawing.Point(85, 215);
+            this.txt_InvoiceDate.Location = new System.Drawing.Point(79, 237);
             this.txt_InvoiceDate.Mask = "0000/00/00";
             this.txt_InvoiceDate.Name = "txt_InvoiceDate";
             this.txt_InvoiceDate.PromptChar = '0';
@@ -351,7 +351,7 @@
             // lbl_InvoiceDate
             // 
             this.lbl_InvoiceDate.AutoSize = true;
-            this.lbl_InvoiceDate.Location = new System.Drawing.Point(93, 191);
+            this.lbl_InvoiceDate.Location = new System.Drawing.Point(93, 213);
             this.lbl_InvoiceDate.Name = "lbl_InvoiceDate";
             this.lbl_InvoiceDate.Size = new System.Drawing.Size(120, 21);
             this.lbl_InvoiceDate.TabIndex = 36;
@@ -363,7 +363,7 @@
             this.lbl_InvoiceTime.AutoSize = true;
             this.lbl_InvoiceTime.Font = new System.Drawing.Font("RokhFaNum SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lbl_InvoiceTime.ForeColor = System.Drawing.Color.Silver;
-            this.lbl_InvoiceTime.Location = new System.Drawing.Point(27, 220);
+            this.lbl_InvoiceTime.Location = new System.Drawing.Point(27, 243);
             this.lbl_InvoiceTime.Name = "lbl_InvoiceTime";
             this.lbl_InvoiceTime.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lbl_InvoiceTime.Size = new System.Drawing.Size(38, 21);
@@ -382,7 +382,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(499, 542);
+            this.ClientSize = new System.Drawing.Size(499, 574);
             this.Controls.Add(this.lbl_InvoiceTime);
             this.Controls.Add(this.lbl_InvoiceDate);
             this.Controls.Add(this.txt_InvoiceDate);
