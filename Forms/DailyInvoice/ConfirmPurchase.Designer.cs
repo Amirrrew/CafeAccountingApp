@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfirmPurchase));
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition4 = new Telerik.WinControls.UI.TableViewDefinition();
             this.lbl_Title = new System.Windows.Forms.Label();
             this.lbl_totalLabel = new System.Windows.Forms.Label();
             this.txt_TotalPrice = new System.Windows.Forms.TextBox();
@@ -55,6 +55,7 @@
             this.lbl_InvoiceDate = new System.Windows.Forms.Label();
             this.lbl_InvoiceTime = new System.Windows.Forms.Label();
             this.Timer_CheckTime = new System.Windows.Forms.Timer(this.components);
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.btn_SendToPOS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cmb_SelectedPOS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cmb_SelectedPOS.EditorControl)).BeginInit();
@@ -174,6 +175,8 @@
             this.txt_Discount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txt_Discount.Click += new System.EventHandler(this.txt_Discount_Click);
             this.txt_Discount.TextChanged += new System.EventHandler(this.txt_Discount_TextChanged);
+            this.txt_Discount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Discount_KeyPress);
+            this.txt_Discount.MouseEnter += new System.EventHandler(this.txt_Discount_MouseEnter);
             // 
             // lbl_Discount
             // 
@@ -207,6 +210,7 @@
             this.txt_finalPrice.TabIndex = 27;
             this.txt_finalPrice.Text = "----------------";
             this.txt_finalPrice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txt_finalPrice.TextChanged += new System.EventHandler(this.txt_finalPrice_TextChanged);
             // 
             // lbl_IRRIAL
             // 
@@ -261,7 +265,7 @@
             this.Cmb_SelectedPOS.EditorControl.MasterTemplate.AllowColumnChooser = false;
             this.Cmb_SelectedPOS.EditorControl.MasterTemplate.EnableGrouping = false;
             this.Cmb_SelectedPOS.EditorControl.MasterTemplate.ShowFilteringRow = false;
-            this.Cmb_SelectedPOS.EditorControl.MasterTemplate.ViewDefinition = tableViewDefinition1;
+            this.Cmb_SelectedPOS.EditorControl.MasterTemplate.ViewDefinition = tableViewDefinition4;
             this.Cmb_SelectedPOS.EditorControl.Name = "NestedRadGridView";
             this.Cmb_SelectedPOS.EditorControl.ReadOnly = true;
             this.Cmb_SelectedPOS.EditorControl.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -453,5 +457,6 @@
         private System.Windows.Forms.Label lbl_InvoiceTime;
         public System.Windows.Forms.Timer Timer_CheckTime;
         public System.Windows.Forms.Label txt_finalPrice;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

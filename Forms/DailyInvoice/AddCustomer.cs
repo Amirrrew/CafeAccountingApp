@@ -74,21 +74,30 @@ namespace CafeApplication.Forms.DailyInvoice
             {
                 if (txt_CustomerID.Text != string.Empty && txt_CustomerName.Text != string.Empty && txt_CustomerPhone.Text != string.Empty)
                 {
-                    int lastID = int.Parse(txt_CustomerID.Text) + 1;
-                    this.customersBindingSource.EndEdit();
-                    i = this.customersTableAdapter.Update(this.dsCafe.Customers);
-                    if (i > 0)
+                    if (txt_CustomerPhone.TextLength == 11)
                     {
-                        
-                        //MessageBox.Show("کاربر گرامی اطلاعات با موفقیت ذخیره شد");
-                        customMessage.NewMessage("موفقیت", "مشتری جدید با موفقیت ثبت شد.", "Y", "success", null);
-                        LoadData();
+                        int lastID = int.Parse(txt_CustomerID.Text) + 1;
+                        this.customersBindingSource.EndEdit();
+                        i = this.customersTableAdapter.Update(this.dsCafe.Customers);
+                        if (i > 0)
+                        {
+
+                            //MessageBox.Show("کاربر گرامی اطلاعات با موفقیت ذخیره شد");
+                            customMessage.NewMessage("موفقیت", "مشتری جدید با موفقیت ثبت شد.", "Y", "success", null);
+                            LoadData();
+                        }
+                        //------------
+                        else
+                        {
+                            customMessage.NewMessage("خطا", "متاسفانه ما نتوانستیم اطلاعات را  با موفقیت ذخیره کنیم", "Y", "error", null);
+                        }
                     }
-                    //------------
                     else
                     {
-                        customMessage.NewMessage("خطا", "متاسفانه ما نتوانستیم اطلاعات را  با موفقیت ذخیره کنیم", "Y", "error", null);
+                        customMessage.NewMessage("هشدار", "شماره تلفن باید 11 رقم باشد", "Y", "warning", null);
+                        txt_CustomerPhone.Focus();
                     }
+                    
                 }
                 else
                 {
