@@ -153,3 +153,6 @@ C:\Users\amir\Desktop\CafeAccountingApp\obj\Debug\CafeApplication.exe.config
 C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Telerik.WinControls.RadDiagram.dll
 C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Telerik.WinControls.RadDiagram.xml
 C:\Users\amir\Desktop\CafeAccountingApp\obj\Debug\CafeApplication.csproj.SuggestedBindingRedirects.cache
+C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\bin\Debug\Telerik.WinControls.RadDiagram.dll
+C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\bin\Debug\Telerik.WinControls.RadDiagram.xml
+C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\obj\Debug\CafeApplication.csproj.SuggestedBindingRedirects.cache

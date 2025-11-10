@@ -212,7 +212,7 @@
             // txt_Date
             // 
             this.txt_Date.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "CreatedAt", true));
-            this.txt_Date.Location = new System.Drawing.Point(195, 109);
+            this.txt_Date.Location = new System.Drawing.Point(193, 106);
             this.txt_Date.Name = "txt_Date";
             this.txt_Date.ReadOnly = true;
             this.txt_Date.Size = new System.Drawing.Size(100, 28);

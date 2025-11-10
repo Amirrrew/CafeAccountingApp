@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using Calendar;
 
 namespace CafeApplication.Forms.DailyInvoice
 {
@@ -20,19 +21,19 @@ namespace CafeApplication.Forms.DailyInvoice
             InitializeComponent();
             blur.SetBlurBack(this);
             font.SetFont(this);
-            customersBindingSource.AddNew();
-            txt_CustomerID.Text = (customersTableAdapter.SetLastCustomerID().GetValueOrDefault() + 1).ToString();
+            
         }
 
         private void AddCustomer_Load(object sender, EventArgs e)
         {
-
+            LoadData();
         }
 
 
         //--------------------- import classes ---------------
         BackBlur blur = new BackBlur();
         FontSet font = new FontSet();
+        GetTime gettime = new GetTime();
         //---
         CafeApplication.Forms.PublicForms.CustomMessage  customMessage = new PublicForms.CustomMessage();
         //--------------------- import classes ---------------
@@ -49,9 +50,13 @@ namespace CafeApplication.Forms.DailyInvoice
             txt_CustomerName.ResetText();
             txt_CustomerPhone.ResetText();
             txt_CustomerAddress.ResetText();
-            customersBindingSource.AddNew();
-            txt_CustomerID.Text = (customersTableAdapter.SetLastCustomerID().GetValueOrDefault() +1).ToString();
-            txt_CustomerName.Focus();
+            this.customersBindingSource.AddNew();
+            int i;
+            i = this.customersTableAdapter.max_num().GetValueOrDefault();
+            i = i + 1;
+            this.txt_CustomerID.Text = i.ToString();
+            txt_Date.Text = gettime.generateFullDate();
+
         }
 
         private void txt_CustomerPhone_KeyPress(object sender, KeyPressEventArgs e)
@@ -69,15 +74,15 @@ namespace CafeApplication.Forms.DailyInvoice
             {
                 if (txt_CustomerID.Text != string.Empty && txt_CustomerName.Text != string.Empty && txt_CustomerPhone.Text != string.Empty)
                 {
+                    int lastID = int.Parse(txt_CustomerID.Text) + 1;
                     this.customersBindingSource.EndEdit();
                     i = this.customersTableAdapter.Update(this.dsCafe.Customers);
                     if (i > 0)
                     {
-                        int lastID = int.Parse(txt_CustomerID.Text) + 1;
+                        
                         //MessageBox.Show("کاربر گرامی اطلاعات با موفقیت ذخیره شد");
                         customMessage.NewMessage("موفقیت", "مشتری جدید با موفقیت ثبت شد.", "Y", "success", null);
-                        txt_CustomerID.Text = lastID.ToString();
-                        customersBindingSource.AddNew();
+                        LoadData();
                     }
                     //------------
                     else
@@ -104,6 +109,7 @@ namespace CafeApplication.Forms.DailyInvoice
                 //---------------------
                 this.customersBindingSource.CancelEdit();
                 this.dsCafe.Customers.RejectChanges();
+                LoadData();
                 
             }
             catch 
