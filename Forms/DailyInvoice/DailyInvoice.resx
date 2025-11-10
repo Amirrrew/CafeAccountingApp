@@ -151,11 +151,21 @@
         99EQj6dc7z22RXgQWdmLWQAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="btn_SendToPOS.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EQAACxEBf2RfkQAAAZZJREFUOE+908uLjnEYxvEZIyExWSkbZWMxNhbWFpTUlFIOYaLklFIOkUMmmlLI
+        KTktbPyfH126n7fnvZvppeSq3+q5ft/nPly/ubn/KezHURzHQSx0z0xhEy7gO37iCz7gE97iPLb3e+sq
+        xrr8Ax/xDm/wCi+xhhd4gr39/pSqsvf4OoIF/g2f8RrPsYqnuI9dnTNRtTmuLC0uYxFbsITbeIZHeICT
+        nTNRzWwM27OOZ75m+LAqvIvd3TdsMwsY2lzunkE15zt1UvHh7okp0cicsoDMbLF7xsLpgt3Csf49huQs
+        lWWbAW/tnrEyu4LdwIn+PYaENnNLNLLNpe4ZVHO8WrBrONI9MS1UaJOzRCPtzHdfhEO4WbDr2Nc9v1Wx
+        SWiTs0Rj6kVUZWPYFZybpoyEHXhcoU3OEo1sMgvIzNLmGHa5frqtsybKc8K9Cm1yNkRjWMAYtoKLqXIW
+        dGdVlNB2WGYWQCobYGdwFps7a0p5AQltcpZoZJvDAlLRCHaqgAc6469U0IByLs16DH+ktJnK/glsI/0C
+        zaaC3BAmn9UAAAAASUVORK5CYII=
+</value>
+  </data>
   <metadata name="customersBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>427, 43</value>
-  </metadata>
-  <metadata name="dsCafe.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>337, 43</value>
   </metadata>
   <metadata name="dsCafe.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>337, 43</value>
@@ -163,14 +173,6 @@
   <metadata name="tooltip_AddCustomer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 43</value>
   </metadata>
-  <data name="btn_ExpandPanel.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAAAIBJREFUKFNtzasKAlEURuFBsIgg4uUFzBarDzBg0SImm9VgsCkiYhQf+ZMjh+HM
-        ZlbZ8K8Fu6o6QB+TuLfACA98sYr+D6Y5+uCNdWxSNMeriPboxS6FzyLaRt+AW47u2ETfgBkuuOKMuvN1
-        AmMcccp3GZsGDLDDAYvoW6SXGJbbDzHZimVjb2jtAAAAAElFTkSuQmCC
-</value>
-  </data>
   <metadata name="TimerCurrentTime.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>185, 43</value>
   </metadata>

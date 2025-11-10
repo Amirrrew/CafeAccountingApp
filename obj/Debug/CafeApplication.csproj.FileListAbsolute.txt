@@ -156,8 +156,19 @@ C:\Users\amir\Desktop\CafeAccountingApp\obj\Debug\CafeApplication.csproj.Suggest
 C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\bin\Debug\Telerik.WinControls.RadDiagram.dll
 C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\bin\Debug\Telerik.WinControls.RadDiagram.xml
 C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\obj\Debug\CafeApplication.csproj.SuggestedBindingRedirects.cache
+<<<<<<< Updated upstream
 C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\bin\Debug\Data\DataSet\DsCafe.cs
 C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\bin\Debug\Data\DataSet\DsCafe.Designer.cs
 C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\bin\Debug\Data\DataSet\DsCafe.xsc
 C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\bin\Debug\Data\DataSet\DsCafe.xsd
 C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\bin\Debug\Data\DataSet\DsCafe.xss
+=======
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Data\DataSet\DsCafe.cs
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Data\DataSet\DsCafe.Designer.cs
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Data\DataSet\DsCafe.xsc
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Data\DataSet\DsCafe.xsd
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Data\DataSet\DsCafe.xss
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Public\search-Icon.png
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Public\search-Icon_med.png
+C:\Users\amir\Desktop\CafeAccountingApp\obj\Debug\CafeApplication.Forms.DailyInvoice.SearchCustomer.resources
+>>>>>>> Stashed changes

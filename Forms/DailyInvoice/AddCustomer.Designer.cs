@@ -43,9 +43,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btn_save = new Telerik.WinControls.UI.RadButton();
             this.btn_cancel = new Telerik.WinControls.UI.RadButton();
-            this.txt_Date = new System.Windows.Forms.TextBox();
             this.customersTableAdapter = new CafeApplication.Data.DataSet.DsCafeTableAdapters.CustomersTableAdapter();
             this.tableAdapterManager = new CafeApplication.Data.DataSet.DsCafeTableAdapters.TableAdapterManager();
+            this.txt_Date = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_save)).BeginInit();
@@ -67,7 +67,7 @@
             // 
             this.txt_CustomerID.BackColor = System.Drawing.Color.Black;
             this.txt_CustomerID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_CustomerID.Font = new System.Drawing.Font("RokhFaNum", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_CustomerID.Font = new System.Drawing.Font("RokhFaNum ExtraLight", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_CustomerID.ForeColor = System.Drawing.Color.White;
             this.txt_CustomerID.Location = new System.Drawing.Point(310, 106);
             this.txt_CustomerID.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -92,12 +92,12 @@
             this.txt_CustomerName.BackColor = System.Drawing.Color.Black;
             this.txt_CustomerName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_CustomerName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "Name", true));
-            this.txt_CustomerName.Font = new System.Drawing.Font("RokhFaNum", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_CustomerName.Font = new System.Drawing.Font("RokhFaNum ExtraLight", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_CustomerName.ForeColor = System.Drawing.Color.White;
             this.txt_CustomerName.Location = new System.Drawing.Point(164, 189);
             this.txt_CustomerName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txt_CustomerName.Name = "txt_CustomerName";
-            this.txt_CustomerName.Size = new System.Drawing.Size(259, 32);
+            this.txt_CustomerName.Size = new System.Drawing.Size(259, 34);
             this.txt_CustomerName.TabIndex = 0;
             this.txt_CustomerName.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -106,12 +106,12 @@
             this.txt_CustomerPhone.BackColor = System.Drawing.Color.Black;
             this.txt_CustomerPhone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_CustomerPhone.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "Phone", true));
-            this.txt_CustomerPhone.Font = new System.Drawing.Font("RokhFaNum", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_CustomerPhone.Font = new System.Drawing.Font("RokhFaNum ExtraLight", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_CustomerPhone.ForeColor = System.Drawing.Color.White;
-            this.txt_CustomerPhone.Location = new System.Drawing.Point(51, 189);
+            this.txt_CustomerPhone.Location = new System.Drawing.Point(9, 189);
             this.txt_CustomerPhone.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txt_CustomerPhone.Name = "txt_CustomerPhone";
-            this.txt_CustomerPhone.Size = new System.Drawing.Size(109, 32);
+            this.txt_CustomerPhone.Size = new System.Drawing.Size(151, 34);
             this.txt_CustomerPhone.TabIndex = 1;
             this.txt_CustomerPhone.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txt_CustomerPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_CustomerPhone_KeyPress);
@@ -209,16 +209,6 @@
             this.btn_cancel.Text = "-";
             this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
-            // txt_Date
-            // 
-            this.txt_Date.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "CreatedAt", true));
-            this.txt_Date.Location = new System.Drawing.Point(193, 106);
-            this.txt_Date.Name = "txt_Date";
-            this.txt_Date.ReadOnly = true;
-            this.txt_Date.Size = new System.Drawing.Size(100, 28);
-            this.txt_Date.TabIndex = 13;
-            this.txt_Date.Visible = false;
-            // 
             // customersTableAdapter
             // 
             this.customersTableAdapter.ClearBeforeFill = true;
@@ -244,12 +234,21 @@
             this.tableAdapterManager.UpdateOrder = CafeApplication.Data.DataSet.DsCafeTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.UsersTableAdapter = null;
             // 
+            // txt_Date
+            // 
+            this.txt_Date.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "CreatedAt", true));
+            this.txt_Date.ForeColor = System.Drawing.Color.Black;
+            this.txt_Date.Location = new System.Drawing.Point(60, 106);
+            this.txt_Date.Name = "txt_Date";
+            this.txt_Date.Size = new System.Drawing.Size(100, 28);
+            this.txt_Date.TabIndex = 14;
+            // 
             // AddCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(433, 449);
+            this.ClientSize = new System.Drawing.Size(432, 448);
             this.Controls.Add(this.txt_Date);
             this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.btn_save);
@@ -300,8 +299,8 @@
         private System.Windows.Forms.Label label4;
         public Telerik.WinControls.UI.RadButton btn_save;
         public Telerik.WinControls.UI.RadButton btn_cancel;
-        private System.Windows.Forms.TextBox txt_Date;
         private Data.DataSet.DsCafeTableAdapters.CustomersTableAdapter customersTableAdapter;
         private Data.DataSet.DsCafeTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.TextBox txt_Date;
     }
 }

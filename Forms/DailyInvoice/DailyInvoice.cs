@@ -40,22 +40,6 @@ namespace CafeApplication.Forms.DailyFactor
         }
 
 
-        private void btn_DailyInvoice_Click(object sender, EventArgs e)
-        {
-
-            if (Pnl_Actions.Width < 100)
-            {
-                Pnl_Actions.Width += 150;
-                btn_ExpandPanel.Location = new Point(1129, 354);
-                btn_ExpandPanel.Image = Image.FromFile(Application.StartupPath + @"/Assets/Icons/Public/chevron-right.png");
-            }
-            else
-            {
-                Pnl_Actions.Width = 76;
-                btn_ExpandPanel.Location = new Point(1279, 366);
-                btn_ExpandPanel.Image = Image.FromFile(Application.StartupPath + @"/Assets/Icons/Public/chevron-left.png");
-            }
-        }
 
         //-------------- action buttons events ---------------
         private void btn_addCustomer_Click(object sender, EventArgs e)
@@ -131,6 +115,22 @@ namespace CafeApplication.Forms.DailyFactor
             this.customersBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.dsCafe);
 
+        }
+
+        private void Pnl_ActionInner_MouseHover(object sender, EventArgs e)
+        {
+            Pnl_Actions.Width += 150;
+        }
+
+        private void Pnl_ActionInner_MouseLeave(object sender, EventArgs e)
+        {
+            Pnl_Actions.Width = 76;
+        }
+
+        private void btn_SendToPOS_Click(object sender, EventArgs e)
+        {
+            SearchCustomer search = new SearchCustomer();
+            search.ShowDialog();
         }
     }
 }
