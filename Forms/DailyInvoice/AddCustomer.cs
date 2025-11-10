@@ -21,7 +21,7 @@ namespace CafeApplication.Forms.DailyInvoice
             InitializeComponent();
             blur.SetBlurBack(this);
             font.SetFont(this);
-            
+            txt_Date.Text = gettime.generateFullDate();
         }
 
         private void AddCustomer_Load(object sender, EventArgs e)
