@@ -110,13 +110,13 @@ namespace CafeApplication.Forms.DailyInvoice
             this.txt_SearchBox.Clear();
             this.txt_SearchBox.Focus();
         }
-        public string SelectedValue { get; set; }
+        public string SelectedValue { get; set; }//برای این که یه متغیر باشه که اون فرم دیلی اینویس لازش مقدار بگیره
         private void btn_EndSearch_Click(object sender, EventArgs e)
         {
             if (lbl_SearchResult.Text != string.Empty)
             {
                 SelectedValue = lbl_SearchResult.Text; // مقداری که کاربر وارد کرده
-                this.DialogResult = DialogResult.OK;
+                this.DialogResult = DialogResult.OK;//دیلی این ویس وقتی که دیالوگ ریزالت اوکی باشه مقدارو  میگیره
                 this.Close();
             }
             
