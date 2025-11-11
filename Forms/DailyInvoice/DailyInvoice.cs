@@ -132,5 +132,6 @@ namespace CafeApplication.Forms.DailyFactor
             SearchCustomer search = new SearchCustomer();
             search.ShowDialog();
         }
+
     }
 }

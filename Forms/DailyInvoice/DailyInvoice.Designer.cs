@@ -35,13 +35,17 @@
             this.lbl_ConfirmIvoiceTitle = new System.Windows.Forms.Label();
             this.lbl_InAction_AddCustomer = new System.Windows.Forms.Label();
             this.Pnl_ActionInner = new System.Windows.Forms.Panel();
+            this.btn_ConfirmPurchase = new Telerik.WinControls.UI.RadButton();
+            this.btn_addCustomer = new Telerik.WinControls.UI.RadButton();
             this.Pnl_Top = new System.Windows.Forms.Panel();
+            this.btn_SendToPOS = new Telerik.WinControls.UI.RadButton();
+            this.txt_CustomerName = new System.Windows.Forms.TextBox();
             this.lbl_InvoiceDateTitle = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
             this.lbl_dailyInvoice = new System.Windows.Forms.Label();
+            this.lbl_customer = new System.Windows.Forms.Label();
             this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dsCafe = new CafeApplication.Data.DataSet.DsCafe();
-            this.lbl_customer = new System.Windows.Forms.Label();
             this.object_5df848ca_f927_4389_812f_3545e39e23ab = new Telerik.WinControls.RootRadElement();
             this.tooltip_AddCustomer = new System.Windows.Forms.ToolTip(this.components);
             this.Pnl_AllCategories = new System.Windows.Forms.Panel();
@@ -60,21 +64,17 @@
             this.TimerCurrentTime = new System.Windows.Forms.Timer(this.components);
             this.customersTableAdapter = new CafeApplication.Data.DataSet.DsCafeTableAdapters.CustomersTableAdapter();
             this.tableAdapterManager = new CafeApplication.Data.DataSet.DsCafeTableAdapters.TableAdapterManager();
-            this.txt_CustomerName = new System.Windows.Forms.TextBox();
-            this.btn_SendToPOS = new Telerik.WinControls.UI.RadButton();
-            this.btn_ConfirmPurchase = new Telerik.WinControls.UI.RadButton();
-            this.btn_addCustomer = new Telerik.WinControls.UI.RadButton();
             this.Pnl_Actions.SuspendLayout();
             this.Pnl_ActionTitles.SuspendLayout();
             this.Pnl_ActionInner.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_ConfirmPurchase)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_addCustomer)).BeginInit();
             this.Pnl_Top.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_SendToPOS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).BeginInit();
             this.Pnl_AllCategories.SuspendLayout();
             this.Pnl_TotalAmount.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_SendToPOS)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_ConfirmPurchase)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_addCustomer)).BeginInit();
             this.SuspendLayout();
             // 
             // Pnl_Actions
@@ -132,6 +132,44 @@
             this.Pnl_ActionInner.MouseLeave += new System.EventHandler(this.Pnl_ActionInner_MouseLeave);
             this.Pnl_ActionInner.MouseHover += new System.EventHandler(this.Pnl_ActionInner_MouseHover);
             // 
+            // btn_ConfirmPurchase
+            // 
+            this.btn_ConfirmPurchase.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_ConfirmPurchase.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
+            this.btn_ConfirmPurchase.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_ConfirmPurchase.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_ConfirmPurchase.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
+            this.btn_ConfirmPurchase.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btn_ConfirmPurchase.Image = ((System.Drawing.Image)(resources.GetObject("btn_ConfirmPurchase.Image")));
+            this.btn_ConfirmPurchase.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_ConfirmPurchase.Location = new System.Drawing.Point(11, 70);
+            this.btn_ConfirmPurchase.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_ConfirmPurchase.Name = "btn_ConfirmPurchase";
+            this.btn_ConfirmPurchase.Size = new System.Drawing.Size(55, 53);
+            this.btn_ConfirmPurchase.TabIndex = 1;
+            this.btn_ConfirmPurchase.Text = "-";
+            this.btn_ConfirmPurchase.Click += new System.EventHandler(this.btn_ConfirmPurchase_Click);
+            // 
+            // btn_addCustomer
+            // 
+            this.btn_addCustomer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_addCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
+            this.btn_addCustomer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_addCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_addCustomer.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
+            this.btn_addCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btn_addCustomer.Image = ((System.Drawing.Image)(resources.GetObject("btn_addCustomer.Image")));
+            this.btn_addCustomer.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_addCustomer.Location = new System.Drawing.Point(11, 9);
+            this.btn_addCustomer.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_addCustomer.Name = "btn_addCustomer";
+            this.btn_addCustomer.Size = new System.Drawing.Size(55, 53);
+            this.btn_addCustomer.TabIndex = 0;
+            this.btn_addCustomer.Text = "-";
+            this.btn_addCustomer.Click += new System.EventHandler(this.btn_addCustomer_Click);
+            // 
             // Pnl_Top
             // 
             this.Pnl_Top.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(3)))), ((int)(((byte)(3)))));
@@ -148,6 +186,37 @@
             this.Pnl_Top.Size = new System.Drawing.Size(1272, 141);
             this.Pnl_Top.TabIndex = 1;
             this.Pnl_Top.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // btn_SendToPOS
+            // 
+            this.btn_SendToPOS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
+            this.btn_SendToPOS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_SendToPOS.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_SendToPOS.Font = new System.Drawing.Font("Rokh Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btn_SendToPOS.ForeColor = System.Drawing.Color.White;
+            this.btn_SendToPOS.Image = ((System.Drawing.Image)(resources.GetObject("btn_SendToPOS.Image")));
+            this.btn_SendToPOS.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_SendToPOS.Location = new System.Drawing.Point(883, 94);
+            this.btn_SendToPOS.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_SendToPOS.Name = "btn_SendToPOS";
+            this.btn_SendToPOS.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
+            this.btn_SendToPOS.Size = new System.Drawing.Size(106, 34);
+            this.btn_SendToPOS.TabIndex = 22;
+            this.btn_SendToPOS.Text = "جستجو";
+            this.btn_SendToPOS.Click += new System.EventHandler(this.btn_SendToPOS_Click);
+            // 
+            // txt_CustomerName
+            // 
+            this.txt_CustomerName.BackColor = System.Drawing.Color.Black;
+            this.txt_CustomerName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_CustomerName.Font = new System.Drawing.Font("RokhFaNum Normal", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_CustomerName.ForeColor = System.Drawing.Color.White;
+            this.txt_CustomerName.Location = new System.Drawing.Point(996, 94);
+            this.txt_CustomerName.Name = "txt_CustomerName";
+            this.txt_CustomerName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txt_CustomerName.Size = new System.Drawing.Size(260, 34);
+            this.txt_CustomerName.TabIndex = 17;
+            this.txt_CustomerName.Text = "مشتری نقدی";
             // 
             // lbl_InvoiceDateTitle
             // 
@@ -183,16 +252,6 @@
             this.lbl_dailyInvoice.Text = "فاکتور فروش روزانه";
             this.lbl_dailyInvoice.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // customersBindingSource
-            // 
-            this.customersBindingSource.DataMember = "Customers";
-            this.customersBindingSource.DataSource = this.dsCafe;
-            // 
-            // dsCafe
-            // 
-            this.dsCafe.DataSetName = "DsCafe";
-            this.dsCafe.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // lbl_customer
             // 
             this.lbl_customer.AutoSize = true;
@@ -204,6 +263,16 @@
             this.lbl_customer.TabIndex = 6;
             this.lbl_customer.Text = "طرف حساب ها";
             this.lbl_customer.Click += new System.EventHandler(this.lbl_customer_Click);
+            // 
+            // customersBindingSource
+            // 
+            this.customersBindingSource.DataMember = "Customers";
+            this.customersBindingSource.DataSource = this.dsCafe;
+            // 
+            // dsCafe
+            // 
+            this.dsCafe.DataSetName = "DsCafe";
+            this.dsCafe.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // object_5df848ca_f927_4389_812f_3545e39e23ab
             // 
@@ -227,7 +296,7 @@
             this.Pnl_AllCategories.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.Pnl_AllCategories.Location = new System.Drawing.Point(0, 512);
             this.Pnl_AllCategories.Name = "Pnl_AllCategories";
-            this.Pnl_AllCategories.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.Pnl_AllCategories.Padding = new System.Windows.Forms.Padding(10);
             this.Pnl_AllCategories.Size = new System.Drawing.Size(1272, 227);
             this.Pnl_AllCategories.TabIndex = 10;
             // 
@@ -402,75 +471,6 @@
             this.tableAdapterManager.UpdateOrder = CafeApplication.Data.DataSet.DsCafeTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.UsersTableAdapter = null;
             // 
-            // txt_CustomerName
-            // 
-            this.txt_CustomerName.BackColor = System.Drawing.Color.Black;
-            this.txt_CustomerName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_CustomerName.Font = new System.Drawing.Font("RokhFaNum Normal", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txt_CustomerName.ForeColor = System.Drawing.Color.White;
-            this.txt_CustomerName.Location = new System.Drawing.Point(996, 94);
-            this.txt_CustomerName.Name = "txt_CustomerName";
-            this.txt_CustomerName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txt_CustomerName.Size = new System.Drawing.Size(260, 34);
-            this.txt_CustomerName.TabIndex = 17;
-            this.txt_CustomerName.Text = "مشتری نقدی";
-            // 
-            // btn_SendToPOS
-            // 
-            this.btn_SendToPOS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
-            this.btn_SendToPOS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_SendToPOS.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_SendToPOS.Font = new System.Drawing.Font("Rokh Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btn_SendToPOS.ForeColor = System.Drawing.Color.White;
-            this.btn_SendToPOS.Image = ((System.Drawing.Image)(resources.GetObject("btn_SendToPOS.Image")));
-            this.btn_SendToPOS.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_SendToPOS.Location = new System.Drawing.Point(840, 94);
-            this.btn_SendToPOS.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_SendToPOS.Name = "btn_SendToPOS";
-            this.btn_SendToPOS.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
-            this.btn_SendToPOS.Size = new System.Drawing.Size(149, 34);
-            this.btn_SendToPOS.TabIndex = 22;
-            this.btn_SendToPOS.Text = "ارسال به پوز";
-            this.btn_SendToPOS.Click += new System.EventHandler(this.btn_SendToPOS_Click);
-            // 
-            // btn_ConfirmPurchase
-            // 
-            this.btn_ConfirmPurchase.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_ConfirmPurchase.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
-            this.btn_ConfirmPurchase.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_ConfirmPurchase.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_ConfirmPurchase.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
-            this.btn_ConfirmPurchase.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btn_ConfirmPurchase.Image = ((System.Drawing.Image)(resources.GetObject("btn_ConfirmPurchase.Image")));
-            this.btn_ConfirmPurchase.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_ConfirmPurchase.Location = new System.Drawing.Point(11, 70);
-            this.btn_ConfirmPurchase.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_ConfirmPurchase.Name = "btn_ConfirmPurchase";
-            this.btn_ConfirmPurchase.Size = new System.Drawing.Size(55, 53);
-            this.btn_ConfirmPurchase.TabIndex = 1;
-            this.btn_ConfirmPurchase.Text = "-";
-            this.btn_ConfirmPurchase.Click += new System.EventHandler(this.btn_ConfirmPurchase_Click);
-            // 
-            // btn_addCustomer
-            // 
-            this.btn_addCustomer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_addCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
-            this.btn_addCustomer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_addCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_addCustomer.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
-            this.btn_addCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btn_addCustomer.Image = ((System.Drawing.Image)(resources.GetObject("btn_addCustomer.Image")));
-            this.btn_addCustomer.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_addCustomer.Location = new System.Drawing.Point(11, 9);
-            this.btn_addCustomer.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_addCustomer.Name = "btn_addCustomer";
-            this.btn_addCustomer.Size = new System.Drawing.Size(55, 53);
-            this.btn_addCustomer.TabIndex = 0;
-            this.btn_addCustomer.Text = "-";
-            this.btn_addCustomer.Click += new System.EventHandler(this.btn_addCustomer_Click);
-            // 
             // DailyInvoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 21F);
@@ -496,16 +496,16 @@
             this.Pnl_ActionTitles.ResumeLayout(false);
             this.Pnl_ActionTitles.PerformLayout();
             this.Pnl_ActionInner.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btn_ConfirmPurchase)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_addCustomer)).EndInit();
             this.Pnl_Top.ResumeLayout(false);
             this.Pnl_Top.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_SendToPOS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).EndInit();
             this.Pnl_AllCategories.ResumeLayout(false);
             this.Pnl_TotalAmount.ResumeLayout(false);
             this.Pnl_TotalAmount.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_SendToPOS)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_ConfirmPurchase)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_addCustomer)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -544,7 +544,7 @@
         private System.Windows.Forms.BindingSource customersBindingSource;
         private Data.DataSet.DsCafeTableAdapters.CustomersTableAdapter customersTableAdapter;
         private Data.DataSet.DsCafeTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.TextBox txt_CustomerName;
         public Telerik.WinControls.UI.RadButton btn_SendToPOS;
+        public System.Windows.Forms.TextBox txt_CustomerName;
     }
 }

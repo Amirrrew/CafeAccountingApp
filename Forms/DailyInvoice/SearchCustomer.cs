@@ -7,7 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace CafeApplication.Forms.DailyInvoice
@@ -19,18 +19,20 @@ namespace CafeApplication.Forms.DailyInvoice
             InitializeComponent();
             blur.SetBlurBack(this);
             font.SetFont(this);
+            Cmb_SearchFrame.SelectedIndex = 0;
         }
 
         BackBlur blur = new BackBlur();
         FontSet font = new FontSet();
         CustomMessage msg = new CustomMessage();
+        CafeApplication.Forms.DailyFactor.DailyInvoice dailyInvoice = new CafeApplication.Forms.DailyFactor.DailyInvoice();
+        string customerName;
 
         private void customersBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
             this.customersBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.dsCafe);
-
         }
 
         private void SearchCustomer_Load(object sender, EventArgs e)
@@ -40,12 +42,47 @@ namespace CafeApplication.Forms.DailyInvoice
             txt_SearchBox.Focus();
         }
 
+
+        public string SearchForCustomer()
+        {
+
+            if (txt_SearchBox.Text != string.Empty)
+            {
+                switch (Cmb_SearchFrame.Text)
+                {
+                    case "کد":
+                        customersTableAdapter.FillBy_customer_id(dsCafe.Customers, int.Parse(txt_SearchBox.Text));
+                        break;
+                    case "نام و نام خانوادگی":
+                        customersTableAdapter.FillBy_customer_name(dsCafe.Customers, "%" + txt_SearchBox.Text + "%");
+                        break;
+                    case "شماره تلفن":
+                        customersTableAdapter.FillBy_customer_phone(dsCafe.Customers, txt_SearchBox.Text + "%");
+                        break;
+                    case "آدرس":
+                        customersTableAdapter.FillBy_customer_address(dsCafe.Customers, "%" + txt_SearchBox.Text + "%");
+                        break;
+                    default:
+                        msg.NewMessage("هشدار", "ابتدا باید یک متد برای جستجو انتخاب کنید.", "Y", "warning", null); break;
+                }
+
+                if (tbl_Customers.RowCount != 0)
+                {
+                    customerName = tbl_Customers.Rows[0].Cells[1].Value.ToString();
+                }
+                else
+                {
+                    customerName = null;
+                }
+            }
+
+   
+            return customerName;
+        }
+
         private void txt_SearchBox_TextChanged(object sender, EventArgs e)
         {
-            if (true)
-            {
-
-            }
+            lbl_SearchResult.Text = SearchForCustomer();
         }
 
         private void txt_SearchBox_KeyPress(object sender, KeyPressEventArgs e)
@@ -63,6 +100,18 @@ namespace CafeApplication.Forms.DailyInvoice
         {
             this.txt_SearchBox.Clear();
             this.txt_SearchBox.Focus();
+        }
+
+        private void btn_EndSearch_Click(object sender, EventArgs e)
+        {
+            dailyInvoice.txt_CustomerName.Text = lbl_SearchResult.Text;
+            dailyInvoice.Focus();
+            this.Close();
+        }
+
+        private void tbl_Customers_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            lbl_SearchResult.Text = tbl_Customers.Rows[e.RowIndex].Cells[1].Value.ToString();
         }
     }
 }
