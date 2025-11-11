@@ -110,12 +110,18 @@ namespace CafeApplication.Forms.DailyInvoice
             this.txt_SearchBox.Clear();
             this.txt_SearchBox.Focus();
         }
-
+        public string SelectedValue { get; set; }
         private void btn_EndSearch_Click(object sender, EventArgs e)
         {
-            dailyInvoice.txt_CustomerName.Text = lbl_SearchResult.Text;
-            dailyInvoice.Focus();
+            SelectedValue = lbl_SearchResult.Text; // مقداری که کاربر وارد کرده
+            this.DialogResult = DialogResult.OK;
             this.Close();
+
+
+
+            //dailyInvoice.txt_CustomerName.Text = lbl_SearchResult.Text;
+            //dailyInvoice.Focus();
+            //this.Close();
         }
 
         private void tbl_Customers_CellClick(object sender, DataGridViewCellEventArgs e)

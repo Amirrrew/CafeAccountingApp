@@ -1,16 +1,8 @@
 ﻿using CafeApplication.Classes.PublicClasses;
 using CafeApplication.Forms.DailyInvoice;
 using CafeApplication.Forms.PublicForms;
-using System.IO;
 using Calendar;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CafeApplication.Forms.DailyFactor
@@ -129,8 +121,18 @@ namespace CafeApplication.Forms.DailyFactor
 
         private void btn_SendToPOS_Click(object sender, EventArgs e)
         {
-            SearchCustomer search = new SearchCustomer();
-            search.ShowDialog();
+
+
+            using (SearchCustomer search = new SearchCustomer())
+            {
+                if (search.ShowDialog() == DialogResult.OK)
+                {
+                    txt_CustomerName.Text = search.SelectedValue;
+                }
+            }
+
+            //SearchCustomer search = new SearchCustomer();
+            //search.ShowDialog();
         }
 
     }
