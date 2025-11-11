@@ -46,6 +46,7 @@
             this.customersTableAdapter = new CafeApplication.Data.DataSet.DsCafeTableAdapters.CustomersTableAdapter();
             this.tableAdapterManager = new CafeApplication.Data.DataSet.DsCafeTableAdapters.TableAdapterManager();
             this.txt_Date = new System.Windows.Forms.TextBox();
+            this.lbl_CreatedAt = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_save)).BeginInit();
@@ -236,12 +237,27 @@
             // 
             // txt_Date
             // 
+            this.txt_Date.BackColor = System.Drawing.Color.Black;
+            this.txt_Date.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Date.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "CreatedAt", true));
-            this.txt_Date.ForeColor = System.Drawing.Color.Black;
-            this.txt_Date.Location = new System.Drawing.Point(60, 106);
+            this.txt_Date.Font = new System.Drawing.Font("RokhFaNum Normal", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_Date.ForeColor = System.Drawing.Color.White;
+            this.txt_Date.Location = new System.Drawing.Point(164, 106);
             this.txt_Date.Name = "txt_Date";
-            this.txt_Date.Size = new System.Drawing.Size(100, 28);
+            this.txt_Date.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txt_Date.Size = new System.Drawing.Size(103, 34);
             this.txt_Date.TabIndex = 14;
+            // 
+            // lbl_CreatedAt
+            // 
+            this.lbl_CreatedAt.AutoSize = true;
+            this.lbl_CreatedAt.Location = new System.Drawing.Point(192, 82);
+            this.lbl_CreatedAt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_CreatedAt.Name = "lbl_CreatedAt";
+            this.lbl_CreatedAt.Size = new System.Drawing.Size(75, 21);
+            this.lbl_CreatedAt.TabIndex = 16;
+            this.lbl_CreatedAt.Text = "کد مشتری";
+            this.lbl_CreatedAt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // AddCustomer
             // 
@@ -249,6 +265,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(432, 448);
+            this.Controls.Add(this.lbl_CreatedAt);
             this.Controls.Add(this.txt_Date);
             this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.btn_save);
@@ -302,5 +319,6 @@
         private Data.DataSet.DsCafeTableAdapters.CustomersTableAdapter customersTableAdapter;
         private Data.DataSet.DsCafeTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.TextBox txt_Date;
+        private System.Windows.Forms.Label lbl_CreatedAt;
     }
 }

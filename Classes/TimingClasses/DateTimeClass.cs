@@ -426,9 +426,9 @@ namespace Calendar
         public string generateFullDate()
         {
             string date_Full;
-            date_Full = pc.GetYear(DateTime.Now).ToString() + "/" +
-                pc.GetMonth(DateTime.Now).ToString() + "/" +
-                pc.GetDayOfMonth(DateTime.Now).ToString();
+            date_Full = GetYear().ToString() + "/" +
+                GetMonth().ToString() + "/" +
+                GetDay().ToString();
             return date_Full;
 
         }
