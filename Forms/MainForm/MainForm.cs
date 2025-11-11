@@ -99,6 +99,7 @@ namespace CafeApplication
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
+            Application.Exit();
             //msg.BtnOK.Text = "بله";
             //msg.NewMessage("خروج؟", "آیا واقعا میخواهید از برنامه خارج شوید؟", "YN", "info", "small", YesClick: () => this.Hide() ,NoClick: ()=> e.Cancel = true);
         }

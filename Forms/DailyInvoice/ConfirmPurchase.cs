@@ -50,7 +50,7 @@ namespace CafeApplication.Forms.DailyInvoice
         }
         private void load_class()
         {
-            string total, finalPrice;
+            string total;
             //----
             txt_TotalPrice_value = int.Parse(txt_TotalPrice.Text);
             total = decimal_Format.decimal_format(txt_TotalPrice.Text);

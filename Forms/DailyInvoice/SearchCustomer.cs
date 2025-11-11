@@ -86,7 +86,7 @@ namespace CafeApplication.Forms.DailyInvoice
         {
             try
             {
-                lbl_SearchResult.Text = SearchForCustomer();
+               /* lbl_SearchResult.Text = */SearchForCustomer();
             }
             catch (Exception)
             {
@@ -113,9 +113,13 @@ namespace CafeApplication.Forms.DailyInvoice
         public string SelectedValue { get; set; }
         private void btn_EndSearch_Click(object sender, EventArgs e)
         {
-            SelectedValue = lbl_SearchResult.Text; // مقداری که کاربر وارد کرده
-            this.DialogResult = DialogResult.OK;
-            this.Close();
+            if (lbl_SearchResult.Text != string.Empty)
+            {
+                SelectedValue = lbl_SearchResult.Text; // مقداری که کاربر وارد کرده
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
+            
 
 
 
