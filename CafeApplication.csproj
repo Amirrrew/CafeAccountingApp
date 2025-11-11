@@ -259,6 +259,9 @@
     <None Include="Assets\Icons\Public\search-Icon_med.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="Assets\Icons\Public\continue-Icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <Content Include="Assets\Wallpaper\DefaultWallpaper.jpg" />
     <Content Include="Assets\Wallpaper\Default_Wallpaper.jpeg" />
     <None Include="Data\Base\CafeAccountingDB.mdf">

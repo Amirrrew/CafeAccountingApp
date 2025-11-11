@@ -245,18 +245,20 @@
             this.txt_Date.Location = new System.Drawing.Point(164, 106);
             this.txt_Date.Name = "txt_Date";
             this.txt_Date.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txt_Date.Size = new System.Drawing.Size(103, 34);
+            this.txt_Date.Size = new System.Drawing.Size(141, 34);
             this.txt_Date.TabIndex = 14;
+            this.txt_Date.Text = "----/--/--";
+            this.txt_Date.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lbl_CreatedAt
             // 
             this.lbl_CreatedAt.AutoSize = true;
-            this.lbl_CreatedAt.Location = new System.Drawing.Point(192, 82);
+            this.lbl_CreatedAt.Location = new System.Drawing.Point(241, 82);
             this.lbl_CreatedAt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_CreatedAt.Name = "lbl_CreatedAt";
-            this.lbl_CreatedAt.Size = new System.Drawing.Size(75, 21);
+            this.lbl_CreatedAt.Size = new System.Drawing.Size(65, 21);
             this.lbl_CreatedAt.TabIndex = 16;
-            this.lbl_CreatedAt.Text = "کد مشتری";
+            this.lbl_CreatedAt.Text = "تاریخ ثبت";
             this.lbl_CreatedAt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // AddCustomer

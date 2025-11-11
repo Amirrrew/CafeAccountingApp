@@ -544,7 +544,7 @@
         private System.Windows.Forms.BindingSource customersBindingSource;
         private Data.DataSet.DsCafeTableAdapters.CustomersTableAdapter customersTableAdapter;
         private Data.DataSet.DsCafeTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.TextBox txt_CustomerName;
         public Telerik.WinControls.UI.RadButton btn_SendToPOS;
+        public System.Windows.Forms.TextBox txt_CustomerName;
     }
 }

@@ -175,3 +175,4 @@ C:\Users\amir\Desktop\CafeAccountingApp\obj\Debug\CafeApplication.Forms.DailyInv
 C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\bin\Debug\Assets\Icons\Public\search-Icon.png
 C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\bin\Debug\Assets\Icons\Public\search-Icon_med.png
 C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\obj\Debug\CafeApplication.Forms.DailyInvoice.SearchCustomer.resources
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Public\continue-Icon.png

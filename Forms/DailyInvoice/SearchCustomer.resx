@@ -139,4 +139,18 @@
   <metadata name="tableAdapterManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>472, 17</value>
   </metadata>
+  <data name="btn_EndSearch.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAHNSURBVEhL5dXLi09hGAfw2QshShLZkmJlhZSNKCLXcknu
+        uRRymVwalxARI9RgIZcFiY2ShQULf9VHz/T8ppmn8ztzWPLU2Z3z/Zzzvs/znoGB/6YwFUuwBuuwMa8N
+        WIEZ9ZnOhSlYiZ3YmtcO7MJu7MNBnMl7/gzDXGzHZmzpA+xP5DBOYAiLa1ZjYV4GbeoIHEvkFO5iac2c
+        ULn+e/4SOI2zeIjZNXussD7D24DjuIlrDcB5XMHFmj1amIkDHYBHeI5XGTgeGMQljGB+NQJZlcFdgXcZ
+        WIGruIMj1Qik16pdgVt9gOiyG3hQjUAirAk42gDcngSIFxipRiDRKRWILrpQgCcdgFiu19UI5FADEG0a
+        3fMigQ/4HEsxCXAvnqlGIHsbgN4cxFu/TeALvuFpC3Afw9UIZG10RAPQm4PL+JTAd/zIsCbgWTRLNQKZ
+        hXN9gN4eROBX/MSvDKtATPx7LKjGaOWhGO3aBPT2IDrr47g2rkAs41DNHitMz6/pB7TtQQCP8QZzavaE
+        wqKWSZ4MiK9bXjMbCwtzPiK8CxCz8xLLalZrYRq24XqeuE3AcM7QyWicmtG54reK1XlCxz7FyRtfGc0R
+        //n29f+n6jcdcgG/BRG5hgAAAABJRU5ErkJggg==
+</value>
+  </data>
 </root>
