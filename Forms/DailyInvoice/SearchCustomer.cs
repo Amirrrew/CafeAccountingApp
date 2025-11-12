@@ -90,7 +90,7 @@ namespace CafeApplication.Forms.DailyInvoice
             }
             catch (Exception)
             {
-
+                msg.NewMessage("خطا" ,"جستحو با مشکل مواجه شد.\n دوباره تلاش کنید!" ,"Y","warning" ,null);
             }
         }
 
@@ -116,6 +116,12 @@ namespace CafeApplication.Forms.DailyInvoice
             if (lbl_SearchResult.Text != string.Empty)
             {
                 SelectedValue = lbl_SearchResult.Text; // مقداری که کاربر وارد کرده
+                this.DialogResult = DialogResult.OK;//دیلی این ویس وقتی که دیالوگ ریزالت اوکی باشه مقدارو  میگیره
+                this.Close();
+            }
+            else
+            {
+                SelectedValue = "مشتری نقدی"; // مقداری که کاربر وارد کرده
                 this.DialogResult = DialogResult.OK;//دیلی این ویس وقتی که دیالوگ ریزالت اوکی باشه مقدارو  میگیره
                 this.Close();
             }

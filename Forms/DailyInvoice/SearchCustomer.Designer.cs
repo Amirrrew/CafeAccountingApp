@@ -78,12 +78,12 @@
             // 
             this.txt_SearchBox.BackColor = System.Drawing.Color.Black;
             this.txt_SearchBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_SearchBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_SearchBox.Font = new System.Drawing.Font("Rokh Normal", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_SearchBox.ForeColor = System.Drawing.Color.White;
             this.txt_SearchBox.Location = new System.Drawing.Point(530, 93);
             this.txt_SearchBox.Name = "txt_SearchBox";
             this.txt_SearchBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txt_SearchBox.Size = new System.Drawing.Size(326, 31);
+            this.txt_SearchBox.Size = new System.Drawing.Size(326, 34);
             this.txt_SearchBox.TabIndex = 18;
             this.txt_SearchBox.Text = "مشتری نقدی";
             this.txt_SearchBox.TextChanged += new System.EventHandler(this.txt_SearchBox_TextChanged);
@@ -123,7 +123,7 @@
             this.tbl_Customers.AllowUserToAddRows = false;
             this.tbl_Customers.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("RokhFaNum Normal", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
@@ -152,7 +152,7 @@
             this.tbl_Customers.DataSource = this.customersBindingSource;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Rokh Normal", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("RokhFaNum Normal", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -170,20 +170,21 @@
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Rokh Normal", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Gray;
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.tbl_Customers.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.tbl_Customers.RowHeadersWidth = 5;
             dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             dataGridViewCellStyle7.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("RokhFaNum Normal", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle7.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
             this.tbl_Customers.RowsDefaultCellStyle = dataGridViewCellStyle7;
             this.tbl_Customers.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.tbl_Customers.RowTemplate.Height = 35;
             this.tbl_Customers.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tbl_Customers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.tbl_Customers.Size = new System.Drawing.Size(845, 305);
@@ -277,7 +278,7 @@
             // 
             this.Cmb_SearchFrame.BackColor = System.Drawing.Color.Black;
             this.Cmb_SearchFrame.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Cmb_SearchFrame.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Cmb_SearchFrame.Font = new System.Drawing.Font("RokhFaNum Normal", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Cmb_SearchFrame.ForeColor = System.Drawing.Color.White;
             this.Cmb_SearchFrame.FormattingEnabled = true;
             this.Cmb_SearchFrame.Items.AddRange(new object[] {
@@ -285,10 +286,10 @@
             "نام و نام خانوادگی",
             "شماره تلفن",
             "آدرس"});
-            this.Cmb_SearchFrame.Location = new System.Drawing.Point(212, 96);
+            this.Cmb_SearchFrame.Location = new System.Drawing.Point(212, 92);
             this.Cmb_SearchFrame.Name = "Cmb_SearchFrame";
             this.Cmb_SearchFrame.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Cmb_SearchFrame.Size = new System.Drawing.Size(167, 28);
+            this.Cmb_SearchFrame.Size = new System.Drawing.Size(167, 32);
             this.Cmb_SearchFrame.TabIndex = 19;
             this.Cmb_SearchFrame.TextChanged += new System.EventHandler(this.Cmb_SearchFrame_TextChanged);
             // 
@@ -312,7 +313,7 @@
             // lbl_SearchResult
             // 
             this.lbl_SearchResult.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "Name", true));
-            this.lbl_SearchResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_SearchResult.Font = new System.Drawing.Font("RokhFaNum Normal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lbl_SearchResult.Location = new System.Drawing.Point(490, 450);
             this.lbl_SearchResult.Name = "lbl_SearchResult";
             this.lbl_SearchResult.RightToLeft = System.Windows.Forms.RightToLeft.Yes;

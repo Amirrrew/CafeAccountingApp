@@ -3,6 +3,7 @@ using CafeApplication.Forms.DailyInvoice;
 using CafeApplication.Forms.PublicForms;
 using Calendar;
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace CafeApplication.Forms.DailyFactor
@@ -22,6 +23,7 @@ namespace CafeApplication.Forms.DailyFactor
         BackBlur blur = new BackBlur();
         FontSet fontSet = new FontSet();
         CustomMessage msg = new CustomMessage();
+        string defaultCustomer = "مشتری نقدی";
 
         private void DailyInvoice_Load(object sender, EventArgs e)
         {
@@ -135,5 +137,21 @@ namespace CafeApplication.Forms.DailyFactor
             //search.ShowDialog();
         }
 
+        private void txt_CustomerName_TextChanged(object sender, EventArgs e)
+        {
+            if (txt_CustomerName.Text != defaultCustomer)
+            {
+                btn_InstantCustomer.Visible = true;
+            }
+            else
+            {
+                btn_InstantCustomer.Visible = false;
+            }
+        }
+
+        private void btn_InstantCustomer_Click(object sender, EventArgs e)
+        {
+            txt_CustomerName.Text = defaultCustomer;
+        }
     }
 }

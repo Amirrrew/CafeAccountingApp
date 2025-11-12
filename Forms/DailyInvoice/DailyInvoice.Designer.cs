@@ -64,6 +64,7 @@
             this.TimerCurrentTime = new System.Windows.Forms.Timer(this.components);
             this.customersTableAdapter = new CafeApplication.Data.DataSet.DsCafeTableAdapters.CustomersTableAdapter();
             this.tableAdapterManager = new CafeApplication.Data.DataSet.DsCafeTableAdapters.TableAdapterManager();
+            this.btn_InstantCustomer = new Telerik.WinControls.UI.RadButton();
             this.Pnl_Actions.SuspendLayout();
             this.Pnl_ActionTitles.SuspendLayout();
             this.Pnl_ActionInner.SuspendLayout();
@@ -75,6 +76,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).BeginInit();
             this.Pnl_AllCategories.SuspendLayout();
             this.Pnl_TotalAmount.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_InstantCustomer)).BeginInit();
             this.SuspendLayout();
             // 
             // Pnl_Actions
@@ -173,6 +175,7 @@
             // Pnl_Top
             // 
             this.Pnl_Top.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(3)))), ((int)(((byte)(3)))));
+            this.Pnl_Top.Controls.Add(this.btn_InstantCustomer);
             this.Pnl_Top.Controls.Add(this.btn_SendToPOS);
             this.Pnl_Top.Controls.Add(this.txt_CustomerName);
             this.Pnl_Top.Controls.Add(this.lbl_InvoiceDateTitle);
@@ -196,7 +199,7 @@
             this.btn_SendToPOS.ForeColor = System.Drawing.Color.White;
             this.btn_SendToPOS.Image = ((System.Drawing.Image)(resources.GetObject("btn_SendToPOS.Image")));
             this.btn_SendToPOS.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_SendToPOS.Location = new System.Drawing.Point(883, 94);
+            this.btn_SendToPOS.Location = new System.Drawing.Point(886, 94);
             this.btn_SendToPOS.Margin = new System.Windows.Forms.Padding(4);
             this.btn_SendToPOS.Name = "btn_SendToPOS";
             this.btn_SendToPOS.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
@@ -217,6 +220,7 @@
             this.txt_CustomerName.Size = new System.Drawing.Size(260, 34);
             this.txt_CustomerName.TabIndex = 17;
             this.txt_CustomerName.Text = "مشتری نقدی";
+            this.txt_CustomerName.TextChanged += new System.EventHandler(this.txt_CustomerName_TextChanged);
             // 
             // lbl_InvoiceDateTitle
             // 
@@ -256,12 +260,12 @@
             // 
             this.lbl_customer.AutoSize = true;
             this.lbl_customer.Font = new System.Drawing.Font("Rokh", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lbl_customer.Location = new System.Drawing.Point(1158, 70);
+            this.lbl_customer.Location = new System.Drawing.Point(1175, 70);
             this.lbl_customer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_customer.Name = "lbl_customer";
-            this.lbl_customer.Size = new System.Drawing.Size(98, 21);
+            this.lbl_customer.Size = new System.Drawing.Size(81, 21);
             this.lbl_customer.TabIndex = 6;
-            this.lbl_customer.Text = "طرف حساب ها";
+            this.lbl_customer.Text = "طرف حساب";
             this.lbl_customer.Click += new System.EventHandler(this.lbl_customer_Click);
             // 
             // customersBindingSource
@@ -471,6 +475,24 @@
             this.tableAdapterManager.UpdateOrder = CafeApplication.Data.DataSet.DsCafeTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.UsersTableAdapter = null;
             // 
+            // btn_InstantCustomer
+            // 
+            this.btn_InstantCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
+            this.btn_InstantCustomer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_InstantCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_InstantCustomer.DisplayStyle = Telerik.WinControls.DisplayStyle.Text;
+            this.btn_InstantCustomer.Font = new System.Drawing.Font("Rokh Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btn_InstantCustomer.ForeColor = System.Drawing.Color.White;
+            this.btn_InstantCustomer.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_InstantCustomer.Location = new System.Drawing.Point(762, 94);
+            this.btn_InstantCustomer.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_InstantCustomer.Name = "btn_InstantCustomer";
+            this.btn_InstantCustomer.Size = new System.Drawing.Size(120, 34);
+            this.btn_InstantCustomer.TabIndex = 23;
+            this.btn_InstantCustomer.Text = "مشتری نقدی";
+            this.btn_InstantCustomer.Visible = false;
+            this.btn_InstantCustomer.Click += new System.EventHandler(this.btn_InstantCustomer_Click);
+            // 
             // DailyInvoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 21F);
@@ -506,6 +528,7 @@
             this.Pnl_AllCategories.ResumeLayout(false);
             this.Pnl_TotalAmount.ResumeLayout(false);
             this.Pnl_TotalAmount.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_InstantCustomer)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -546,5 +569,6 @@
         private Data.DataSet.DsCafeTableAdapters.TableAdapterManager tableAdapterManager;
         public Telerik.WinControls.UI.RadButton btn_SendToPOS;
         public System.Windows.Forms.TextBox txt_CustomerName;
+        public Telerik.WinControls.UI.RadButton btn_InstantCustomer;
     }
 }
