@@ -84,6 +84,7 @@
             this.dsCafe = new CafeApplication.Data.DataSet.DsCafe();
             this.setupTableAdapter = new CafeApplication.Data.DataSet.DsCafeTableAdapters.SetupTableAdapter();
             this.tableAdapterManager = new CafeApplication.Data.DataSet.DsCafeTableAdapters.TableAdapterManager();
+            this.Pnl_Items = new System.Windows.Forms.Panel();
             this.MainPanel.SuspendLayout();
             this.InnerPanel.SuspendLayout();
             this.Pnl_transaction.SuspendLayout();
@@ -124,13 +125,14 @@
             // MainPanel
             // 
             this.MainPanel.BackColor = System.Drawing.Color.Black;
+            this.MainPanel.Controls.Add(this.Pnl_Items);
             this.MainPanel.Controls.Add(this.InnerPanel);
             this.MainPanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.MainPanel.Location = new System.Drawing.Point(1129, 10);
+            this.MainPanel.Location = new System.Drawing.Point(1131, 10);
             this.MainPanel.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.MainPanel.Name = "MainPanel";
             this.MainPanel.Padding = new System.Windows.Forms.Padding(10);
-            this.MainPanel.Size = new System.Drawing.Size(370, 737);
+            this.MainPanel.Size = new System.Drawing.Size(368, 737);
             this.MainPanel.TabIndex = 0;
             // 
             // InnerPanel
@@ -147,7 +149,7 @@
             this.InnerPanel.Controls.Add(this.Pnl_reports);
             this.InnerPanel.Dock = System.Windows.Forms.DockStyle.Right;
             this.InnerPanel.Font = new System.Drawing.Font("Rokh Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.InnerPanel.Location = new System.Drawing.Point(1, 10);
+            this.InnerPanel.Location = new System.Drawing.Point(-1, 10);
             this.InnerPanel.Name = "InnerPanel";
             this.InnerPanel.Size = new System.Drawing.Size(359, 717);
             this.InnerPanel.TabIndex = 1;
@@ -727,6 +729,15 @@
             this.tableAdapterManager.UpdateOrder = CafeApplication.Data.DataSet.DsCafeTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.UsersTableAdapter = null;
             // 
+            // Pnl_Items
+            // 
+            this.Pnl_Items.BackColor = System.Drawing.Color.Transparent;
+            this.Pnl_Items.Dock = System.Windows.Forms.DockStyle.Right;
+            this.Pnl_Items.Location = new System.Drawing.Point(-361, 10);
+            this.Pnl_Items.Name = "Pnl_Items";
+            this.Pnl_Items.Size = new System.Drawing.Size(360, 717);
+            this.Pnl_Items.TabIndex = 2;
+            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -850,6 +861,7 @@
         private System.Windows.Forms.BindingSource setupBindingSource;
         private Data.DataSet.DsCafeTableAdapters.SetupTableAdapter setupTableAdapter;
         private Data.DataSet.DsCafeTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.Panel Pnl_Items;
     }
 }
 

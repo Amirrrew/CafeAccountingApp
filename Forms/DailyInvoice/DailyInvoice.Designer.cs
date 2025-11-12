@@ -38,6 +38,7 @@
             this.btn_ConfirmPurchase = new Telerik.WinControls.UI.RadButton();
             this.btn_addCustomer = new Telerik.WinControls.UI.RadButton();
             this.Pnl_Top = new System.Windows.Forms.Panel();
+            this.btn_InstantCustomer = new Telerik.WinControls.UI.RadButton();
             this.btn_SendToPOS = new Telerik.WinControls.UI.RadButton();
             this.txt_CustomerName = new System.Windows.Forms.TextBox();
             this.lbl_InvoiceDateTitle = new System.Windows.Forms.Label();
@@ -47,7 +48,7 @@
             this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dsCafe = new CafeApplication.Data.DataSet.DsCafe();
             this.object_5df848ca_f927_4389_812f_3545e39e23ab = new Telerik.WinControls.RootRadElement();
-            this.tooltip_AddCustomer = new System.Windows.Forms.ToolTip(this.components);
+            this.tooltip_Buttons = new System.Windows.Forms.ToolTip(this.components);
             this.Pnl_AllCategories = new System.Windows.Forms.Panel();
             this.Pnl_TotalAmount = new System.Windows.Forms.Panel();
             this.lbl_currency = new System.Windows.Forms.Label();
@@ -64,19 +65,18 @@
             this.TimerCurrentTime = new System.Windows.Forms.Timer(this.components);
             this.customersTableAdapter = new CafeApplication.Data.DataSet.DsCafeTableAdapters.CustomersTableAdapter();
             this.tableAdapterManager = new CafeApplication.Data.DataSet.DsCafeTableAdapters.TableAdapterManager();
-            this.btn_InstantCustomer = new Telerik.WinControls.UI.RadButton();
             this.Pnl_Actions.SuspendLayout();
             this.Pnl_ActionTitles.SuspendLayout();
             this.Pnl_ActionInner.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_ConfirmPurchase)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_addCustomer)).BeginInit();
             this.Pnl_Top.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_InstantCustomer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_SendToPOS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).BeginInit();
             this.Pnl_AllCategories.SuspendLayout();
             this.Pnl_TotalAmount.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_InstantCustomer)).BeginInit();
             this.SuspendLayout();
             // 
             // Pnl_Actions
@@ -151,6 +151,7 @@
             this.btn_ConfirmPurchase.Size = new System.Drawing.Size(55, 53);
             this.btn_ConfirmPurchase.TabIndex = 1;
             this.btn_ConfirmPurchase.Text = "-";
+            this.tooltip_Buttons.SetToolTip(this.btn_ConfirmPurchase, "ثبت نهایی فاکتور");
             this.btn_ConfirmPurchase.Click += new System.EventHandler(this.btn_ConfirmPurchase_Click);
             // 
             // btn_addCustomer
@@ -170,6 +171,7 @@
             this.btn_addCustomer.Size = new System.Drawing.Size(55, 53);
             this.btn_addCustomer.TabIndex = 0;
             this.btn_addCustomer.Text = "-";
+            this.tooltip_Buttons.SetToolTip(this.btn_addCustomer, "افزودن مشتری جدید");
             this.btn_addCustomer.Click += new System.EventHandler(this.btn_addCustomer_Click);
             // 
             // Pnl_Top
@@ -190,6 +192,25 @@
             this.Pnl_Top.TabIndex = 1;
             this.Pnl_Top.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // btn_InstantCustomer
+            // 
+            this.btn_InstantCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
+            this.btn_InstantCustomer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_InstantCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_InstantCustomer.DisplayStyle = Telerik.WinControls.DisplayStyle.Text;
+            this.btn_InstantCustomer.Font = new System.Drawing.Font("Rokh Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btn_InstantCustomer.ForeColor = System.Drawing.Color.White;
+            this.btn_InstantCustomer.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_InstantCustomer.Location = new System.Drawing.Point(762, 94);
+            this.btn_InstantCustomer.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_InstantCustomer.Name = "btn_InstantCustomer";
+            this.btn_InstantCustomer.Size = new System.Drawing.Size(120, 34);
+            this.btn_InstantCustomer.TabIndex = 23;
+            this.btn_InstantCustomer.Text = "مشتری نقدی";
+            this.tooltip_Buttons.SetToolTip(this.btn_InstantCustomer, "استفاده از مشتری پیشفرض");
+            this.btn_InstantCustomer.Visible = false;
+            this.btn_InstantCustomer.Click += new System.EventHandler(this.btn_InstantCustomer_Click);
+            // 
             // btn_SendToPOS
             // 
             this.btn_SendToPOS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
@@ -206,6 +227,7 @@
             this.btn_SendToPOS.Size = new System.Drawing.Size(106, 34);
             this.btn_SendToPOS.TabIndex = 22;
             this.btn_SendToPOS.Text = "جستجو";
+            this.tooltip_Buttons.SetToolTip(this.btn_SendToPOS, "جستجو بین مشتریان");
             this.btn_SendToPOS.Click += new System.EventHandler(this.btn_SendToPOS_Click);
             // 
             // txt_CustomerName
@@ -284,14 +306,12 @@
             this.object_5df848ca_f927_4389_812f_3545e39e23ab.StretchHorizontally = true;
             this.object_5df848ca_f927_4389_812f_3545e39e23ab.StretchVertically = true;
             // 
-            // tooltip_AddCustomer
+            // tooltip_Buttons
             // 
-            this.tooltip_AddCustomer.BackColor = System.Drawing.Color.Black;
-            this.tooltip_AddCustomer.ForeColor = System.Drawing.Color.White;
-            this.tooltip_AddCustomer.Tag = "برای افزودن یک مشتری جدید کلیک کنید";
-            this.tooltip_AddCustomer.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            this.tooltip_AddCustomer.ToolTipTitle = "افزودن مشتری جدید";
-            this.tooltip_AddCustomer.Popup += new System.Windows.Forms.PopupEventHandler(this.tooltip_AddCustomer_Popup);
+            this.tooltip_Buttons.BackColor = System.Drawing.Color.Transparent;
+            this.tooltip_Buttons.ForeColor = System.Drawing.Color.White;
+            this.tooltip_Buttons.Tag = "";
+            this.tooltip_Buttons.Popup += new System.Windows.Forms.PopupEventHandler(this.tooltip_AddCustomer_Popup);
             // 
             // Pnl_AllCategories
             // 
@@ -475,24 +495,6 @@
             this.tableAdapterManager.UpdateOrder = CafeApplication.Data.DataSet.DsCafeTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.UsersTableAdapter = null;
             // 
-            // btn_InstantCustomer
-            // 
-            this.btn_InstantCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
-            this.btn_InstantCustomer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_InstantCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_InstantCustomer.DisplayStyle = Telerik.WinControls.DisplayStyle.Text;
-            this.btn_InstantCustomer.Font = new System.Drawing.Font("Rokh Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btn_InstantCustomer.ForeColor = System.Drawing.Color.White;
-            this.btn_InstantCustomer.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_InstantCustomer.Location = new System.Drawing.Point(762, 94);
-            this.btn_InstantCustomer.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_InstantCustomer.Name = "btn_InstantCustomer";
-            this.btn_InstantCustomer.Size = new System.Drawing.Size(120, 34);
-            this.btn_InstantCustomer.TabIndex = 23;
-            this.btn_InstantCustomer.Text = "مشتری نقدی";
-            this.btn_InstantCustomer.Visible = false;
-            this.btn_InstantCustomer.Click += new System.EventHandler(this.btn_InstantCustomer_Click);
-            // 
             // DailyInvoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 21F);
@@ -522,13 +524,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_addCustomer)).EndInit();
             this.Pnl_Top.ResumeLayout(false);
             this.Pnl_Top.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_InstantCustomer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_SendToPOS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).EndInit();
             this.Pnl_AllCategories.ResumeLayout(false);
             this.Pnl_TotalAmount.ResumeLayout(false);
             this.Pnl_TotalAmount.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_InstantCustomer)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -540,7 +542,7 @@
         private System.Windows.Forms.Label lbl_customer;
         private Telerik.WinControls.RootRadElement object_5df848ca_f927_4389_812f_3545e39e23ab;
         public Telerik.WinControls.UI.RadButton btn_addCustomer;
-        private System.Windows.Forms.ToolTip tooltip_AddCustomer;
+        private System.Windows.Forms.ToolTip tooltip_Buttons;
         private System.Windows.Forms.Panel Pnl_ActionInner;
         public Telerik.WinControls.UI.RadButton btn_ConfirmPurchase;
         private System.Windows.Forms.Panel Pnl_ActionTitles;

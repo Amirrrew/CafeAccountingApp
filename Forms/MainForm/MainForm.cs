@@ -19,6 +19,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Telerik.WinControls;
+using Telerik.WinControls.UI;
 
 namespace CafeApplication
 {
@@ -70,14 +71,20 @@ namespace CafeApplication
             MainPanel.BackColor = Color.FromArgb(30, 0, 0, 1);
             UserPanel.BackColor = Color.FromArgb(30,0,0,1);
         }
-        public void ExpandMainPanel()
+        public void ExpandMainPanel(RadButton btn)
         {
+            string openPath = Application.StartupPath + @"/Assets/Icons/chevron-left (2).png";
+            string closePath = Application.StartupPath + @"/Assets/Icons/Public/chevron-right (2).png";
+
+
             if (MainPanel.Width < 700)
             {
                 MainPanel.Size = new Size(742, 729);
+                btn.Image = Image.FromFile(closePath);
             } else
             {
                 MainPanel.Size = new Size(368, 729);
+                btn.Image = Image.FromFile(openPath);
             }
         }
         
@@ -148,7 +155,7 @@ namespace CafeApplication
 
         private void btn_products_Click(object sender, EventArgs e)
         {
-
+            ExpandMainPanel(btn_products);
         } //------------- open product management form
 
         private void btn_employee_Click(object sender, EventArgs e)

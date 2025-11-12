@@ -15,7 +15,7 @@ namespace CafeApplication.Forms.DailyFactor
             InitializeComponent();
             blur.SetBlurBack(this);
             fontSet.SetFont(this);
-            tooltip_AddCustomer.SetToolTip(btn_addCustomer, "افزودن مشتری جدید");
+            tooltip_Buttons.SetToolTip(btn_addCustomer, "افزودن مشتری جدید");
             lblDate.Text = $"{gt.GetYear()}/{gt.GetMonth()}/{gt.GetDay()}";
         }
         //-------------- load classes ---------
