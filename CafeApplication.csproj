@@ -76,6 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\PublicClasses\BackBlur.cs" />
+    <Compile Include="Classes\PublicClasses\MainPanelTiles.cs" />
     <Compile Include="Classes\PublicClasses\FontSet.cs" />
     <Compile Include="Classes\PublicClasses\NumberSeperate.cs" />
     <Compile Include="Classes\PublicClasses\Number_decimal_format.cs" />
@@ -278,7 +279,6 @@
   <ItemGroup>
     <Folder Include="Assets\Images\" />
     <Folder Include="Assets\Posters\" />
-    <Folder Include="Classes\MainForm\" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">

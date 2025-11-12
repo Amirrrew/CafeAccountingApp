@@ -159,7 +159,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnNo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconBox)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.ResumeLayout(false);
+            //this.ResumeLayout(false);
             this.PerformLayout();
 
         }
