@@ -31,6 +31,22 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.MainPanel = new System.Windows.Forms.Panel();
+            this.Pnl_Items = new System.Windows.Forms.Panel();
+            this.lbl_Option14 = new System.Windows.Forms.Label();
+            this.lbl_Option13 = new System.Windows.Forms.Label();
+            this.lbl_Option12 = new System.Windows.Forms.Label();
+            this.lbl_Option11 = new System.Windows.Forms.Label();
+            this.lbl_Option10 = new System.Windows.Forms.Label();
+            this.lbl_Option9 = new System.Windows.Forms.Label();
+            this.lbl_Option8 = new System.Windows.Forms.Label();
+            this.lbl_Option7 = new System.Windows.Forms.Label();
+            this.lbl_Option6 = new System.Windows.Forms.Label();
+            this.lbl_Option5 = new System.Windows.Forms.Label();
+            this.lbl_Option4 = new System.Windows.Forms.Label();
+            this.lbl_Option3 = new System.Windows.Forms.Label();
+            this.lbl_Option2 = new System.Windows.Forms.Label();
+            this.lbl_Option1 = new System.Windows.Forms.Label();
+            this.lbl_OptionsTitle = new System.Windows.Forms.Label();
             this.InnerPanel = new System.Windows.Forms.Panel();
             this.Pnl_transaction = new System.Windows.Forms.Panel();
             this.Iconbox_transaction = new System.Windows.Forms.PictureBox();
@@ -69,7 +85,7 @@
             this.btn_reports = new Telerik.WinControls.UI.RadButton();
             this.lbl_reports = new System.Windows.Forms.Label();
             this.UserPanel = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.Pnl_User = new System.Windows.Forms.Panel();
             this.lbl_userRole = new System.Windows.Forms.Label();
             this.Iconbox_userPic = new System.Windows.Forms.PictureBox();
             this.btn_userSettings = new Telerik.WinControls.UI.RadButton();
@@ -84,8 +100,8 @@
             this.dsCafe = new CafeApplication.Data.DataSet.DsCafe();
             this.setupTableAdapter = new CafeApplication.Data.DataSet.DsCafeTableAdapters.SetupTableAdapter();
             this.tableAdapterManager = new CafeApplication.Data.DataSet.DsCafeTableAdapters.TableAdapterManager();
-            this.Pnl_Items = new System.Windows.Forms.Panel();
             this.MainPanel.SuspendLayout();
+            this.Pnl_Items.SuspendLayout();
             this.InnerPanel.SuspendLayout();
             this.Pnl_transaction.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Iconbox_transaction)).BeginInit();
@@ -115,7 +131,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Iconbox_reports)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_reports)).BeginInit();
             this.UserPanel.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.Pnl_User.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Iconbox_userPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_userSettings)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.setupBindingSource)).BeginInit();
@@ -134,6 +150,279 @@
             this.MainPanel.Padding = new System.Windows.Forms.Padding(10);
             this.MainPanel.Size = new System.Drawing.Size(368, 737);
             this.MainPanel.TabIndex = 0;
+            // 
+            // Pnl_Items
+            // 
+            this.Pnl_Items.BackColor = System.Drawing.Color.Transparent;
+            this.Pnl_Items.Controls.Add(this.lbl_Option14);
+            this.Pnl_Items.Controls.Add(this.lbl_Option13);
+            this.Pnl_Items.Controls.Add(this.lbl_Option12);
+            this.Pnl_Items.Controls.Add(this.lbl_Option11);
+            this.Pnl_Items.Controls.Add(this.lbl_Option10);
+            this.Pnl_Items.Controls.Add(this.lbl_Option9);
+            this.Pnl_Items.Controls.Add(this.lbl_Option8);
+            this.Pnl_Items.Controls.Add(this.lbl_Option7);
+            this.Pnl_Items.Controls.Add(this.lbl_Option6);
+            this.Pnl_Items.Controls.Add(this.lbl_Option5);
+            this.Pnl_Items.Controls.Add(this.lbl_Option4);
+            this.Pnl_Items.Controls.Add(this.lbl_Option3);
+            this.Pnl_Items.Controls.Add(this.lbl_Option2);
+            this.Pnl_Items.Controls.Add(this.lbl_Option1);
+            this.Pnl_Items.Controls.Add(this.lbl_OptionsTitle);
+            this.Pnl_Items.Dock = System.Windows.Forms.DockStyle.Right;
+            this.Pnl_Items.Location = new System.Drawing.Point(-361, 10);
+            this.Pnl_Items.Name = "Pnl_Items";
+            this.Pnl_Items.Size = new System.Drawing.Size(360, 717);
+            this.Pnl_Items.TabIndex = 2;
+            // 
+            // lbl_Option14
+            // 
+            this.lbl_Option14.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbl_Option14.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbl_Option14.Font = new System.Drawing.Font("RokhFaNum Normal", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_Option14.Image = ((System.Drawing.Image)(resources.GetObject("lbl_Option14.Image")));
+            this.lbl_Option14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_Option14.Location = new System.Drawing.Point(0, 650);
+            this.lbl_Option14.Name = "lbl_Option14";
+            this.lbl_Option14.Padding = new System.Windows.Forms.Padding(180, 0, 10, 0);
+            this.lbl_Option14.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lbl_Option14.Size = new System.Drawing.Size(360, 47);
+            this.lbl_Option14.TabIndex = 14;
+            this.lbl_Option14.Text = "گزینه شماره 14";
+            this.lbl_Option14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_Option14.Visible = false;
+            // 
+            // lbl_Option13
+            // 
+            this.lbl_Option13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbl_Option13.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbl_Option13.Font = new System.Drawing.Font("RokhFaNum Normal", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_Option13.Image = ((System.Drawing.Image)(resources.GetObject("lbl_Option13.Image")));
+            this.lbl_Option13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_Option13.Location = new System.Drawing.Point(0, 603);
+            this.lbl_Option13.Name = "lbl_Option13";
+            this.lbl_Option13.Padding = new System.Windows.Forms.Padding(180, 0, 10, 0);
+            this.lbl_Option13.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lbl_Option13.Size = new System.Drawing.Size(360, 47);
+            this.lbl_Option13.TabIndex = 13;
+            this.lbl_Option13.Text = "گزینه شماره 13";
+            this.lbl_Option13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_Option13.Visible = false;
+            // 
+            // lbl_Option12
+            // 
+            this.lbl_Option12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbl_Option12.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbl_Option12.Font = new System.Drawing.Font("RokhFaNum Normal", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_Option12.Image = ((System.Drawing.Image)(resources.GetObject("lbl_Option12.Image")));
+            this.lbl_Option12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_Option12.Location = new System.Drawing.Point(0, 556);
+            this.lbl_Option12.Name = "lbl_Option12";
+            this.lbl_Option12.Padding = new System.Windows.Forms.Padding(180, 0, 10, 0);
+            this.lbl_Option12.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lbl_Option12.Size = new System.Drawing.Size(360, 47);
+            this.lbl_Option12.TabIndex = 12;
+            this.lbl_Option12.Text = "گزینه شماره 12";
+            this.lbl_Option12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_Option12.Visible = false;
+            // 
+            // lbl_Option11
+            // 
+            this.lbl_Option11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbl_Option11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbl_Option11.Font = new System.Drawing.Font("RokhFaNum Normal", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_Option11.Image = ((System.Drawing.Image)(resources.GetObject("lbl_Option11.Image")));
+            this.lbl_Option11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_Option11.Location = new System.Drawing.Point(0, 509);
+            this.lbl_Option11.Name = "lbl_Option11";
+            this.lbl_Option11.Padding = new System.Windows.Forms.Padding(180, 0, 10, 0);
+            this.lbl_Option11.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lbl_Option11.Size = new System.Drawing.Size(360, 47);
+            this.lbl_Option11.TabIndex = 11;
+            this.lbl_Option11.Text = "گزینه شماره 11";
+            this.lbl_Option11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_Option11.Visible = false;
+            // 
+            // lbl_Option10
+            // 
+            this.lbl_Option10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbl_Option10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbl_Option10.Font = new System.Drawing.Font("RokhFaNum Normal", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_Option10.Image = ((System.Drawing.Image)(resources.GetObject("lbl_Option10.Image")));
+            this.lbl_Option10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_Option10.Location = new System.Drawing.Point(0, 462);
+            this.lbl_Option10.Name = "lbl_Option10";
+            this.lbl_Option10.Padding = new System.Windows.Forms.Padding(180, 0, 10, 0);
+            this.lbl_Option10.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lbl_Option10.Size = new System.Drawing.Size(360, 47);
+            this.lbl_Option10.TabIndex = 10;
+            this.lbl_Option10.Text = "گزینه شماره 10";
+            this.lbl_Option10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_Option10.Visible = false;
+            // 
+            // lbl_Option9
+            // 
+            this.lbl_Option9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbl_Option9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbl_Option9.Font = new System.Drawing.Font("RokhFaNum Normal", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_Option9.Image = ((System.Drawing.Image)(resources.GetObject("lbl_Option9.Image")));
+            this.lbl_Option9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_Option9.Location = new System.Drawing.Point(0, 415);
+            this.lbl_Option9.Name = "lbl_Option9";
+            this.lbl_Option9.Padding = new System.Windows.Forms.Padding(180, 0, 10, 0);
+            this.lbl_Option9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lbl_Option9.Size = new System.Drawing.Size(360, 47);
+            this.lbl_Option9.TabIndex = 9;
+            this.lbl_Option9.Text = "گزینه شماره 9";
+            this.lbl_Option9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_Option9.Visible = false;
+            // 
+            // lbl_Option8
+            // 
+            this.lbl_Option8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbl_Option8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbl_Option8.Font = new System.Drawing.Font("RokhFaNum Normal", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_Option8.Image = ((System.Drawing.Image)(resources.GetObject("lbl_Option8.Image")));
+            this.lbl_Option8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_Option8.Location = new System.Drawing.Point(0, 368);
+            this.lbl_Option8.Name = "lbl_Option8";
+            this.lbl_Option8.Padding = new System.Windows.Forms.Padding(180, 0, 10, 0);
+            this.lbl_Option8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lbl_Option8.Size = new System.Drawing.Size(360, 47);
+            this.lbl_Option8.TabIndex = 8;
+            this.lbl_Option8.Text = "گزینه شماره 8";
+            this.lbl_Option8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_Option8.Visible = false;
+            // 
+            // lbl_Option7
+            // 
+            this.lbl_Option7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbl_Option7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbl_Option7.Font = new System.Drawing.Font("RokhFaNum Normal", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_Option7.Image = ((System.Drawing.Image)(resources.GetObject("lbl_Option7.Image")));
+            this.lbl_Option7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_Option7.Location = new System.Drawing.Point(0, 321);
+            this.lbl_Option7.Name = "lbl_Option7";
+            this.lbl_Option7.Padding = new System.Windows.Forms.Padding(180, 0, 10, 0);
+            this.lbl_Option7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lbl_Option7.Size = new System.Drawing.Size(360, 47);
+            this.lbl_Option7.TabIndex = 7;
+            this.lbl_Option7.Text = "گزینه شماره 7";
+            this.lbl_Option7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_Option7.Visible = false;
+            // 
+            // lbl_Option6
+            // 
+            this.lbl_Option6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbl_Option6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbl_Option6.Font = new System.Drawing.Font("RokhFaNum Normal", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_Option6.Image = ((System.Drawing.Image)(resources.GetObject("lbl_Option6.Image")));
+            this.lbl_Option6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_Option6.Location = new System.Drawing.Point(0, 274);
+            this.lbl_Option6.Name = "lbl_Option6";
+            this.lbl_Option6.Padding = new System.Windows.Forms.Padding(180, 0, 10, 0);
+            this.lbl_Option6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lbl_Option6.Size = new System.Drawing.Size(360, 47);
+            this.lbl_Option6.TabIndex = 6;
+            this.lbl_Option6.Text = "گزینه شماره 6";
+            this.lbl_Option6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_Option6.Visible = false;
+            // 
+            // lbl_Option5
+            // 
+            this.lbl_Option5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbl_Option5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbl_Option5.Font = new System.Drawing.Font("RokhFaNum Normal", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_Option5.Image = ((System.Drawing.Image)(resources.GetObject("lbl_Option5.Image")));
+            this.lbl_Option5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_Option5.Location = new System.Drawing.Point(0, 227);
+            this.lbl_Option5.Name = "lbl_Option5";
+            this.lbl_Option5.Padding = new System.Windows.Forms.Padding(180, 0, 10, 0);
+            this.lbl_Option5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lbl_Option5.Size = new System.Drawing.Size(360, 47);
+            this.lbl_Option5.TabIndex = 5;
+            this.lbl_Option5.Text = "گزینه شماره 5";
+            this.lbl_Option5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_Option5.Visible = false;
+            // 
+            // lbl_Option4
+            // 
+            this.lbl_Option4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbl_Option4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbl_Option4.Font = new System.Drawing.Font("RokhFaNum Normal", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_Option4.Image = ((System.Drawing.Image)(resources.GetObject("lbl_Option4.Image")));
+            this.lbl_Option4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_Option4.Location = new System.Drawing.Point(0, 180);
+            this.lbl_Option4.Name = "lbl_Option4";
+            this.lbl_Option4.Padding = new System.Windows.Forms.Padding(180, 0, 10, 0);
+            this.lbl_Option4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lbl_Option4.Size = new System.Drawing.Size(360, 47);
+            this.lbl_Option4.TabIndex = 4;
+            this.lbl_Option4.Text = "گزینه شماره 4";
+            this.lbl_Option4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_Option4.Visible = false;
+            // 
+            // lbl_Option3
+            // 
+            this.lbl_Option3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbl_Option3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbl_Option3.Font = new System.Drawing.Font("RokhFaNum Normal", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_Option3.Image = ((System.Drawing.Image)(resources.GetObject("lbl_Option3.Image")));
+            this.lbl_Option3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_Option3.Location = new System.Drawing.Point(0, 133);
+            this.lbl_Option3.Name = "lbl_Option3";
+            this.lbl_Option3.Padding = new System.Windows.Forms.Padding(180, 0, 10, 0);
+            this.lbl_Option3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lbl_Option3.Size = new System.Drawing.Size(360, 47);
+            this.lbl_Option3.TabIndex = 3;
+            this.lbl_Option3.Text = "گزینه شماره 3";
+            this.lbl_Option3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_Option3.Visible = false;
+            // 
+            // lbl_Option2
+            // 
+            this.lbl_Option2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbl_Option2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbl_Option2.Font = new System.Drawing.Font("RokhFaNum Normal", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_Option2.Image = ((System.Drawing.Image)(resources.GetObject("lbl_Option2.Image")));
+            this.lbl_Option2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_Option2.Location = new System.Drawing.Point(0, 86);
+            this.lbl_Option2.Name = "lbl_Option2";
+            this.lbl_Option2.Padding = new System.Windows.Forms.Padding(180, 0, 10, 0);
+            this.lbl_Option2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lbl_Option2.Size = new System.Drawing.Size(360, 47);
+            this.lbl_Option2.TabIndex = 2;
+            this.lbl_Option2.Text = "گزینه شماره 2";
+            this.lbl_Option2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_Option2.Visible = false;
+            // 
+            // lbl_Option1
+            // 
+            this.lbl_Option1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbl_Option1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbl_Option1.Font = new System.Drawing.Font("RokhFaNum Normal", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_Option1.Image = ((System.Drawing.Image)(resources.GetObject("lbl_Option1.Image")));
+            this.lbl_Option1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_Option1.Location = new System.Drawing.Point(0, 39);
+            this.lbl_Option1.Name = "lbl_Option1";
+            this.lbl_Option1.Padding = new System.Windows.Forms.Padding(180, 0, 10, 0);
+            this.lbl_Option1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lbl_Option1.Size = new System.Drawing.Size(360, 47);
+            this.lbl_Option1.TabIndex = 1;
+            this.lbl_Option1.Text = "گزینه شماره 1";
+            this.lbl_Option1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_Option1.Visible = false;
+            // 
+            // lbl_OptionsTitle
+            // 
+            this.lbl_OptionsTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbl_OptionsTitle.Font = new System.Drawing.Font("Rokh Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_OptionsTitle.Location = new System.Drawing.Point(0, 0);
+            this.lbl_OptionsTitle.Name = "lbl_OptionsTitle";
+            this.lbl_OptionsTitle.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lbl_OptionsTitle.Size = new System.Drawing.Size(360, 39);
+            this.lbl_OptionsTitle.TabIndex = 0;
+            this.lbl_OptionsTitle.Text = "عنوان تب انتخاب شده";
             // 
             // InnerPanel
             // 
@@ -580,7 +869,7 @@
             // UserPanel
             // 
             this.UserPanel.BackColor = System.Drawing.Color.Black;
-            this.UserPanel.Controls.Add(this.panel1);
+            this.UserPanel.Controls.Add(this.Pnl_User);
             this.UserPanel.Location = new System.Drawing.Point(10, 441);
             this.UserPanel.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.UserPanel.Name = "UserPanel";
@@ -588,18 +877,18 @@
             this.UserPanel.Size = new System.Drawing.Size(366, 301);
             this.UserPanel.TabIndex = 1;
             // 
-            // panel1
+            // Pnl_User
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(4)))));
-            this.panel1.Controls.Add(this.lbl_userRole);
-            this.panel1.Controls.Add(this.Iconbox_userPic);
-            this.panel1.Controls.Add(this.btn_userSettings);
-            this.panel1.Controls.Add(this.lbl_userName);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(10, 217);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(346, 74);
-            this.panel1.TabIndex = 14;
+            this.Pnl_User.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(4)))));
+            this.Pnl_User.Controls.Add(this.lbl_userRole);
+            this.Pnl_User.Controls.Add(this.Iconbox_userPic);
+            this.Pnl_User.Controls.Add(this.btn_userSettings);
+            this.Pnl_User.Controls.Add(this.lbl_userName);
+            this.Pnl_User.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.Pnl_User.Location = new System.Drawing.Point(10, 217);
+            this.Pnl_User.Name = "Pnl_User";
+            this.Pnl_User.Size = new System.Drawing.Size(346, 74);
+            this.Pnl_User.TabIndex = 14;
             // 
             // lbl_userRole
             // 
@@ -729,15 +1018,6 @@
             this.tableAdapterManager.UpdateOrder = CafeApplication.Data.DataSet.DsCafeTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.UsersTableAdapter = null;
             // 
-            // Pnl_Items
-            // 
-            this.Pnl_Items.BackColor = System.Drawing.Color.Transparent;
-            this.Pnl_Items.Dock = System.Windows.Forms.DockStyle.Right;
-            this.Pnl_Items.Location = new System.Drawing.Point(-361, 10);
-            this.Pnl_Items.Name = "Pnl_Items";
-            this.Pnl_Items.Size = new System.Drawing.Size(360, 717);
-            this.Pnl_Items.TabIndex = 2;
-            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -762,10 +1042,11 @@
             this.Padding = new System.Windows.Forms.Padding(10);
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "salam";
+            this.Text = "کافینو";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.MainPanel.ResumeLayout(false);
+            this.Pnl_Items.ResumeLayout(false);
             this.InnerPanel.ResumeLayout(false);
             this.Pnl_transaction.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Iconbox_transaction)).EndInit();
@@ -795,7 +1076,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Iconbox_reports)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_reports)).EndInit();
             this.UserPanel.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
+            this.Pnl_User.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Iconbox_userPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_userSettings)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.setupBindingSource)).EndInit();
@@ -806,8 +1087,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel MainPanel;
         private System.Windows.Forms.Panel UserPanel;
         private System.Windows.Forms.Panel InnerPanel;
         private System.Windows.Forms.Label lblCurrentTime;
@@ -853,7 +1132,7 @@
         private System.Windows.Forms.Label lbl_products;
         private System.Windows.Forms.Label lbl_CustomerManage;
         public Telerik.WinControls.UI.RadButton btn_userSettings;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel Pnl_User;
         private System.Windows.Forms.PictureBox Iconbox_userPic;
         private System.Windows.Forms.Label lbl_userName;
         private System.Windows.Forms.Label lbl_userRole;
@@ -862,6 +1141,22 @@
         private Data.DataSet.DsCafeTableAdapters.SetupTableAdapter setupTableAdapter;
         private Data.DataSet.DsCafeTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.Panel Pnl_Items;
+        public System.Windows.Forms.Label lbl_Option1;
+        public System.Windows.Forms.Label lbl_Option14;
+        public System.Windows.Forms.Label lbl_Option13;
+        public System.Windows.Forms.Label lbl_Option12;
+        public System.Windows.Forms.Label lbl_Option11;
+        public System.Windows.Forms.Label lbl_Option10;
+        public System.Windows.Forms.Label lbl_Option9;
+        public System.Windows.Forms.Label lbl_Option8;
+        public System.Windows.Forms.Label lbl_Option7;
+        public System.Windows.Forms.Label lbl_Option6;
+        public System.Windows.Forms.Label lbl_Option5;
+        public System.Windows.Forms.Label lbl_Option4;
+        public System.Windows.Forms.Label lbl_Option3;
+        public System.Windows.Forms.Label lbl_Option2;
+        public System.Windows.Forms.Label lbl_OptionsTitle;
+        public System.Windows.Forms.Panel MainPanel;
     }
 }
 

@@ -179,4 +179,5 @@ C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Public\continue-I
 C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\bin\Debug\Assets\Icons\Public\continue-Icon.png
 C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Public\chevron-right (2).png
 C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\chevron-right (2).png
-C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\bin\Debug\Assets\Icons\Public\chevron-right (2).png
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\Products\manageProducts-Icon.png
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\Products\service-Icon.png
