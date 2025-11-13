@@ -37,6 +37,11 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
             this.lbl_dailyInvoice = new System.Windows.Forms.Label();
             this.txt_SearchBox = new System.Windows.Forms.TextBox();
             this.lbl_Search = new System.Windows.Forms.Label();
@@ -51,14 +56,17 @@
             this.dsCafe = new CafeApplication.Data.DataSet.DsCafe();
             this.customersTableAdapter = new CafeApplication.Data.DataSet.DsCafeTableAdapters.CustomersTableAdapter();
             this.tableAdapterManager = new CafeApplication.Data.DataSet.DsCafeTableAdapters.TableAdapterManager();
-            this.Cmb_SearchFrame = new System.Windows.Forms.ComboBox();
             this.btn_EndSearch = new Telerik.WinControls.UI.RadButton();
             this.lbl_SearchResult = new System.Windows.Forms.Label();
             this.lbl_ResultTitle = new System.Windows.Forms.Label();
+            this.Cmb_SearchFrame = new Telerik.WinControls.UI.RadMultiColumnComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.tbl_Customers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_EndSearch)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cmb_SearchFrame)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cmb_SearchFrame.EditorControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cmb_SearchFrame.EditorControl.MasterTemplate)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_dailyInvoice
@@ -152,7 +160,7 @@
             this.tbl_Customers.DataSource = this.customersBindingSource;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("RokhFaNum Normal", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Rokh Normal", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -274,25 +282,6 @@
             this.tableAdapterManager.UpdateOrder = CafeApplication.Data.DataSet.DsCafeTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.UsersTableAdapter = null;
             // 
-            // Cmb_SearchFrame
-            // 
-            this.Cmb_SearchFrame.BackColor = System.Drawing.Color.Black;
-            this.Cmb_SearchFrame.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Cmb_SearchFrame.Font = new System.Drawing.Font("RokhFaNum Normal", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.Cmb_SearchFrame.ForeColor = System.Drawing.Color.White;
-            this.Cmb_SearchFrame.FormattingEnabled = true;
-            this.Cmb_SearchFrame.Items.AddRange(new object[] {
-            "کد",
-            "نام و نام خانوادگی",
-            "شماره تلفن",
-            "آدرس"});
-            this.Cmb_SearchFrame.Location = new System.Drawing.Point(212, 92);
-            this.Cmb_SearchFrame.Name = "Cmb_SearchFrame";
-            this.Cmb_SearchFrame.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Cmb_SearchFrame.Size = new System.Drawing.Size(167, 32);
-            this.Cmb_SearchFrame.TabIndex = 19;
-            this.Cmb_SearchFrame.TextChanged += new System.EventHandler(this.Cmb_SearchFrame_TextChanged);
-            // 
             // btn_EndSearch
             // 
             this.btn_EndSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -334,19 +323,75 @@
             this.lbl_ResultTitle.Text = "مشتری انتخابی:";
             this.lbl_ResultTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // Cmb_SearchFrame
+            // 
+            this.Cmb_SearchFrame.AutoSize = false;
+            this.Cmb_SearchFrame.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Cmb_SearchFrame.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList;
+            // 
+            // Cmb_SearchFrame.NestedRadGridView
+            // 
+            this.Cmb_SearchFrame.EditorControl.BackColor = System.Drawing.SystemColors.Window;
+            this.Cmb_SearchFrame.EditorControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cmb_SearchFrame.EditorControl.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Cmb_SearchFrame.EditorControl.Location = new System.Drawing.Point(0, 0);
+            // 
+            // 
+            // 
+            this.Cmb_SearchFrame.EditorControl.MasterTemplate.AllowAddNewRow = false;
+            this.Cmb_SearchFrame.EditorControl.MasterTemplate.AllowCellContextMenu = false;
+            this.Cmb_SearchFrame.EditorControl.MasterTemplate.AllowColumnChooser = false;
+            gridViewTextBoxColumn1.HeaderText = "کد";
+            gridViewTextBoxColumn1.Name = "کد";
+            gridViewTextBoxColumn2.HeaderText = "نام و نام خانوادگی";
+            gridViewTextBoxColumn2.Name = "نام و نام خانوادگی";
+            gridViewTextBoxColumn3.HeaderText = "آدرس";
+            gridViewTextBoxColumn3.Name = "آدرس";
+            gridViewTextBoxColumn4.HeaderText = "شماره تلفن";
+            gridViewTextBoxColumn4.Name = "شماره تلفن";
+            this.Cmb_SearchFrame.EditorControl.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
+            gridViewTextBoxColumn1,
+            gridViewTextBoxColumn2,
+            gridViewTextBoxColumn3,
+            gridViewTextBoxColumn4});
+            this.Cmb_SearchFrame.EditorControl.MasterTemplate.EnableGrouping = false;
+            this.Cmb_SearchFrame.EditorControl.MasterTemplate.ShowFilteringRow = false;
+            this.Cmb_SearchFrame.EditorControl.MasterTemplate.ViewDefinition = tableViewDefinition1;
+            this.Cmb_SearchFrame.EditorControl.Name = "NestedRadGridView";
+            this.Cmb_SearchFrame.EditorControl.ReadOnly = true;
+            this.Cmb_SearchFrame.EditorControl.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.Cmb_SearchFrame.EditorControl.ShowGroupPanel = false;
+            this.Cmb_SearchFrame.EditorControl.Size = new System.Drawing.Size(240, 150);
+            this.Cmb_SearchFrame.EditorControl.TabIndex = 0;
+            this.Cmb_SearchFrame.Font = new System.Drawing.Font("RokhFaNum Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Cmb_SearchFrame.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Cmb_SearchFrame.Location = new System.Drawing.Point(203, 93);
+            this.Cmb_SearchFrame.Name = "Cmb_SearchFrame";
+            this.Cmb_SearchFrame.Padding = new System.Windows.Forms.Padding(0, 0, 7, 0);
+            this.Cmb_SearchFrame.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            // 
+            // 
+            // 
+            this.Cmb_SearchFrame.RootElement.BorderHighlightColor = System.Drawing.Color.Empty;
+            this.Cmb_SearchFrame.RootElement.BorderHighlightThickness = 0;
+            this.Cmb_SearchFrame.Size = new System.Drawing.Size(189, 34);
+            this.Cmb_SearchFrame.TabIndex = 32;
+            this.Cmb_SearchFrame.TabStop = false;
+            this.Cmb_SearchFrame.Text = "s";
+            // 
             // SearchCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(865, 496);
+            this.Controls.Add(this.Cmb_SearchFrame);
             this.Controls.Add(this.lbl_ResultTitle);
             this.Controls.Add(this.lbl_SearchResult);
             this.Controls.Add(this.btn_EndSearch);
             this.Controls.Add(this.tbl_Customers);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbl_Search);
-            this.Controls.Add(this.Cmb_SearchFrame);
             this.Controls.Add(this.txt_SearchBox);
             this.Controls.Add(this.lbl_dailyInvoice);
             this.DoubleBuffered = true;
@@ -366,6 +411,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_EndSearch)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cmb_SearchFrame.EditorControl.MasterTemplate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cmb_SearchFrame.EditorControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cmb_SearchFrame)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -387,9 +435,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        public System.Windows.Forms.ComboBox Cmb_SearchFrame;
         public Telerik.WinControls.UI.RadButton btn_EndSearch;
         private System.Windows.Forms.Label lbl_ResultTitle;
         public System.Windows.Forms.Label lbl_SearchResult;
+        public Telerik.WinControls.UI.RadMultiColumnComboBox Cmb_SearchFrame;
     }
 }

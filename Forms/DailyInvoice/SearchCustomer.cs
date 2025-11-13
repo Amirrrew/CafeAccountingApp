@@ -20,7 +20,8 @@ namespace CafeApplication.Forms.DailyInvoice
             blur.SetBlurBack(this);
             font.SetFont(this);
             btn.SetBtnColor(this);
-            Cmb_SearchFrame.SelectedIndex = 0;
+            Cmb_SearchFrame.BackColor = Color.FromArgb(30, 0, 0, 1);
+            //Cmb_SearchFrame.SelectedIndex = 0;
         }
 
         BackBlur blur = new BackBlur();
@@ -42,6 +43,8 @@ namespace CafeApplication.Forms.DailyInvoice
             // TODO: This line of code loads data into the 'dsCafe.Customers' table. You can move, or remove it, as needed.
             this.customersTableAdapter.Fill(this.dsCafe.Customers);
             txt_SearchBox.Focus();
+
+            
         }
 
 

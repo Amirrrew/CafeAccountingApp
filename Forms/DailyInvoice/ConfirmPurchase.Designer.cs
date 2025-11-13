@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfirmPurchase));
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition4 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
             this.lbl_Title = new System.Windows.Forms.Label();
             this.lbl_totalLabel = new System.Windows.Forms.Label();
             this.txt_TotalPrice = new System.Windows.Forms.TextBox();
@@ -250,6 +250,7 @@
             // 
             this.Cmb_SelectedPOS.AutoSize = false;
             this.Cmb_SelectedPOS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Cmb_SelectedPOS.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList;
             // 
             // Cmb_SelectedPOS.NestedRadGridView
             // 
@@ -265,14 +266,14 @@
             this.Cmb_SelectedPOS.EditorControl.MasterTemplate.AllowColumnChooser = false;
             this.Cmb_SelectedPOS.EditorControl.MasterTemplate.EnableGrouping = false;
             this.Cmb_SelectedPOS.EditorControl.MasterTemplate.ShowFilteringRow = false;
-            this.Cmb_SelectedPOS.EditorControl.MasterTemplate.ViewDefinition = tableViewDefinition4;
+            this.Cmb_SelectedPOS.EditorControl.MasterTemplate.ViewDefinition = tableViewDefinition1;
             this.Cmb_SelectedPOS.EditorControl.Name = "NestedRadGridView";
             this.Cmb_SelectedPOS.EditorControl.ReadOnly = true;
             this.Cmb_SelectedPOS.EditorControl.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Cmb_SelectedPOS.EditorControl.ShowGroupPanel = false;
             this.Cmb_SelectedPOS.EditorControl.Size = new System.Drawing.Size(240, 150);
             this.Cmb_SelectedPOS.EditorControl.TabIndex = 0;
-            this.Cmb_SelectedPOS.Font = new System.Drawing.Font("Rokh", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Cmb_SelectedPOS.Font = new System.Drawing.Font("RokhFaNum Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Cmb_SelectedPOS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Cmb_SelectedPOS.Location = new System.Drawing.Point(13, 394);
             this.Cmb_SelectedPOS.Name = "Cmb_SelectedPOS";
