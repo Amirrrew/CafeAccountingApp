@@ -14,6 +14,7 @@ using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Telerik.WinControls;
 using Telerik.WinControls.UI;
 
 namespace CafeApplication
@@ -28,6 +29,7 @@ namespace CafeApplication
             fontSet.SetFont(this); //----> sets font of the form
             SetCurrentTime(); //------> sets current time for mainform labels
             CheckSetupDone(); // -----> checks if first time setup is done
+            btn.SetBtnColor(this); //------> sets buttons default color
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -42,6 +44,7 @@ namespace CafeApplication
         BackBlur blur = new BackBlur();
         FontSet fontSet = new FontSet();
         CustomMessage msg = new CustomMessage();
+        BtnDefaultStyle btn = new BtnDefaultStyle();
         string ProdIconPath = Application.StartupPath + @"/Assets/Icons/Mainmenu/Products/";
 
 
@@ -68,6 +71,10 @@ namespace CafeApplication
             UserPanel.BackColor = Color.FromArgb(30,0,0,1);
         }
 
+
+
+
+        
 
 
         //---------------------- Timing classes and Events ---------------

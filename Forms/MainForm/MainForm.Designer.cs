@@ -541,8 +541,8 @@
             // 
             this.Pnl_DailyInvoice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(4)))));
             this.Pnl_DailyInvoice.Controls.Add(this.Iconbox_DailyInvoice);
-            this.Pnl_DailyInvoice.Controls.Add(this.btn_DailyInvoice);
             this.Pnl_DailyInvoice.Controls.Add(this.lbl_DailyInvoice);
+            this.Pnl_DailyInvoice.Controls.Add(this.btn_DailyInvoice);
             this.Pnl_DailyInvoice.Location = new System.Drawing.Point(11, 2);
             this.Pnl_DailyInvoice.Name = "Pnl_DailyInvoice";
             this.Pnl_DailyInvoice.Size = new System.Drawing.Size(346, 74);
@@ -566,7 +566,7 @@
             this.btn_DailyInvoice.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
             this.btn_DailyInvoice.Image = ((System.Drawing.Image)(resources.GetObject("btn_DailyInvoice.Image")));
             this.btn_DailyInvoice.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_DailyInvoice.Location = new System.Drawing.Point(21, 20);
+            this.btn_DailyInvoice.Location = new System.Drawing.Point(21, 19);
             this.btn_DailyInvoice.Margin = new System.Windows.Forms.Padding(4);
             this.btn_DailyInvoice.Name = "btn_DailyInvoice";
             this.btn_DailyInvoice.Size = new System.Drawing.Size(34, 34);

@@ -76,6 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\PublicClasses\BackBlur.cs" />
+    <Compile Include="Classes\PublicClasses\BtnDefaultStyle.cs" />
     <Compile Include="Classes\PublicClasses\FontSet.cs" />
     <Compile Include="Classes\PublicClasses\NumberSeperate.cs" />
     <Compile Include="Classes\PublicClasses\Number_decimal_format.cs" />
