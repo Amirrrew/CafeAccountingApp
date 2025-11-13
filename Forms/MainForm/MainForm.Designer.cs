@@ -190,6 +190,7 @@
             this.lbl_Option14.TabIndex = 14;
             this.lbl_Option14.Text = "گزینه شماره 14";
             this.lbl_Option14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_Option14.Visible = false;
             // 
             // lbl_Option13
             // 
@@ -206,6 +207,7 @@
             this.lbl_Option13.TabIndex = 13;
             this.lbl_Option13.Text = "گزینه شماره 13";
             this.lbl_Option13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_Option13.Visible = false;
             // 
             // lbl_Option12
             // 
@@ -222,6 +224,7 @@
             this.lbl_Option12.TabIndex = 12;
             this.lbl_Option12.Text = "گزینه شماره 12";
             this.lbl_Option12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_Option12.Visible = false;
             // 
             // lbl_Option11
             // 
@@ -238,6 +241,7 @@
             this.lbl_Option11.TabIndex = 11;
             this.lbl_Option11.Text = "گزینه شماره 11";
             this.lbl_Option11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_Option11.Visible = false;
             // 
             // lbl_Option10
             // 
@@ -254,6 +258,7 @@
             this.lbl_Option10.TabIndex = 10;
             this.lbl_Option10.Text = "گزینه شماره 10";
             this.lbl_Option10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_Option10.Visible = false;
             // 
             // lbl_Option9
             // 
@@ -270,6 +275,7 @@
             this.lbl_Option9.TabIndex = 9;
             this.lbl_Option9.Text = "گزینه شماره 9";
             this.lbl_Option9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_Option9.Visible = false;
             // 
             // lbl_Option8
             // 
@@ -286,6 +292,7 @@
             this.lbl_Option8.TabIndex = 8;
             this.lbl_Option8.Text = "گزینه شماره 8";
             this.lbl_Option8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_Option8.Visible = false;
             // 
             // lbl_Option7
             // 
@@ -302,6 +309,7 @@
             this.lbl_Option7.TabIndex = 7;
             this.lbl_Option7.Text = "گزینه شماره 7";
             this.lbl_Option7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_Option7.Visible = false;
             // 
             // lbl_Option6
             // 
@@ -318,6 +326,7 @@
             this.lbl_Option6.TabIndex = 6;
             this.lbl_Option6.Text = "گزینه شماره 6";
             this.lbl_Option6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_Option6.Visible = false;
             // 
             // lbl_Option5
             // 
@@ -334,6 +343,7 @@
             this.lbl_Option5.TabIndex = 5;
             this.lbl_Option5.Text = "گزینه شماره 5";
             this.lbl_Option5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_Option5.Visible = false;
             // 
             // lbl_Option4
             // 
@@ -350,6 +360,7 @@
             this.lbl_Option4.TabIndex = 4;
             this.lbl_Option4.Text = "گزینه شماره 4";
             this.lbl_Option4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_Option4.Visible = false;
             // 
             // lbl_Option3
             // 
@@ -366,6 +377,7 @@
             this.lbl_Option3.TabIndex = 3;
             this.lbl_Option3.Text = "گزینه شماره 3";
             this.lbl_Option3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_Option3.Visible = false;
             // 
             // lbl_Option2
             // 
@@ -382,6 +394,7 @@
             this.lbl_Option2.TabIndex = 2;
             this.lbl_Option2.Text = "گزینه شماره 2";
             this.lbl_Option2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_Option2.Visible = false;
             // 
             // lbl_Option1
             // 
@@ -398,6 +411,7 @@
             this.lbl_Option1.TabIndex = 1;
             this.lbl_Option1.Text = "گزینه شماره 1";
             this.lbl_Option1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_Option1.Visible = false;
             // 
             // lbl_OptionsTitle
             // 
@@ -1028,7 +1042,7 @@
             this.Padding = new System.Windows.Forms.Padding(10);
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "salam";
+            this.Text = "کافینو";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.MainPanel.ResumeLayout(false);
@@ -1073,8 +1087,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel MainPanel;
         private System.Windows.Forms.Panel UserPanel;
         private System.Windows.Forms.Panel InnerPanel;
         private System.Windows.Forms.Label lblCurrentTime;
@@ -1144,6 +1156,7 @@
         public System.Windows.Forms.Label lbl_Option3;
         public System.Windows.Forms.Label lbl_Option2;
         public System.Windows.Forms.Label lbl_OptionsTitle;
+        public System.Windows.Forms.Panel MainPanel;
     }
 }
 

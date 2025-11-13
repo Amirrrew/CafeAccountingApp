@@ -76,7 +76,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\PublicClasses\BackBlur.cs" />
-    <Compile Include="Classes\PublicClasses\MainPanelTiles.cs" />
     <Compile Include="Classes\PublicClasses\FontSet.cs" />
     <Compile Include="Classes\PublicClasses\NumberSeperate.cs" />
     <Compile Include="Classes\PublicClasses\Number_decimal_format.cs" />
@@ -266,6 +265,12 @@
     <None Include="Assets\Icons\Public\chevron-right %282%29.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="Assets\Icons\Mainmenu\Products\manageProducts-Icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Assets\Icons\Mainmenu\Products\service-Icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <Content Include="Assets\Wallpaper\DefaultWallpaper.jpg" />
     <Content Include="Assets\Wallpaper\Default_Wallpaper.jpeg" />
     <None Include="Data\Base\CafeAccountingDB.mdf">
@@ -279,6 +284,7 @@
   <ItemGroup>
     <Folder Include="Assets\Images\" />
     <Folder Include="Assets\Posters\" />
+    <Folder Include="Classes\MainFormClasses\" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">
