@@ -19,12 +19,15 @@ namespace CafeApplication.Forms.DailyInvoice
             InitializeComponent();
             blur.SetBlurBack(this);
             font.SetFont(this);
-            Cmb_SearchFrame.SelectedIndex = 0;
+            btn.SetBtnColor(this);
+            Cmb_SearchFrame.BackColor = Color.FromArgb(30, 0, 0, 1);
+            //Cmb_SearchFrame.SelectedIndex = 0;
         }
 
         BackBlur blur = new BackBlur();
         FontSet font = new FontSet();
         CustomMessage msg = new CustomMessage();
+        BtnDefaultStyle btn = new BtnDefaultStyle();
         CafeApplication.Forms.DailyFactor.DailyInvoice dailyInvoice = new CafeApplication.Forms.DailyFactor.DailyInvoice();
         string customerName;
 
@@ -40,6 +43,8 @@ namespace CafeApplication.Forms.DailyInvoice
             // TODO: This line of code loads data into the 'dsCafe.Customers' table. You can move, or remove it, as needed.
             this.customersTableAdapter.Fill(this.dsCafe.Customers);
             txt_SearchBox.Focus();
+
+            
         }
 
 

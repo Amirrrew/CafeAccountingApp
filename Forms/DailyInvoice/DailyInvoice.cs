@@ -15,6 +15,7 @@ namespace CafeApplication.Forms.DailyFactor
             InitializeComponent();
             blur.SetBlurBack(this);
             fontSet.SetFont(this);
+            btn.SetBtnColor(this);
             tooltip_Buttons.SetToolTip(btn_addCustomer, "افزودن مشتری جدید");
             lblDate.Text = $"{gt.GetYear()}/{gt.GetMonth()}/{gt.GetDay()}";
         }
@@ -23,6 +24,7 @@ namespace CafeApplication.Forms.DailyFactor
         BackBlur blur = new BackBlur();
         FontSet fontSet = new FontSet();
         CustomMessage msg = new CustomMessage();
+        BtnDefaultStyle btn = new BtnDefaultStyle();
         string defaultCustomer = "مشتری نقدی";
 
         private void DailyInvoice_Load(object sender, EventArgs e)

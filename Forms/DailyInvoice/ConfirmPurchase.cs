@@ -22,6 +22,8 @@ namespace CafeApplication.Forms.DailyInvoice
             blur.SetBlurBack(this);
             font.SetFont(this);
             PrepareForInvoice();
+            btn.SetBtnColor(this);
+            Cmb_SelectedPOS.BackColor = Color.FromArgb(30, 0, 0, 1);
         }
 
         //-------------- import classes ----------------- 
@@ -30,6 +32,7 @@ namespace CafeApplication.Forms.DailyInvoice
         NumberSeperate seperate = new NumberSeperate();
         CustomMessage msg = new CustomMessage();
         GetTime gt = new GetTime();
+        BtnDefaultStyle btn = new BtnDefaultStyle();
         CafeApplication.Forms.DailyFactor.DailyInvoice invoice = new CafeApplication.Forms.DailyFactor.DailyInvoice();
         Int64 txt_TotalPrice_value, txt_finalPrice_value;//مقدار تکست باکس رو نگه میداره که توی سیو دیتا و  فرمت ها به مشکل نخوریم
         string txt_Discount_value, txt_Discount_format;

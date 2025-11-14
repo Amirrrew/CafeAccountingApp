@@ -21,6 +21,7 @@ namespace CafeApplication.Forms.DailyInvoice
             InitializeComponent();
             blur.SetBlurBack(this);
             font.SetFont(this);
+            btn.SetBtnColor(this);
         }
 
         private void AddCustomer_Load(object sender, EventArgs e)
@@ -33,6 +34,7 @@ namespace CafeApplication.Forms.DailyInvoice
         BackBlur blur = new BackBlur();
         FontSet font = new FontSet();
         GetTime gettime = new GetTime();
+        BtnDefaultStyle btn = new BtnDefaultStyle();
         //---
         CafeApplication.Forms.PublicForms.CustomMessage  customMessage = new PublicForms.CustomMessage();
         //--------------------- import classes ---------------
