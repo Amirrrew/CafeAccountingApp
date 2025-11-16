@@ -20,7 +20,7 @@ namespace CafeApplication.Forms.DailyInvoice
             blur.SetBlurBack(this);
             font.SetFont(this);
             btn.SetBtnColor(this);
-            Cmb_SearchFrame.BackColor = Color.FromArgb(30, 0, 0, 1);
+            //Cmb_SearchFrame.BackColor = Color.FromArgb(30, 0, 0, 1);
             //Cmb_SearchFrame.SelectedIndex = 0;
         }
 

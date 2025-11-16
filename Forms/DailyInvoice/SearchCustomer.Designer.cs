@@ -30,18 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SearchCustomer));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lbl_dailyInvoice = new System.Windows.Forms.Label();
             this.txt_SearchBox = new System.Windows.Forms.TextBox();
             this.lbl_Search = new System.Windows.Forms.Label();
@@ -59,14 +54,12 @@
             this.btn_EndSearch = new Telerik.WinControls.UI.RadButton();
             this.lbl_SearchResult = new System.Windows.Forms.Label();
             this.lbl_ResultTitle = new System.Windows.Forms.Label();
-            this.Cmb_SearchFrame = new Telerik.WinControls.UI.RadMultiColumnComboBox();
+            this.radThemeManager1 = new Telerik.WinControls.RadThemeManager();
+            this.Cmb_SearchFrame = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.tbl_Customers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_EndSearch)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cmb_SearchFrame)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cmb_SearchFrame.EditorControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cmb_SearchFrame.EditorControl.MasterTemplate)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_dailyInvoice
@@ -130,25 +123,25 @@
             // 
             this.tbl_Customers.AllowUserToAddRows = false;
             this.tbl_Customers.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("RokhFaNum Normal", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            this.tbl_Customers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("RokhFaNum Normal", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.White;
+            this.tbl_Customers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle15;
             this.tbl_Customers.AutoGenerateColumns = false;
             this.tbl_Customers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.tbl_Customers.BackgroundColor = System.Drawing.Color.Black;
             this.tbl_Customers.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbl_Customers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Rokh Normal", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tbl_Customers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Rokh Normal", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tbl_Customers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
             this.tbl_Customers.ColumnHeadersHeight = 40;
             this.tbl_Customers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.tbl_Customers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -158,15 +151,15 @@
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn6});
             this.tbl_Customers.DataSource = this.customersBindingSource;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Rokh Normal", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.tbl_Customers.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Rokh Normal", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle19.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.tbl_Customers.DefaultCellStyle = dataGridViewCellStyle19;
             this.tbl_Customers.EnableHeadersVisualStyles = false;
             this.tbl_Customers.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tbl_Customers.Location = new System.Drawing.Point(12, 133);
@@ -174,23 +167,23 @@
             this.tbl_Customers.Name = "tbl_Customers";
             this.tbl_Customers.ReadOnly = true;
             this.tbl_Customers.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Rokh Normal", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tbl_Customers.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Rokh Normal", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tbl_Customers.RowHeadersDefaultCellStyle = dataGridViewCellStyle20;
             this.tbl_Customers.RowHeadersWidth = 5;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("RokhFaNum Normal", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
-            this.tbl_Customers.RowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("RokhFaNum Normal", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle21.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.White;
+            this.tbl_Customers.RowsDefaultCellStyle = dataGridViewCellStyle21;
             this.tbl_Customers.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             this.tbl_Customers.RowTemplate.Height = 35;
             this.tbl_Customers.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -211,8 +204,8 @@
             // 
             this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.dataGridViewTextBoxColumn2.DataPropertyName = "Name";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle17;
             this.dataGridViewTextBoxColumn2.HeaderText = "نام و نام خانوادگی";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
@@ -240,8 +233,8 @@
             // 
             this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.dataGridViewTextBoxColumn6.DataPropertyName = "CreatedAt";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
-            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
+            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle18;
             this.dataGridViewTextBoxColumn6.HeaderText = "تاریخ ثبت";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.ReadOnly = true;
@@ -284,10 +277,10 @@
             // 
             // btn_EndSearch
             // 
-            this.btn_EndSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_EndSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(100)))));
             this.btn_EndSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_EndSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_EndSearch.Font = new System.Drawing.Font("Rokh Normal", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btn_EndSearch.Font = new System.Drawing.Font("Rokh Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btn_EndSearch.ForeColor = System.Drawing.Color.White;
             this.btn_EndSearch.Image = ((System.Drawing.Image)(resources.GetObject("btn_EndSearch.Image")));
             this.btn_EndSearch.Location = new System.Drawing.Point(8, 445);
@@ -325,59 +318,20 @@
             // 
             // Cmb_SearchFrame
             // 
-            this.Cmb_SearchFrame.AutoSize = false;
-            this.Cmb_SearchFrame.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Cmb_SearchFrame.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList;
-            // 
-            // Cmb_SearchFrame.NestedRadGridView
-            // 
-            this.Cmb_SearchFrame.EditorControl.BackColor = System.Drawing.SystemColors.Window;
-            this.Cmb_SearchFrame.EditorControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cmb_SearchFrame.EditorControl.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Cmb_SearchFrame.EditorControl.Location = new System.Drawing.Point(0, 0);
-            // 
-            // 
-            // 
-            this.Cmb_SearchFrame.EditorControl.MasterTemplate.AllowAddNewRow = false;
-            this.Cmb_SearchFrame.EditorControl.MasterTemplate.AllowCellContextMenu = false;
-            this.Cmb_SearchFrame.EditorControl.MasterTemplate.AllowColumnChooser = false;
-            gridViewTextBoxColumn1.HeaderText = "کد";
-            gridViewTextBoxColumn1.Name = "کد";
-            gridViewTextBoxColumn2.HeaderText = "نام و نام خانوادگی";
-            gridViewTextBoxColumn2.Name = "نام و نام خانوادگی";
-            gridViewTextBoxColumn3.HeaderText = "آدرس";
-            gridViewTextBoxColumn3.Name = "آدرس";
-            gridViewTextBoxColumn4.HeaderText = "شماره تلفن";
-            gridViewTextBoxColumn4.Name = "شماره تلفن";
-            this.Cmb_SearchFrame.EditorControl.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn1,
-            gridViewTextBoxColumn2,
-            gridViewTextBoxColumn3,
-            gridViewTextBoxColumn4});
-            this.Cmb_SearchFrame.EditorControl.MasterTemplate.EnableGrouping = false;
-            this.Cmb_SearchFrame.EditorControl.MasterTemplate.ShowFilteringRow = false;
-            this.Cmb_SearchFrame.EditorControl.MasterTemplate.ViewDefinition = tableViewDefinition1;
-            this.Cmb_SearchFrame.EditorControl.Name = "NestedRadGridView";
-            this.Cmb_SearchFrame.EditorControl.ReadOnly = true;
-            this.Cmb_SearchFrame.EditorControl.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Cmb_SearchFrame.EditorControl.ShowGroupPanel = false;
-            this.Cmb_SearchFrame.EditorControl.Size = new System.Drawing.Size(240, 150);
-            this.Cmb_SearchFrame.EditorControl.TabIndex = 0;
-            this.Cmb_SearchFrame.Font = new System.Drawing.Font("RokhFaNum Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.Cmb_SearchFrame.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Cmb_SearchFrame.Location = new System.Drawing.Point(203, 93);
+            this.Cmb_SearchFrame.BackColor = System.Drawing.Color.Black;
+            this.Cmb_SearchFrame.Font = new System.Drawing.Font("RokhFaNum Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Cmb_SearchFrame.ForeColor = System.Drawing.Color.White;
+            this.Cmb_SearchFrame.FormattingEnabled = true;
+            this.Cmb_SearchFrame.Items.AddRange(new object[] {
+            "کد",
+            "نام و نام خانوادگی",
+            "شماره تلفن",
+            "آدرس"});
+            this.Cmb_SearchFrame.Location = new System.Drawing.Point(212, 92);
             this.Cmb_SearchFrame.Name = "Cmb_SearchFrame";
-            this.Cmb_SearchFrame.Padding = new System.Windows.Forms.Padding(0, 0, 7, 0);
             this.Cmb_SearchFrame.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            // 
-            // 
-            // 
-            this.Cmb_SearchFrame.RootElement.BorderHighlightColor = System.Drawing.Color.Empty;
-            this.Cmb_SearchFrame.RootElement.BorderHighlightThickness = 0;
-            this.Cmb_SearchFrame.Size = new System.Drawing.Size(189, 34);
-            this.Cmb_SearchFrame.TabIndex = 32;
-            this.Cmb_SearchFrame.TabStop = false;
-            this.Cmb_SearchFrame.Text = "s";
+            this.Cmb_SearchFrame.Size = new System.Drawing.Size(179, 35);
+            this.Cmb_SearchFrame.TabIndex = 25;
             // 
             // SearchCustomer
             // 
@@ -411,9 +365,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_EndSearch)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cmb_SearchFrame.EditorControl.MasterTemplate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cmb_SearchFrame.EditorControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cmb_SearchFrame)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -438,6 +389,8 @@
         public Telerik.WinControls.UI.RadButton btn_EndSearch;
         private System.Windows.Forms.Label lbl_ResultTitle;
         public System.Windows.Forms.Label lbl_SearchResult;
-        public Telerik.WinControls.UI.RadMultiColumnComboBox Cmb_SearchFrame;
+        private Telerik.WinControls.UI.RadRadioButton radRadioButton1;
+        public Telerik.WinControls.RadThemeManager radThemeManager1;
+        public System.Windows.Forms.ComboBox Cmb_SearchFrame;
     }
 }

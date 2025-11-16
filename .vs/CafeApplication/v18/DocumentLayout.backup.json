@@ -51,8 +51,7 @@
               "ViewState": "AgIAAAsAAAAAAAAAAAAIwB8AAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-12T15:01:45.484Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -70,7 +69,7 @@
               "RelativeDocumentMoniker": "Forms\\DailyInvoice\\SearchCustomer.cs",
               "ToolTip": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\DailyInvoice\\SearchCustomer.cs",
               "RelativeToolTip": "Forms\\DailyInvoice\\SearchCustomer.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAADwvxYAAABGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-13T13:55:32.554Z",
               "EditorCaption": ""
@@ -97,8 +96,7 @@
               "RelativeToolTip": "Forms\\DailyInvoice\\ConfirmPurchase.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAADwvxkAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T13:50:06.992Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-13T13:50:06.992Z"
             },
             {
               "$type": "Document",
@@ -109,8 +107,7 @@
               "ToolTip": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\DailyInvoice\\ConfirmPurchase.cs [Design]",
               "RelativeToolTip": "Forms\\DailyInvoice\\ConfirmPurchase.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T13:47:40.546Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-11-13T13:47:40.546Z"
             },
             {
               "$type": "Document",
@@ -121,8 +118,7 @@
               "ToolTip": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\MainForm\\MainForm.cs [Design]",
               "RelativeToolTip": "Forms\\MainForm\\MainForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T15:01:29.818Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-11-12T15:01:29.818Z"
             },
             {
               "$type": "Document",
@@ -134,8 +130,7 @@
               "RelativeToolTip": "Forms\\DailyInvoice\\DailyInvoice.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T10:47:34.654Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-12T10:47:34.654Z"
             }
           ]
         }
