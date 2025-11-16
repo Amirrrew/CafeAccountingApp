@@ -1,6 +1,7 @@
 ﻿using CafeApplication.Classes.PublicClasses;
 using CafeApplication.Data.DataSet;
 using CafeApplication.Data.DataSet.DsCafeTableAdapters;
+using CafeApplication.Forms.CustomerManageForms;
 using CafeApplication.Forms.DailyFactor;
 using CafeApplication.Forms.PublicForms;
 using Calendar;
@@ -46,6 +47,7 @@ namespace CafeApplication
         CustomMessage msg = new CustomMessage();
         BtnDefaultStyle btn = new BtnDefaultStyle();
         string ProdIconPath = Application.StartupPath + @"/Assets/Icons/Mainmenu/Products/";
+        string CustomerIconPath = Application.StartupPath + @"/Assets/Icons/Mainmenu/CustomerManage/";
 
 
         //-------------- import forms ---------------
@@ -132,7 +134,14 @@ namespace CafeApplication
 
         private void LabelFunc(Label lbl ,Action func)
         {
-            lbl.Click += (sender, e) => func();
+            if (MainPanel.Width < 700)
+            {
+                lbl.Click += null;
+            }
+            else
+            {
+                lbl.Click += (sender, e) => func();
+            }
         }
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -166,7 +175,13 @@ namespace CafeApplication
 
         private void btn_CustomerManage_Click(object sender, EventArgs e)
         {
+            
+            CustomerManage csm = new CustomerManage();
+            ExpandMainPanel(lbl_CustomerManage.Text, btn_CustomerManage, 1);
 
+            lbl_Option1.Text = "منوی مدیریت";
+            lbl_Option1.Image = Image.FromFile(CustomerIconPath + @"customerManage-Icon.png");
+            LabelFunc(lbl_Option1, () => { csm.ShowDialog(); });
         } //--------------- open customer management tabs
 
         private void btn_warehouse_Click(object sender, EventArgs e)
@@ -192,7 +207,6 @@ namespace CafeApplication
 
             lbl_Option2.Text = "مدیریت کالا ها";
             lbl_Option2.Image = Image.FromFile(ProdIconPath + @"manageProducts-Icon.png");
-
             lbl_Option1.Text = "مدیریت خدمات";
             lbl_Option1.Image = Image.FromFile(ProdIconPath + @"service-Icon.png");
 

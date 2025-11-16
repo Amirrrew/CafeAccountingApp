@@ -58,8 +58,8 @@
             this.lbl_employee = new System.Windows.Forms.Label();
             this.Pnl_DailyInvoice = new System.Windows.Forms.Panel();
             this.Iconbox_DailyInvoice = new System.Windows.Forms.PictureBox();
-            this.btn_DailyInvoice = new Telerik.WinControls.UI.RadButton();
             this.lbl_DailyInvoice = new System.Windows.Forms.Label();
+            this.btn_DailyInvoice = new Telerik.WinControls.UI.RadButton();
             this.Pnl_confirmDaily = new System.Windows.Forms.Panel();
             this.Iconbox_ConfirmDaily = new System.Windows.Forms.PictureBox();
             this.btn_ConfirmDaily = new Telerik.WinControls.UI.RadButton();
@@ -558,6 +558,16 @@
             this.Iconbox_DailyInvoice.TabIndex = 9;
             this.Iconbox_DailyInvoice.TabStop = false;
             // 
+            // lbl_DailyInvoice
+            // 
+            this.lbl_DailyInvoice.Font = new System.Drawing.Font("Rokh Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_DailyInvoice.Location = new System.Drawing.Point(55, 25);
+            this.lbl_DailyInvoice.Name = "lbl_DailyInvoice";
+            this.lbl_DailyInvoice.Size = new System.Drawing.Size(240, 24);
+            this.lbl_DailyInvoice.TabIndex = 8;
+            this.lbl_DailyInvoice.Text = "صدور فاکتور فروش روزانه";
+            this.lbl_DailyInvoice.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // btn_DailyInvoice
             // 
             this.btn_DailyInvoice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -569,20 +579,17 @@
             this.btn_DailyInvoice.Location = new System.Drawing.Point(21, 19);
             this.btn_DailyInvoice.Margin = new System.Windows.Forms.Padding(4);
             this.btn_DailyInvoice.Name = "btn_DailyInvoice";
+            // 
+            // 
+            // 
+            this.btn_DailyInvoice.RootElement.BorderHighlightThickness = 0;
+            this.btn_DailyInvoice.RootElement.CanFocus = true;
+            this.btn_DailyInvoice.RootElement.FocusBorderWidth = 0;
+            this.btn_DailyInvoice.RootElement.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             this.btn_DailyInvoice.Size = new System.Drawing.Size(34, 34);
             this.btn_DailyInvoice.TabIndex = 8;
             this.btn_DailyInvoice.Text = "-";
             this.btn_DailyInvoice.Click += new System.EventHandler(this.btn_DailyFactor_Click);
-            // 
-            // lbl_DailyInvoice
-            // 
-            this.lbl_DailyInvoice.Font = new System.Drawing.Font("Rokh Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lbl_DailyInvoice.Location = new System.Drawing.Point(55, 25);
-            this.lbl_DailyInvoice.Name = "lbl_DailyInvoice";
-            this.lbl_DailyInvoice.Size = new System.Drawing.Size(240, 24);
-            this.lbl_DailyInvoice.TabIndex = 8;
-            this.lbl_DailyInvoice.Text = "صدور فاکتور فروش روزانه";
-            this.lbl_DailyInvoice.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Pnl_confirmDaily
             // 
