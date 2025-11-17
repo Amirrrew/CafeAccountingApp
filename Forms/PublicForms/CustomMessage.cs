@@ -140,5 +140,10 @@ namespace CafeApplication.Forms.PublicForms
         {
 
         }
+
+        private void BtnOK_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
+        }
     }
 }

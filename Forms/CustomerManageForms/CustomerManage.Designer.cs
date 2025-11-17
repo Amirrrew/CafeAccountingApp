@@ -42,8 +42,8 @@
             this.customersTableAdapter = new CafeApplication.Data.DataSet.DsCafeTableAdapters.CustomersTableAdapter();
             this.txt_SearchBox = new System.Windows.Forms.TextBox();
             this.btn_addCustomer = new Telerik.WinControls.UI.RadButton();
-            this.radButton1 = new Telerik.WinControls.UI.RadButton();
-            this.radButton2 = new Telerik.WinControls.UI.RadButton();
+            this.btn_delete_coustomer = new Telerik.WinControls.UI.RadButton();
+            this.btn_edit = new Telerik.WinControls.UI.RadButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tbl_customers = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,8 +55,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_addCustomer)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_delete_coustomer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_edit)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbl_customers)).BeginInit();
             this.SuspendLayout();
@@ -109,48 +109,49 @@
             this.btn_addCustomer.Text = "-";
             this.btn_addCustomer.Click += new System.EventHandler(this.btn_addCustomer_Click);
             // 
-            // radButton1
+            // btn_delete_coustomer
             // 
-            this.radButton1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btn_delete_coustomer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.radButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
-            this.radButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.radButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radButton1.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
-            this.radButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.radButton1.Image = ((System.Drawing.Image)(resources.GetObject("radButton1.Image")));
-            this.radButton1.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.radButton1.Location = new System.Drawing.Point(77, 9);
-            this.radButton1.Margin = new System.Windows.Forms.Padding(4);
-            this.radButton1.Name = "radButton1";
-            this.radButton1.Size = new System.Drawing.Size(66, 41);
-            this.radButton1.TabIndex = 27;
-            this.radButton1.Text = "-";
+            this.btn_delete_coustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
+            this.btn_delete_coustomer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_delete_coustomer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_delete_coustomer.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
+            this.btn_delete_coustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btn_delete_coustomer.Image = ((System.Drawing.Image)(resources.GetObject("btn_delete_coustomer.Image")));
+            this.btn_delete_coustomer.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_delete_coustomer.Location = new System.Drawing.Point(77, 9);
+            this.btn_delete_coustomer.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_delete_coustomer.Name = "btn_delete_coustomer";
+            this.btn_delete_coustomer.Size = new System.Drawing.Size(66, 41);
+            this.btn_delete_coustomer.TabIndex = 27;
+            this.btn_delete_coustomer.Text = "-";
+            this.btn_delete_coustomer.Click += new System.EventHandler(this.btn_delete_coustomer_Click);
             // 
-            // radButton2
+            // btn_edit
             // 
-            this.radButton2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btn_edit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.radButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
-            this.radButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.radButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radButton2.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
-            this.radButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.radButton2.Image = ((System.Drawing.Image)(resources.GetObject("radButton2.Image")));
-            this.radButton2.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.radButton2.Location = new System.Drawing.Point(8, 9);
-            this.radButton2.Margin = new System.Windows.Forms.Padding(4);
-            this.radButton2.Name = "radButton2";
-            this.radButton2.Size = new System.Drawing.Size(66, 41);
-            this.radButton2.TabIndex = 27;
-            this.radButton2.Text = "-";
+            this.btn_edit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
+            this.btn_edit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_edit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_edit.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
+            this.btn_edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btn_edit.Image = ((System.Drawing.Image)(resources.GetObject("btn_edit.Image")));
+            this.btn_edit.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_edit.Location = new System.Drawing.Point(8, 9);
+            this.btn_edit.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_edit.Name = "btn_edit";
+            this.btn_edit.Size = new System.Drawing.Size(66, 41);
+            this.btn_edit.TabIndex = 27;
+            this.btn_edit.Text = "-";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(11)))), ((int)(((byte)(11)))));
             this.panel1.Controls.Add(this.txt_SearchBox);
-            this.panel1.Controls.Add(this.radButton2);
-            this.panel1.Controls.Add(this.radButton1);
+            this.panel1.Controls.Add(this.btn_edit);
+            this.panel1.Controls.Add(this.btn_delete_coustomer);
             this.panel1.Controls.Add(this.btn_addCustomer);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 569);
@@ -317,8 +318,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_addCustomer)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_delete_coustomer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_edit)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbl_customers)).EndInit();
@@ -331,8 +332,8 @@
         private System.Windows.Forms.BindingSource customersBindingSource;
         private Data.DataSet.DsCafeTableAdapters.CustomersTableAdapter customersTableAdapter;
         private System.Windows.Forms.TextBox txt_SearchBox;
-        public Telerik.WinControls.UI.RadButton radButton2;
-        public Telerik.WinControls.UI.RadButton radButton1;
+        public Telerik.WinControls.UI.RadButton btn_edit;
+        public Telerik.WinControls.UI.RadButton btn_delete_coustomer;
         public Telerik.WinControls.UI.RadButton btn_addCustomer;
         private System.Windows.Forms.Panel panel1;
         public System.Windows.Forms.DataGridView tbl_customers;
