@@ -1,10 +1,12 @@
 ﻿using CafeApplication.Classes.PublicClasses;
 using CafeApplication.Data.DataSet;
 using CafeApplication.Data.DataSet.DsCafeTableAdapters;
+using CafeApplication.Forms.CustomerManageForms;
 using CafeApplication.Forms.DailyFactor;
 using CafeApplication.Forms.PublicForms;
 using Calendar;
 using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -12,6 +14,7 @@ using System.Drawing.Imaging;
 using System.Drawing.Text;
 using System.IO;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Telerik.WinControls;
@@ -46,6 +49,7 @@ namespace CafeApplication
         CustomMessage msg = new CustomMessage();
         BtnDefaultStyle btn = new BtnDefaultStyle();
         string ProdIconPath = Application.StartupPath + @"/Assets/Icons/Mainmenu/Products/";
+        string CustomerIconPath = Application.StartupPath + @"/Assets/Icons/Mainmenu/CustomerManage/";
 
 
         //-------------- import forms ---------------
@@ -85,10 +89,18 @@ namespace CafeApplication
             lblDayTitle.Text = gt.GetDayTitle();
         }
 
+
+
+
+
         private void TimerTimeUpdate_Tick(object sender, EventArgs e)
         {
             SetCurrentTime();
         }
+
+
+
+
 
         public void ExpandMainPanel(string PnlTitle, RadButton btn, int LblCount)
         {
@@ -130,10 +142,26 @@ namespace CafeApplication
             lbl_Option14.Visible = isEnabled[14];
         }
 
-        private void LabelFunc(Label lbl ,Action func)
+
+
+
+
+
+        private readonly Dictionary<Label, EventHandler> _labelHandlers = new Dictionary<Label, EventHandler>();
+        private void LabelFunc(Label lbl, Action func)
         {
-            lbl.Click += (sender, e) => func();
+            if (_labelHandlers.TryGetValue(lbl, out EventHandler existingHandler))
+            {
+                lbl.Click -= existingHandler;
+            }
+
+            EventHandler handler = (sender, e) => func();
+            lbl.Click += handler;
+            _labelHandlers[lbl] = handler;
         }
+
+
+
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -141,6 +169,8 @@ namespace CafeApplication
             //msg.BtnOK.Text = "بله";
             //msg.NewMessage("خروج؟", "آیا واقعا میخواهید از برنامه خارج شوید؟", "YN", "info", "small", YesClick: () => this.Hide() ,NoClick: ()=> e.Cancel = true);
         }
+
+
 
         private void setupBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
@@ -166,7 +196,14 @@ namespace CafeApplication
 
         private void btn_CustomerManage_Click(object sender, EventArgs e)
         {
+            
+            CustomerManage csm = new CustomerManage();
+            ExpandMainPanel(lbl_CustomerManage.Text, btn_CustomerManage, 1);
 
+            lbl_Option1.Text = "منوی مدیریت";
+            lbl_Option1.Image = Image.FromFile(CustomerIconPath + @"customerManage-Icon.png");
+            LabelFunc(lbl_Option1,() => csm.Show());
+            
         } //--------------- open customer management tabs
 
         private void btn_warehouse_Click(object sender, EventArgs e)
@@ -192,7 +229,6 @@ namespace CafeApplication
 
             lbl_Option2.Text = "مدیریت کالا ها";
             lbl_Option2.Image = Image.FromFile(ProdIconPath + @"manageProducts-Icon.png");
-
             lbl_Option1.Text = "مدیریت خدمات";
             lbl_Option1.Image = Image.FromFile(ProdIconPath + @"service-Icon.png");
 
