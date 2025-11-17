@@ -138,6 +138,11 @@ namespace CafeApplication.Forms.DailyInvoice
 
         }
 
+        private void btn_SendToPOS_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void txt_Discount_MouseEnter(object sender, EventArgs e)
         {
             toolTip1.SetToolTip(txt_Discount, txt_Discount_format);

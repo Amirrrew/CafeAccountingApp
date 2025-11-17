@@ -137,6 +137,7 @@
             this.btn_SendToPOS.Size = new System.Drawing.Size(472, 45);
             this.btn_SendToPOS.TabIndex = 21;
             this.btn_SendToPOS.Text = "ارسال به پوز";
+            this.btn_SendToPOS.Click += new System.EventHandler(this.btn_SendToPOS_Click);
             // 
             // lbl_POS
             // 

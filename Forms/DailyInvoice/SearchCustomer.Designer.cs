@@ -332,8 +332,10 @@
             // Cmb_SearchFrame.NestedRadGridView
             // 
             this.Cmb_SearchFrame.EditorControl.BackColor = System.Drawing.SystemColors.Window;
-            this.Cmb_SearchFrame.EditorControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cmb_SearchFrame.EditorControl.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Cmb_SearchFrame.EditorControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.Cmb_SearchFrame.EditorControl.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Cmb_SearchFrame.EditorControl.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.Cmb_SearchFrame.EditorControl.Location = new System.Drawing.Point(0, 0);
             // 
             // 
@@ -341,12 +343,19 @@
             this.Cmb_SearchFrame.EditorControl.MasterTemplate.AllowAddNewRow = false;
             this.Cmb_SearchFrame.EditorControl.MasterTemplate.AllowCellContextMenu = false;
             this.Cmb_SearchFrame.EditorControl.MasterTemplate.AllowColumnChooser = false;
+            gridViewTextBoxColumn1.EnableExpressionEditor = false;
             gridViewTextBoxColumn1.HeaderText = "کد";
             gridViewTextBoxColumn1.Name = "کد";
+            gridViewTextBoxColumn1.Width = 108;
+            gridViewTextBoxColumn2.EnableExpressionEditor = false;
             gridViewTextBoxColumn2.HeaderText = "نام و نام خانوادگی";
             gridViewTextBoxColumn2.Name = "نام و نام خانوادگی";
+            gridViewTextBoxColumn2.Width = 191;
+            gridViewTextBoxColumn3.EnableExpressionEditor = false;
             gridViewTextBoxColumn3.HeaderText = "آدرس";
             gridViewTextBoxColumn3.Name = "آدرس";
+            gridViewTextBoxColumn3.Width = 116;
+            gridViewTextBoxColumn4.EnableExpressionEditor = false;
             gridViewTextBoxColumn4.HeaderText = "شماره تلفن";
             gridViewTextBoxColumn4.Name = "شماره تلفن";
             this.Cmb_SearchFrame.EditorControl.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
@@ -356,6 +365,7 @@
             gridViewTextBoxColumn4});
             this.Cmb_SearchFrame.EditorControl.MasterTemplate.EnableGrouping = false;
             this.Cmb_SearchFrame.EditorControl.MasterTemplate.ShowFilteringRow = false;
+            this.Cmb_SearchFrame.EditorControl.MasterTemplate.ShowRowHeaderColumn = false;
             this.Cmb_SearchFrame.EditorControl.MasterTemplate.ViewDefinition = tableViewDefinition1;
             this.Cmb_SearchFrame.EditorControl.Name = "NestedRadGridView";
             this.Cmb_SearchFrame.EditorControl.ReadOnly = true;
