@@ -185,7 +185,10 @@ C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\bin\Debug\Assets\Icons\Public
 C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\Products\manageProducts-Icon.png
 C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\Products\service-Icon.png
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\amir\Desktop\CafeAccountingApp\obj\Debug\CafeApplication.Forms.CustomerManageForms.CustomerManage.resources
 C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\CustomerManage\customerManage-Icon.png
+=======
+>>>>>>> parent of 33e1679 (complete new and delete in coustomer mange)
 =======
 >>>>>>> parent of 33e1679 (complete new and delete in coustomer mange)
