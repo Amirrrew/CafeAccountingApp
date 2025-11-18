@@ -450,6 +450,7 @@
             // 
             // Cmb_SearchFrame.NestedRadGridView
             // 
+<<<<<<< HEAD
             //this.Cmb_SearchFrame.EditorControl.BackColor = System.Drawing.SystemColors.Window;
             //this.Cmb_SearchFrame.EditorControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             //this.Cmb_SearchFrame.EditorControl.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -482,6 +483,40 @@
             //this.Cmb_SearchFrame.EditorControl.ShowGroupPanel = false;
             //this.Cmb_SearchFrame.EditorControl.Size = new System.Drawing.Size(240, 150);
             //this.Cmb_SearchFrame.EditorControl.TabIndex = 0;
+=======
+            this.Cmb_SearchFrame.EditorControl.BackColor = System.Drawing.SystemColors.Window;
+            this.Cmb_SearchFrame.EditorControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cmb_SearchFrame.EditorControl.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Cmb_SearchFrame.EditorControl.Location = new System.Drawing.Point(0, 0);
+            // 
+            // 
+            // 
+            this.Cmb_SearchFrame.EditorControl.MasterTemplate.AllowAddNewRow = false;
+            this.Cmb_SearchFrame.EditorControl.MasterTemplate.AllowCellContextMenu = false;
+            this.Cmb_SearchFrame.EditorControl.MasterTemplate.AllowColumnChooser = false;
+            gridViewTextBoxColumn1.HeaderText = "کد";
+            gridViewTextBoxColumn1.Name = "کد";
+            gridViewTextBoxColumn2.HeaderText = "نام و نام خانوادگی";
+            gridViewTextBoxColumn2.Name = "نام و نام خانوادگی";
+            gridViewTextBoxColumn3.HeaderText = "آدرس";
+            gridViewTextBoxColumn3.Name = "آدرس";
+            gridViewTextBoxColumn4.HeaderText = "شماره تلفن";
+            gridViewTextBoxColumn4.Name = "شماره تلفن";
+            this.Cmb_SearchFrame.EditorControl.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
+            gridViewTextBoxColumn1,
+            gridViewTextBoxColumn2,
+            gridViewTextBoxColumn3,
+            gridViewTextBoxColumn4});
+            this.Cmb_SearchFrame.EditorControl.MasterTemplate.EnableGrouping = false;
+            this.Cmb_SearchFrame.EditorControl.MasterTemplate.ShowFilteringRow = false;
+            this.Cmb_SearchFrame.EditorControl.MasterTemplate.ViewDefinition = tableViewDefinition1;
+            this.Cmb_SearchFrame.EditorControl.Name = "NestedRadGridView";
+            this.Cmb_SearchFrame.EditorControl.ReadOnly = true;
+            this.Cmb_SearchFrame.EditorControl.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.Cmb_SearchFrame.EditorControl.ShowGroupPanel = false;
+            this.Cmb_SearchFrame.EditorControl.Size = new System.Drawing.Size(240, 150);
+            this.Cmb_SearchFrame.EditorControl.TabIndex = 0;
+>>>>>>> parent of f9b7fe3 (new)
             this.Cmb_SearchFrame.Font = new System.Drawing.Font("RokhFaNum Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Cmb_SearchFrame.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Cmb_SearchFrame.Location = new System.Drawing.Point(203, 93);
