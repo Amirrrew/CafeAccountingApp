@@ -20,7 +20,11 @@ namespace CafeApplication.Forms.DailyInvoice
             blur.SetBlurBack(this);
             font.SetFont(this);
             btn.SetBtnColor(this);
+<<<<<<< HEAD
             Cmb_SearchFrame.BackColor = Color.FromArgb(30, 0, 0, 1);
+=======
+            //Cmb_SearchFrame.BackColor = Color.FromArgb(30, 0, 0, 1);
+>>>>>>> parent of 9e77c26 (manageCustomers)
             //Cmb_SearchFrame.SelectedIndex = 0;
         }
 

@@ -132,7 +132,18 @@ namespace CafeApplication
 
         private void LabelFunc(Label lbl ,Action func)
         {
+<<<<<<< HEAD
             lbl.Click += (sender, e) => func();
+=======
+            if (MainPanel.Width < 700)
+            {
+                lbl.Click += null;
+            }
+            else
+            {
+                lbl.Click += (sender, e) => func();
+            }
+>>>>>>> parent of 9e77c26 (manageCustomers)
         }
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -174,6 +185,7 @@ namespace CafeApplication
 
             lbl_Option1.Text = "منوی مدیریت";
             lbl_Option1.Image = Image.FromFile(CustomerIconPath + @"customerManage-Icon.png");
+<<<<<<< HEAD
             LabelFunc(lbl_Option1,() => { CustomerManage csm = new CustomerManage(); csm.Show(); });
             
 =======
@@ -182,6 +194,9 @@ namespace CafeApplication
 =======
 
 >>>>>>> parent of f0fb9b1 (Merge branch 'main' of https://github.com/Amirrrew/CafeAccountingApp)
+=======
+            LabelFunc(lbl_Option1, () => { csm.ShowDialog(); });
+>>>>>>> parent of 9e77c26 (manageCustomers)
         } //--------------- open customer management tabs
 
         private void btn_warehouse_Click(object sender, EventArgs e)
