@@ -181,6 +181,7 @@ C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Public\chevron-ri
 C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\chevron-right (2).png
 C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\Products\manageProducts-Icon.png
 C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\Products\service-Icon.png
+<<<<<<< HEAD
 C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\bin\Debug\Assets\Icons\Public\chevron-right (2).png
 C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\Products\manageProducts-Icon.png
 C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\Products\service-Icon.png
@@ -195,3 +196,5 @@ C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\Customer
 >>>>>>> parent of 33e1679 (complete new and delete in coustomer mange)
 =======
 >>>>>>> parent of 33e1679 (complete new and delete in coustomer mange)
+=======
+>>>>>>> parent of f9b7fe3 (new)
