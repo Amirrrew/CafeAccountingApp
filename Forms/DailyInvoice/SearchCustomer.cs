@@ -75,9 +75,9 @@ namespace CafeApplication.Forms.DailyInvoice
                             msg.NewMessage("هشدار", "ابتدا باید یک متد برای جستجو انتخاب کنید.", "Y", "warning", null); break;
                     }
 
-                    if (tbl_Customers.RowCount != 0)
+                    if (tbl_customers.RowCount != 0)
                     {
-                        customerName = tbl_Customers.Rows[0].Cells[1].Value.ToString();
+                        customerName = tbl_customers.Rows[0].Cells[1].Value.ToString();
                     }
                     else
                     {
@@ -147,7 +147,7 @@ namespace CafeApplication.Forms.DailyInvoice
         {
             try
             {
-                lbl_SearchResult.Text = tbl_Customers.Rows[e.RowIndex].Cells[1].Value.ToString();
+                lbl_SearchResult.Text = tbl_customers.Rows[e.RowIndex].Cells[1].Value.ToString();
             }
             catch 
             {
