@@ -167,6 +167,7 @@ namespace CafeApplication
         private void btn_CustomerManage_Click(object sender, EventArgs e)
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             
 
             ExpandMainPanel(lbl_CustomerManage.Text, btn_CustomerManage, 1);
@@ -175,6 +176,9 @@ namespace CafeApplication
             lbl_Option1.Image = Image.FromFile(CustomerIconPath + @"customerManage-Icon.png");
             LabelFunc(lbl_Option1,() => { CustomerManage csm = new CustomerManage(); csm.Show(); });
             
+=======
+
+>>>>>>> parent of f0fb9b1 (Merge branch 'main' of https://github.com/Amirrrew/CafeAccountingApp)
 =======
 
 >>>>>>> parent of f0fb9b1 (Merge branch 'main' of https://github.com/Amirrrew/CafeAccountingApp)
