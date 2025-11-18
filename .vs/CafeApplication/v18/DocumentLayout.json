@@ -4,15 +4,33 @@
   "Documents": [
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|c:\\users\\hosein\\documents\\github\\cafeaccountingapp\\forms\\customermanageforms\\customermanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\customermanageforms\\customermanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
 =======
+=======
+>>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|C:\\Users\\amir\\Desktop\\CafeAccountingApp\\forms\\dailyinvoice\\searchcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\dailyinvoice\\searchcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|c:\\users\\amir\\desktop\\cafeaccountingapp\\forms\\customermanageforms\\customermanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\customermanageforms\\customermanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+<<<<<<< Updated upstream
+=======
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|C:\\Users\\amir\\Desktop\\CafeAccountingApp\\forms\\customermanageforms\\customermanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\customermanageforms\\customermanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|C:\\Users\\amir\\Desktop\\CafeAccountingApp\\forms\\mainform\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\mainform\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|C:\\Users\\amir\\Desktop\\CafeAccountingApp\\forms\\dailyinvoice\\searchcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\dailyinvoice\\searchcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> Stashed changes
     },
     {
       "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|C:\\Users\\amir\\Desktop\\CafeAccountingApp\\forms\\customermanageforms\\customermanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -73,6 +91,7 @@
             {
               "$type": "Document",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Hosein\\Documents\\GitHub\\CafeAccountingApp\\Program.cs",
@@ -81,6 +100,8 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA4AAAAAAAAAA==",
 =======
+=======
+>>>>>>> Stashed changes
               "DocumentIndex": 4,
               "Title": "SearchCustomer.cs",
               "DocumentMoniker": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\DailyInvoice\\SearchCustomer.cs",
@@ -88,6 +109,9 @@
               "ToolTip": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\DailyInvoice\\SearchCustomer.cs",
               "RelativeToolTip": "Forms\\DailyInvoice\\SearchCustomer.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAgwC0AAAAMAAAAAAAAAA==",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-17T21:13:13.783Z",
@@ -96,10 +120,13 @@
             {
               "$type": "Document",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "DocumentIndex": 2,
               "Title": "CustomerManage.cs",
               "DocumentMoniker": "C:\\Users\\Hosein\\Documents\\GitHub\\CafeAccountingApp\\Forms\\CustomerManageForms\\CustomerManage.cs",
 =======
+=======
+>>>>>>> Stashed changes
               "DocumentIndex": 0,
               "Title": "SearchCustomer.cs [Design]",
               "DocumentMoniker": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\DailyInvoice\\SearchCustomer.cs",
@@ -127,6 +154,7 @@
             {
               "$type": "Document",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "DocumentIndex": 0,
               "Title": "CustomerManage.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Hosein\\Documents\\GitHub\\CafeAccountingApp\\Forms\\CustomerManageForms\\CustomerManage.cs",
@@ -134,6 +162,8 @@
               "ToolTip": "C:\\Users\\Hosein\\Documents\\GitHub\\CafeAccountingApp\\Forms\\CustomerManageForms\\CustomerManage.cs [Design]",
               "RelativeToolTip": "Forms\\CustomerManageForms\\CustomerManage.cs [Design]",
 =======
+=======
+>>>>>>> Stashed changes
               "DocumentIndex": 2,
               "Title": "CustomerManage.cs",
               "DocumentMoniker": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\CustomerManageForms\\CustomerManage.cs",
@@ -141,6 +171,9 @@
               "ToolTip": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\CustomerManageForms\\CustomerManage.cs",
               "RelativeToolTip": "Forms\\CustomerManageForms\\CustomerManage.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAACUAAAA7AAAAAAAAAA==",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-17T20:01:00.782Z",
