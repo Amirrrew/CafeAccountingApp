@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|c:\\users\\amir\\desktop\\cafeaccountingapp\\forms\\dailyinvoice\\searchcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\dailyinvoice\\searchcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -56,6 +57,16 @@
     },
     {
 >>>>>>> parent of 33e1679 (complete new and delete in coustomer mange)
+=======
+      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|c:\\users\\hosein\\documents\\github\\cafeaccountingapp\\classes\\publicclasses\\backblur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:classes\\publicclasses\\backblur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|c:\\users\\hosein\\documents\\github\\cafeaccountingapp\\forms\\dailyinvoice\\searchcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\dailyinvoice\\searchcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+>>>>>>> parent of 33e1679 (complete new and delete in coustomer mange)
       "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|C:\\Users\\Hosein\\Documents\\GitHub\\CafeAccountingApp\\forms\\dailyinvoice\\confirmpurchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\dailyinvoice\\confirmpurchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -71,6 +82,9 @@
       "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|C:\\Users\\Hosein\\Documents\\GitHub\\CafeAccountingApp\\forms\\dailyinvoice\\dailyinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 33e1679 (complete new and delete in coustomer mange)
+=======
 >>>>>>> parent of 33e1679 (complete new and delete in coustomer mange)
 =======
 >>>>>>> parent of 33e1679 (complete new and delete in coustomer mange)
@@ -98,6 +112,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -174,6 +189,16 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
 >>>>>>> parent of 33e1679 (complete new and delete in coustomer mange)
+=======
+              "DocumentIndex": 0,
+              "Title": "BackBlur.cs",
+              "DocumentMoniker": "C:\\Users\\Hosein\\Documents\\GitHub\\CafeAccountingApp\\Classes\\PublicClasses\\BackBlur.cs",
+              "RelativeDocumentMoniker": "Classes\\PublicClasses\\BackBlur.cs",
+              "ToolTip": "C:\\Users\\Hosein\\Documents\\GitHub\\CafeAccountingApp\\Classes\\PublicClasses\\BackBlur.cs",
+              "RelativeToolTip": "Classes\\PublicClasses\\BackBlur.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+>>>>>>> parent of 33e1679 (complete new and delete in coustomer mange)
               "WhenOpened": "2025-11-15T20:06:12.934Z",
               "EditorCaption": ""
             },
@@ -202,6 +227,9 @@
               "EditorCaption": " [Design]"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 33e1679 (complete new and delete in coustomer mange)
+=======
 >>>>>>> parent of 33e1679 (complete new and delete in coustomer mange)
 =======
 >>>>>>> parent of 33e1679 (complete new and delete in coustomer mange)
@@ -214,6 +242,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               "Title": "ConfirmPurchase.cs [Design]",
               "DocumentMoniker": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\DailyInvoice\\ConfirmPurchase.cs",
               "RelativeDocumentMoniker": "Forms\\DailyInvoice\\ConfirmPurchase.cs",
@@ -222,6 +251,8 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-18T16:01:55.703Z"
 =======
+=======
+>>>>>>> parent of 33e1679 (complete new and delete in coustomer mange)
 =======
 >>>>>>> parent of 33e1679 (complete new and delete in coustomer mange)
 =======
@@ -248,6 +279,9 @@
               "EditorCaption": " [Design]"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 33e1679 (complete new and delete in coustomer mange)
+=======
 >>>>>>> parent of 33e1679 (complete new and delete in coustomer mange)
 =======
 >>>>>>> parent of 33e1679 (complete new and delete in coustomer mange)
@@ -258,6 +292,7 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "DailyInvoice.cs",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -273,6 +308,8 @@
 >>>>>>> parent of 33e1679 (complete new and delete in coustomer mange)
 =======
 >>>>>>> parent of 33e1679 (complete new and delete in coustomer mange)
+=======
+>>>>>>> parent of 33e1679 (complete new and delete in coustomer mange)
               "DocumentMoniker": "C:\\Users\\Hosein\\Documents\\GitHub\\CafeAccountingApp\\Forms\\DailyInvoice\\DailyInvoice.cs",
               "RelativeDocumentMoniker": "Forms\\DailyInvoice\\DailyInvoice.cs",
               "ToolTip": "C:\\Users\\Hosein\\Documents\\GitHub\\CafeAccountingApp\\Forms\\DailyInvoice\\DailyInvoice.cs",
@@ -283,6 +320,9 @@
               "EditorCaption": ""
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 33e1679 (complete new and delete in coustomer mange)
+=======
 >>>>>>> parent of 33e1679 (complete new and delete in coustomer mange)
 =======
 >>>>>>> parent of 33e1679 (complete new and delete in coustomer mange)
