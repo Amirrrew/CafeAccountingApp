@@ -197,12 +197,12 @@ namespace CafeApplication
         private void btn_CustomerManage_Click(object sender, EventArgs e)
         {
             
-            CustomerManage csm = new CustomerManage();
+
             ExpandMainPanel(lbl_CustomerManage.Text, btn_CustomerManage, 1);
 
             lbl_Option1.Text = "منوی مدیریت";
             lbl_Option1.Image = Image.FromFile(CustomerIconPath + @"customerManage-Icon.png");
-            LabelFunc(lbl_Option1,() => csm.Show());
+            LabelFunc(lbl_Option1,() => { CustomerManage csm = new CustomerManage(); csm.Show(); });
             
         } //--------------- open customer management tabs
 
