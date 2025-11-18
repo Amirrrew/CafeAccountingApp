@@ -30,29 +30,18 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SearchCustomer));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lbl_dailyInvoice = new System.Windows.Forms.Label();
             this.txt_SearchBox = new System.Windows.Forms.TextBox();
             this.lbl_Search = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.tbl_Customers = new System.Windows.Forms.DataGridView();
+            this.tbl_customers = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,14 +54,11 @@
             this.btn_EndSearch = new Telerik.WinControls.UI.RadButton();
             this.lbl_SearchResult = new System.Windows.Forms.Label();
             this.lbl_ResultTitle = new System.Windows.Forms.Label();
-            this.Cmb_SearchFrame = new Telerik.WinControls.UI.RadMultiColumnComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.tbl_Customers)).BeginInit();
+            this.Cmb_SearchFrame = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_customers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_EndSearch)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cmb_SearchFrame)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cmb_SearchFrame.EditorControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cmb_SearchFrame.EditorControl.MasterTemplate)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_dailyInvoice
@@ -132,78 +118,78 @@
             this.label1.Text = "جستجو بر اساس:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tbl_Customers
+            // tbl_customers
             // 
-            this.tbl_Customers.AllowUserToAddRows = false;
-            this.tbl_Customers.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("RokhFaNum Normal", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            this.tbl_Customers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.tbl_Customers.AutoGenerateColumns = false;
-            this.tbl_Customers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.tbl_Customers.BackgroundColor = System.Drawing.Color.Black;
-            this.tbl_Customers.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbl_Customers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Rokh Normal", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tbl_Customers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.tbl_Customers.ColumnHeadersHeight = 40;
-            this.tbl_Customers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.tbl_Customers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.tbl_customers.AllowUserToAddRows = false;
+            this.tbl_customers.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("RokhFaNum Normal", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
+            this.tbl_customers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
+            this.tbl_customers.AutoGenerateColumns = false;
+            this.tbl_customers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.tbl_customers.BackgroundColor = System.Drawing.Color.Black;
+            this.tbl_customers.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbl_customers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Rokh Normal", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tbl_customers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            this.tbl_customers.ColumnHeadersHeight = 40;
+            this.tbl_customers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.tbl_customers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn6});
-            this.tbl_Customers.DataSource = this.customersBindingSource;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Rokh Normal", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.tbl_Customers.DefaultCellStyle = dataGridViewCellStyle5;
-            this.tbl_Customers.EnableHeadersVisualStyles = false;
-            this.tbl_Customers.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbl_Customers.Location = new System.Drawing.Point(12, 133);
-            this.tbl_Customers.MultiSelect = false;
-            this.tbl_Customers.Name = "tbl_Customers";
-            this.tbl_Customers.ReadOnly = true;
-            this.tbl_Customers.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Rokh Normal", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tbl_Customers.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.tbl_Customers.RowHeadersWidth = 5;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("RokhFaNum Normal", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
-            this.tbl_Customers.RowsDefaultCellStyle = dataGridViewCellStyle7;
-            this.tbl_Customers.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.tbl_Customers.RowTemplate.Height = 35;
-            this.tbl_Customers.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbl_Customers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.tbl_Customers.Size = new System.Drawing.Size(845, 305);
-            this.tbl_Customers.TabIndex = 21;
-            this.tbl_Customers.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tbl_Customers_CellClick);
+            this.tbl_customers.DataSource = this.customersBindingSource;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Rokh Normal", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.tbl_customers.DefaultCellStyle = dataGridViewCellStyle12;
+            this.tbl_customers.EnableHeadersVisualStyles = false;
+            this.tbl_customers.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbl_customers.Location = new System.Drawing.Point(12, 133);
+            this.tbl_customers.MultiSelect = false;
+            this.tbl_customers.Name = "tbl_customers";
+            this.tbl_customers.ReadOnly = true;
+            this.tbl_customers.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Rokh Normal", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tbl_customers.RowHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            this.tbl_customers.RowHeadersWidth = 5;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("RokhFaNum Normal", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.White;
+            this.tbl_customers.RowsDefaultCellStyle = dataGridViewCellStyle14;
+            this.tbl_customers.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.tbl_customers.RowTemplate.Height = 35;
+            this.tbl_customers.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbl_customers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.tbl_customers.Size = new System.Drawing.Size(845, 305);
+            this.tbl_customers.TabIndex = 21;
+            this.tbl_customers.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tbl_Customers_CellClick);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -217,8 +203,8 @@
             // 
             this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.dataGridViewTextBoxColumn2.DataPropertyName = "Name";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridViewTextBoxColumn2.HeaderText = "نام و نام خانوادگی";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
@@ -246,8 +232,8 @@
             // 
             this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.dataGridViewTextBoxColumn6.DataPropertyName = "CreatedAt";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
-            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
+            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle11;
             this.dataGridViewTextBoxColumn6.HeaderText = "تاریخ ثبت";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.ReadOnly = true;
@@ -331,194 +317,22 @@
             // 
             // Cmb_SearchFrame
             // 
-            this.Cmb_SearchFrame.AutoSize = false;
-            this.Cmb_SearchFrame.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Cmb_SearchFrame.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList;
-            // 
-            // Cmb_SearchFrame.NestedRadGridView
-            // 
-            this.Cmb_SearchFrame.EditorControl.BackColor = System.Drawing.SystemColors.Window;
-            this.Cmb_SearchFrame.EditorControl.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Cmb_SearchFrame.EditorControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.Cmb_SearchFrame.EditorControl.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Cmb_SearchFrame.EditorControl.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Cmb_SearchFrame.EditorControl.Location = new System.Drawing.Point(0, 0);
-            // 
-            // 
-            // 
-            this.Cmb_SearchFrame.EditorControl.MasterTemplate.AllowAddNewRow = false;
-            this.Cmb_SearchFrame.EditorControl.MasterTemplate.AllowCellContextMenu = false;
-            this.Cmb_SearchFrame.EditorControl.MasterTemplate.AllowColumnChooser = false;
-            gridViewTextBoxColumn1.EnableExpressionEditor = false;
-            gridViewTextBoxColumn1.HeaderText = "کد";
-            gridViewTextBoxColumn1.Name = "کد";
-            gridViewTextBoxColumn1.Width = 108;
-            gridViewTextBoxColumn2.EnableExpressionEditor = false;
-            gridViewTextBoxColumn2.HeaderText = "نام و نام خانوادگی";
-            gridViewTextBoxColumn2.Name = "نام و نام خانوادگی";
-            gridViewTextBoxColumn2.Width = 191;
-            gridViewTextBoxColumn3.EnableExpressionEditor = false;
-            gridViewTextBoxColumn3.HeaderText = "آدرس";
-            gridViewTextBoxColumn3.Name = "آدرس";
-            gridViewTextBoxColumn3.Width = 116;
-            gridViewTextBoxColumn4.EnableExpressionEditor = false;
-            gridViewTextBoxColumn4.HeaderText = "شماره تلفن";
-            gridViewTextBoxColumn4.Name = "شماره تلفن";
-            this.Cmb_SearchFrame.EditorControl.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn1,
-            gridViewTextBoxColumn2,
-            gridViewTextBoxColumn3,
-            gridViewTextBoxColumn4});
-            this.Cmb_SearchFrame.EditorControl.MasterTemplate.EnableGrouping = false;
-            this.Cmb_SearchFrame.EditorControl.MasterTemplate.ShowFilteringRow = false;
-            this.Cmb_SearchFrame.EditorControl.MasterTemplate.ShowRowHeaderColumn = false;
-            this.Cmb_SearchFrame.EditorControl.MasterTemplate.ViewDefinition = tableViewDefinition1;
-            this.Cmb_SearchFrame.EditorControl.Name = "NestedRadGridView";
-            this.Cmb_SearchFrame.EditorControl.ReadOnly = true;
-            this.Cmb_SearchFrame.EditorControl.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Cmb_SearchFrame.EditorControl.ShowGroupPanel = false;
-            this.Cmb_SearchFrame.EditorControl.Size = new System.Drawing.Size(240, 150);
-            this.Cmb_SearchFrame.EditorControl.TabIndex = 0;
-            this.Cmb_SearchFrame.Font = new System.Drawing.Font("RokhFaNum Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.Cmb_SearchFrame.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Cmb_SearchFrame.Location = new System.Drawing.Point(203, 93);
+            this.Cmb_SearchFrame.BackColor = System.Drawing.Color.Black;
+            this.Cmb_SearchFrame.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Cmb_SearchFrame.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Cmb_SearchFrame.Font = new System.Drawing.Font("Rokh Normal", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Cmb_SearchFrame.ForeColor = System.Drawing.Color.White;
+            this.Cmb_SearchFrame.FormattingEnabled = true;
+            this.Cmb_SearchFrame.Items.AddRange(new object[] {
+            "کد",
+            "نام و نام خانوادگی",
+            "شماره تلفن",
+            "آدرس"});
+            this.Cmb_SearchFrame.Location = new System.Drawing.Point(202, 89);
             this.Cmb_SearchFrame.Name = "Cmb_SearchFrame";
-            this.Cmb_SearchFrame.Padding = new System.Windows.Forms.Padding(0, 0, 7, 0);
             this.Cmb_SearchFrame.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            // 
-            // 
-<<<<<<< Updated upstream
-            // 
-            this.Cmb_SearchFrame.RootElement.BorderHighlightColor = System.Drawing.Color.Empty;
-            this.Cmb_SearchFrame.RootElement.BorderHighlightThickness = 0;
-            this.Cmb_SearchFrame.Size = new System.Drawing.Size(189, 34);
-            this.Cmb_SearchFrame.TabIndex = 32;
-            this.Cmb_SearchFrame.TabStop = false;
-            this.Cmb_SearchFrame.Text = "s";
-=======
-            this.tbl_customers.AllowUserToAddRows = false;
-            this.tbl_customers.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(8)))), ((int)(((byte)(8)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("RokhFaNum Normal", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            this.tbl_customers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.tbl_customers.AutoGenerateColumns = false;
-            this.tbl_customers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.tbl_customers.BackgroundColor = System.Drawing.Color.Black;
-            this.tbl_customers.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbl_customers.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
-            this.tbl_customers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Rokh Normal", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tbl_customers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.tbl_customers.ColumnHeadersHeight = 40;
-            this.tbl_customers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.tbl_customers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10});
-            this.tbl_customers.DataSource = this.customersBindingSource;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Rokh Normal", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.tbl_customers.DefaultCellStyle = dataGridViewCellStyle5;
-            this.tbl_customers.EnableHeadersVisualStyles = false;
-            this.tbl_customers.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbl_customers.Location = new System.Drawing.Point(8, 151);
-            this.tbl_customers.MultiSelect = false;
-            this.tbl_customers.Name = "tbl_customers";
-            this.tbl_customers.ReadOnly = true;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Rokh Normal", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tbl_customers.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.tbl_customers.RowHeadersWidth = 5;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("RokhFaNum Normal", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
-            this.tbl_customers.RowsDefaultCellStyle = dataGridViewCellStyle7;
-            this.tbl_customers.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.tbl_customers.RowTemplate.Height = 35;
-            this.tbl_customers.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbl_customers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.tbl_customers.Size = new System.Drawing.Size(848, 307);
-            this.tbl_customers.TabIndex = 26;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "CreatedAt";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
-            this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridViewTextBoxColumn5.HeaderText = "تاریخ ثبت";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Address";
-            this.dataGridViewTextBoxColumn7.HeaderText = "آدرس";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            this.dataGridViewTextBoxColumn7.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewTextBoxColumn7.Width = 270;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "Phone";
-            this.dataGridViewTextBoxColumn8.HeaderText = "شماره تلفن";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.ReadOnly = true;
-            this.dataGridViewTextBoxColumn8.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewTextBoxColumn8.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "Name";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn9.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridViewTextBoxColumn9.HeaderText = "نام و نام خانوادگی";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.ReadOnly = true;
-            this.dataGridViewTextBoxColumn9.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewTextBoxColumn9.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "CustomerID";
-            this.dataGridViewTextBoxColumn10.HeaderText = "کد";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.ReadOnly = true;
-            this.dataGridViewTextBoxColumn10.Resizable = System.Windows.Forms.DataGridViewTriState.False;
->>>>>>> Stashed changes
+            this.Cmb_SearchFrame.Size = new System.Drawing.Size(189, 35);
+            this.Cmb_SearchFrame.TabIndex = 33;
             // 
             // SearchCustomer
             // 
@@ -530,7 +344,7 @@
             this.Controls.Add(this.lbl_ResultTitle);
             this.Controls.Add(this.lbl_SearchResult);
             this.Controls.Add(this.btn_EndSearch);
-            this.Controls.Add(this.tbl_Customers);
+            this.Controls.Add(this.tbl_customers);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbl_Search);
             this.Controls.Add(this.txt_SearchBox);
@@ -548,13 +362,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "جستجو بین مشتریان";
             this.Load += new System.EventHandler(this.SearchCustomer_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.tbl_Customers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_customers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_EndSearch)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cmb_SearchFrame.EditorControl.MasterTemplate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cmb_SearchFrame.EditorControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cmb_SearchFrame)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -570,7 +381,7 @@
         private System.Windows.Forms.TextBox txt_SearchBox;
         private System.Windows.Forms.Label lbl_Search;
         private System.Windows.Forms.Label label1;
-        public System.Windows.Forms.DataGridView tbl_Customers;
+        public System.Windows.Forms.DataGridView tbl_customers;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
@@ -579,6 +390,6 @@
         public Telerik.WinControls.UI.RadButton btn_EndSearch;
         private System.Windows.Forms.Label lbl_ResultTitle;
         public System.Windows.Forms.Label lbl_SearchResult;
-        public Telerik.WinControls.UI.RadMultiColumnComboBox Cmb_SearchFrame;
+        public System.Windows.Forms.ComboBox Cmb_SearchFrame;
     }
 }
