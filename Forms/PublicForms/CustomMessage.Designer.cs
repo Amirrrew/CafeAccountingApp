@@ -78,7 +78,6 @@
             this.BtnOK.Size = new System.Drawing.Size(110, 36);
             this.BtnOK.TabIndex = 2;
             this.BtnOK.Text = "بله";
-            this.BtnOK.Click += new System.EventHandler(this.BtnOK_Click);
             ((Telerik.WinControls.UI.RadButtonElement)(this.BtnOK.GetChildAt(0))).DisplayStyle = Telerik.WinControls.DisplayStyle.Text;
             ((Telerik.WinControls.UI.RadButtonElement)(this.BtnOK.GetChildAt(0))).Text = "بله";
             ((Telerik.WinControls.UI.RadButtonElement)(this.BtnOK.GetChildAt(0))).Font = new System.Drawing.Font("Rokh Normal", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
@@ -160,7 +159,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnNo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconBox)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.ResumeLayout(false);
+            //this.ResumeLayout(false);
             this.PerformLayout();
 
         }

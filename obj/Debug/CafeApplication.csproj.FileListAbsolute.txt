@@ -184,5 +184,3 @@ C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\Products
 C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\bin\Debug\Assets\Icons\Public\chevron-right (2).png
 C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\Products\manageProducts-Icon.png
 C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\Products\service-Icon.png
-C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\obj\Debug\CafeApplication.Forms.CustomerManageForms.CustomerManage.resources
-C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\CustomerManage\customerManage-Icon.png

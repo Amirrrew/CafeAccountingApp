@@ -40,7 +40,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.lbl_titele = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.btn_save = new Telerik.WinControls.UI.RadButton();
             this.btn_cancel = new Telerik.WinControls.UI.RadButton();
             this.customersTableAdapter = new CafeApplication.Data.DataSet.DsCafeTableAdapters.CustomersTableAdapter();
@@ -165,18 +165,18 @@
             this.label3.Text = "آدرس";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // lbl_titele
+            // label4
             // 
-            this.lbl_titele.AutoSize = true;
-            this.lbl_titele.Font = new System.Drawing.Font("Rokh", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lbl_titele.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_titele.Location = new System.Drawing.Point(170, 8);
-            this.lbl_titele.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_titele.Name = "lbl_titele";
-            this.lbl_titele.Size = new System.Drawing.Size(259, 41);
-            this.lbl_titele.TabIndex = 12;
-            this.lbl_titele.Text = "افزودن مشتری جدید";
-            this.lbl_titele.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Rokh", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label4.ForeColor = System.Drawing.Color.Gray;
+            this.label4.Location = new System.Drawing.Point(170, 8);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(259, 41);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "افزودن مشتری جدید";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // btn_save
             // 
@@ -271,7 +271,7 @@
             this.Controls.Add(this.txt_Date);
             this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.btn_save);
-            this.Controls.Add(this.lbl_titele);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -315,7 +315,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label lbl_titele;
+        private System.Windows.Forms.Label label4;
         public Telerik.WinControls.UI.RadButton btn_save;
         public Telerik.WinControls.UI.RadButton btn_cancel;
         private Data.DataSet.DsCafeTableAdapters.CustomersTableAdapter customersTableAdapter;
