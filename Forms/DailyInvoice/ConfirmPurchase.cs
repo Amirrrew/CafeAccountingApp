@@ -24,7 +24,6 @@ namespace CafeApplication.Forms.DailyInvoice
             PrepareForInvoice();
             btn.SetBtnColor(this);
             Cmb_SelectedPOS.BackColor = Color.FromArgb(30, 0, 0, 1);
-            
         }
 
         //-------------- import classes ----------------- 

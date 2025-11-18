@@ -85,12 +85,6 @@
       <DependentUpon>DsCafe.xsd</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="Forms\CustomerManageForms\CustomerManage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\CustomerManageForms\CustomerManage.Designer.cs">
-      <DependentUpon>CustomerManage.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\DailyInvoice\AddCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,9 +129,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\CustomerManageForms\CustomerManage.resx">
-      <DependentUpon>CustomerManage.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\DailyInvoice\AddCustomer.resx">
       <DependentUpon>AddCustomer.cs</DependentUpon>
     </EmbeddedResource>
@@ -279,9 +270,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Assets\Icons\Mainmenu\Products\service-Icon.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Assets\Icons\Mainmenu\CustomerManage\customerManage-Icon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <Content Include="Assets\Wallpaper\DefaultWallpaper.jpg" />

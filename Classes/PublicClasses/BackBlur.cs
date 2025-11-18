@@ -42,7 +42,7 @@ namespace CafeApplication.Classes.PublicClasses
         public void EnableBlur(Form form)
         {
             var accent = new AccentPolicy();
-            accent.AccentState = 4;
+            accent.AccentState = 3;
             accent.GradiantColor = (180 << 24) | (0x00 << 16) | (0x00 << 8) | 0x00;
             var accentStructSize = Marshal.SizeOf(accent);
             var accentPtr = Marshal.AllocHGlobal(accentStructSize);
@@ -55,7 +55,6 @@ namespace CafeApplication.Classes.PublicClasses
             SetWindowCompositionAttribute(form.Handle, ref data);
             Marshal.FreeHGlobal(accentPtr);
         }
-
 
     }
 }
