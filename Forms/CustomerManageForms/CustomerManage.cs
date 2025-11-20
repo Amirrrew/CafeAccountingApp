@@ -82,5 +82,30 @@ namespace CafeApplication.Forms.CustomerManageForms
                 return;
             }
         }
+
+        private void txt_SearchBox_TextChanged(object sender, EventArgs e)
+        {
+            if ( txt_SearchBox.Text != string.Empty)
+            {
+                if (rd_name.Checked)
+                {
+                    customersTableAdapter.FillBy_customer_name(dsCafe.Customers,  txt_SearchBox.Text + "%" );
+                }
+                else if (rd_number.Checked)
+                {
+                    customersTableAdapter.FillBy_customer_phone(dsCafe.Customers, txt_SearchBox.Text + "%");
+                }
+            }
+            else
+            {
+                customersTableAdapter.Fill(dsCafe.Customers);
+            }
+        }
+
+        private void btn_edit_Click(object sender, EventArgs e)
+        {
+            CafeApplication.Forms.CustomerManageForms.EditCustomer editCustomer = new CafeApplication.Forms.CustomerManageForms.EditCustomer();
+            editCustomer.ShowDialog();
+        }
     }
 }
