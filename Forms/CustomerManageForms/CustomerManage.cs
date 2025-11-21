@@ -21,14 +21,16 @@ namespace CafeApplication.Forms.CustomerManageForms
             blur.SetBlurBack(this);
             font.SetFont(this);
             btn.SetBtnColor(this);
-            
+            Cmb_SearchFrame.SelectedIndex = 0;
+            Cmb_SearchFrame.AutoSize = false;
+            Cmb_SearchFrame.Height = 45;
         }
 
         //----------- importing classes ----------
         BackBlur blur = new BackBlur();
         FontSet font = new FontSet();
         BtnDefaultStyle btn = new BtnDefaultStyle();
-        CafeApplication.Forms.PublicForms.CustomMessage customMessage = new PublicForms.CustomMessage();
+        CafeApplication.Forms.PublicForms.CustomMessage msg = new PublicForms.CustomMessage();
 
         private void CustomerManage_Load(object sender, EventArgs e)
         {
@@ -52,8 +54,8 @@ namespace CafeApplication.Forms.CustomerManageForms
         private  DialogResult msg_Question()
         {
             //برای این که دیالوگ ریزالت فرم رو بگیریم م ستغیم داخل شرط ایف نمیشد پس براش کلس نوشتیم
-            customMessage.NewMessage("هشدار", "آیا از حذف اطلاعات انتخاب شده مطمعن هستید ؟", "YN", "warning", null);
-            return customMessage.DialogResult;
+            msg.NewMessage("هشدار", "آیا از حذف اطلاعات انتخاب شده مطمعن هستید ؟", "YN", "warning", null);
+            return msg.DialogResult;
         }
         private void btn_delete_coustomer_Click(object sender, EventArgs e)
         {
@@ -61,7 +63,7 @@ namespace CafeApplication.Forms.CustomerManageForms
             {
                 if (this.tbl_customers.Rows.Count == 0)
                 {
-                    customMessage.NewMessage("هشدار", "اطلاعاتی برای حذف وجود ندارد", "Y", "warning",null);
+                    msg.NewMessage("هشدار", "اطلاعاتی برای حذف وجود ندارد", "Y", "warning",null);
                     return;
                 }
                 //---------------
@@ -78,8 +80,56 @@ namespace CafeApplication.Forms.CustomerManageForms
             }
             catch 
             {
-                customMessage.NewMessage("خطا", "در ذخیره سازی اطلاعات مشکلی پیش آمده\n دوباره تلاش کنید و در صورت لزوم با پشتیبانی تماس بگیرید", "Y", "error", null);
+                msg.NewMessage("خطا", "در ذخیره سازی اطلاعات مشکلی پیش آمده\n دوباره تلاش کنید و در صورت لزوم با پشتیبانی تماس بگیرید", "Y", "error", null);
                 return;
+            }
+        }
+
+        private void txt_SearchBox_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txt_SearchBox.Text != string.Empty)
+                {
+                    switch (Cmb_SearchFrame.Text)
+                    {
+                        case "کد":
+                            customersTableAdapter.FillBy_customer_id(dsCafe.Customers, int.Parse(txt_SearchBox.Text));
+                            break;
+                        case "نام و نام خانوادگی":
+                            customersTableAdapter.FillBy_customer_name(dsCafe.Customers, "%" + txt_SearchBox.Text + "%");
+                            break;
+                        case "شماره تلفن":
+                            customersTableAdapter.FillBy_customer_phone(dsCafe.Customers, txt_SearchBox.Text + "%");
+                            break;
+                        case "آدرس":
+                            customersTableAdapter.FillBy_customer_address(dsCafe.Customers, "%" + txt_SearchBox.Text + "%");
+                            break;
+                        default:
+                            msg.NewMessage("هشدار", "ابتدا باید یک متد برای جستجو انتخاب کنید.", "Y", "warning", null); break;
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                msg.NewMessage("خطا", "در جستجو مشکلی پیش آمده.\nفرم را ببندید و دوباره تلاش کنید.", "Y", "error", null);
+            }
+
+        }
+
+        private void txt_SearchBox_Leave(object sender, EventArgs e)
+        {
+            customersTableAdapter.Fill(dsCafe.Customers);
+        }
+
+        private void txt_SearchBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Cmb_SearchFrame.Text == "شماره تلفن" || Cmb_SearchFrame.Text == "کد")
+            {
+                if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+                {
+                    e.Handled = true;
+                }
             }
         }
     }
