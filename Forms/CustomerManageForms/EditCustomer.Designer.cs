@@ -35,13 +35,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(592, 740);
+            this.ClientSize = new System.Drawing.Size(474, 691);
             this.Font = new System.Drawing.Font("Rokh Normal", 12F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.Name = "EditCustomer";
             this.Text = "منوی ویرایش مشتریان";
+            this.Load += new System.EventHandler(this.EditCustomer_Load);
             this.ResumeLayout(false);
 
         }

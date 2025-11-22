@@ -24,5 +24,10 @@ namespace CafeApplication.Forms.CustomerManageForms
         FontSet font = new FontSet();
         BtnDefaultStyle btn = new BtnDefaultStyle();
         CafeApplication.Forms.PublicForms.CustomMessage customMessage = new PublicForms.CustomMessage();
+
+        private void EditCustomer_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
