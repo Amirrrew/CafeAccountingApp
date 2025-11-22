@@ -31,7 +31,18 @@ namespace CafeApplication.Forms.CustomerManageForms
         FontSet font = new FontSet();
         BtnDefaultStyle btn = new BtnDefaultStyle();
         CafeApplication.Forms.PublicForms.CustomMessage msg = new PublicForms.CustomMessage();
+        string selectedId ,selectedName, selectedPhone, selectedAddress ,selectedDate ,selectedBalance;
 
+
+        public void SetSelectedDefault()
+        {
+            selectedId = tbl_customers.Rows[0].Cells[0].Value.ToString();
+            selectedName = tbl_customers.Rows[0].Cells[1].Value.ToString();
+            selectedPhone = tbl_customers.Rows[0].Cells[2].Value.ToString();
+            selectedAddress = tbl_customers.Rows[0].Cells[3].Value.ToString();
+            selectedBalance = tbl_customers.Rows[0].Cells[4].Value.ToString();
+            selectedDate = tbl_customers.Rows[0].Cells[5].Value.ToString();
+        }
         private void CustomerManage_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'dsCafe.Customers' table. You can move, or remove it, as needed.
@@ -57,6 +68,17 @@ namespace CafeApplication.Forms.CustomerManageForms
             msg.NewMessage("هشدار", "آیا از حذف اطلاعات انتخاب شده مطمعن هستید ؟", "YN", "warning", null);
             return msg.DialogResult;
         }
+
+        private void tbl_customers_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            selectedId = tbl_customers.Rows[e.RowIndex].Cells[0].Value.ToString();
+            selectedName = tbl_customers.Rows[e.RowIndex].Cells[1].Value.ToString();
+            selectedPhone = tbl_customers.Rows[e.RowIndex].Cells[2].Value.ToString();
+            selectedAddress = tbl_customers.Rows[e.RowIndex].Cells[3].Value.ToString();
+            selectedBalance = tbl_customers.Rows[e.RowIndex].Cells[4].Value.ToString();
+            selectedDate = tbl_customers.Rows[e.RowIndex].Cells[5].Value.ToString();
+        }
+
         private void btn_delete_coustomer_Click(object sender, EventArgs e)
         {
             try
@@ -131,6 +153,25 @@ namespace CafeApplication.Forms.CustomerManageForms
                     e.Handled = true;
                 }
             }
+        }
+
+        private void btn_edit_Click(object sender, EventArgs e)
+        {
+            EditCustomer edit = new EditCustomer();
+            //if(selectedId != string.Empty && selectedName != string.Empty)
+            //{
+                edit.txt_CustomerID.Text = selectedId;
+                edit.txt_CustomerName.Text = selectedName;
+                edit.txt_CustomerAddress.Text = selectedAddress;
+                edit.txt_CustomerPhone.Text = selectedPhone;
+                edit.txt_Date.Text = selectedDate;
+                edit.ShowDialog();
+            //}
+            //else
+            //{
+            //    msg.NewMessage("انتخاب ردیف" , "لطفا ابتدا یک ردیف انتخاب کنید." ,"Y" ,"info" ,null);
+            //}
+
         }
     }
 }

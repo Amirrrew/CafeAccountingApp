@@ -188,3 +188,4 @@ C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\obj\Debug\CafeApplication.For
 C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\CustomerManage\customerManage-Icon.png
 C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\CustomerManage\customerManage-Icon.png
 C:\Users\amir\Desktop\CafeAccountingApp\obj\Debug\CafeApplication.Forms.CustomerManageForms.CustomerManage.resources
+C:\Users\amir\Desktop\CafeAccountingApp\obj\Debug\CafeApplication.Forms.CustomerManageForms.EditCustomer.resources
