@@ -77,6 +77,7 @@ namespace CafeApplication.Forms.DailyInvoice
                     else
                     {
                         customerName = null;
+                        customersTableAdapter.Fill(dsCafe.Customers);
                     }
                 }
 
@@ -146,8 +147,7 @@ namespace CafeApplication.Forms.DailyInvoice
             }
             catch 
             {
-
-               
+                msg.NewMessage("خطا", "در جستجو مشکلی پیش آمده.\nفرم را ببندید و دوباره تلاش کنید.", "Y", "error", null);
             }
            
         }

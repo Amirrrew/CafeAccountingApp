@@ -21,15 +21,28 @@ namespace CafeApplication.Forms.CustomerManageForms
             blur.SetBlurBack(this);
             font.SetFont(this);
             btn.SetBtnColor(this);
-            
+            Cmb_SearchFrame.SelectedIndex = 0;
+            Cmb_SearchFrame.AutoSize = false;
+            Cmb_SearchFrame.Height = 45;
         }
 
         //----------- importing classes ----------
         BackBlur blur = new BackBlur();
         FontSet font = new FontSet();
         BtnDefaultStyle btn = new BtnDefaultStyle();
-        CafeApplication.Forms.PublicForms.CustomMessage customMessage = new PublicForms.CustomMessage();
+        CafeApplication.Forms.PublicForms.CustomMessage msg = new PublicForms.CustomMessage();
+        string selectedId ,selectedName, selectedPhone, selectedAddress ,selectedDate ,selectedBalance;
 
+
+        public void SetSelectedDefault()
+        {
+            selectedId = tbl_customers.Rows[0].Cells[0].Value.ToString();
+            selectedName = tbl_customers.Rows[0].Cells[1].Value.ToString();
+            selectedPhone = tbl_customers.Rows[0].Cells[2].Value.ToString();
+            selectedAddress = tbl_customers.Rows[0].Cells[3].Value.ToString();
+            selectedBalance = tbl_customers.Rows[0].Cells[4].Value.ToString();
+            selectedDate = tbl_customers.Rows[0].Cells[5].Value.ToString();
+        }
         private void CustomerManage_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'dsCafe.Customers' table. You can move, or remove it, as needed.
@@ -52,16 +65,27 @@ namespace CafeApplication.Forms.CustomerManageForms
         private  DialogResult msg_Question()
         {
             //برای این که دیالوگ ریزالت فرم رو بگیریم م ستغیم داخل شرط ایف نمیشد پس براش کلس نوشتیم
-            customMessage.NewMessage("هشدار", "آیا از حذف اطلاعات انتخاب شده مطمعن هستید ؟", "YN", "warning", null);
-            return customMessage.DialogResult;
+            msg.NewMessage("هشدار", "آیا از حذف اطلاعات انتخاب شده مطمعن هستید ؟", "YN", "warning", null);
+            return msg.DialogResult;
         }
+
+        private void tbl_customers_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            selectedId = tbl_customers.Rows[e.RowIndex].Cells[0].Value.ToString();
+            selectedName = tbl_customers.Rows[e.RowIndex].Cells[1].Value.ToString();
+            selectedPhone = tbl_customers.Rows[e.RowIndex].Cells[2].Value.ToString();
+            selectedAddress = tbl_customers.Rows[e.RowIndex].Cells[3].Value.ToString();
+            selectedBalance = tbl_customers.Rows[e.RowIndex].Cells[4].Value.ToString();
+            selectedDate = tbl_customers.Rows[e.RowIndex].Cells[5].Value.ToString();
+        }
+
         private void btn_delete_coustomer_Click(object sender, EventArgs e)
         {
             try
             {
                 if (this.tbl_customers.Rows.Count == 0)
                 {
-                    customMessage.NewMessage("هشدار", "اطلاعاتی برای حذف وجود ندارد", "Y", "warning",null);
+                    msg.NewMessage("هشدار", "اطلاعاتی برای حذف وجود ندارد", "Y", "warning",null);
                     return;
                 }
                 //---------------
@@ -78,34 +102,76 @@ namespace CafeApplication.Forms.CustomerManageForms
             }
             catch 
             {
-                customMessage.NewMessage("خطا", "در ذخیره سازی اطلاعات مشکلی پیش آمده\n دوباره تلاش کنید و در صورت لزوم با پشتیبانی تماس بگیرید", "Y", "error", null);
+                msg.NewMessage("خطا", "در ذخیره سازی اطلاعات مشکلی پیش آمده\n دوباره تلاش کنید و در صورت لزوم با پشتیبانی تماس بگیرید", "Y", "error", null);
                 return;
             }
         }
 
         private void txt_SearchBox_TextChanged(object sender, EventArgs e)
         {
-            if ( txt_SearchBox.Text != string.Empty)
+            try
             {
-                if (rd_name.Checked)
+                if (txt_SearchBox.Text != string.Empty)
                 {
-                    customersTableAdapter.FillBy_customer_name(dsCafe.Customers,  txt_SearchBox.Text + "%" );
-                }
-                else if (rd_number.Checked)
-                {
-                    customersTableAdapter.FillBy_customer_phone(dsCafe.Customers, txt_SearchBox.Text + "%");
+                    switch (Cmb_SearchFrame.Text)
+                    {
+                        case "کد":
+                            customersTableAdapter.FillBy_customer_id(dsCafe.Customers, int.Parse(txt_SearchBox.Text));
+                            break;
+                        case "نام و نام خانوادگی":
+                            customersTableAdapter.FillBy_customer_name(dsCafe.Customers, "%" + txt_SearchBox.Text + "%");
+                            break;
+                        case "شماره تلفن":
+                            customersTableAdapter.FillBy_customer_phone(dsCafe.Customers, txt_SearchBox.Text + "%");
+                            break;
+                        case "آدرس":
+                            customersTableAdapter.FillBy_customer_address(dsCafe.Customers, "%" + txt_SearchBox.Text + "%");
+                            break;
+                        default:
+                            msg.NewMessage("هشدار", "ابتدا باید یک متد برای جستجو انتخاب کنید.", "Y", "warning", null); break;
+                    }
                 }
             }
-            else
+            catch (Exception)
             {
-                customersTableAdapter.Fill(dsCafe.Customers);
+                msg.NewMessage("خطا", "در جستجو مشکلی پیش آمده.\nفرم را ببندید و دوباره تلاش کنید.", "Y", "error", null);
+            }
+
+        }
+
+        private void txt_SearchBox_Leave(object sender, EventArgs e)
+        {
+            customersTableAdapter.Fill(dsCafe.Customers);
+        }
+
+        private void txt_SearchBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Cmb_SearchFrame.Text == "شماره تلفن" || Cmb_SearchFrame.Text == "کد")
+            {
+                if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+                {
+                    e.Handled = true;
+                }
             }
         }
 
         private void btn_edit_Click(object sender, EventArgs e)
         {
-            CafeApplication.Forms.CustomerManageForms.EditCustomer editCustomer = new CafeApplication.Forms.CustomerManageForms.EditCustomer();
-            editCustomer.ShowDialog();
+            EditCustomer edit = new EditCustomer();
+            //if(selectedId != string.Empty && selectedName != string.Empty)
+            //{
+                edit.txt_CustomerID.Text = selectedId;
+                edit.txt_CustomerName.Text = selectedName;
+                edit.txt_CustomerAddress.Text = selectedAddress;
+                edit.txt_CustomerPhone.Text = selectedPhone;
+                edit.txt_Date.Text = selectedDate;
+                edit.ShowDialog();
+            //}
+            //else
+            //{
+            //    msg.NewMessage("انتخاب ردیف" , "لطفا ابتدا یک ردیف انتخاب کنید." ,"Y" ,"info" ,null);
+            //}
+
         }
     }
 }
