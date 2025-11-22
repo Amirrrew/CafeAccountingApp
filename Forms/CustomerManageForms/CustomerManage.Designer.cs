@@ -113,7 +113,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(10, 10);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1525, 61);
+            this.panel1.Size = new System.Drawing.Size(1133, 61);
             this.panel1.TabIndex = 28;
             // 
             // label1
@@ -412,7 +412,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1545, 642);
+            this.ClientSize = new System.Drawing.Size(1153, 627);
             this.Controls.Add(this.createdAtLabel1);
             this.Controls.Add(this.addressLabel1);
             this.Controls.Add(this.phoneLabel1);

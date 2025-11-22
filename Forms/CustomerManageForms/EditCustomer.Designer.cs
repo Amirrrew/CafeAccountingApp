@@ -328,7 +328,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(808, 461);
+            this.ClientSize = new System.Drawing.Size(425, 445);
             this.ControlBox = false;
             this.Controls.Add(this.customersDataGridView);
             this.Controls.Add(this.lbl_CreatedAt);
