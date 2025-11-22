@@ -44,5 +44,17 @@ namespace CafeApplication.Properties {
                 return ((string)(this["CafeApplicationSetupDone"]));
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string edit_customer {
+            get {
+                return ((string)(this["edit_customer"]));
+            }
+            set {
+                this["edit_customer"] = value;
+            }
+        }
     }
 }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomerManage));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -36,7 +37,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomerManage));
             this.dsCafe = new CafeApplication.Data.DataSet.DsCafe();
             this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.customersTableAdapter = new CafeApplication.Data.DataSet.DsCafeTableAdapters.CustomersTableAdapter();
@@ -44,6 +44,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.Cmb_SearchFrame = new System.Windows.Forms.ComboBox();
+            this.btn_edit = new Telerik.WinControls.UI.RadButton();
+            this.btn_delete_coustomer = new Telerik.WinControls.UI.RadButton();
+            this.btn_addCustomer = new Telerik.WinControls.UI.RadButton();
             this.tbl_customers = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Balance = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,16 +54,19 @@
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btn_edit = new Telerik.WinControls.UI.RadButton();
-            this.btn_delete_coustomer = new Telerik.WinControls.UI.RadButton();
-            this.btn_addCustomer = new Telerik.WinControls.UI.RadButton();
+            this.tableAdapterManager = new CafeApplication.Data.DataSet.DsCafeTableAdapters.TableAdapterManager();
+            this.customerIDLabel1 = new System.Windows.Forms.Label();
+            this.nameLabel1 = new System.Windows.Forms.Label();
+            this.phoneLabel1 = new System.Windows.Forms.Label();
+            this.addressLabel1 = new System.Windows.Forms.Label();
+            this.createdAtLabel1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbl_customers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_edit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_delete_coustomer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_addCustomer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_customers)).BeginInit();
             this.SuspendLayout();
             // 
             // dsCafe
@@ -107,7 +113,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(10, 10);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1133, 61);
+            this.panel1.Size = new System.Drawing.Size(1525, 61);
             this.panel1.TabIndex = 28;
             // 
             // label1
@@ -142,6 +148,60 @@
             this.Cmb_SearchFrame.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Cmb_SearchFrame.Size = new System.Drawing.Size(190, 35);
             this.Cmb_SearchFrame.TabIndex = 29;
+            // 
+            // btn_edit
+            // 
+            this.btn_edit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btn_edit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
+            this.btn_edit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_edit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_edit.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
+            this.btn_edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btn_edit.Image = ((System.Drawing.Image)(resources.GetObject("btn_edit.Image")));
+            this.btn_edit.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_edit.Location = new System.Drawing.Point(8, 7);
+            this.btn_edit.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_edit.Name = "btn_edit";
+            this.btn_edit.Size = new System.Drawing.Size(53, 48);
+            this.btn_edit.TabIndex = 27;
+            this.btn_edit.Text = "-";
+            this.btn_edit.Click += new System.EventHandler(this.btn_edit_Click);
+            // 
+            // btn_delete_coustomer
+            // 
+            this.btn_delete_coustomer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btn_delete_coustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
+            this.btn_delete_coustomer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_delete_coustomer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_delete_coustomer.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
+            this.btn_delete_coustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btn_delete_coustomer.Image = ((System.Drawing.Image)(resources.GetObject("btn_delete_coustomer.Image")));
+            this.btn_delete_coustomer.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_delete_coustomer.Location = new System.Drawing.Point(65, 7);
+            this.btn_delete_coustomer.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_delete_coustomer.Name = "btn_delete_coustomer";
+            this.btn_delete_coustomer.Size = new System.Drawing.Size(53, 48);
+            this.btn_delete_coustomer.TabIndex = 27;
+            this.btn_delete_coustomer.Text = "-";
+            this.btn_delete_coustomer.Click += new System.EventHandler(this.btn_delete_coustomer_Click);
+            // 
+            // btn_addCustomer
+            // 
+            this.btn_addCustomer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btn_addCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
+            this.btn_addCustomer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_addCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_addCustomer.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
+            this.btn_addCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btn_addCustomer.Image = ((System.Drawing.Image)(resources.GetObject("btn_addCustomer.Image")));
+            this.btn_addCustomer.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_addCustomer.Location = new System.Drawing.Point(122, 7);
+            this.btn_addCustomer.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_addCustomer.Name = "btn_addCustomer";
+            this.btn_addCustomer.Size = new System.Drawing.Size(53, 48);
+            this.btn_addCustomer.TabIndex = 26;
+            this.btn_addCustomer.Text = "-";
+            this.btn_addCustomer.Click += new System.EventHandler(this.btn_addCustomer_Click);
             // 
             // tbl_customers
             // 
@@ -281,66 +341,83 @@
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
             this.dataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // btn_edit
+            // tableAdapterManager
             // 
-            this.btn_edit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btn_edit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
-            this.btn_edit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_edit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_edit.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
-            this.btn_edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btn_edit.Image = ((System.Drawing.Image)(resources.GetObject("btn_edit.Image")));
-            this.btn_edit.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_edit.Location = new System.Drawing.Point(8, 7);
-            this.btn_edit.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_edit.Name = "btn_edit";
-            this.btn_edit.Size = new System.Drawing.Size(53, 48);
-            this.btn_edit.TabIndex = 27;
-            this.btn_edit.Text = "-";
-            this.btn_edit.Click += new System.EventHandler(this.btn_edit_Click);
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.CafeTablesTableAdapter = null;
+            this.tableAdapterManager.CategoriesTableAdapter = null;
+            this.tableAdapterManager.CustomersTableAdapter = this.customersTableAdapter;
+            this.tableAdapterManager.EmployeesTableAdapter = null;
+            this.tableAdapterManager.ExpensesTableAdapter = null;
+            this.tableAdapterManager.IncomesTableAdapter = null;
+            this.tableAdapterManager.ProductsTableAdapter = null;
+            this.tableAdapterManager.PurchaseItemsTableAdapter = null;
+            this.tableAdapterManager.PurchasesTableAdapter = null;
+            this.tableAdapterManager.SaleItemsTableAdapter = null;
+            this.tableAdapterManager.SalesTableAdapter = null;
+            this.tableAdapterManager.SetupTableAdapter = null;
+            this.tableAdapterManager.SuppliersTableAdapter = null;
+            this.tableAdapterManager.TransactionsTableAdapter = null;
+            this.tableAdapterManager.TrashBinTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = CafeApplication.Data.DataSet.DsCafeTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UsersTableAdapter = null;
             // 
-            // btn_delete_coustomer
+            // customerIDLabel1
             // 
-            this.btn_delete_coustomer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btn_delete_coustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
-            this.btn_delete_coustomer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_delete_coustomer.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_delete_coustomer.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
-            this.btn_delete_coustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btn_delete_coustomer.Image = ((System.Drawing.Image)(resources.GetObject("btn_delete_coustomer.Image")));
-            this.btn_delete_coustomer.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_delete_coustomer.Location = new System.Drawing.Point(65, 7);
-            this.btn_delete_coustomer.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_delete_coustomer.Name = "btn_delete_coustomer";
-            this.btn_delete_coustomer.Size = new System.Drawing.Size(53, 48);
-            this.btn_delete_coustomer.TabIndex = 27;
-            this.btn_delete_coustomer.Text = "-";
-            this.btn_delete_coustomer.Click += new System.EventHandler(this.btn_delete_coustomer_Click);
+            this.customerIDLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "CustomerID", true));
+            this.customerIDLabel1.Location = new System.Drawing.Point(1354, 121);
+            this.customerIDLabel1.Name = "customerIDLabel1";
+            this.customerIDLabel1.Size = new System.Drawing.Size(100, 23);
+            this.customerIDLabel1.TabIndex = 29;
+            this.customerIDLabel1.Text = "label2";
             // 
-            // btn_addCustomer
+            // nameLabel1
             // 
-            this.btn_addCustomer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btn_addCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
-            this.btn_addCustomer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_addCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_addCustomer.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
-            this.btn_addCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btn_addCustomer.Image = ((System.Drawing.Image)(resources.GetObject("btn_addCustomer.Image")));
-            this.btn_addCustomer.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_addCustomer.Location = new System.Drawing.Point(122, 7);
-            this.btn_addCustomer.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_addCustomer.Name = "btn_addCustomer";
-            this.btn_addCustomer.Size = new System.Drawing.Size(53, 48);
-            this.btn_addCustomer.TabIndex = 26;
-            this.btn_addCustomer.Text = "-";
-            this.btn_addCustomer.Click += new System.EventHandler(this.btn_addCustomer_Click);
+            this.nameLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "Name", true));
+            this.nameLabel1.Location = new System.Drawing.Point(1354, 158);
+            this.nameLabel1.Name = "nameLabel1";
+            this.nameLabel1.Size = new System.Drawing.Size(100, 23);
+            this.nameLabel1.TabIndex = 30;
+            this.nameLabel1.Text = "label2";
+            // 
+            // phoneLabel1
+            // 
+            this.phoneLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "Phone", true));
+            this.phoneLabel1.Location = new System.Drawing.Point(1354, 193);
+            this.phoneLabel1.Name = "phoneLabel1";
+            this.phoneLabel1.Size = new System.Drawing.Size(100, 23);
+            this.phoneLabel1.TabIndex = 31;
+            this.phoneLabel1.Text = "label2";
+            // 
+            // addressLabel1
+            // 
+            this.addressLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "Address", true));
+            this.addressLabel1.Location = new System.Drawing.Point(1354, 230);
+            this.addressLabel1.Name = "addressLabel1";
+            this.addressLabel1.Size = new System.Drawing.Size(100, 23);
+            this.addressLabel1.TabIndex = 32;
+            this.addressLabel1.Text = "label2";
+            // 
+            // createdAtLabel1
+            // 
+            this.createdAtLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "CreatedAt", true));
+            this.createdAtLabel1.Location = new System.Drawing.Point(1354, 268);
+            this.createdAtLabel1.Name = "createdAtLabel1";
+            this.createdAtLabel1.Size = new System.Drawing.Size(100, 23);
+            this.createdAtLabel1.TabIndex = 33;
+            this.createdAtLabel1.Text = "label2";
             // 
             // CustomerManage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1153, 627);
+            this.ClientSize = new System.Drawing.Size(1545, 642);
+            this.Controls.Add(this.createdAtLabel1);
+            this.Controls.Add(this.addressLabel1);
+            this.Controls.Add(this.phoneLabel1);
+            this.Controls.Add(this.nameLabel1);
+            this.Controls.Add(this.customerIDLabel1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tbl_customers);
             this.Font = new System.Drawing.Font("Rokh Normal", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
@@ -359,10 +436,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbl_customers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_edit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_delete_coustomer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_addCustomer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_customers)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -385,5 +462,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         public System.Windows.Forms.ComboBox Cmb_SearchFrame;
         private System.Windows.Forms.Label label1;
+        private Data.DataSet.DsCafeTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.Label customerIDLabel1;
+        private System.Windows.Forms.Label nameLabel1;
+        private System.Windows.Forms.Label phoneLabel1;
+        private System.Windows.Forms.Label addressLabel1;
+        private System.Windows.Forms.Label createdAtLabel1;
     }
 }

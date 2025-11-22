@@ -1,5 +1,6 @@
 ﻿using CafeApplication.Classes.PublicClasses;
 using CafeApplication.Forms.DailyInvoice;
+using CafeApplication.Forms.PublicForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -71,12 +72,20 @@ namespace CafeApplication.Forms.CustomerManageForms
 
         private void tbl_customers_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            selectedId = tbl_customers.Rows[e.RowIndex].Cells[0].Value.ToString();
-            selectedName = tbl_customers.Rows[e.RowIndex].Cells[1].Value.ToString();
-            selectedPhone = tbl_customers.Rows[e.RowIndex].Cells[2].Value.ToString();
-            selectedAddress = tbl_customers.Rows[e.RowIndex].Cells[3].Value.ToString();
-            selectedBalance = tbl_customers.Rows[e.RowIndex].Cells[4].Value.ToString();
-            selectedDate = tbl_customers.Rows[e.RowIndex].Cells[5].Value.ToString();
+            try
+            {
+                selectedId = tbl_customers.Rows[e.RowIndex].Cells[0].Value.ToString();
+                selectedName = tbl_customers.Rows[e.RowIndex].Cells[1].Value.ToString();
+                selectedPhone = tbl_customers.Rows[e.RowIndex].Cells[2].Value.ToString();
+                selectedAddress = tbl_customers.Rows[e.RowIndex].Cells[3].Value.ToString();
+                selectedBalance = tbl_customers.Rows[e.RowIndex].Cells[4].Value.ToString();
+                selectedDate = tbl_customers.Rows[e.RowIndex].Cells[5].Value.ToString();
+            }
+            catch
+            {
+
+            }
+            
         }
 
         private void btn_delete_coustomer_Click(object sender, EventArgs e)
@@ -155,22 +164,50 @@ namespace CafeApplication.Forms.CustomerManageForms
             }
         }
 
+        //ساخت متغیر های پابلیک برای ارسال به فرم ادیت
+        public string Customer_id { get; set; }
+        public string Customer_name { get; set; }
+        public string Customer_phone { get; set; }
+        public string Customer_address { get; set; }
+        public string created_at { get; set; }
+        //----------------------------------------------
+
         private void btn_edit_Click(object sender, EventArgs e)
         {
-            EditCustomer edit = new EditCustomer();
-            //if(selectedId != string.Empty && selectedName != string.Empty)
-            //{
-                edit.txt_CustomerID.Text = selectedId;
-                edit.txt_CustomerName.Text = selectedName;
-                edit.txt_CustomerAddress.Text = selectedAddress;
-                edit.txt_CustomerPhone.Text = selectedPhone;
-                edit.txt_Date.Text = selectedDate;
-                edit.ShowDialog();
-            //}
-            //else
-            //{
-            //    msg.NewMessage("انتخاب ردیف" , "لطفا ابتدا یک ردیف انتخاب کنید." ,"Y" ,"info" ,null);
-            //}
+            if (this.tbl_customers.Rows.Count == 0)
+            {
+                msg.NewMessage("هشدار", "اطلاعاتی برای اصلاه وجود ندارد", "Y", "warning", null);
+                return;
+            }
+            Customer_id = customerIDLabel1.Text;
+            Customer_name = nameLabel1.Text;
+            Customer_phone = phoneLabel1.Text;
+            Customer_address = addressLabel1.Text;
+            created_at = createdAtLabel1.Text;
+
+            //---
+            using (EditCustomer form_edit = new EditCustomer(Customer_id, Customer_name, Customer_phone, Customer_address, created_at))
+            {
+                DialogResult d = form_edit.ShowDialog();
+                if (d == DialogResult.Yes)
+                {
+                    this.Refresh();
+                    customersTableAdapter.Fill(dsCafe.Customers);
+                    msg.NewMessage("هشدار", "تغیرات با موفقیت اعمال شد", "Y", "success", null);
+                }
+                else if (d == DialogResult.Cancel)
+                {
+                    msg.NewMessage("هشدار", "تغیراتی اعمال نشد", "Y", "success", null);
+                }
+                else if (d == DialogResult.No)
+                {
+                    msg.NewMessage("خطا", "اعمال تغیرات با شکست رو به رو  شد\n دوباره تلاش کنید", "Y", "error", null);
+                }
+            }
+            
+            
+            
+
 
         }
     }

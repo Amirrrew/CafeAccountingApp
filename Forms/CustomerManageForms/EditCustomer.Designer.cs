@@ -47,10 +47,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txt_CustomerID = new System.Windows.Forms.TextBox();
             this.lbl_CustomerID = new System.Windows.Forms.Label();
+            this.customersDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_cancel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_save)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customersDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_CreatedAt
@@ -128,6 +136,7 @@
             this.btn_cancel.Size = new System.Drawing.Size(60, 57);
             this.btn_cancel.TabIndex = 23;
             this.btn_cancel.Text = "-";
+            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
             // btn_save
             // 
@@ -143,6 +152,7 @@
             this.btn_save.Size = new System.Drawing.Size(60, 57);
             this.btn_save.TabIndex = 22;
             this.btn_save.Text = "-";
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
             // lbl_titele
             // 
@@ -186,7 +196,7 @@
             this.txt_CustomerAddress.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "Address", true));
             this.txt_CustomerAddress.Font = new System.Drawing.Font("Rokh Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_CustomerAddress.ForeColor = System.Drawing.Color.White;
-            this.txt_CustomerAddress.Location = new System.Drawing.Point(7, 271);
+            this.txt_CustomerAddress.Location = new System.Drawing.Point(8, 271);
             this.txt_CustomerAddress.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txt_CustomerAddress.Multiline = true;
             this.txt_CustomerAddress.Name = "txt_CustomerAddress";
@@ -237,6 +247,7 @@
             // 
             this.txt_CustomerID.BackColor = System.Drawing.Color.Black;
             this.txt_CustomerID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_CustomerID.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "CustomerID", true));
             this.txt_CustomerID.Font = new System.Drawing.Font("RokhFaNum ExtraLight", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_CustomerID.ForeColor = System.Drawing.Color.White;
             this.txt_CustomerID.Location = new System.Drawing.Point(309, 107);
@@ -258,12 +269,68 @@
             this.lbl_CustomerID.Text = "کد مشتری";
             this.lbl_CustomerID.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // customersDataGridView
+            // 
+            this.customersDataGridView.AutoGenerateColumns = false;
+            this.customersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.customersDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6});
+            this.customersDataGridView.DataSource = this.customersBindingSource;
+            this.customersDataGridView.Location = new System.Drawing.Point(506, 107);
+            this.customersDataGridView.Name = "customersDataGridView";
+            this.customersDataGridView.Size = new System.Drawing.Size(300, 220);
+            this.customersDataGridView.TabIndex = 29;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "CustomerID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "CustomerID";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Phone";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Phone";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Address";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Address";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Balance";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Balance";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "CreatedAt";
+            this.dataGridViewTextBoxColumn6.HeaderText = "CreatedAt";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
             // EditCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(429, 449);
+            this.ClientSize = new System.Drawing.Size(808, 461);
+            this.ControlBox = false;
+            this.Controls.Add(this.customersDataGridView);
             this.Controls.Add(this.lbl_CreatedAt);
             this.Controls.Add(this.txt_Date);
             this.Controls.Add(this.btn_cancel);
@@ -290,6 +357,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_cancel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_save)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customersDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -314,5 +382,12 @@
         public System.Windows.Forms.TextBox txt_CustomerPhone;
         public System.Windows.Forms.TextBox txt_CustomerName;
         public System.Windows.Forms.TextBox txt_CustomerID;
+        private System.Windows.Forms.DataGridView customersDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
     }
 }
