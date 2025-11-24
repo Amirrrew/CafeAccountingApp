@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CafeApplication.Classes.PublicClasses;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +17,8 @@ namespace CafeApplication.Forms.CustomerManageForms
         public EditCustomer(string id,string name,string phone,string address,string cr_date)
         {
             InitializeComponent();
+            blur.SetBlurBack(this);
+            font.SetFont(this);
             txt_CustomerID.Text = id;
             txt_CustomerName.Text = name;
             txt_CustomerPhone.Text = phone;
@@ -24,7 +27,10 @@ namespace CafeApplication.Forms.CustomerManageForms
             customersTableAdapter.FillBy_customer_id(dsCafe.Customers, int.Parse(id));
 
         }
+        BackBlur blur = new BackBlur();
+        FontSet font = new FontSet();
         CafeApplication.Forms.PublicForms.CustomMessage msg = new PublicForms.CustomMessage();
+        
 
         private void btn_save_Click(object sender, EventArgs e)
         {
@@ -33,7 +39,7 @@ namespace CafeApplication.Forms.CustomerManageForms
             {
                 if (this.customersDataGridView.Rows.Count == 0)
                 {
-                    msg.NewMessage("هشدار", "اطلاعاتی برای اصلاه وجود ندارد", "Y", "warning", null);
+                    msg.NewMessage("هشدار", "اطلاعاتی برای ویرایش وجود ندارد", "Y", "warning", null);
                     return;
                 }
                 //---------

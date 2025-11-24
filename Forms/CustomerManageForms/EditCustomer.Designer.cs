@@ -106,6 +106,7 @@
             this.txt_Date.ForeColor = System.Drawing.Color.White;
             this.txt_Date.Location = new System.Drawing.Point(163, 107);
             this.txt_Date.Name = "txt_Date";
+            this.txt_Date.ReadOnly = true;
             this.txt_Date.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txt_Date.Size = new System.Drawing.Size(141, 34);
             this.txt_Date.TabIndex = 28;
@@ -328,7 +329,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(425, 445);
+            this.ClientSize = new System.Drawing.Size(430, 448);
             this.ControlBox = false;
             this.Controls.Add(this.customersDataGridView);
             this.Controls.Add(this.lbl_CreatedAt);

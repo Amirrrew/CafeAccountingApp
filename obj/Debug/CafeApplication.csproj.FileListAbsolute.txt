@@ -190,3 +190,7 @@ C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\Customer
 C:\Users\amir\Desktop\CafeAccountingApp\obj\Debug\CafeApplication.Forms.CustomerManageForms.CustomerManage.resources
 C:\Users\amir\Desktop\CafeAccountingApp\obj\Debug\CafeApplication.Forms.CustomerManageForms.EditCustomer.resources
 C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\obj\Debug\CafeApplication.Forms.CustomerManageForms.EditCustomer.resources
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Public\add-Icon.png
+C:\Users\amir\Desktop\CafeAccountingApp\obj\Debug\CafeApplication.Forms.ProductManageForms.Categories.resources
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\Products\category-Icon.png
+C:\Users\amir\Desktop\CafeAccountingApp\obj\Debug\CafeApplication.Forms.ProductManageForms.AddCategory.resources

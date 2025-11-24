@@ -3,6 +3,7 @@ using CafeApplication.Data.DataSet;
 using CafeApplication.Data.DataSet.DsCafeTableAdapters;
 using CafeApplication.Forms.CustomerManageForms;
 using CafeApplication.Forms.DailyFactor;
+using CafeApplication.Forms.ProductManageForms;
 using CafeApplication.Forms.PublicForms;
 using Calendar;
 using System;
@@ -223,8 +224,11 @@ namespace CafeApplication
         {
 
 
-            ExpandMainPanel(lbl_products.Text ,btn_products ,2);
+            ExpandMainPanel(lbl_products.Text ,btn_products ,3);
 
+            lbl_Option3.Text = "دسته بندی کالا ها";
+            lbl_Option3.Image = Image.FromFile(ProdIconPath + @"category-Icon.png");
+            LabelFunc(lbl_Option3 , () => { Categories cat = new Categories(); cat.Show(); });
             lbl_Option2.Text = "مدیریت کالا ها";
             lbl_Option2.Image = Image.FromFile(ProdIconPath + @"manageProducts-Icon.png");
             lbl_Option1.Text = "مدیریت خدمات";

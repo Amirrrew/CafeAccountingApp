@@ -94,7 +94,7 @@ namespace CafeApplication.Forms.CustomerManageForms
             {
                 if (this.tbl_customers.Rows.Count == 0)
                 {
-                    msg.NewMessage("هشدار", "اطلاعاتی برای حذف وجود ندارد", "Y", "warning",null);
+                    msg.NewMessage("حذف", "برای حدف ابتدا ردیفی انتخاب کنید.", "Y", "info",null);
                     return;
                 }
                 //---------------
@@ -176,7 +176,7 @@ namespace CafeApplication.Forms.CustomerManageForms
         {
             if (this.tbl_customers.Rows.Count == 0)
             {
-                msg.NewMessage("هشدار", "اطلاعاتی برای اصلاه وجود ندارد", "Y", "warning", null);
+                msg.NewMessage("هشدار", "اطلاعاتی برای ویرایش وجود ندارد", "Y", "warning", null);
                 return;
             }
             Customer_id = customerIDLabel1.Text;
@@ -193,11 +193,11 @@ namespace CafeApplication.Forms.CustomerManageForms
                 {
                     this.Refresh();
                     customersTableAdapter.Fill(dsCafe.Customers);
-                    msg.NewMessage("هشدار", "تغیرات با موفقیت اعمال شد", "Y", "success", null);
+                    msg.NewMessage("ویرایش", "تغیرات با موفقیت اعمال شد", "Y", "success", null);
                 }
                 else if (d == DialogResult.Cancel)
                 {
-                    msg.NewMessage("هشدار", "تغیراتی اعمال نشد", "Y", "success", null);
+                    msg.NewMessage("ویرایش", "تغیراتی اعمال نشد", "Y", "success", null);
                 }
                 else if (d == DialogResult.No)
                 {
