@@ -34,14 +34,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddCategory));
             this.dsCafe = new CafeApplication.Data.DataSet.DsCafe();
             this.categoriesTableAdapter = new CafeApplication.Data.DataSet.DsCafeTableAdapters.CategoriesTableAdapter();
-            this.txt_CatName = new System.Windows.Forms.TextBox();
             this.categoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.txt_CatID = new System.Windows.Forms.TextBox();
             this.btn_cancel = new Telerik.WinControls.UI.RadButton();
             this.btn_save = new Telerik.WinControls.UI.RadButton();
             this.tableAdapterManager = new CafeApplication.Data.DataSet.DsCafeTableAdapters.TableAdapterManager();
             this.Chk_IsActive = new System.Windows.Forms.CheckBox();
             this.txt_cateParent = new System.Windows.Forms.TextBox();
+            this.txt_CatID = new System.Windows.Forms.TextBox();
+            this.txt_CatName = new System.Windows.Forms.TextBox();
             lbl_CatName = new System.Windows.Forms.Label();
             lbl_CatID = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).BeginInit();
@@ -53,7 +53,7 @@
             // lbl_CatName
             // 
             lbl_CatName.AutoSize = true;
-            lbl_CatName.Location = new System.Drawing.Point(254, 107);
+            lbl_CatName.Location = new System.Drawing.Point(264, 107);
             lbl_CatName.Name = "lbl_CatName";
             lbl_CatName.Size = new System.Drawing.Size(99, 21);
             lbl_CatName.TabIndex = 1;
@@ -62,11 +62,11 @@
             // lbl_CatID
             // 
             lbl_CatID.AutoSize = true;
-            lbl_CatID.Location = new System.Drawing.Point(254, 19);
+            lbl_CatID.Location = new System.Drawing.Point(269, 19);
             lbl_CatID.Name = "lbl_CatID";
-            lbl_CatID.Size = new System.Drawing.Size(99, 21);
+            lbl_CatID.Size = new System.Drawing.Size(98, 21);
             lbl_CatID.TabIndex = 4;
-            lbl_CatID.Text = "نام دسته بندی";
+            lbl_CatID.Text = "کد دسته بندی";
             // 
             // dsCafe
             // 
@@ -77,37 +77,10 @@
             // 
             this.categoriesTableAdapter.ClearBeforeFill = true;
             // 
-            // txt_CatName
-            // 
-            this.txt_CatName.BackColor = System.Drawing.Color.Black;
-            this.txt_CatName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_CatName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.categoriesBindingSource, "Name", true));
-            this.txt_CatName.Font = new System.Drawing.Font("RokhFaNum Normal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txt_CatName.ForeColor = System.Drawing.Color.White;
-            this.txt_CatName.Location = new System.Drawing.Point(6, 131);
-            this.txt_CatName.Name = "txt_CatName";
-            this.txt_CatName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txt_CatName.Size = new System.Drawing.Size(347, 38);
-            this.txt_CatName.TabIndex = 1;
-            // 
             // categoriesBindingSource
             // 
             this.categoriesBindingSource.DataMember = "Categories";
             this.categoriesBindingSource.DataSource = this.dsCafe;
-            // 
-            // txt_CatID
-            // 
-            this.txt_CatID.BackColor = System.Drawing.Color.Black;
-            this.txt_CatID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_CatID.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.categoriesBindingSource, "CategoryID", true));
-            this.txt_CatID.Font = new System.Drawing.Font("RokhFaNum Normal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txt_CatID.ForeColor = System.Drawing.Color.White;
-            this.txt_CatID.Location = new System.Drawing.Point(240, 43);
-            this.txt_CatID.Name = "txt_CatID";
-            this.txt_CatID.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txt_CatID.Size = new System.Drawing.Size(113, 38);
-            this.txt_CatID.TabIndex = 0;
-            this.txt_CatID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btn_cancel
             // 
@@ -184,20 +157,45 @@
             this.txt_cateParent.Size = new System.Drawing.Size(100, 28);
             this.txt_cateParent.TabIndex = 8;
             // 
+            // txt_CatID
+            // 
+            this.txt_CatID.BackColor = System.Drawing.Color.Black;
+            this.txt_CatID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_CatID.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.categoriesBindingSource, "CategoryID", true));
+            this.txt_CatID.Font = new System.Drawing.Font("RokhFaNum Normal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_CatID.ForeColor = System.Drawing.Color.White;
+            this.txt_CatID.Location = new System.Drawing.Point(259, 43);
+            this.txt_CatID.Name = "txt_CatID";
+            this.txt_CatID.ReadOnly = true;
+            this.txt_CatID.Size = new System.Drawing.Size(108, 38);
+            this.txt_CatID.TabIndex = 9;
+            // 
+            // txt_CatName
+            // 
+            this.txt_CatName.BackColor = System.Drawing.Color.Black;
+            this.txt_CatName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_CatName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.categoriesBindingSource, "Name", true));
+            this.txt_CatName.Font = new System.Drawing.Font("RokhFaNum Normal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_CatName.ForeColor = System.Drawing.Color.White;
+            this.txt_CatName.Location = new System.Drawing.Point(5, 131);
+            this.txt_CatName.Name = "txt_CatName";
+            this.txt_CatName.Size = new System.Drawing.Size(362, 38);
+            this.txt_CatName.TabIndex = 10;
+            // 
             // AddCategory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(359, 229);
+            this.ClientSize = new System.Drawing.Size(373, 225);
+            this.Controls.Add(this.txt_CatName);
+            this.Controls.Add(this.txt_CatID);
             this.Controls.Add(this.txt_cateParent);
             this.Controls.Add(this.Chk_IsActive);
             this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.btn_save);
             this.Controls.Add(lbl_CatID);
-            this.Controls.Add(this.txt_CatID);
             this.Controls.Add(lbl_CatName);
-            this.Controls.Add(this.txt_CatName);
             this.Font = new System.Drawing.Font("RokhFaNum Normal", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -225,11 +223,11 @@
         private System.Windows.Forms.BindingSource categoriesBindingSource;
         private Data.DataSet.DsCafeTableAdapters.CategoriesTableAdapter categoriesTableAdapter;
         private Data.DataSet.DsCafeTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.TextBox txt_CatName;
-        private System.Windows.Forms.TextBox txt_CatID;
         public Telerik.WinControls.UI.RadButton btn_cancel;
         public Telerik.WinControls.UI.RadButton btn_save;
         private System.Windows.Forms.CheckBox Chk_IsActive;
         private System.Windows.Forms.TextBox txt_cateParent;
+        private System.Windows.Forms.TextBox txt_CatID;
+        private System.Windows.Forms.TextBox txt_CatName;
     }
 }

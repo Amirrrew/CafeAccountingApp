@@ -194,3 +194,6 @@ C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Public\add-Icon.p
 C:\Users\amir\Desktop\CafeAccountingApp\obj\Debug\CafeApplication.Forms.ProductManageForms.Categories.resources
 C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\Products\category-Icon.png
 C:\Users\amir\Desktop\CafeAccountingApp\obj\Debug\CafeApplication.Forms.ProductManageForms.AddCategory.resources
+C:\Users\amir\Desktop\CafeAccountingApp\obj\Debug\CafeApplication.Forms.ProductManageForms.Products.resources
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Public\edit-Icon.png
+C:\Users\amir\Desktop\CafeAccountingApp\obj\Debug\CafeApplication.Forms.ProductManageForms.AddProduct.resources

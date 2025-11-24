@@ -1,4 +1,5 @@
 ﻿using CafeApplication.Classes.PublicClasses;
+using CafeApplication.Forms.PublicForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Interop;
 
 namespace CafeApplication.Forms.ProductManageForms
 {
@@ -22,6 +24,7 @@ namespace CafeApplication.Forms.ProductManageForms
 
         BackBlur blur = new BackBlur();
         FontSet font = new FontSet();
+        CustomMessage msg = new CustomMessage();
 
         private void categoriesBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
@@ -44,6 +47,30 @@ namespace CafeApplication.Forms.ProductManageForms
         {
             AddCategory add = new AddCategory();
             add.ShowDialog();
+        }
+
+        private DialogResult msg_Question()
+        {
+            msg.NewMessage("هشدار", "آیا از حذف اطلاعات انتخاب شده مطمعن هستید ؟", "YN", "warning", null);
+            return msg.DialogResult;
+        }
+
+        private void btn_delete_coustomer_Click(object sender, EventArgs e)
+        {
+            if (tbl_Category.SelectedRows.Count == 0)
+            {
+                msg.NewMessage("حذف", "برای حدف ابتدا ردیفی انتخاب کنید.", "Y", "info", null);
+                return;
+            }
+            else
+            {
+                if (msg_Question() == DialogResult.OK)
+                {
+                    categoriesBindingSource.RemoveCurrent();
+                    categoriesBindingSource.EndEdit();
+                    categoriesTableAdapter.Update(dsCafe.Categories);
+                }
+            }
         }
     }
 }

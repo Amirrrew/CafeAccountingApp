@@ -42,13 +42,14 @@
             this.tableAdapterManager = new CafeApplication.Data.DataSet.DsCafeTableAdapters.TableAdapterManager();
             this.productsTableAdapter = new CafeApplication.Data.DataSet.DsCafeTableAdapters.ProductsTableAdapter();
             this.tbl_Category = new System.Windows.Forms.DataGridView();
+            this.categoryIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.isActiveDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.fKCategoriesParentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.fKProductsCategoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btn_delete_coustomer = new Telerik.WinControls.UI.RadButton();
             this.btn_addCustomer = new Telerik.WinControls.UI.RadButton();
-            this.categoryIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.isActiveDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.categoriesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbl_Category)).BeginInit();
@@ -56,6 +57,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.fKProductsCategoryBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_delete_coustomer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_addCustomer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_titele
@@ -140,7 +142,7 @@
             this.categoryIDDataGridViewTextBoxColumn,
             this.nameDataGridViewTextBoxColumn,
             this.isActiveDataGridViewCheckBoxColumn});
-            this.tbl_Category.DataSource = this.fKCategoriesParentBindingSource;
+            this.tbl_Category.DataSource = this.categoriesBindingSource1;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("RokhFaNum Normal", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
@@ -181,6 +183,30 @@
             this.tbl_Category.Size = new System.Drawing.Size(436, 545);
             this.tbl_Category.TabIndex = 29;
             // 
+            // categoryIDDataGridViewTextBoxColumn
+            // 
+            this.categoryIDDataGridViewTextBoxColumn.DataPropertyName = "CategoryID";
+            this.categoryIDDataGridViewTextBoxColumn.HeaderText = "کد دسته بندی";
+            this.categoryIDDataGridViewTextBoxColumn.Name = "categoryIDDataGridViewTextBoxColumn";
+            this.categoryIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.categoryIDDataGridViewTextBoxColumn.Width = 122;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "نام دسته بندی";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // isActiveDataGridViewCheckBoxColumn
+            // 
+            this.isActiveDataGridViewCheckBoxColumn.DataPropertyName = "IsActive";
+            this.isActiveDataGridViewCheckBoxColumn.HeaderText = "فعال";
+            this.isActiveDataGridViewCheckBoxColumn.Name = "isActiveDataGridViewCheckBoxColumn";
+            this.isActiveDataGridViewCheckBoxColumn.ReadOnly = true;
+            this.isActiveDataGridViewCheckBoxColumn.Width = 44;
+            // 
             // fKCategoriesParentBindingSource
             // 
             this.fKCategoriesParentBindingSource.DataMember = "FK_Categories_Parent";
@@ -207,6 +233,7 @@
             this.btn_delete_coustomer.Size = new System.Drawing.Size(41, 37);
             this.btn_delete_coustomer.TabIndex = 31;
             this.btn_delete_coustomer.Text = "-";
+            this.btn_delete_coustomer.Click += new System.EventHandler(this.btn_delete_coustomer_Click);
             // 
             // btn_addCustomer
             // 
@@ -226,29 +253,10 @@
             this.btn_addCustomer.Text = "-";
             this.btn_addCustomer.Click += new System.EventHandler(this.btn_addCustomer_Click);
             // 
-            // categoryIDDataGridViewTextBoxColumn
+            // categoriesBindingSource1
             // 
-            this.categoryIDDataGridViewTextBoxColumn.DataPropertyName = "CategoryID";
-            this.categoryIDDataGridViewTextBoxColumn.HeaderText = "کد دسته بندی";
-            this.categoryIDDataGridViewTextBoxColumn.Name = "categoryIDDataGridViewTextBoxColumn";
-            this.categoryIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.categoryIDDataGridViewTextBoxColumn.Width = 122;
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "نام دسته بندی";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // isActiveDataGridViewCheckBoxColumn
-            // 
-            this.isActiveDataGridViewCheckBoxColumn.DataPropertyName = "IsActive";
-            this.isActiveDataGridViewCheckBoxColumn.HeaderText = "فعال";
-            this.isActiveDataGridViewCheckBoxColumn.Name = "isActiveDataGridViewCheckBoxColumn";
-            this.isActiveDataGridViewCheckBoxColumn.ReadOnly = true;
-            this.isActiveDataGridViewCheckBoxColumn.Width = 44;
+            this.categoriesBindingSource1.DataMember = "Categories";
+            this.categoriesBindingSource1.DataSource = this.dsCafe;
             // 
             // Categories
             // 
@@ -279,6 +287,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.fKProductsCategoryBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_delete_coustomer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_addCustomer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -300,5 +309,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn categoryIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewCheckBoxColumn isActiveDataGridViewCheckBoxColumn;
+        private System.Windows.Forms.BindingSource categoriesBindingSource1;
     }
 }

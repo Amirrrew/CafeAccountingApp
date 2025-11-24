@@ -139,11 +139,23 @@
     <Compile Include="Forms\ProductManageForms\AddCategory.Designer.cs">
       <DependentUpon>AddCategory.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ProductManageForms\AddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductManageForms\AddProduct.Designer.cs">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ProductManageForms\Categories.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\ProductManageForms\Categories.Designer.cs">
       <DependentUpon>Categories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductManageForms\Products.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductManageForms\Products.Designer.cs">
+      <DependentUpon>Products.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\PublicForms\CustomMessage.cs">
       <SubType>Form</SubType>
@@ -177,8 +189,14 @@
     <EmbeddedResource Include="Forms\ProductManageForms\AddCategory.resx">
       <DependentUpon>AddCategory.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductManageForms\AddProduct.resx">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ProductManageForms\Categories.resx">
       <DependentUpon>Categories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductManageForms\Products.resx">
+      <DependentUpon>Products.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PublicForms\CustomMessage.resx">
       <DependentUpon>CustomMessage.cs</DependentUpon>
@@ -315,6 +333,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Assets\Icons\Mainmenu\Products\category-Icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Assets\Icons\Public\edit-Icon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <Content Include="Assets\Wallpaper\DefaultWallpaper.jpg" />

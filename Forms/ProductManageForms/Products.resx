@@ -117,31 +117,31 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="productsBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>107, 17</value>
+  </metadata>
   <metadata name="dsCafe.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="categoriesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>107, 17</value>
-  </metadata>
-  <metadata name="categoriesTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>292, 17</value>
-  </metadata>
-  <metadata name="tableAdapterManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>470, 17</value>
-  </metadata>
   <metadata name="productsTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>876, 17</value>
-  </metadata>
-  <metadata name="categoriesBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>248, 54</value>
-  </metadata>
-  <metadata name="fKCategoriesParentBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 54</value>
-  </metadata>
-  <metadata name="fKProductsCategoryBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>639, 17</value>
+    <value>285, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="radButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EAAACxABrSO9dQAAAhZJREFUSEvt1umLTWEcB/CReKXxF1jGDArJvidbvB2JkKSx71siW7YI2bfImi3L
+        O1ukRLzDv/TRM/3mNvOYe66rw6v51q9u55x7Ps9znuWchoaelBT0xmLsxXz0yq/pNhiAufGneZiDWZiJ
+        6ZiGyZiI8RiL0RgVx97gJ77hI07kRpegHy7jPV7iGZ7gIe7jDm7hBq7iEs7jDE7hdGA/8DXQV3iNKblX
+        SaAJuYYrceMLOIezceMEnEy9wDEcweH4/QXfu0HfoS332hOPN/W0bPQtPqRhy832YDZe/AM0dSYNT+/c
+        bE9MoKd/gX6ugT5HS+5VErP2Uclompy7MCj3Koml8qBkdCu2YHDuVYIZuFcyuv5P4Km4XQM9hE91oOuw
+        GU25V0la4LhZgB7E9TrRNdhUC54UN66G7o85UA/aho0YknuVYEKs4WroPtytE12FDbXgcbhYgKY3Tdqf
+        c/RxAboyjjfnXiUYE0upGronKl2TGpjW+9EYw2roijhe2OP0Wkszuhq6GzuxPXqYZmsavyJ0OdbW6vHI
+        mNFlokvjXCE8AsdLRpfE+cK9eniMb5lo+vxZXQtujsdcJroo4MJH3YgDJaMLY69uzL0uwYKS0WVozZ3f
+        gj7xVZneoTuwLSq1uqMRHQ1JlXaljgalZdNRqXHp+lb0zZ2qia/Ngel1FtWUNoGoNBdStXSqoRjWqdKx
+        /vl9e/Lf8wvOPrJ8syAXtwAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="btn_delete_coustomer.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -160,7 +160,7 @@
   <data name="btn_addCustomer.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAAolJREFUSEvtlklvTlEcxmvYGFZNEQvxEUpYVb+B2qBEGjHEHIQIYpYSQ40tgqTE
+        DQAACw0B7QfALAAAAolJREFUSEvtlklvTlEcxmvYGFZNEQvxEUpYVb+B2qBEGjHEHIQIYpYSQ40tgqTE
         kOiuYg6JlY2FjY2v85OneU7z+r/3nnPf2vZJbt7z3ul3/sN5zu3qmlVGwHxgHbAF2AvsAjYAvcC8eP9/
         C1gLjAFvgTfAM+CRzz3w+D5wCFgZn+9YwDLgCfABeAyMAveAO8At4AZwDbgKDPvQuSFgUXxfIwGrgU/A
         uKMqQS8DF4FzPo4AS+J7szL0m6PsFHoGOA2cNLwnvr9SwFJHqhTnoC9c6zroCeA4sAdYGDltMrCUXl37
