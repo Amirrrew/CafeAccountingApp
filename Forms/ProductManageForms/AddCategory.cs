@@ -40,8 +40,15 @@ namespace CafeApplication.Forms.ProductManageForms
         {
             // TODO: This line of code loads data into the 'dsCafe.Categories' table. You can move, or remove it, as needed.
             this.categoriesTableAdapter.Fill(this.dsCafe.Categories);
+            NewData();
+        }
+
+        private void NewData()
+        {
             categoriesBindingSource.AddNew();
             txt_CatID.Text = (categoriesTableAdapter.SetMaxID().GetValueOrDefault() + 1).ToString();
+            Chk_IsActive.Checked = true;
+            txt_CatName.ResetText();
         }
 
         private void btn_cancel_Click(object sender, EventArgs e)
@@ -60,6 +67,7 @@ namespace CafeApplication.Forms.ProductManageForms
                 if (IsUpdated > 0)
                 {
                     msg.NewMessage("دسته بندی جدید", "دسته بندی جدید با موفقیت اضاقه شد.", "Y", "success", null);
+                    NewData();
                 }
                 else
                 {
@@ -72,6 +80,12 @@ namespace CafeApplication.Forms.ProductManageForms
             {
                 msg.NewMessage("دسته بندی جدید", "ابتدا برای دسته بندی جدید یک نام انتخاب کنید!", "Y", "warning", null);
             }
+        }
+
+        private void AddCategory_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Categories ct = new Categories();
+            ct.categoriesTableAdapter.Fill(dsCafe.Categories);
         }
     }
 }

@@ -72,5 +72,10 @@ namespace CafeApplication.Forms.ProductManageForms
                 }
             }
         }
+
+        private void Categories_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            categoriesTableAdapter.Update(dsCafe.Categories);
+        }
     }
 }
