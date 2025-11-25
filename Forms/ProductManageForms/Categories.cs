@@ -51,25 +51,22 @@ namespace CafeApplication.Forms.ProductManageForms
 
         private DialogResult msg_Question()
         {
-            msg.NewMessage("هشدار", "آیا از حذف اطلاعات انتخاب شده مطمعن هستید ؟", "YN", "warning", null);
+            msg.NewMessage("هشدار", "\nدرصورتی که دسته بندی را حذف کنید کل کالا های مربوطه هم حذف خواهند شد.آیا از حذف اطلاعات انتخاب شده مطمعن هستید ؟", "YN", "warning", "med");
             return msg.DialogResult;
         }
 
         private void btn_delete_coustomer_Click(object sender, EventArgs e)
         {
-            if (tbl_Category.SelectedRows.Count == 0)
+            if (tbl_Category.Rows.Count == 0)
             {
                 msg.NewMessage("حذف", "برای حدف ابتدا ردیفی انتخاب کنید.", "Y", "info", null);
                 return;
             }
-            else
+            if (msg_Question() == DialogResult.OK)
             {
-                if (msg_Question() == DialogResult.OK)
-                {
-                    categoriesBindingSource.RemoveCurrent();
-                    categoriesBindingSource.EndEdit();
-                    categoriesTableAdapter.Update(dsCafe.Categories);
-                }
+                categoriesBindingSource.RemoveAt(tbl_Category.CurrentRow.Index);
+                categoriesBindingSource.EndEdit();
+                categoriesTableAdapter.Update(dsCafe.Categories);
             }
         }
 
