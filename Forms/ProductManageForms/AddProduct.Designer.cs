@@ -54,9 +54,11 @@
             this.txt_ProdUnit = new System.Windows.Forms.TextBox();
             this.lbl_titele = new System.Windows.Forms.Label();
             this.Cmb_ProdCategory = new System.Windows.Forms.ComboBox();
+            this.categoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lbl_ProdCreated = new System.Windows.Forms.Label();
             this.btn_cancel = new Telerik.WinControls.UI.RadButton();
             this.btn_save = new Telerik.WinControls.UI.RadButton();
+            this.categoriesTableAdapter = new CafeApplication.Data.DataSet.DsCafeTableAdapters.CategoriesTableAdapter();
             lbl_ProdID = new System.Windows.Forms.Label();
             lbl_ProdCode = new System.Windows.Forms.Label();
             lbl_ProdName = new System.Windows.Forms.Label();
@@ -70,6 +72,7 @@
             label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_cancel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_save)).BeginInit();
             this.SuspendLayout();
@@ -325,6 +328,7 @@
             // 
             this.Cmb_ProdCategory.BackColor = System.Drawing.Color.Black;
             this.Cmb_ProdCategory.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productsBindingSource, "CategoryID", true));
+            this.Cmb_ProdCategory.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.categoriesBindingSource, "CategoryID", true));
             this.Cmb_ProdCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cmb_ProdCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Cmb_ProdCategory.Font = new System.Drawing.Font("RokhFaNum Normal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
@@ -335,6 +339,11 @@
             this.Cmb_ProdCategory.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Cmb_ProdCategory.Size = new System.Drawing.Size(256, 39);
             this.Cmb_ProdCategory.TabIndex = 5;
+            // 
+            // categoriesBindingSource
+            // 
+            this.categoriesBindingSource.DataMember = "Categories";
+            this.categoriesBindingSource.DataSource = this.dsCafe;
             // 
             // lbl_ProdCreated
             // 
@@ -382,6 +391,10 @@
             this.btn_save.Text = "-";
             this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
+            // categoriesTableAdapter
+            // 
+            this.categoriesTableAdapter.ClearBeforeFill = true;
+            // 
             // AddProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 21F);
@@ -425,6 +438,7 @@
             this.Load += new System.EventHandler(this.AddProduct_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_cancel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_save)).EndInit();
             this.ResumeLayout(false);
@@ -450,5 +464,7 @@
         private System.Windows.Forms.Label lbl_ProdCreated;
         public Telerik.WinControls.UI.RadButton btn_cancel;
         public Telerik.WinControls.UI.RadButton btn_save;
+        private System.Windows.Forms.BindingSource categoriesBindingSource;
+        private Data.DataSet.DsCafeTableAdapters.CategoriesTableAdapter categoriesTableAdapter;
     }
 }

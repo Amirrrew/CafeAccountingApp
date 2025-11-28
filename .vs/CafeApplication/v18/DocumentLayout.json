@@ -3,48 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|C:\\Users\\amir\\Desktop\\CafeAccountingApp\\forms\\productmanageforms\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\productmanageforms\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|C:\\Users\\amir\\Desktop\\CafeAccountingApp\\forms\\productmanageforms\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\productmanageforms\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|C:\\Users\\amir\\Desktop\\CafeAccountingApp\\forms\\productmanageforms\\addproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\productmanageforms\\addproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|c:\\users\\amir\\desktop\\cafeaccountingapp\\forms\\dailyinvoice\\searchcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\dailyinvoice\\searchcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|c:\\users\\amir\\desktop\\cafeaccountingapp\\forms\\dailyinvoice\\searchcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\dailyinvoice\\searchcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|c:\\users\\amir\\desktop\\cafeaccountingapp\\forms\\productmanageforms\\addcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\productmanageforms\\addcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|C:\\Users\\amir\\Desktop\\CafeAccountingApp\\forms\\customermanageforms\\customermanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\customermanageforms\\customermanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|C:\\Users\\amir\\Desktop\\CafeAccountingApp\\forms\\productmanageforms\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\productmanageforms\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|C:\\Users\\amir\\Desktop\\CafeAccountingApp\\forms\\productmanageforms\\addcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\productmanageforms\\addcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|C:\\Users\\amir\\Desktop\\CafeAccountingApp\\forms\\productmanageforms\\addproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\productmanageforms\\addproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|C:\\Users\\amir\\Desktop\\CafeAccountingApp\\forms\\productmanageforms\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\productmanageforms\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|C:\\Users\\amir\\Desktop\\CafeAccountingApp\\forms\\productmanageforms\\addproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\productmanageforms\\addproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|C:\\Users\\amir\\Desktop\\CafeAccountingApp\\forms\\dailyinvoice\\addcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\dailyinvoice\\addcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|C:\\Users\\amir\\Desktop\\CafeAccountingApp\\forms\\productmanageforms\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\productmanageforms\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|C:\\Users\\amir\\Desktop\\CafeAccountingApp\\forms\\productmanageforms\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\productmanageforms\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|c:\\users\\amir\\desktop\\cafeaccountingapp\\forms\\productmanageforms\\addproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\productmanageforms\\addproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|C:\\Users\\amir\\Desktop\\CafeAccountingApp\\forms\\dailyinvoice\\addcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\dailyinvoice\\addcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,11 +42,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "AddCategory.cs [Design]",
               "DocumentMoniker": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\ProductManageForms\\AddCategory.cs",
               "RelativeDocumentMoniker": "Forms\\ProductManageForms\\AddCategory.cs",
@@ -71,13 +59,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Categories.cs",
               "DocumentMoniker": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\ProductManageForms\\Categories.cs",
               "RelativeDocumentMoniker": "Forms\\ProductManageForms\\Categories.cs",
               "ToolTip": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\ProductManageForms\\Categories.cs",
               "RelativeToolTip": "Forms\\ProductManageForms\\Categories.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAADwvzUAAACvAAAAAAAAAA==",
+              "ViewState": "AgIAADQAAAAAAAAAAADwvzUAAACIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-24T13:30:56.478Z",
               "IsPinned": true,
@@ -93,83 +81,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SearchCustomer.cs",
-              "DocumentMoniker": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\DailyInvoice\\SearchCustomer.cs",
-              "RelativeDocumentMoniker": "Forms\\DailyInvoice\\SearchCustomer.cs",
-              "ToolTip": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\DailyInvoice\\SearchCustomer.cs",
-              "RelativeToolTip": "Forms\\DailyInvoice\\SearchCustomer.cs",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAIwJEAAAA7AAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "AddCustomer.cs",
+              "DocumentMoniker": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\DailyInvoice\\AddCustomer.cs",
+              "RelativeDocumentMoniker": "Forms\\DailyInvoice\\AddCustomer.cs",
+              "ToolTip": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\DailyInvoice\\AddCustomer.cs",
+              "RelativeToolTip": "Forms\\DailyInvoice\\AddCustomer.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAUwDQAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T16:05:21.079Z",
+              "WhenOpened": "2025-11-25T16:42:20.433Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "SearchCustomer.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\DailyInvoice\\SearchCustomer.cs",
-              "RelativeDocumentMoniker": "Forms\\DailyInvoice\\SearchCustomer.cs",
-              "ToolTip": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\DailyInvoice\\SearchCustomer.cs [Design]",
-              "RelativeToolTip": "Forms\\DailyInvoice\\SearchCustomer.cs [Design]",
+              "Title": "AddCustomer.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\DailyInvoice\\AddCustomer.cs",
+              "RelativeDocumentMoniker": "Forms\\DailyInvoice\\AddCustomer.cs",
+              "ToolTip": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\DailyInvoice\\AddCustomer.cs [Design]",
+              "RelativeToolTip": "Forms\\DailyInvoice\\AddCustomer.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T16:05:17.97Z",
+              "WhenOpened": "2025-11-25T16:42:17.259Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CustomerManage.cs",
-              "DocumentMoniker": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\CustomerManageForms\\CustomerManage.cs",
-              "RelativeDocumentMoniker": "Forms\\CustomerManageForms\\CustomerManage.cs",
-              "ToolTip": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\CustomerManageForms\\CustomerManage.cs",
-              "RelativeToolTip": "Forms\\CustomerManageForms\\CustomerManage.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAswGkAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T13:31:12.54Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Categories.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\ProductManageForms\\Categories.cs",
-              "RelativeDocumentMoniker": "Forms\\ProductManageForms\\Categories.cs",
-              "ToolTip": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\ProductManageForms\\Categories.cs [Design]",
-              "RelativeToolTip": "Forms\\ProductManageForms\\Categories.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T13:29:23.684Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AddCategory.cs",
-              "DocumentMoniker": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\ProductManageForms\\AddCategory.cs",
-              "RelativeDocumentMoniker": "Forms\\ProductManageForms\\AddCategory.cs",
-              "ToolTip": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\ProductManageForms\\AddCategory.cs",
-              "RelativeToolTip": "Forms\\ProductManageForms\\AddCategory.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAADwvzIAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T13:28:04.881Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AddProduct.cs",
               "DocumentMoniker": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\ProductManageForms\\AddProduct.cs",
               "RelativeDocumentMoniker": "Forms\\ProductManageForms\\AddProduct.cs",
               "ToolTip": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\ProductManageForms\\AddProduct.cs",
               "RelativeToolTip": "Forms\\ProductManageForms\\AddProduct.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAtwDkAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAgwDgAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-24T13:04:59.566Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "AddProduct.cs [Design]",
               "DocumentMoniker": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\ProductManageForms\\AddProduct.cs",
               "RelativeDocumentMoniker": "Forms\\ProductManageForms\\AddProduct.cs",
@@ -181,20 +131,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 0,
               "Title": "Products.cs",
               "DocumentMoniker": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\ProductManageForms\\Products.cs",
               "RelativeDocumentMoniker": "Forms\\ProductManageForms\\Products.cs",
               "ToolTip": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\ProductManageForms\\Products.cs",
               "RelativeToolTip": "Forms\\ProductManageForms\\Products.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAcwCIAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAwwC4AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-24T12:01:23.528Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
               "Title": "Products.cs [Design]",
               "DocumentMoniker": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\ProductManageForms\\Products.cs",
               "RelativeDocumentMoniker": "Forms\\ProductManageForms\\Products.cs",

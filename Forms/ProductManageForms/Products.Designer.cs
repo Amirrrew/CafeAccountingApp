@@ -281,6 +281,7 @@
             this.btn_delete_coustomer.Size = new System.Drawing.Size(41, 37);
             this.btn_delete_coustomer.TabIndex = 33;
             this.btn_delete_coustomer.Text = "-";
+            this.btn_delete_coustomer.Click += new System.EventHandler(this.btn_delete_coustomer_Click);
             // 
             // btn_addCustomer
             // 
