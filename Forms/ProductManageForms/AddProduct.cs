@@ -21,7 +21,6 @@ namespace CafeApplication.Forms.ProductManageForms
             InitializeComponent();
             blur.SetBlurBack(this);
             font.SetFont(this);
-
         }
 
         int lastID;
@@ -41,14 +40,19 @@ namespace CafeApplication.Forms.ProductManageForms
         private void AddProduct_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'dsCafe.Categories' table. You can move, or remove it, as needed.
-            this.categoriesTableAdapter.Fill(this.dsCafe.Categories);
+            this.productsTableAdapter.Fill(this.dsCafe.Products);
             // TODO: This line of code loads data into the 'dsCafe.Products' table. You can move, or remove it, as needed.
+            LoadData();
+
+        }
+
+        public void LoadData()
+        {
             this.productsTableAdapter.Fill(this.dsCafe.Products);
             lastID = productsTableAdapter.ProdMaxID().GetValueOrDefault() + 1;
-            lbl_ProdCreated.Text = gt.generateFullDate();
             productsBindingSource.AddNew();
             txt_ProdID.Text = lastID.ToString();
-
+            lbl_ProdCreated.Text = gt.generateFullDate();
         }
 
         private void btn_save_Click(object sender, EventArgs e)
@@ -61,6 +65,7 @@ namespace CafeApplication.Forms.ProductManageForms
                 if (isUpdated > 0)
                 {
                     msg.NewMessage("افزودن کالا", "کالای جدید با موفقیت افزوده شد.", "Y", "success", null);
+                    LoadData();
                 }
                 else
                 {
@@ -77,6 +82,12 @@ namespace CafeApplication.Forms.ProductManageForms
         {
             productsBindingSource.CancelEdit();
             this.Close();
+        }
+
+        private void btn_GenerateCode_Click(object sender, EventArgs e)
+        {
+            GenerateCode gen = new GenerateCode();
+            txt_ProdCode.Text = gen.Barcode(txt_ProdCode.Text).ToString();
         }
     }
 }

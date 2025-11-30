@@ -59,6 +59,7 @@
             this.btn_cancel = new Telerik.WinControls.UI.RadButton();
             this.btn_save = new Telerik.WinControls.UI.RadButton();
             this.categoriesTableAdapter = new CafeApplication.Data.DataSet.DsCafeTableAdapters.CategoriesTableAdapter();
+            this.btn_GenerateCode = new Telerik.WinControls.UI.RadButton();
             lbl_ProdID = new System.Windows.Forms.Label();
             lbl_ProdCode = new System.Windows.Forms.Label();
             lbl_ProdName = new System.Windows.Forms.Label();
@@ -75,6 +76,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_cancel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_save)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_GenerateCode)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_ProdID
@@ -89,11 +91,12 @@
             // lbl_ProdCode
             // 
             lbl_ProdCode.AutoSize = true;
-            lbl_ProdCode.Location = new System.Drawing.Point(415, 104);
+            lbl_ProdCode.Location = new System.Drawing.Point(9, 41);
             lbl_ProdCode.Name = "lbl_ProdCode";
             lbl_ProdCode.Size = new System.Drawing.Size(40, 21);
             lbl_ProdCode.TabIndex = 3;
             lbl_ProdCode.Text = "بارکد";
+            lbl_ProdCode.Visible = false;
             // 
             // lbl_ProdName
             // 
@@ -107,7 +110,7 @@
             // lbl_ProdCat
             // 
             lbl_ProdCat.AutoSize = true;
-            lbl_ProdCat.Location = new System.Drawing.Point(187, 104);
+            lbl_ProdCat.Location = new System.Drawing.Point(119, 104);
             lbl_ProdCat.Name = "lbl_ProdCat";
             lbl_ProdCat.Size = new System.Drawing.Size(79, 21);
             lbl_ProdCat.TabIndex = 7;
@@ -224,13 +227,13 @@
             this.txt_ProdID.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productsBindingSource, "ProductID", true));
             this.txt_ProdID.Font = new System.Drawing.Font("RokhFaNum Normal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_ProdID.ForeColor = System.Drawing.Color.White;
-            this.txt_ProdID.Location = new System.Drawing.Point(464, 128);
+            this.txt_ProdID.Location = new System.Drawing.Point(-2, 0);
             this.txt_ProdID.Name = "txt_ProdID";
-            this.txt_ProdID.ReadOnly = true;
             this.txt_ProdID.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txt_ProdID.Size = new System.Drawing.Size(100, 38);
             this.txt_ProdID.TabIndex = 2;
             this.txt_ProdID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_ProdID.Visible = false;
             // 
             // txt_ProdCode
             // 
@@ -239,10 +242,10 @@
             this.txt_ProdCode.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productsBindingSource, "Code", true));
             this.txt_ProdCode.Font = new System.Drawing.Font("RokhFaNum Normal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_ProdCode.ForeColor = System.Drawing.Color.White;
-            this.txt_ProdCode.Location = new System.Drawing.Point(275, 128);
+            this.txt_ProdCode.Location = new System.Drawing.Point(370, 128);
             this.txt_ProdCode.Name = "txt_ProdCode";
             this.txt_ProdCode.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txt_ProdCode.Size = new System.Drawing.Size(183, 38);
+            this.txt_ProdCode.Size = new System.Drawing.Size(191, 38);
             this.txt_ProdCode.TabIndex = 4;
             // 
             // txt_ProdName
@@ -337,7 +340,7 @@
             this.Cmb_ProdCategory.Location = new System.Drawing.Point(13, 127);
             this.Cmb_ProdCategory.Name = "Cmb_ProdCategory";
             this.Cmb_ProdCategory.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Cmb_ProdCategory.Size = new System.Drawing.Size(256, 39);
+            this.Cmb_ProdCategory.Size = new System.Drawing.Size(181, 39);
             this.Cmb_ProdCategory.TabIndex = 5;
             // 
             // categoriesBindingSource
@@ -350,7 +353,7 @@
             this.lbl_ProdCreated.AutoSize = true;
             this.lbl_ProdCreated.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productsBindingSource, "CreatedAt", true));
             this.lbl_ProdCreated.ForeColor = System.Drawing.Color.DarkGray;
-            this.lbl_ProdCreated.Location = new System.Drawing.Point(312, 74);
+            this.lbl_ProdCreated.Location = new System.Drawing.Point(295, 74);
             this.lbl_ProdCreated.Name = "lbl_ProdCreated";
             this.lbl_ProdCreated.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lbl_ProdCreated.Size = new System.Drawing.Size(52, 21);
@@ -366,7 +369,7 @@
             this.btn_cancel.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
             this.btn_cancel.Image = ((System.Drawing.Image)(resources.GetObject("btn_cancel.Image")));
             this.btn_cancel.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_cancel.Location = new System.Drawing.Point(75, 405);
+            this.btn_cancel.Location = new System.Drawing.Point(75, 412);
             this.btn_cancel.Margin = new System.Windows.Forms.Padding(4);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(57, 55);
@@ -383,7 +386,7 @@
             this.btn_save.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
             this.btn_save.Image = ((System.Drawing.Image)(resources.GetObject("btn_save.Image")));
             this.btn_save.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_save.Location = new System.Drawing.Point(13, 405);
+            this.btn_save.Location = new System.Drawing.Point(13, 412);
             this.btn_save.Margin = new System.Windows.Forms.Padding(4);
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(57, 55);
@@ -395,12 +398,31 @@
             // 
             this.categoriesTableAdapter.ClearBeforeFill = true;
             // 
+            // btn_GenerateCode
+            // 
+            this.btn_GenerateCode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
+            this.btn_GenerateCode.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_GenerateCode.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_GenerateCode.Font = new System.Drawing.Font("Rokh Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btn_GenerateCode.ForeColor = System.Drawing.Color.White;
+            this.btn_GenerateCode.Image = ((System.Drawing.Image)(resources.GetObject("btn_GenerateCode.Image")));
+            this.btn_GenerateCode.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_GenerateCode.Location = new System.Drawing.Point(201, 128);
+            this.btn_GenerateCode.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_GenerateCode.Name = "btn_GenerateCode";
+            this.btn_GenerateCode.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
+            this.btn_GenerateCode.Size = new System.Drawing.Size(162, 39);
+            this.btn_GenerateCode.TabIndex = 30;
+            this.btn_GenerateCode.Text = "تولید کد تصادفی";
+            this.btn_GenerateCode.Click += new System.EventHandler(this.btn_GenerateCode_Click);
+            // 
             // AddProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(578, 473);
+            this.ClientSize = new System.Drawing.Size(579, 480);
+            this.Controls.Add(this.btn_GenerateCode);
             this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.btn_save);
             this.Controls.Add(this.lbl_ProdCreated);
@@ -441,6 +463,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_cancel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_save)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_GenerateCode)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -466,5 +489,6 @@
         public Telerik.WinControls.UI.RadButton btn_save;
         private System.Windows.Forms.BindingSource categoriesBindingSource;
         private Data.DataSet.DsCafeTableAdapters.CategoriesTableAdapter categoriesTableAdapter;
+        public Telerik.WinControls.UI.RadButton btn_GenerateCode;
     }
 }

@@ -197,3 +197,4 @@ C:\Users\amir\Desktop\CafeAccountingApp\obj\Debug\CafeApplication.Forms.ProductM
 C:\Users\amir\Desktop\CafeAccountingApp\obj\Debug\CafeApplication.Forms.ProductManageForms.Products.resources
 C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Public\edit-Icon.png
 C:\Users\amir\Desktop\CafeAccountingApp\obj\Debug\CafeApplication.Forms.ProductManageForms.AddProduct.resources
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Public\barcode-Icon.png
