@@ -165,8 +165,8 @@
   <metadata name="categoriesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>625, 17</value>
   </metadata>
-  <metadata name="categoriesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>625, 17</value>
+  <metadata name="categoriesBindingSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 54</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btn_cancel.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -207,7 +207,7 @@
   <data name="btn_GenerateCode.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAAaRJREFUOE/l1HmrTlEUB+AbPgKuUDKUzP4Tl0sJGSPJWKaLkCGzDBEKIRSKUHzQ
+        DwAACw8BkvkDpQAAAaRJREFUOE/l1HmrTlEUB+AbPgKuUDKUzP4Tl0sJGSPJWKaLkCGzDBEKIRSKUHzQ
         R7/6qdvp+gROvb3n3e/ez1p77XXOyMj/e2EtHmA6TuEsFmEbLmIGbvb+HA507BGWDb2AmfwdS/AL73Ac
         z/Eba/Cj46/xHqvwExNDL+BlfMLCTnqFY3iIb93B12Iv8AYr8QUnhl7A040+v8AzHG7mHwt+LvakAZc2
         04NDL+DRTp7bTB/jUDPP4mz5Q7FknVIsxkvsHHoB9xeZ1YX3ExlnOr4ab4vdLbwAT7F56AXMad7BzC68
@@ -217,4 +217,7 @@
         oARJ8HWT5o4Ovf/o+gMJR+we7grCegAAAABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="categoriesBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>988, 17</value>
+  </metadata>
 </root>
