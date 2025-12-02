@@ -60,6 +60,8 @@
             this.btn_save = new Telerik.WinControls.UI.RadButton();
             this.categoriesTableAdapter = new CafeApplication.Data.DataSet.DsCafeTableAdapters.CategoriesTableAdapter();
             this.btn_GenerateCode = new Telerik.WinControls.UI.RadButton();
+            this.categoriesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.categoriesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             lbl_ProdID = new System.Windows.Forms.Label();
             lbl_ProdCode = new System.Windows.Forms.Label();
             lbl_ProdName = new System.Windows.Forms.Label();
@@ -77,6 +79,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_cancel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_save)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_GenerateCode)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_ProdID
@@ -330,8 +334,10 @@
             // Cmb_ProdCategory
             // 
             this.Cmb_ProdCategory.BackColor = System.Drawing.Color.Black;
-            this.Cmb_ProdCategory.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productsBindingSource, "CategoryID", true));
             this.Cmb_ProdCategory.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.categoriesBindingSource, "CategoryID", true));
+            this.Cmb_ProdCategory.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.categoriesBindingSource, "Name", true));
+            this.Cmb_ProdCategory.DataSource = this.categoriesBindingSource2;
+            this.Cmb_ProdCategory.DisplayMember = "CategoryID";
             this.Cmb_ProdCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cmb_ProdCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Cmb_ProdCategory.Font = new System.Drawing.Font("RokhFaNum Normal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
@@ -416,6 +422,16 @@
             this.btn_GenerateCode.Text = "تولید کد تصادفی";
             this.btn_GenerateCode.Click += new System.EventHandler(this.btn_GenerateCode_Click);
             // 
+            // categoriesBindingSource1
+            // 
+            this.categoriesBindingSource1.DataMember = "Categories";
+            this.categoriesBindingSource1.DataSource = this.dsCafe;
+            // 
+            // categoriesBindingSource2
+            // 
+            this.categoriesBindingSource2.DataMember = "Categories";
+            this.categoriesBindingSource2.DataSource = this.dsCafe;
+            // 
             // AddProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 21F);
@@ -464,6 +480,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_cancel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_save)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_GenerateCode)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -490,5 +508,7 @@
         private System.Windows.Forms.BindingSource categoriesBindingSource;
         private Data.DataSet.DsCafeTableAdapters.CategoriesTableAdapter categoriesTableAdapter;
         public Telerik.WinControls.UI.RadButton btn_GenerateCode;
+        private System.Windows.Forms.BindingSource categoriesBindingSource2;
+        private System.Windows.Forms.BindingSource categoriesBindingSource1;
     }
 }
