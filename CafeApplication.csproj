@@ -49,6 +49,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Stimulsoft.Base, Version=2023.1.1.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Stimulsoft Designer 2023.1.1\Stimulsoft.Base.dll</HintPath>
+    </Reference>
     <Reference Include="Stimulsoft.Data, Version=2023.1.1.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\Program Files (x86)\Stimulsoft Designer 2023.1.1\Stimulsoft.Data.dll</HintPath>
@@ -236,6 +240,9 @@
     <None Include="Assets\Fonts\Rokh-SemiBold.ttf" />
     <None Include="Assets\Fonts\Rokh-Thin.ttf" />
     <None Include="Assets\Fonts\Rokh-UltraBold.ttf" />
+    <None Include="Assets\report\rep_customers.mrt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="Data\DataSet\DsCafe.xsc">
       <DependentUpon>DsCafe.xsd</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

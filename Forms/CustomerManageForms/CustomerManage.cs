@@ -1,6 +1,7 @@
 ﻿using CafeApplication.Classes.PublicClasses;
 using CafeApplication.Forms.DailyInvoice;
 using CafeApplication.Forms.PublicForms;
+using Calendar;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -33,6 +34,7 @@ namespace CafeApplication.Forms.CustomerManageForms
         BtnDefaultStyle btn = new BtnDefaultStyle();
         CafeApplication.Forms.PublicForms.CustomMessage msg = new PublicForms.CustomMessage();
         string selectedId ,selectedName, selectedPhone, selectedAddress ,selectedDate ,selectedBalance;
+        GetTime gt = new GetTime();
 
 
         public void SetSelectedDefault()
@@ -166,6 +168,30 @@ namespace CafeApplication.Forms.CustomerManageForms
 
         //ساخت متغیر های پابلیک برای ارسال به فرم ادیت
         public string Customer_id { get; set; }
+
+        private void btn_print_Click(object sender, EventArgs e)
+        {
+            String Path;
+            Path = Application.StartupPath + @"\Assets\report\rep_customers.mrt";
+            this.stiReport1.Load(Path);
+            this.stiReport1.RegData(this.dsCafe.Customers);
+            //---------------------
+            Stimulsoft.Report.Components.StiText tb;
+            tb = new Stimulsoft.Report.Components.StiText();
+            //----------------------
+            tb = (Stimulsoft.Report.Components.StiText)this.stiReport1.GetComponentByName("txt_name");
+            tb.Text = Properties.Settings.Default.company_name;
+            //----------------------
+            //----------------------
+            tb = (Stimulsoft.Report.Components.StiText)this.stiReport1.GetComponentByName("txt_date");
+            tb.Text = gt.generateFullDate();
+            //----------------------
+
+            //----------------------
+            this.stiReport1.Show();
+            this.customersTableAdapter.Fill(this.dsCafe.Customers);
+        }
+
         public string Customer_name { get; set; }
         public string Customer_phone { get; set; }
         public string Customer_address { get; set; }

@@ -1,0 +1,766 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="16">
+      <CafeTables Ref="2" type="DataTableSource" isKey="true">
+        <Alias>CafeTables</Alias>
+        <Columns isList="true" count="4">
+          <value>TableID,System.Int32</value>
+          <value>Name,System.String</value>
+          <value>Capacity,System.Int32</value>
+          <value>Status,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>a6c9284927f14977affb8264bd6e9dd9</Key>
+        <Name>CafeTables</Name>
+        <NameInSource>DsCafe.CafeTables</NameInSource>
+      </CafeTables>
+      <Categories Ref="3" type="DataTableSource" isKey="true">
+        <Alias>Categories</Alias>
+        <Columns isList="true" count="4">
+          <value>CategoryID,System.Int32</value>
+          <value>Name,System.String</value>
+          <value>ParentID,System.Int32</value>
+          <value>IsActive,System.Boolean</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>7181d3c0226f467bb913307498eb850d</Key>
+        <Name>Categories</Name>
+        <NameInSource>DsCafe.Categories</NameInSource>
+      </Categories>
+      <Customers Ref="4" type="DataTableSource" isKey="true">
+        <Alias>Customers</Alias>
+        <Columns isList="true" count="6">
+          <value>CustomerID,System.Int32</value>
+          <value>Name,System.String</value>
+          <value>Phone,System.String</value>
+          <value>Address,System.String</value>
+          <value>Balance,System.Decimal</value>
+          <value>CreatedAt,System.DateTime</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>918685ff25794a26843aeaf24b6b4447</Key>
+        <Name>Customers</Name>
+        <NameInSource>DsCafe.Customers</NameInSource>
+      </Customers>
+      <Employees Ref="5" type="DataTableSource" isKey="true">
+        <Alias>Employees</Alias>
+        <Columns isList="true" count="8">
+          <value>EmployeeID,System.Int32</value>
+          <value>FullName,System.String</value>
+          <value>NationalCode,System.String</value>
+          <value>Phone,System.String</value>
+          <value>Position,System.String</value>
+          <value>Salary,System.Decimal</value>
+          <value>HireDate,System.DateTime</value>
+          <value>IsActive,System.Boolean</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>8b246cb2875d4f15b7fde92b8468ade2</Key>
+        <Name>Employees</Name>
+        <NameInSource>DsCafe.Employees</NameInSource>
+      </Employees>
+      <Expenses Ref="6" type="DataTableSource" isKey="true">
+        <Alias>Expenses</Alias>
+        <Columns isList="true" count="5">
+          <value>ExpenseID,System.Int32</value>
+          <value>Title,System.String</value>
+          <value>Amount,System.Decimal</value>
+          <value>Date,System.DateTime</value>
+          <value>Description,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>a011273ea2414b9bb62123800487c49a</Key>
+        <Name>Expenses</Name>
+        <NameInSource>DsCafe.Expenses</NameInSource>
+      </Expenses>
+      <Incomes Ref="7" type="DataTableSource" isKey="true">
+        <Alias>Incomes</Alias>
+        <Columns isList="true" count="5">
+          <value>IncomeID,System.Int32</value>
+          <value>Title,System.String</value>
+          <value>Amount,System.Decimal</value>
+          <value>Date,System.DateTime</value>
+          <value>Description,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>40e5383a071a4853a77b047516041067</Key>
+        <Name>Incomes</Name>
+        <NameInSource>DsCafe.Incomes</NameInSource>
+      </Incomes>
+      <Products Ref="8" type="DataTableSource" isKey="true">
+        <Alias>Products</Alias>
+        <Columns isList="true" count="10">
+          <value>ProductID,System.Int32</value>
+          <value>Code,System.String</value>
+          <value>Name,System.String</value>
+          <value>CategoryID,System.Int32</value>
+          <value>UnitPrice,System.Decimal</value>
+          <value>CostPrice,System.Decimal</value>
+          <value>Tax,System.Decimal</value>
+          <value>Unit,System.String</value>
+          <value>IsActive,System.Boolean</value>
+          <value>CreatedAt,System.DateTime</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>f28bedf560e5482caa40184afbec458d</Key>
+        <Name>Products</Name>
+        <NameInSource>DsCafe.Products</NameInSource>
+      </Products>
+      <PurchaseItems Ref="9" type="DataTableSource" isKey="true">
+        <Alias>PurchaseItems</Alias>
+        <Columns isList="true" count="6">
+          <value>PurchaseItemID,System.Int32</value>
+          <value>PurchaseID,System.Int32</value>
+          <value>ProductID,System.Int32</value>
+          <value>Quantity,System.Decimal</value>
+          <value>UnitCost,System.Decimal</value>
+          <value>Total,System.Decimal</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>feaf149b056a493fb95a8da1f5772f35</Key>
+        <Name>PurchaseItems</Name>
+        <NameInSource>DsCafe.PurchaseItems</NameInSource>
+      </PurchaseItems>
+      <Purchases Ref="10" type="DataTableSource" isKey="true">
+        <Alias>Purchases</Alias>
+        <Columns isList="true" count="6">
+          <value>PurchaseID,System.Int32</value>
+          <value>SupplierID,System.Int32</value>
+          <value>Date,System.DateTime</value>
+          <value>TotalAmount,System.Decimal</value>
+          <value>Description,System.String</value>
+          <value>CreatedBy,System.Int32</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>bdd9f9cc94984f8ba70deb67ebb906e2</Key>
+        <Name>Purchases</Name>
+        <NameInSource>DsCafe.Purchases</NameInSource>
+      </Purchases>
+      <SaleItems Ref="11" type="DataTableSource" isKey="true">
+        <Alias>SaleItems</Alias>
+        <Columns isList="true" count="7">
+          <value>SaleItemID,System.Int32</value>
+          <value>SaleID,System.Int32</value>
+          <value>ProductID,System.Int32</value>
+          <value>Quantity,System.Decimal</value>
+          <value>UnitPrice,System.Decimal</value>
+          <value>Discount,System.Decimal</value>
+          <value>Total,System.Decimal</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>447a91037c3f4ef98ebf2e0201c3cb41</Key>
+        <Name>SaleItems</Name>
+        <NameInSource>DsCafe.SaleItems</NameInSource>
+      </SaleItems>
+      <Sales Ref="12" type="DataTableSource" isKey="true">
+        <Alias>Sales</Alias>
+        <Columns isList="true" count="12">
+          <value>SaleID,System.Int32</value>
+          <value>Code,System.String</value>
+          <value>TableID,System.Int32</value>
+          <value>UserID,System.Int32</value>
+          <value>CustomerID,System.Int32</value>
+          <value>Date,System.DateTime</value>
+          <value>PaymentMethod,System.String</value>
+          <value>TotalAmount,System.Decimal</value>
+          <value>Discount,System.Decimal</value>
+          <value>Tax,System.Decimal</value>
+          <value>FinalAmount,System.Decimal</value>
+          <value>IsVoided,System.Boolean</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>89000c2a7cc047af953d77d17e23a4ba</Key>
+        <Name>Sales</Name>
+        <NameInSource>DsCafe.Sales</NameInSource>
+      </Sales>
+      <Suppliers Ref="13" type="DataTableSource" isKey="true">
+        <Alias>Suppliers</Alias>
+        <Columns isList="true" count="5">
+          <value>SupplierID,System.Int32</value>
+          <value>Name,System.String</value>
+          <value>Phone,System.String</value>
+          <value>Address,System.String</value>
+          <value>CreatedAt,System.DateTime</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>2d854f73d2954e9ebe460cfb3ca4a1ac</Key>
+        <Name>Suppliers</Name>
+        <NameInSource>DsCafe.Suppliers</NameInSource>
+      </Suppliers>
+      <Transactions Ref="14" type="DataTableSource" isKey="true">
+        <Alias>Transactions</Alias>
+        <Columns isList="true" count="6">
+          <value>TransactionID,System.Int32</value>
+          <value>RefID,System.Int32</value>
+          <value>Type,System.String</value>
+          <value>Amount,System.Decimal</value>
+          <value>Date,System.DateTime</value>
+          <value>Description,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>4ac3b092257f421b8b5a9debb994466c</Key>
+        <Name>Transactions</Name>
+        <NameInSource>DsCafe.Transactions</NameInSource>
+      </Transactions>
+      <TrashBin Ref="15" type="DataTableSource" isKey="true">
+        <Alias>TrashBin</Alias>
+        <Columns isList="true" count="6">
+          <value>TrashID,System.Int32</value>
+          <value>TableName,System.String</value>
+          <value>EntityID,System.Int32</value>
+          <value>DeletedBy,System.Int32</value>
+          <value>DeletedAt,System.DateTime</value>
+          <value>DataJson,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>18ede1c8327344aa938028cf9c94b314</Key>
+        <Name>TrashBin</Name>
+        <NameInSource>DsCafe.TrashBin</NameInSource>
+      </TrashBin>
+      <Users Ref="16" type="DataTableSource" isKey="true">
+        <Alias>Users</Alias>
+        <Columns isList="true" count="8">
+          <value>UserID,System.Int32</value>
+          <value>Username,System.String</value>
+          <value>PasswordHash,System.String</value>
+          <value>Salt,System.String</value>
+          <value>FullName,System.String</value>
+          <value>Role,System.String</value>
+          <value>CreatedAt,System.DateTime</value>
+          <value>IsActive,System.Boolean</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>db368e9390a0466aaa7f61d11d993d88</Key>
+        <Name>Users</Name>
+        <NameInSource>DsCafe.Users</NameInSource>
+      </Users>
+      <Setup Ref="17" type="DataTableSource" isKey="true">
+        <Alias>Setup</Alias>
+        <Columns isList="true" count="1">
+          <value>IsSetupDone,System.Boolean</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>f1b9320b381b4f9bb194ff20f8cd33c9</Key>
+        <Name>Setup</Name>
+        <NameInSource>DsCafe.Setup</NameInSource>
+      </Setup>
+    </DataSources>
+    <Relations isList="true" count="10">
+      <Categories Ref="18" type="DataRelation" isKey="true">
+        <Alias>Categories</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>ParentID</value>
+        </ChildColumns>
+        <ChildSource isRef="3" />
+        <Dictionary isRef="1" />
+        <Name>Categories</Name>
+        <NameInSource>FK_Categories_Parent</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>CategoryID</value>
+        </ParentColumns>
+        <ParentSource isRef="3" />
+      </Categories>
+      <Categories Ref="19" type="DataRelation" isKey="true">
+        <Alias>Categories</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>CategoryID</value>
+        </ChildColumns>
+        <ChildSource isRef="8" />
+        <Dictionary isRef="1" />
+        <Name>Categories</Name>
+        <NameInSource>FK_Products_Category</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>CategoryID</value>
+        </ParentColumns>
+        <ParentSource isRef="3" />
+      </Categories>
+      <Products Ref="20" type="DataRelation" isKey="true">
+        <Alias>Products</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>ProductID</value>
+        </ChildColumns>
+        <ChildSource isRef="9" />
+        <Dictionary isRef="1" />
+        <Name>Products</Name>
+        <NameInSource>FK_PurchaseItems_Product</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>ProductID</value>
+        </ParentColumns>
+        <ParentSource isRef="8" />
+      </Products>
+      <Purchases Ref="21" type="DataRelation" isKey="true">
+        <Alias>Purchases</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>PurchaseID</value>
+        </ChildColumns>
+        <ChildSource isRef="9" />
+        <Dictionary isRef="1" />
+        <Name>Purchases</Name>
+        <NameInSource>FK_PurchaseItems_Purchase</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>PurchaseID</value>
+        </ParentColumns>
+        <ParentSource isRef="10" />
+      </Purchases>
+      <Products Ref="22" type="DataRelation" isKey="true">
+        <Alias>Products</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>ProductID</value>
+        </ChildColumns>
+        <ChildSource isRef="11" />
+        <Dictionary isRef="1" />
+        <Name>Products</Name>
+        <NameInSource>FK_SaleItems_Product</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>ProductID</value>
+        </ParentColumns>
+        <ParentSource isRef="8" />
+      </Products>
+      <Sales Ref="23" type="DataRelation" isKey="true">
+        <Alias>Sales</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>SaleID</value>
+        </ChildColumns>
+        <ChildSource isRef="11" />
+        <Dictionary isRef="1" />
+        <Name>Sales</Name>
+        <NameInSource>FK_SaleItems_Sale</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>SaleID</value>
+        </ParentColumns>
+        <ParentSource isRef="12" />
+      </Sales>
+      <Customers Ref="24" type="DataRelation" isKey="true">
+        <Alias>Customers</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>CustomerID</value>
+        </ChildColumns>
+        <ChildSource isRef="12" />
+        <Dictionary isRef="1" />
+        <Name>Customers</Name>
+        <NameInSource>FK_Sales_Customer</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>CustomerID</value>
+        </ParentColumns>
+        <ParentSource isRef="4" />
+      </Customers>
+      <CafeTables Ref="25" type="DataRelation" isKey="true">
+        <Alias>CafeTables</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>TableID</value>
+        </ChildColumns>
+        <ChildSource isRef="12" />
+        <Dictionary isRef="1" />
+        <Name>CafeTables</Name>
+        <NameInSource>FK_Sales_Table</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>TableID</value>
+        </ParentColumns>
+        <ParentSource isRef="2" />
+      </CafeTables>
+      <Suppliers Ref="26" type="DataRelation" isKey="true">
+        <Alias>Suppliers</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>SupplierID</value>
+        </ChildColumns>
+        <ChildSource isRef="10" />
+        <Dictionary isRef="1" />
+        <Name>Suppliers</Name>
+        <NameInSource>FK_Purchases_Supplier</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>SupplierID</value>
+        </ParentColumns>
+        <ParentSource isRef="13" />
+      </Suppliers>
+      <Users Ref="27" type="DataRelation" isKey="true">
+        <Alias>Users</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>UserID</value>
+        </ChildColumns>
+        <ChildSource isRef="12" />
+        <Dictionary isRef="1" />
+        <Name>Users</Name>
+        <NameInSource>FK_Sales_User</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>UserID</value>
+        </ParentColumns>
+        <ParentSource isRef="16" />
+      </Users>
+    </Relations>
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>199ece5a36e0450ab4643e36d75b796b</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="28" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="2">
+        <hb Ref="29" type="HeaderBand" isKey="true">
+          <Brush>[191:191:191]</Brush>
+          <ClientRectangle>0,0.2,7.72,1.4</ClientRectangle>
+          <Components isList="true" count="11">
+            <Text1 Ref="30" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[242:242:242]</Brush>
+              <ClientRectangle>6.4,0.4,1.1,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Rokh Normal,12</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="28" />
+              <Parent isRef="29" />
+              <Text>گزارش  مشتری ها</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Text1>
+            <Text2 Ref="31" type="Text" isKey="true">
+              <Border>Top, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>[242:242:242]</Brush>
+              <ClientRectangle>4.1,0.4,0.6,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Rokh Normal,12</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="28" />
+              <Parent isRef="29" />
+              <Text>نام کافه :</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Text2>
+            <txt_name Ref="32" type="Text" isKey="true">
+              <Border>Top, Left, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>[242:242:242]</Brush>
+              <ClientRectangle>3.3,0.4,0.8,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Rokh,12</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>txt_name</Name>
+              <Page isRef="28" />
+              <Parent isRef="29" />
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </txt_name>
+            <Text3 Ref="33" type="Text" isKey="true">
+              <Border>Top, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>[242:242:242]</Brush>
+              <ClientRectangle>1.1,0.4,0.4,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Rokh Normal,12</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="28" />
+              <Parent isRef="29" />
+              <Text>تاریخ :</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Text3>
+            <txt_date Ref="34" type="Text" isKey="true">
+              <Border>Top, Left, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>[242:242:242]</Brush>
+              <ClientRectangle>0.4,0.4,0.7,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>RokhFaNum,12</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>txt_date</Name>
+              <Page isRef="28" />
+              <Parent isRef="29" />
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Bottom</VertAlignment>
+            </txt_date>
+            <Text5 Ref="35" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[242:242:242]</Brush>
+              <ClientRectangle>5.9,1.1,1.12,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Rokh Normal,10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="28" />
+              <Parent isRef="29" />
+              <Text>نام مشتری</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Text5>
+            <Text9 Ref="36" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[242:242:242]</Brush>
+              <ClientRectangle>0,1.1,0.8,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Rokh Normal,12</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="28" />
+              <Parent isRef="29" />
+              <Text>تاریخ ثبت</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Bottom</VertAlignment>
+            </Text9>
+            <Text16 Ref="37" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[242:242:242]</Brush>
+              <ClientRectangle>7,1.1,0.7,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Rokh Normal,10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text16</Name>
+              <Page isRef="28" />
+              <Parent isRef="29" />
+              <Text>کد سیستمی</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text16>
+            <Text4 Ref="38" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[242:242:242]</Brush>
+              <ClientRectangle>4.9,1.1,1,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Rokh Normal,10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="28" />
+              <Parent isRef="29" />
+              <Text>تلفن همراه</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text4>
+            <Text6 Ref="39" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[242:242:242]</Brush>
+              <ClientRectangle>3.6,1.1,1.3,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Rokh Normal,10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="28" />
+              <Parent isRef="29" />
+              <Text>مبلغ بدهکاری</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text6>
+            <Text8 Ref="40" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[242:242:242]</Brush>
+              <ClientRectangle>0.8,1.1,2.8,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Rokh Normal,10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="28" />
+              <Parent isRef="29" />
+              <Text>آدرس</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text8>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>hb</Name>
+          <Page isRef="28" />
+          <Parent isRef="28" />
+        </hb>
+        <DataBand1 Ref="41" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,2,7.72,0.2</ClientRectangle>
+          <Components isList="true" count="6">
+            <Text10 Ref="42" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[242:242:242]</Brush>
+              <ClientRectangle>7,0,0.7,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>RokhFaNum Normal,10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="28" />
+              <Parent isRef="41" />
+              <Text>{Customers.CustomerID}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text10>
+            <Text11 Ref="43" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[242:242:242]</Brush>
+              <ClientRectangle>5.9,0,1.1,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Rokh Normal,10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="28" />
+              <Parent isRef="41" />
+              <Text>{Customers.Name}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text11>
+            <Text12 Ref="44" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[242:242:242]</Brush>
+              <ClientRectangle>4.9,0,1,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>RokhFaNum Normal,10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text12</Name>
+              <Page isRef="28" />
+              <Parent isRef="41" />
+              <Text>{Customers.Phone}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text12>
+            <Text13 Ref="45" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[242:242:242]</Brush>
+              <ClientRectangle>3.6,0,1.3,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>RokhFaNum Normal,10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text13</Name>
+              <Page isRef="28" />
+              <Parent isRef="41" />
+              <Text>{Customers.Balance}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="46" type="CustomFormat" isKey="true">
+                <StringFormat>ريال0.00</StringFormat>
+              </TextFormat>
+              <VertAlignment>Center</VertAlignment>
+            </Text13>
+            <Text14 Ref="47" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[242:242:242]</Brush>
+              <ClientRectangle>0.8,0,2.8,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Rokh Normal,10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text14</Name>
+              <Page isRef="28" />
+              <Parent isRef="41" />
+              <Text>{Customers.Address}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text14>
+            <Text15 Ref="48" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[242:242:242]</Brush>
+              <ClientRectangle>0,0,0.8,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>RokhFaNum Normal,10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text15</Name>
+              <Page isRef="28" />
+              <Parent isRef="41" />
+              <Text>{Customers.CreatedAt}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text15>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>Customers</DataSourceName>
+          <Expressions isList="true" count="0" />
+          <Filters isList="true" count="0" />
+          <Name>DataBand1</Name>
+          <Page isRef="28" />
+          <Parent isRef="28" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Expressions isList="true" count="0" />
+      <Guid>f66f29b5a261485d9e0e50c7bf0aadaf</Guid>
+      <Margins>0.39,0.39,0.39,0.39</Margins>
+      <Name>Page1</Name>
+      <PageHeight>11</PageHeight>
+      <PageWidth>8.5</PageWidth>
+      <PaperSize>Letter</PaperSize>
+      <Report isRef="0" />
+    </Page1>
+  </Pages>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>12/5/2025 12:43:42 AM</ReportChanged>
+  <ReportCreated>12/4/2025 2:38:16 PM</ReportCreated>
+  <ReportFile>C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\Assets\report\rep_customers.mrt</ReportFile>
+  <ReportGuid>b7f63a4df26f4bc7a8e48a87997a9ddf</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Inches</ReportUnit>
+  <ReportVersion>2023.1.1.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

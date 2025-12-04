@@ -56,5 +56,17 @@ namespace CafeApplication.Properties {
                 this["edit_customer"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string company_name {
+            get {
+                return ((string)(this["company_name"]));
+            }
+            set {
+                this["company_name"] = value;
+            }
+        }
     }
 }
