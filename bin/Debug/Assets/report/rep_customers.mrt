@@ -406,11 +406,11 @@
         <hb Ref="29" type="HeaderBand" isKey="true">
           <Brush>[191:191:191]</Brush>
           <ClientRectangle>0,0.2,7.72,1.4</ClientRectangle>
-          <Components isList="true" count="11">
+          <Components isList="true" count="10">
             <Text1 Ref="30" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
-              <Brush>[242:242:242]</Brush>
-              <ClientRectangle>6.4,0.4,1.1,0.3</ClientRectangle>
+              <Brush>[216:216:216]</Brush>
+              <ClientRectangle>0,0.8,7.7,0.3</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Expressions isList="true" count="0" />
               <Font>Rokh Normal,12</Font>
@@ -419,35 +419,18 @@
               <Name>Text1</Name>
               <Page isRef="28" />
               <Parent isRef="29" />
-              <Text>گزارش  مشتری ها</Text>
+              <Text>گزارش مشتریان</Text>
               <TextBrush>Black</TextBrush>
               <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
               <VertAlignment>Center</VertAlignment>
             </Text1>
-            <Text2 Ref="31" type="Text" isKey="true">
-              <Border>Top, Right, Bottom;Black;1;Solid;False;4;Black</Border>
-              <Brush>[242:242:242]</Brush>
-              <ClientRectangle>4.1,0.4,0.6,0.3</ClientRectangle>
-              <Conditions isList="true" count="0" />
-              <Expressions isList="true" count="0" />
-              <Font>Rokh Normal,12</Font>
-              <HorAlignment>Center</HorAlignment>
-              <Margins>0,0,0,0</Margins>
-              <Name>Text2</Name>
-              <Page isRef="28" />
-              <Parent isRef="29" />
-              <Text>نام کافه :</Text>
-              <TextBrush>Black</TextBrush>
-              <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
-              <VertAlignment>Center</VertAlignment>
-            </Text2>
-            <txt_name Ref="32" type="Text" isKey="true">
+            <txt_name Ref="31" type="Text" isKey="true">
               <Border>Top, Left, Bottom;Black;1;Solid;False;4;Black</Border>
               <Brush>[242:242:242]</Brush>
-              <ClientRectangle>3.3,0.4,0.8,0.3</ClientRectangle>
+              <ClientRectangle>1.7,0,6,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Expressions isList="true" count="0" />
-              <Font>Rokh,12</Font>
+              <Font>Rokh Bold,28</Font>
               <Margins>0,0,0,0</Margins>
               <Name>txt_name</Name>
               <Page isRef="28" />
@@ -456,10 +439,10 @@
               <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
               <VertAlignment>Center</VertAlignment>
             </txt_name>
-            <Text3 Ref="33" type="Text" isKey="true">
+            <Text3 Ref="32" type="Text" isKey="true">
               <Border>Top, Right, Bottom;Black;1;Solid;False;4;Black</Border>
               <Brush>[242:242:242]</Brush>
-              <ClientRectangle>1.1,0.4,0.4,0.3</ClientRectangle>
+              <ClientRectangle>0.7,0,0.4,0.3</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Expressions isList="true" count="0" />
               <Font>Rokh Normal,12</Font>
@@ -473,10 +456,10 @@
               <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
               <VertAlignment>Center</VertAlignment>
             </Text3>
-            <txt_date Ref="34" type="Text" isKey="true">
+            <txt_date Ref="33" type="Text" isKey="true">
               <Border>Top, Left, Bottom;Black;1;Solid;False;4;Black</Border>
               <Brush>[242:242:242]</Brush>
-              <ClientRectangle>0.4,0.4,0.7,0.3</ClientRectangle>
+              <ClientRectangle>0,0,0.7,0.3</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Expressions isList="true" count="0" />
               <Font>RokhFaNum,12</Font>
@@ -488,7 +471,7 @@
               <TextBrush>Black</TextBrush>
               <VertAlignment>Bottom</VertAlignment>
             </txt_date>
-            <Text5 Ref="35" type="Text" isKey="true">
+            <Text5 Ref="34" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>[242:242:242]</Brush>
               <ClientRectangle>5.9,1.1,1.12,0.3</ClientRectangle>
@@ -505,7 +488,7 @@
               <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
               <VertAlignment>Center</VertAlignment>
             </Text5>
-            <Text9 Ref="36" type="Text" isKey="true">
+            <Text9 Ref="35" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>[242:242:242]</Brush>
               <ClientRectangle>0,1.1,0.8,0.3</ClientRectangle>
@@ -521,7 +504,7 @@
               <TextBrush>Black</TextBrush>
               <VertAlignment>Bottom</VertAlignment>
             </Text9>
-            <Text16 Ref="37" type="Text" isKey="true">
+            <Text16 Ref="36" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>[242:242:242]</Brush>
               <ClientRectangle>7,1.1,0.7,0.3</ClientRectangle>
@@ -537,7 +520,7 @@
               <TextBrush>Black</TextBrush>
               <VertAlignment>Center</VertAlignment>
             </Text16>
-            <Text4 Ref="38" type="Text" isKey="true">
+            <Text4 Ref="37" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>[242:242:242]</Brush>
               <ClientRectangle>4.9,1.1,1,0.3</ClientRectangle>
@@ -553,7 +536,7 @@
               <TextBrush>Black</TextBrush>
               <VertAlignment>Center</VertAlignment>
             </Text4>
-            <Text6 Ref="39" type="Text" isKey="true">
+            <Text6 Ref="38" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>[242:242:242]</Brush>
               <ClientRectangle>3.6,1.1,1.3,0.3</ClientRectangle>
@@ -569,7 +552,7 @@
               <TextBrush>Black</TextBrush>
               <VertAlignment>Center</VertAlignment>
             </Text6>
-            <Text8 Ref="40" type="Text" isKey="true">
+            <Text8 Ref="39" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>[242:242:242]</Brush>
               <ClientRectangle>0.8,1.1,2.8,0.3</ClientRectangle>
@@ -593,12 +576,12 @@
           <Page isRef="28" />
           <Parent isRef="28" />
         </hb>
-        <DataBand1 Ref="41" type="DataBand" isKey="true">
+        <DataBand1 Ref="40" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
           <ClientRectangle>0,2,7.72,0.2</ClientRectangle>
           <Components isList="true" count="6">
-            <Text10 Ref="42" type="Text" isKey="true">
+            <Text10 Ref="41" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>[242:242:242]</Brush>
               <ClientRectangle>7,0,0.7,0.2</ClientRectangle>
@@ -609,12 +592,12 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text10</Name>
               <Page isRef="28" />
-              <Parent isRef="41" />
+              <Parent isRef="40" />
               <Text>{Customers.CustomerID}</Text>
               <TextBrush>Black</TextBrush>
               <VertAlignment>Center</VertAlignment>
             </Text10>
-            <Text11 Ref="43" type="Text" isKey="true">
+            <Text11 Ref="42" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>[242:242:242]</Brush>
               <ClientRectangle>5.9,0,1.1,0.2</ClientRectangle>
@@ -625,12 +608,12 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text11</Name>
               <Page isRef="28" />
-              <Parent isRef="41" />
+              <Parent isRef="40" />
               <Text>{Customers.Name}</Text>
               <TextBrush>Black</TextBrush>
               <VertAlignment>Center</VertAlignment>
             </Text11>
-            <Text12 Ref="44" type="Text" isKey="true">
+            <Text12 Ref="43" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>[242:242:242]</Brush>
               <ClientRectangle>4.9,0,1,0.2</ClientRectangle>
@@ -641,12 +624,12 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text12</Name>
               <Page isRef="28" />
-              <Parent isRef="41" />
+              <Parent isRef="40" />
               <Text>{Customers.Phone}</Text>
               <TextBrush>Black</TextBrush>
               <VertAlignment>Center</VertAlignment>
             </Text12>
-            <Text13 Ref="45" type="Text" isKey="true">
+            <Text13 Ref="44" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>[242:242:242]</Brush>
               <ClientRectangle>3.6,0,1.3,0.2</ClientRectangle>
@@ -657,15 +640,15 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text13</Name>
               <Page isRef="28" />
-              <Parent isRef="41" />
+              <Parent isRef="40" />
               <Text>{Customers.Balance}</Text>
               <TextBrush>Black</TextBrush>
-              <TextFormat Ref="46" type="CustomFormat" isKey="true">
+              <TextFormat Ref="45" type="CustomFormat" isKey="true">
                 <StringFormat>ريال0.00</StringFormat>
               </TextFormat>
               <VertAlignment>Center</VertAlignment>
             </Text13>
-            <Text14 Ref="47" type="Text" isKey="true">
+            <Text14 Ref="46" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>[242:242:242]</Brush>
               <ClientRectangle>0.8,0,2.8,0.2</ClientRectangle>
@@ -676,12 +659,12 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text14</Name>
               <Page isRef="28" />
-              <Parent isRef="41" />
+              <Parent isRef="40" />
               <Text>{Customers.Address}</Text>
               <TextBrush>Black</TextBrush>
               <VertAlignment>Center</VertAlignment>
             </Text14>
-            <Text15 Ref="48" type="Text" isKey="true">
+            <Text15 Ref="47" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>[242:242:242]</Brush>
               <ClientRectangle>0,0,0.8,0.2</ClientRectangle>
@@ -692,7 +675,7 @@
               <Margins>0,0,0,0</Margins>
               <Name>Text15</Name>
               <Page isRef="28" />
-              <Parent isRef="41" />
+              <Parent isRef="40" />
               <Text>{Customers.CreatedAt}</Text>
               <TextBrush>Black</TextBrush>
               <VertAlignment>Center</VertAlignment>
@@ -731,10 +714,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>12/5/2025 12:43:42 AM</ReportChanged>
+  <ReportChanged>12/10/2025 7:39:37 PM</ReportChanged>
   <ReportCreated>12/4/2025 2:38:16 PM</ReportCreated>
-  <ReportFile>C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\Assets\report\rep_customers.mrt</ReportFile>
-  <ReportGuid>b7f63a4df26f4bc7a8e48a87997a9ddf</ReportGuid>
+  <ReportFile>C:\Users\amir\Desktop\CafeAccountingApp\Assets\report\rep_customers.mrt</ReportFile>
+  <ReportGuid>26d8091434f54c1c9ef816d0d3ba1d8c</ReportGuid>
   <ReportName>Report</ReportName>
   <ReportUnit>Inches</ReportUnit>
   <ReportVersion>2023.1.1.0</ReportVersion>

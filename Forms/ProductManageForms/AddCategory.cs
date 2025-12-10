@@ -47,13 +47,12 @@ namespace CafeApplication.Forms.ProductManageForms
         {
             categoriesBindingSource.AddNew();
             txt_CatID.Text = (categoriesTableAdapter.SetMaxID().GetValueOrDefault() + 1).ToString();
-            Chk_IsActive.Checked = true;
             txt_CatName.ResetText();
+            Chk_IsActive.Checked = false;
         }
 
         private void btn_cancel_Click(object sender, EventArgs e)
         {
-            msg.NewMessage("افزودن دسته بندی", "دسته بندی اضافه نشد.", "Y", "info", null);
             this.Close();
         }
 
@@ -86,6 +85,11 @@ namespace CafeApplication.Forms.ProductManageForms
         {
             Categories ct = new Categories();
             ct.categoriesTableAdapter.Fill(dsCafe.Categories);
+        }
+
+        private void txt_cateParent_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

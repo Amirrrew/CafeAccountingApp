@@ -216,3 +216,13 @@ C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\obj\Debug\CafeApplication.For
 C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\obj\Debug\CafeApplication.Forms.ProductManageForms.Categories.resources
 C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\obj\Debug\CafeApplication.Forms.ProductManageForms.Products.resources
 C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\bin\Debug\Assets\report\rep_customers.mrt
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\report\rep_customers.mrt
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Stimulsoft.Base.dll
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Stimulsoft.Data.dll
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Stimulsoft.Report.dll
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Stimulsoft.Report.Win.dll
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Stimulsoft.Controls.dll
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Stimulsoft.Controls.Win.dll
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Microsoft.Web.WebView2.WinForms.dll
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Microsoft.Web.WebView2.Core.dll

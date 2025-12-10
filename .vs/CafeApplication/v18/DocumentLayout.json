@@ -1,9 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Hosein\\Documents\\GitHub\\CafeAccountingApp\\",
+  "WorkspaceRootPath": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|C:\\Users\\Hosein\\Documents\\GitHub\\CafeAccountingApp\\forms\\customermanageforms\\customermanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|c:\\users\\amir\\desktop\\cafeaccountingapp\\forms\\productmanageforms\\addcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\productmanageforms\\addcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|c:\\users\\amir\\desktop\\cafeaccountingapp\\forms\\productmanageforms\\addcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\productmanageforms\\addcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|C:\\Users\\amir\\Desktop\\CafeAccountingApp\\forms\\customermanageforms\\customermanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7FD173F3-8A14-4FE2-A933-DCF9264960E5}|CafeApplication.csproj|solutionrelative:forms\\customermanageforms\\customermanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -13,7 +21,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
+          "DockedWidth": 256,
           "SelectedChildIndex": 2,
           "Children": [
             {
@@ -27,13 +35,44 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AddCategory.cs",
+              "DocumentMoniker": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\ProductManageForms\\AddCategory.cs",
+              "RelativeDocumentMoniker": "Forms\\ProductManageForms\\AddCategory.cs",
+              "ToolTip": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\ProductManageForms\\AddCategory.cs",
+              "RelativeToolTip": "Forms\\ProductManageForms\\AddCategory.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAewDIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T15:55:53.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "CustomerManage.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Hosein\\Documents\\GitHub\\CafeAccountingApp\\Forms\\CustomerManageForms\\CustomerManage.cs",
+              "DocumentMoniker": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\CustomerManageForms\\CustomerManage.cs",
               "RelativeDocumentMoniker": "Forms\\CustomerManageForms\\CustomerManage.cs",
-              "ToolTip": "C:\\Users\\Hosein\\Documents\\GitHub\\CafeAccountingApp\\Forms\\CustomerManageForms\\CustomerManage.cs [Design]",
+              "ToolTip": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\CustomerManageForms\\CustomerManage.cs [Design]",
               "RelativeToolTip": "Forms\\CustomerManageForms\\CustomerManage.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-03T19:12:47.885Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 144,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddCategory.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\ProductManageForms\\AddCategory.cs",
+              "RelativeDocumentMoniker": "Forms\\ProductManageForms\\AddCategory.cs",
+              "ToolTip": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\ProductManageForms\\AddCategory.cs [Design]",
+              "RelativeToolTip": "Forms\\ProductManageForms\\AddCategory.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T15:55:37.77Z",
               "EditorCaption": " [Design]"
             }
           ]
