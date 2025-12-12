@@ -39,7 +39,8 @@ namespace CafeApplication.Forms.ProductManageForms
         private void btn_addCustomer_Click(object sender, EventArgs e)
         {
             AddProduct add = new AddProduct();
-            add.Show();
+            add.FormClosed += (s, args) => { productsTableAdapter.Fill(dsCafe.Products); };
+            add.ShowDialog();
         }
 
         public void RemovePrd()
@@ -53,5 +54,7 @@ namespace CafeApplication.Forms.ProductManageForms
         {
             msg.NewMessage("حذف کالا", "آیا از حذف کالای انتخاب شده مطمئن هستید. در صورت حذف بازیابی آن امکان پذیر نخواهد بود.", "YN", "info", "med", YesClick: () => { RemovePrd(); }, NoClick: () => this.Close());
         }
+
+
     }
 }

@@ -62,8 +62,8 @@ namespace CafeApplication.Forms.CustomerManageForms
         private void btn_addCustomer_Click(object sender, EventArgs e)
         {
             AddCustomer addcustomer = new AddCustomer();
+            addcustomer.FormClosed += (s, args) => { customersTableAdapter.Fill(dsCafe.Customers); };
             addcustomer.ShowDialog();
-
         }
         private  DialogResult msg_Question()
         {
@@ -230,11 +230,6 @@ namespace CafeApplication.Forms.CustomerManageForms
                     msg.NewMessage("خطا", "اعمال تغیرات با شکست رو به رو  شد\n دوباره تلاش کنید", "Y", "error", null);
                 }
             }
-            
-            
-            
-
-
         }
     }
 }

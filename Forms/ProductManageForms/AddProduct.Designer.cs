@@ -55,13 +55,13 @@
             this.lbl_titele = new System.Windows.Forms.Label();
             this.Cmb_ProdCategory = new System.Windows.Forms.ComboBox();
             this.categoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.categoriesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.lbl_ProdCreated = new System.Windows.Forms.Label();
             this.btn_cancel = new Telerik.WinControls.UI.RadButton();
             this.btn_save = new Telerik.WinControls.UI.RadButton();
             this.categoriesTableAdapter = new CafeApplication.Data.DataSet.DsCafeTableAdapters.CategoriesTableAdapter();
             this.btn_GenerateCode = new Telerik.WinControls.UI.RadButton();
             this.categoriesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.categoriesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             lbl_ProdID = new System.Windows.Forms.Label();
             lbl_ProdCode = new System.Windows.Forms.Label();
             lbl_ProdName = new System.Windows.Forms.Label();
@@ -76,11 +76,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_cancel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_save)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_GenerateCode)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_ProdID
@@ -354,6 +354,11 @@
             this.categoriesBindingSource.DataMember = "Categories";
             this.categoriesBindingSource.DataSource = this.dsCafe;
             // 
+            // categoriesBindingSource2
+            // 
+            this.categoriesBindingSource2.DataMember = "Categories";
+            this.categoriesBindingSource2.DataSource = this.dsCafe;
+            // 
             // lbl_ProdCreated
             // 
             this.lbl_ProdCreated.AutoSize = true;
@@ -427,11 +432,6 @@
             this.categoriesBindingSource1.DataMember = "Categories";
             this.categoriesBindingSource1.DataSource = this.dsCafe;
             // 
-            // categoriesBindingSource2
-            // 
-            this.categoriesBindingSource2.DataMember = "Categories";
-            this.categoriesBindingSource2.DataSource = this.dsCafe;
-            // 
             // AddProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 21F);
@@ -474,14 +474,15 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "افزودن کالای جدید";
             this.Load += new System.EventHandler(this.AddProduct_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.AddProduct_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_cancel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_save)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_GenerateCode)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

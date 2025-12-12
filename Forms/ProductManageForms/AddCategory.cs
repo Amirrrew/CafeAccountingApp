@@ -58,6 +58,11 @@ namespace CafeApplication.Forms.ProductManageForms
 
         private void btn_save_Click(object sender, EventArgs e)
         {
+            SaveNewCategory();
+        }
+
+        public void SaveNewCategory()
+        {
             int IsUpdated;
             if (txt_CatID.Text != string.Empty && txt_CatName.Text != string.Empty)
             {
@@ -81,15 +86,21 @@ namespace CafeApplication.Forms.ProductManageForms
             }
         }
 
-        private void AddCategory_FormClosed(object sender, FormClosedEventArgs e)
+        private void AddCategory_KeyDown(object sender, KeyEventArgs e)
         {
-            Categories ct = new Categories();
-            ct.categoriesTableAdapter.Fill(dsCafe.Categories);
+
         }
 
-        private void txt_cateParent_TextChanged(object sender, EventArgs e)
+        private void txt_CatName_KeyDown(object sender, KeyEventArgs e)
         {
-
+            if (e.KeyCode == Keys.Enter)
+            {
+                SaveNewCategory();
+            } 
+            else if (e.KeyCode == Keys.Escape)
+            {
+                this.Close();
+            }
         }
     }
 }

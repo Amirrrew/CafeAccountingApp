@@ -57,6 +57,11 @@ namespace CafeApplication.Forms.ProductManageForms
 
         private void btn_save_Click(object sender, EventArgs e)
         {
+            NewProduct();
+        }
+
+        public void NewProduct()
+        {
             Int32 isUpdated;
             if (txt_ProdID.Text != string.Empty && txt_ProdName.Text != string.Empty)
             {
@@ -88,6 +93,18 @@ namespace CafeApplication.Forms.ProductManageForms
         {
             GenerateCode gen = new GenerateCode();
             txt_ProdCode.Text = gen.Barcode(txt_ProdCode.Text).ToString();
+        }
+
+        private void AddProduct_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                NewProduct();
+            }
+            else if (e.KeyCode == Keys.Escape) {
+                productsBindingSource.CancelEdit();
+                this.Close();
+            }
         }
     }
 }

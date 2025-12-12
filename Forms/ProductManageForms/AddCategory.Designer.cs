@@ -96,7 +96,7 @@
             this.btn_cancel.Margin = new System.Windows.Forms.Padding(4);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(44, 44);
-            this.btn_cancel.TabIndex = 3;
+            this.btn_cancel.TabIndex = 2;
             this.btn_cancel.Text = "-";
             this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
@@ -113,7 +113,7 @@
             this.btn_save.Margin = new System.Windows.Forms.Padding(4);
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(44, 44);
-            this.btn_save.TabIndex = 2;
+            this.btn_save.TabIndex = 1;
             this.btn_save.Text = "-";
             this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
@@ -164,7 +164,8 @@
             this.txt_CatName.Name = "txt_CatName";
             this.txt_CatName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txt_CatName.Size = new System.Drawing.Size(362, 38);
-            this.txt_CatName.TabIndex = 10;
+            this.txt_CatName.TabIndex = 0;
+            this.txt_CatName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_CatName_KeyDown);
             // 
             // txt_cateParent
             // 
@@ -174,7 +175,6 @@
             this.txt_cateParent.Size = new System.Drawing.Size(100, 28);
             this.txt_cateParent.TabIndex = 8;
             this.txt_cateParent.Visible = false;
-            this.txt_cateParent.TextChanged += new System.EventHandler(this.txt_cateParent_TextChanged);
             // 
             // Chk_IsActive
             // 
@@ -182,7 +182,7 @@
             this.Chk_IsActive.Location = new System.Drawing.Point(6, 6);
             this.Chk_IsActive.Name = "Chk_IsActive";
             this.Chk_IsActive.Size = new System.Drawing.Size(59, 24);
-            this.Chk_IsActive.TabIndex = 11;
+            this.Chk_IsActive.TabIndex = 3;
             this.Chk_IsActive.Text = "فعال";
             this.Chk_IsActive.UseVisualStyleBackColor = true;
             // 
@@ -192,8 +192,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(372, 127);
-            this.Controls.Add(this.Chk_IsActive);
             this.Controls.Add(this.txt_CatName);
+            this.Controls.Add(this.Chk_IsActive);
             this.Controls.Add(this.txt_CatID);
             this.Controls.Add(this.txt_cateParent);
             this.Controls.Add(this.btn_cancel);
@@ -211,8 +211,8 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "افزودن دسته بندی";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AddCategory_FormClosed);
             this.Load += new System.EventHandler(this.AddCategory_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.AddCategory_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_cancel)).EndInit();

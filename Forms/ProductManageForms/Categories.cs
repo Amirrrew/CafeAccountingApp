@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Interop;
+using Telerik.WinControls.UI;
 
 namespace CafeApplication.Forms.ProductManageForms
 {
@@ -46,6 +47,11 @@ namespace CafeApplication.Forms.ProductManageForms
         private void btn_addCustomer_Click(object sender, EventArgs e)
         {
             AddCategory add = new AddCategory();
+            add.FormClosed += (s, args) =>
+            {
+                categoriesTableAdapter.Fill(dsCafe.Categories);
+            };
+
             add.ShowDialog();
         }
 
@@ -74,5 +80,6 @@ namespace CafeApplication.Forms.ProductManageForms
         {
             categoriesTableAdapter.Update(dsCafe.Categories);
         }
+
     }
 }
