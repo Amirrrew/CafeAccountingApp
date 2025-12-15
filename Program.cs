@@ -1,4 +1,5 @@
 ﻿using CafeApplication.Forms.DailyInvoice;
+using CafeApplication.Forms.UserForms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace CafeApplication
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CafeApplication.MainForm());
+            Application.Run(new UserLogin());
         }
     }
 }

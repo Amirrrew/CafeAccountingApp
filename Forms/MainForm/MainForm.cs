@@ -5,6 +5,7 @@ using CafeApplication.Forms.CustomerManageForms;
 using CafeApplication.Forms.DailyFactor;
 using CafeApplication.Forms.ProductManageForms;
 using CafeApplication.Forms.PublicForms;
+using CafeApplication.Forms.Settings;
 using Calendar;
 using System;
 using System.Collections.Generic;
@@ -266,6 +267,12 @@ namespace CafeApplication
                 btn_userSettings.Image = Image.FromFile(moreRoute);
             }
 
+        }
+
+        private void btn_settings_Click(object sender, EventArgs e)
+        {
+            MainSettings st = new MainSettings();
+            st.ShowDialog();
         }
     }
 }
