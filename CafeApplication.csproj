@@ -361,6 +361,12 @@
     <None Include="Assets\Icons\Public\barcode-Icon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="Assets\Icons\Public\settingsMidIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Assets\Icons\Mainmenu\close-icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <Content Include="Assets\Wallpaper\DefaultWallpaper.jpg" />
     <Content Include="Assets\Wallpaper\Default_Wallpaper.jpeg" />
     <None Include="Data\Base\CafeAccountingDB.mdf">

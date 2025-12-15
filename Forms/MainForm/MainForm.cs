@@ -34,6 +34,7 @@ namespace CafeApplication
             SetCurrentTime(); //------> sets current time for mainform labels
             CheckSetupDone(); // -----> checks if first time setup is done
             btn.SetBtnColor(this); //------> sets buttons default color
+            btn_settings.BackColor = Color.FromArgb(35, 64, 64, 64);
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -249,6 +250,23 @@ namespace CafeApplication
 
         } //------------- open transactions tabs
 
+        private void btn_userSettings_Click(object sender, EventArgs e)
+        {
+            string closeRoute = Application.StartupPath + @"/Assets/Icons/Mainmenu/close-icon.png";
+            string moreRoute = Application.StartupPath + @"/Assets/Icons/Mainmenu/more-icon.png";
+            if (pnl_userProps.Visible == false)
+            {
+                pnl_userProps.Location = new Point(38, 491);
+                pnl_userProps.Visible = true;
+                btn_userSettings.Image = Image.FromFile(closeRoute);
+            }
+            else
+            {
+                pnl_userProps.Visible = false;
+                btn_userSettings.Image = Image.FromFile(moreRoute);
+            }
+
+        }
     }
 }
 

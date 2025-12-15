@@ -100,6 +100,13 @@
             this.dsCafe = new CafeApplication.Data.DataSet.DsCafe();
             this.setupTableAdapter = new CafeApplication.Data.DataSet.DsCafeTableAdapters.SetupTableAdapter();
             this.tableAdapterManager = new CafeApplication.Data.DataSet.DsCafeTableAdapters.TableAdapterManager();
+            this.btn_settings = new Telerik.WinControls.UI.RadButton();
+            this.radButton2 = new Telerik.WinControls.UI.RadButton();
+            this.radButton3 = new Telerik.WinControls.UI.RadButton();
+            this.pnl_userProps = new System.Windows.Forms.Panel();
+            this.radButton1 = new Telerik.WinControls.UI.RadButton();
+            this.radButton4 = new Telerik.WinControls.UI.RadButton();
+            this.radButton5 = new Telerik.WinControls.UI.RadButton();
             this.MainPanel.SuspendLayout();
             this.Pnl_Items.SuspendLayout();
             this.InnerPanel.SuspendLayout();
@@ -136,6 +143,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_userSettings)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.setupBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_settings)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton3)).BeginInit();
+            this.pnl_userProps.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton5)).BeginInit();
             this.SuspendLayout();
             // 
             // MainPanel
@@ -876,12 +890,15 @@
             // UserPanel
             // 
             this.UserPanel.BackColor = System.Drawing.Color.Black;
+            this.UserPanel.Controls.Add(this.radButton3);
+            this.UserPanel.Controls.Add(this.radButton2);
+            this.UserPanel.Controls.Add(this.btn_settings);
             this.UserPanel.Controls.Add(this.Pnl_User);
-            this.UserPanel.Location = new System.Drawing.Point(10, 441);
+            this.UserPanel.Location = new System.Drawing.Point(10, 541);
             this.UserPanel.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.UserPanel.Name = "UserPanel";
             this.UserPanel.Padding = new System.Windows.Forms.Padding(10);
-            this.UserPanel.Size = new System.Drawing.Size(366, 301);
+            this.UserPanel.Size = new System.Drawing.Size(366, 201);
             this.UserPanel.TabIndex = 1;
             // 
             // Pnl_User
@@ -892,7 +909,7 @@
             this.Pnl_User.Controls.Add(this.btn_userSettings);
             this.Pnl_User.Controls.Add(this.lbl_userName);
             this.Pnl_User.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.Pnl_User.Location = new System.Drawing.Point(10, 217);
+            this.Pnl_User.Location = new System.Drawing.Point(10, 117);
             this.Pnl_User.Name = "Pnl_User";
             this.Pnl_User.Size = new System.Drawing.Size(346, 74);
             this.Pnl_User.TabIndex = 14;
@@ -932,6 +949,7 @@
             this.btn_userSettings.Size = new System.Drawing.Size(34, 34);
             this.btn_userSettings.TabIndex = 8;
             this.btn_userSettings.Text = "-";
+            this.btn_userSettings.Click += new System.EventHandler(this.btn_userSettings_Click);
             // 
             // lbl_userName
             // 
@@ -1025,6 +1043,120 @@
             this.tableAdapterManager.UpdateOrder = CafeApplication.Data.DataSet.DsCafeTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.UsersTableAdapter = null;
             // 
+            // btn_settings
+            // 
+            this.btn_settings.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_settings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_settings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_settings.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_settings.Font = new System.Drawing.Font("Rokh Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btn_settings.ForeColor = System.Drawing.Color.White;
+            this.btn_settings.Image = ((System.Drawing.Image)(resources.GetObject("btn_settings.Image")));
+            this.btn_settings.ImageAlignment = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_settings.Location = new System.Drawing.Point(10, 11);
+            this.btn_settings.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_settings.Name = "btn_settings";
+            this.btn_settings.Padding = new System.Windows.Forms.Padding(0, 15, 0, 5);
+            this.btn_settings.Size = new System.Drawing.Size(112, 98);
+            this.btn_settings.TabIndex = 9;
+            this.btn_settings.Text = "تنظیمات";
+            this.btn_settings.TextAlignment = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // radButton2
+            // 
+            this.radButton2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.radButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.radButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.radButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radButton2.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
+            this.radButton2.Image = ((System.Drawing.Image)(resources.GetObject("radButton2.Image")));
+            this.radButton2.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.radButton2.Location = new System.Drawing.Point(244, 11);
+            this.radButton2.Margin = new System.Windows.Forms.Padding(4);
+            this.radButton2.Name = "radButton2";
+            this.radButton2.Size = new System.Drawing.Size(112, 98);
+            this.radButton2.TabIndex = 10;
+            this.radButton2.Text = "-";
+            // 
+            // radButton3
+            // 
+            this.radButton3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.radButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.radButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.radButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radButton3.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
+            this.radButton3.Image = ((System.Drawing.Image)(resources.GetObject("radButton3.Image")));
+            this.radButton3.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.radButton3.Location = new System.Drawing.Point(127, 11);
+            this.radButton3.Margin = new System.Windows.Forms.Padding(4);
+            this.radButton3.Name = "radButton3";
+            this.radButton3.Size = new System.Drawing.Size(112, 98);
+            this.radButton3.TabIndex = 11;
+            this.radButton3.Text = "-";
+            // 
+            // pnl_userProps
+            // 
+            this.pnl_userProps.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(11)))), ((int)(((byte)(11)))));
+            this.pnl_userProps.Controls.Add(this.radButton5);
+            this.pnl_userProps.Controls.Add(this.radButton4);
+            this.pnl_userProps.Controls.Add(this.radButton1);
+            this.pnl_userProps.Location = new System.Drawing.Point(382, 563);
+            this.pnl_userProps.Name = "pnl_userProps";
+            this.pnl_userProps.Size = new System.Drawing.Size(200, 179);
+            this.pnl_userProps.TabIndex = 8;
+            this.pnl_userProps.Visible = false;
+            // 
+            // radButton1
+            // 
+            this.radButton1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.radButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.radButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.radButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radButton1.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
+            this.radButton1.Font = new System.Drawing.Font("Rokh Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.radButton1.Image = ((System.Drawing.Image)(resources.GetObject("radButton1.Image")));
+            this.radButton1.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            this.radButton1.Location = new System.Drawing.Point(10, 10);
+            this.radButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.radButton1.Name = "radButton1";
+            this.radButton1.Size = new System.Drawing.Size(181, 49);
+            this.radButton1.TabIndex = 12;
+            this.radButton1.Text = "-";
+            // 
+            // radButton4
+            // 
+            this.radButton4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.radButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.radButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.radButton4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radButton4.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
+            this.radButton4.Font = new System.Drawing.Font("Rokh Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.radButton4.Image = ((System.Drawing.Image)(resources.GetObject("radButton4.Image")));
+            this.radButton4.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            this.radButton4.Location = new System.Drawing.Point(10, 65);
+            this.radButton4.Margin = new System.Windows.Forms.Padding(4);
+            this.radButton4.Name = "radButton4";
+            this.radButton4.Size = new System.Drawing.Size(181, 49);
+            this.radButton4.TabIndex = 13;
+            this.radButton4.Text = "-";
+            // 
+            // radButton5
+            // 
+            this.radButton5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.radButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.radButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.radButton5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radButton5.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
+            this.radButton5.Font = new System.Drawing.Font("Rokh Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.radButton5.Image = ((System.Drawing.Image)(resources.GetObject("radButton5.Image")));
+            this.radButton5.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            this.radButton5.Location = new System.Drawing.Point(10, 120);
+            this.radButton5.Margin = new System.Windows.Forms.Padding(4);
+            this.radButton5.Name = "radButton5";
+            this.radButton5.Size = new System.Drawing.Size(181, 49);
+            this.radButton5.TabIndex = 13;
+            this.radButton5.Text = "-";
+            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -1032,6 +1164,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1509, 757);
+            this.Controls.Add(this.pnl_userProps);
             this.Controls.Add(this.lbl_today);
             this.Controls.Add(this.lblDayTitle);
             this.Controls.Add(this.lblDate);
@@ -1088,6 +1221,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_userSettings)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.setupBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_settings)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton3)).EndInit();
+            this.pnl_userProps.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1164,6 +1304,13 @@
         public System.Windows.Forms.Label lbl_Option2;
         public System.Windows.Forms.Label lbl_OptionsTitle;
         public System.Windows.Forms.Panel MainPanel;
+        public Telerik.WinControls.UI.RadButton radButton3;
+        public Telerik.WinControls.UI.RadButton radButton2;
+        public Telerik.WinControls.UI.RadButton btn_settings;
+        public Telerik.WinControls.UI.RadButton radButton1;
+        private System.Windows.Forms.Panel pnl_userProps;
+        public Telerik.WinControls.UI.RadButton radButton5;
+        public Telerik.WinControls.UI.RadButton radButton4;
     }
 }
 

@@ -226,3 +226,6 @@ C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Stimulsoft.Controls.dll
 C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Stimulsoft.Controls.Win.dll
 C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Microsoft.Web.WebView2.WinForms.dll
 C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Microsoft.Web.WebView2.Core.dll
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Public\settingsMidIcon.png
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\closeMiniIcon.png
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\close-icon.png
