@@ -45,6 +45,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbl_ForgotPass = new System.Windows.Forms.Label();
             this.salesTableAdapter = new CafeApplication.Data.DataSet.DsCafeTableAdapters.SalesTableAdapter();
+            this.txt_userrole = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Login)).BeginInit();
@@ -100,7 +101,7 @@
             this.Cmb_users.Font = new System.Drawing.Font("RokhFaNum Normal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Cmb_users.ForeColor = System.Drawing.Color.White;
             this.Cmb_users.FormattingEnabled = true;
-            this.Cmb_users.Location = new System.Drawing.Point(12, 91);
+            this.Cmb_users.Location = new System.Drawing.Point(11, 91);
             this.Cmb_users.Name = "Cmb_users";
             this.Cmb_users.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Cmb_users.Size = new System.Drawing.Size(450, 43);
@@ -144,7 +145,7 @@
             this.txt_password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_password.Font = new System.Drawing.Font("RokhFaNum Normal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_password.ForeColor = System.Drawing.Color.White;
-            this.txt_password.Location = new System.Drawing.Point(14, 172);
+            this.txt_password.Location = new System.Drawing.Point(13, 172);
             this.txt_password.Name = "txt_password";
             this.txt_password.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txt_password.Size = new System.Drawing.Size(447, 42);
@@ -161,7 +162,7 @@
             this.btn_Login.ForeColor = System.Drawing.Color.White;
             this.btn_Login.Image = ((System.Drawing.Image)(resources.GetObject("btn_Login.Image")));
             this.btn_Login.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_Login.Location = new System.Drawing.Point(14, 225);
+            this.btn_Login.Location = new System.Drawing.Point(13, 225);
             this.btn_Login.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Login.Name = "btn_Login";
             this.btn_Login.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
@@ -180,7 +181,7 @@
             this.btn_Exit.ForeColor = System.Drawing.Color.White;
             this.btn_Exit.Image = ((System.Drawing.Image)(resources.GetObject("btn_Exit.Image")));
             this.btn_Exit.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_Exit.Location = new System.Drawing.Point(238, 225);
+            this.btn_Exit.Location = new System.Drawing.Point(237, 225);
             this.btn_Exit.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Exit.Name = "btn_Exit";
             this.btn_Exit.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
@@ -225,12 +226,21 @@
             // 
             this.salesTableAdapter.ClearBeforeFill = true;
             // 
+            // txt_userrole
+            // 
+            this.txt_userrole.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "Role", true));
+            this.txt_userrole.Location = new System.Drawing.Point(13, 9);
+            this.txt_userrole.Name = "txt_userrole";
+            this.txt_userrole.Size = new System.Drawing.Size(100, 28);
+            this.txt_userrole.TabIndex = 18;
+            // 
             // UserLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(474, 287);
+            this.ClientSize = new System.Drawing.Size(472, 287);
+            this.Controls.Add(this.txt_userrole);
             this.Controls.Add(this.lbl_ForgotPass);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Pic_password);
@@ -278,5 +288,6 @@
         private System.Windows.Forms.Label lbl_ForgotPass;
         private Data.DataSet.DsCafeTableAdapters.SalesTableAdapter salesTableAdapter;
         public System.Windows.Forms.ComboBox Cmb_users;
+        private System.Windows.Forms.TextBox txt_userrole;
     }
 }

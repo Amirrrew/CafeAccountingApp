@@ -30,6 +30,8 @@ namespace CafeApplication.Forms.UserForms
         int remainingAttemps = 9;
         string password;
         int FindUser;
+        public string UserName {  get; set; }
+        public string UserRole {  get; set; }
 
         private void usersBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
@@ -75,10 +77,10 @@ namespace CafeApplication.Forms.UserForms
 
                 if (txt_password.Text == userPassowrd)
                 {
-                    MainForm mf = new MainForm();
-                    mf.Show();
                     UserLogin ul = new UserLogin();
+                    MainForm mf = new MainForm();
                     ul.Close();
+                    mf.Show();
                 }
                 else
                 {
@@ -116,7 +118,9 @@ namespace CafeApplication.Forms.UserForms
 
         private void btn_Login_Click(object sender, EventArgs e)
         {
-
+            UserRole = txt_userrole.Text;
+            UserName = Cmb_users.Text;
+            this.DialogResult = DialogResult.OK;
             LoginAttemp();
 
         }

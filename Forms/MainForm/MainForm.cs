@@ -6,6 +6,7 @@ using CafeApplication.Forms.DailyFactor;
 using CafeApplication.Forms.ProductManageForms;
 using CafeApplication.Forms.PublicForms;
 using CafeApplication.Forms.Settings;
+using CafeApplication.Forms.UserForms;
 using Calendar;
 using System;
 using System.Collections.Generic;
@@ -36,6 +37,7 @@ namespace CafeApplication
             CheckSetupDone(); // -----> checks if first time setup is done
             btn.SetBtnColor(this); //------> sets buttons default color
             btn_settings.BackColor = Color.FromArgb(35, 64, 64, 64);
+            LoadUser();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -71,6 +73,19 @@ namespace CafeApplication
             //{
             //    MessageBox.Show("khodafez");
             //}
+        }
+
+        public void LoadUser()
+        {
+            using (UserLogin login = new UserLogin())
+            {
+                login.DialogResult = DialogResult.OK;
+                if (login.DialogResult == DialogResult.OK)
+                {
+                    lbl_userName.Text = login.UserName;
+                    lbl_userRole.Text = login.UserRole;
+                }
+            }
         }
 
 
