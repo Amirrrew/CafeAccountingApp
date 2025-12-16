@@ -237,3 +237,13 @@ C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\userMenu
 C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\userMenu\userSM-Icon.png
 C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\userMenu\pass-Icon.png
 C:\Users\amir\Desktop\CafeAccountingApp\obj\Debug\CafeApplication.Forms.UserForms.UserLogin.resources
+C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\bin\Debug\Assets\Icons\Public\settingsMidIcon.png
+C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\close-icon.png
+C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\userMenu\logout-Icon.png
+C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\userMenu\switch-Icon.png
+C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\userMenu\userSetting-Icon.png
+C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\userMenu\tick-Icon.png
+C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\userMenu\userSM-Icon.png
+C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\userMenu\pass-Icon.png
+C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\obj\Debug\CafeApplication.Forms.Settings.MainSettings.resources
+C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\obj\Debug\CafeApplication.Forms.UserForms.UserLogin.resources

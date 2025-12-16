@@ -39,7 +39,7 @@ namespace CafeApplication.Forms.ProductManageForms
         private void AddCategory_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'dsCafe.Categories' table. You can move, or remove it, as needed.
-            this.categoriesTableAdapter.Fill(this.dsCafe.Categories);
+            //this.categoriesTableAdapter.Fill(this.dsCafe.Categories);
             NewData();
         }
 
@@ -66,8 +66,8 @@ namespace CafeApplication.Forms.ProductManageForms
             int IsUpdated;
             if (txt_CatID.Text != string.Empty && txt_CatName.Text != string.Empty)
             {
-                categoriesBindingSource.EndEdit();
-                IsUpdated = categoriesTableAdapter.Update(dsCafe.Categories);
+                this.categoriesBindingSource.EndEdit();
+                IsUpdated = this.categoriesTableAdapter.Update(this.dsCafe.Categories);
                 if (IsUpdated > 0)
                 {
                     msg.NewMessage("دسته بندی جدید", "دسته بندی جدید با موفقیت اضاقه شد.", "Y", "success", null);

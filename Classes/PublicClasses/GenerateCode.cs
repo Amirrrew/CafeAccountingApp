@@ -15,7 +15,7 @@ namespace CafeApplication.Classes.PublicClasses
             long FinalCode = 0;
             ProductsTableAdapter prdtbl = new ProductsTableAdapter();
             DsCafe ds = new DsCafe();
-            Int32 doesExist = prdtbl.SearchForCode(ds.Products, text);
+            Int32 doesExist = prdtbl.FillBy_code_user(ds.Products, text);
             Random rnd = new Random();
 
             if (doesExist != 1)
