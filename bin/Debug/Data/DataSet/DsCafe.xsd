@@ -611,7 +611,7 @@ SELECT ProductID, Code, Name, CategoryID, UnitPrice, CostPrice, Tax, Unit, IsAct
               <Mapping SourceColumn="CreatedAt" DataSetColumn="CreatedAt" />
             </Mappings>
             <Sources>
-              <DbSource ConnectionRef="CafeAccountingDBConnectionString (Settings)" DbObjectName="dbo.Products" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy_code_user" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy_code_user" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="FillBy_code_user">
+              <DbSource ConnectionRef="CafeAccountingDBConnectionString (Settings)" DbObjectName="dbo.Products" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy_code_user" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy_code_user" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy_code_user">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        ProductID, Code, Name, CategoryID, UnitPrice, CostPrice, Tax, Unit, IsActive, CreatedAt
@@ -623,7 +623,7 @@ WHERE        (Code = @Param1)</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="CafeAccountingDBConnectionString (Settings)" DbObjectName="dbo.Products" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy_prod_name" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy_prod_name" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="FillBy_prod_name">
+              <DbSource ConnectionRef="CafeAccountingDBConnectionString (Settings)" DbObjectName="dbo.Products" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy_prod_name" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy_prod_name" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="FillBy_prod_name">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        ProductID, Code, Name, CategoryID, UnitPrice, CostPrice, Tax, Unit, IsActive, CreatedAt
@@ -635,7 +635,7 @@ WHERE        (Name = @Param2)</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="CafeAccountingDBConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ProdMaxID" Modifier="Public" Name="ProdMaxID" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="ProdMaxID">
+              <DbSource ConnectionRef="CafeAccountingDBConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ProdMaxID" Modifier="Public" Name="ProdMaxID" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="ProdMaxID">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        MAX(ProductID) AS Expr1
@@ -1247,8 +1247,7 @@ SELECT UserID, Username, PasswordHash, Salt, FullName, Role, CreatedAt, IsActive
                 </InsertCommand>
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>SELECT        Users.*
-FROM            Users</CommandText>
+                    <CommandText>SELECT UserID, Username, PasswordHash, Salt, FullName, Role, CreatedAt, IsActive FROM Users</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
@@ -1292,7 +1291,32 @@ SELECT UserID, Username, PasswordHash, Salt, FullName, Role, CreatedAt, IsActive
               <Mapping SourceColumn="CreatedAt" DataSetColumn="CreatedAt" />
               <Mapping SourceColumn="IsActive" DataSetColumn="IsActive" />
             </Mappings>
-            <Sources />
+            <Sources>
+              <DbSource ConnectionRef="CafeAccountingDBConnectionString (Settings)" DbObjectName="dbo.Users" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="GetPassword" Modifier="Public" Name="GetPassword" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="GetPassword">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        PasswordHash
+FROM            Users
+WHERE        (Username = @Param1)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="Username" DataSourceName="[C:\USERS\AMIR\DESKTOP\CAFEACCOUNTINGAPP\DATA\BASE\CAFEACCOUNTINGDB.MDF].dbo.Users" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@Param1" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="Username" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="CafeAccountingDBConnectionString (Settings)" DbObjectName="dbo.Users" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="GetUsername" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="GetUsername" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="GetUsername">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        UserID, Username, PasswordHash, Salt, FullName, Role, CreatedAt, IsActive
+FROM            Users
+WHERE        (Username = @Param2)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param2" ColumnName="Username" DataSourceName="[C:\USERS\AMIR\DESKTOP\CAFEACCOUNTINGAPP\DATA\BASE\CAFEACCOUNTINGDB.MDF].dbo.Users" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@Param2" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="Username" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SetupTableAdapter" GeneratorDataComponentClassName="SetupTableAdapter" Name="Setup" UserDataComponentName="SetupTableAdapter">
             <MainSource>

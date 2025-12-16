@@ -44,6 +44,7 @@
             this.Pic_password = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbl_ForgotPass = new System.Windows.Forms.Label();
+            this.salesTableAdapter = new CafeApplication.Data.DataSet.DsCafeTableAdapters.SalesTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Login)).BeginInit();
@@ -90,7 +91,10 @@
             // Cmb_users
             // 
             this.Cmb_users.BackColor = System.Drawing.Color.Black;
+            this.Cmb_users.DataBindings.Add(new System.Windows.Forms.Binding("SelectedItem", this.usersBindingSource, "Username", true));
             this.Cmb_users.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "Username", true));
+            this.Cmb_users.DataSource = this.usersBindingSource;
+            this.Cmb_users.DisplayMember = "Username";
             this.Cmb_users.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cmb_users.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Cmb_users.Font = new System.Drawing.Font("RokhFaNum Normal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
@@ -101,6 +105,8 @@
             this.Cmb_users.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Cmb_users.Size = new System.Drawing.Size(450, 43);
             this.Cmb_users.TabIndex = 2;
+            this.Cmb_users.ValueMember = "Username";
+            this.Cmb_users.Click += new System.EventHandler(this.Cmb_users_Click);
             // 
             // lbl_title
             // 
@@ -143,6 +149,7 @@
             this.txt_password.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txt_password.Size = new System.Drawing.Size(447, 42);
             this.txt_password.TabIndex = 6;
+            this.txt_password.TextChanged += new System.EventHandler(this.txt_password_TextChanged);
             // 
             // btn_Login
             // 
@@ -203,15 +210,20 @@
             // 
             // lbl_ForgotPass
             // 
-            this.lbl_ForgotPass.AutoSize = true;
             this.lbl_ForgotPass.Font = new System.Drawing.Font("RokhFaNum Normal", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lbl_ForgotPass.ForeColor = System.Drawing.Color.Red;
-            this.lbl_ForgotPass.Location = new System.Drawing.Point(183, 145);
+            this.lbl_ForgotPass.Location = new System.Drawing.Point(14, 145);
             this.lbl_ForgotPass.Name = "lbl_ForgotPass";
             this.lbl_ForgotPass.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lbl_ForgotPass.Size = new System.Drawing.Size(187, 21);
+            this.lbl_ForgotPass.Size = new System.Drawing.Size(356, 21);
             this.lbl_ForgotPass.TabIndex = 17;
             this.lbl_ForgotPass.Text = "- بار تلاش تا قفل شدن نرم افزار";
+            this.lbl_ForgotPass.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_ForgotPass.Visible = false;
+            // 
+            // salesTableAdapter
+            // 
+            this.salesTableAdapter.ClearBeforeFill = true;
             // 
             // UserLogin
             // 
@@ -255,7 +267,6 @@
         private System.Windows.Forms.BindingSource usersBindingSource;
         private Data.DataSet.DsCafeTableAdapters.UsersTableAdapter usersTableAdapter;
         private Data.DataSet.DsCafeTableAdapters.TableAdapterManager tableAdapterManager;
-        public System.Windows.Forms.ComboBox Cmb_users;
         private System.Windows.Forms.Label lbl_title;
         private System.Windows.Forms.Label lbl_userName;
         private System.Windows.Forms.Label lbl_password;
@@ -265,5 +276,7 @@
         private System.Windows.Forms.PictureBox Pic_password;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lbl_ForgotPass;
+        private Data.DataSet.DsCafeTableAdapters.SalesTableAdapter salesTableAdapter;
+        public System.Windows.Forms.ComboBox Cmb_users;
     }
 }

@@ -4,6 +4,9 @@
 
     partial class DsCafe
     {
+        partial class LoginAttempsDataTable
+        {
+        }
     }
 }
 

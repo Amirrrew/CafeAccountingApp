@@ -40,6 +40,8 @@ namespace CafeApplication
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'dsCafe.Users' table. You can move, or remove it, as needed.
+            this.usersTableAdapter.Fill(this.dsCafe.Users);
             this.setupTableAdapter.Fill(this.dsCafe.Setup);
         }
 
@@ -273,6 +275,12 @@ namespace CafeApplication
         {
             MainSettings st = new MainSettings();
             st.ShowDialog();
+        }
+
+        private void radButton1_Click(object sender, EventArgs e)
+        {
+            usersBindingSource.EndEdit();
+            usersTableAdapter.Update(dsCafe.Users);
         }
     }
 }
