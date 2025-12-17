@@ -781,7 +781,7 @@
   <data name="btn_settings.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAABMRJREFUaEPtmcmLXUUUh9U4BKMhKioOC0VBcUAXguIiiUQ3KqJxTOI8TzHOJs7G
+        DwAACw8BkvkDpQAABMRJREFUaEPtmcmLXUUUh9U4BKMhKioOC0VBcUAXguIiiUQ3KqJxTOI8TzHOJs7G
         ecZ5QkVURFwoqLhzQBRc6L/0yRd+t32c9Huvqk3SvegfXLpf1a1657unzqlT9+2226IWtahdKuBY4H7g
         ZeAd4FPgY+BV4FHgRuDIOm5BCTgN+BX4FvgC+AT4AHgPeB/4MG2fA8fV8QtGMfQr4HXgtXjhFeAl4EXg
         BeA54G1gSx2/IATsA/wSIydBPAs8H+g96zzzLuAq4McGiGeArcC7wFl1nnkVcDzwU55yC8RTaTMhHFbn
@@ -870,10 +870,10 @@
   <metadata name="tableAdapterManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>731, 17</value>
   </metadata>
-  <data name="radButton5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_logout.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAAXtJREFUOE+11EtLlVEUxnEHOam+gDNHTcx0qkiDHESkDUQyySyTLkRhEGRQipUU
+        EAAACxABrSO9dQAAAXtJREFUOE+11EtLlVEUxnEHOam+gDNHTcx0qkiDHESkDUQyySyTLkRhEGRQipUU
         QRAJSiA6KsIudh3VKBrVqG/0kxWLl+NGznsEfWBzNi97/fez1tpntbXtt3AQp3AWIziD0ziJEziOfhxF
         exm/TejAa6xhGUt4ged4hid4jAXM4xYOlZxKuI+VHUBPsYiHCYpz93AXAyWnUjrYDewOhktOpQxqFRa/
         t+uAD1qExf47XtYBI6AOFmnGxV/xDXMlp1IeboRFN6Prn/Au9+u5viT0bTypkvVfmCmcReA//MVv/ExX
@@ -882,10 +882,10 @@
         NQ7gGM7hAg6XnG3CAXSiq2HFMO3GMfSgF0fibBm/59oCyPRqy1oXcOcAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="radButton4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_changeUser.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAAXpJREFUOE/V1E1LVVEUxnEHodBAQdAaJdkgCiKoJpEU1CBsIBVK9v4KSfSGgZAK
+        EAAACxABrSO9dQAAAXpJREFUOE/V1E1LVVEUxnEHodBAQdAaJdkgCiKoJpEU1CBsIBVK9v4KSfSGgZAK
         aRAERRA0alyf8xeLu3bss9AP4AMHLns9978Paz3rjI0deOEkHuEulnEDc9W3pzCLs+XsHb7iCz5jB7t4
         gqneOxBO4C/+4GZ3fhXfE/YJ2/iIDaxhckga/el4wn7hJ37jele/htd4i62EfcD7aEOFTRbYD3zL3+cG
         5pF/AksJe5PPbDWs51v1sBjEsQEthfEEvcJLnK+eMEU/AhYD2Kn1qrwwYM+xUOtheNFNc7PWq/AwYTHt
@@ -894,10 +894,10 @@
         5gA2WJvm/3VM71Ec7s/2VX55LsQEc5fjI3Gk+g6e/gGx8j5ylRISnwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="radButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_userManage.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAAVdJREFUOE/t0s1LFXEYxXFJF1dX7sJAsouIEGIgRrQwshARXLi4+VJQgaWVRFCI
+        DwAACw8BkvkDpQAAAVdJREFUOE/t0s1LFXEYxXFJF1dX7sJAsouIEGIgRrQwshARXLi4+VJQgaWVRFCI
         aC0iFRF1EVRgO//RTzzcR5gZLzZbwQPDzDDn953zvHR1XSuEfmzgMxbQW/XUFm7iDCfYxTe8LULxHIfY
         xnq+L2O2TGubv+I4YfH8JdNOFzzzHWDPMFemtc17HWCraFW9tYQPHWAvIlXBcw/vsIQZ3McDjJZpbXOz
         A+wV7hQ88f0nfuTgwvsGr8u0VBzGYpqiNyOV7924nQMcwC0Moq/oqy30YAJjGE5ggBtVby1hB39wgC18

@@ -8,6 +8,7 @@ using System.Drawing;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -30,8 +31,6 @@ namespace CafeApplication.Forms.UserForms
         int remainingAttemps = 9;
         string password;
         int FindUser;
-        public string UserName {  get; set; }
-        public string UserRole {  get; set; }
 
         private void usersBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
@@ -77,10 +76,11 @@ namespace CafeApplication.Forms.UserForms
 
                 if (txt_password.Text == userPassowrd)
                 {
-                    UserLogin ul = new UserLogin();
                     MainForm mf = new MainForm();
-                    ul.Close();
+                    mf.Username = Cmb_users.Text;
+                    mf.UserRole = txt_userrole.Text;
                     mf.Show();
+                    this.Hide();
                 }
                 else
                 {
@@ -118,9 +118,6 @@ namespace CafeApplication.Forms.UserForms
 
         private void btn_Login_Click(object sender, EventArgs e)
         {
-            UserRole = txt_userrole.Text;
-            UserName = Cmb_users.Text;
-            this.DialogResult = DialogResult.OK;
             LoginAttemp();
 
         }

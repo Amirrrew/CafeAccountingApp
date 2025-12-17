@@ -37,7 +37,6 @@ namespace CafeApplication
             CheckSetupDone(); // -----> checks if first time setup is done
             btn.SetBtnColor(this); //------> sets buttons default color
             btn_settings.BackColor = Color.FromArgb(35, 64, 64, 64);
-            LoadUser();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -45,11 +44,14 @@ namespace CafeApplication
             // TODO: This line of code loads data into the 'dsCafe.Users' table. You can move, or remove it, as needed.
             this.usersTableAdapter.Fill(this.dsCafe.Users);
             this.setupTableAdapter.Fill(this.dsCafe.Setup);
+            LoadUser();
         }
 
         
 
         //--------------- importing classes and needed files ----------------- 
+        public string Username { get; set; }
+        public string UserRole { get; set; }
         GetTime gt = new GetTime();
         BackBlur blur = new BackBlur();
         FontSet fontSet = new FontSet();
@@ -77,15 +79,8 @@ namespace CafeApplication
 
         public void LoadUser()
         {
-            using (UserLogin login = new UserLogin())
-            {
-                login.DialogResult = DialogResult.OK;
-                if (login.DialogResult == DialogResult.OK)
-                {
-                    lbl_userName.Text = login.UserName;
-                    lbl_userRole.Text = login.UserRole;
-                }
-            }
+            lbl_userName.Text = Username;
+            lbl_userRole.Text = UserRole;
         }
 
 
@@ -95,12 +90,6 @@ namespace CafeApplication
             UserPanel.BackColor = Color.FromArgb(30,0,0,1);
         }
 
-
-
-
-        
-
-
         //---------------------- Timing classes and Events ---------------
         public void SetCurrentTime()
         {
@@ -108,10 +97,6 @@ namespace CafeApplication
             lblDate.Text = $"{gt.GetYear()}/{gt.GetMonth()}/{gt.GetDay()}";
             lblDayTitle.Text = gt.GetDayTitle();
         }
-
-
-
-
 
         private void TimerTimeUpdate_Tick(object sender, EventArgs e)
         {
@@ -292,10 +277,12 @@ namespace CafeApplication
             st.ShowDialog();
         }
 
-        private void radButton1_Click(object sender, EventArgs e)
+
+        private void btn_userManage_Click(object sender, EventArgs e)
         {
-            usersBindingSource.EndEdit();
-            usersTableAdapter.Update(dsCafe.Users);
+            ManageCurrentUser currentUser = new ManageCurrentUser();
+            currentUser.CurrentUser = lbl_userName.Text;
+            currentUser.ShowDialog();
         }
     }
 }
