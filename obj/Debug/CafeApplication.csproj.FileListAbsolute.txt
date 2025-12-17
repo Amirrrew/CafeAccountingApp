@@ -248,3 +248,5 @@ C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\bin\Debug\Assets\Icons\Mainme
 C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\obj\Debug\CafeApplication.Forms.Settings.MainSettings.resources
 C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\obj\Debug\CafeApplication.Forms.UserForms.UserLogin.resources
 C:\Users\amir\Desktop\CafeAccountingApp\obj\Debug\CafeApplication.Forms.UserForms.ManageCurrentUser.resources
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\userMenu\closeEye-Icon.png
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\userMenu\eye-Icon.png

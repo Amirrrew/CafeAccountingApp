@@ -284,6 +284,20 @@ namespace CafeApplication
             currentUser.CurrentUser = lbl_userName.Text;
             currentUser.ShowDialog();
         }
+
+        private void btn_changeUser_Click(object sender, EventArgs e)
+        {
+            UserLogin login = new UserLogin();
+            login.Show();
+            this.Hide();
+        }
+
+        private void btn_logout_Click(object sender, EventArgs e)
+        {
+            UserLogin login = new UserLogin();
+            login.Show();
+            this.Hide();
+        }
     }
 }
 

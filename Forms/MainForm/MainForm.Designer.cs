@@ -1127,6 +1127,7 @@
             this.btn_logout.Size = new System.Drawing.Size(181, 49);
             this.btn_logout.TabIndex = 13;
             this.btn_logout.Text = "خروج";
+            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
             // 
             // btn_changeUser
             // 
@@ -1145,6 +1146,7 @@
             this.btn_changeUser.Size = new System.Drawing.Size(181, 49);
             this.btn_changeUser.TabIndex = 13;
             this.btn_changeUser.Text = "تغییر کاربر";
+            this.btn_changeUser.Click += new System.EventHandler(this.btn_changeUser_Click);
             // 
             // btn_userManage
             // 
