@@ -18,6 +18,7 @@ namespace CafeApplication.Forms.Settings
             InitializeComponent();
             blur.SetBlurBack(this);
             font.SetFont(this);
+            txt_Search.Padding = new System.Windows.Forms.Padding(10 ,10 , 10 , 10 );
         }
 
         //--------------- import forms and classes ----

@@ -6,6 +6,7 @@ using CafeApplication.Forms.DailyFactor;
 using CafeApplication.Forms.ProductManageForms;
 using CafeApplication.Forms.PublicForms;
 using CafeApplication.Forms.Settings;
+using CafeApplication.Forms.UserForms;
 using Calendar;
 using System;
 using System.Collections.Generic;
@@ -43,11 +44,14 @@ namespace CafeApplication
             // TODO: This line of code loads data into the 'dsCafe.Users' table. You can move, or remove it, as needed.
             this.usersTableAdapter.Fill(this.dsCafe.Users);
             this.setupTableAdapter.Fill(this.dsCafe.Setup);
+            LoadUser();
         }
 
         
 
         //--------------- importing classes and needed files ----------------- 
+        public string Username { get; set; }
+        public string UserRole { get; set; }
         GetTime gt = new GetTime();
         BackBlur blur = new BackBlur();
         FontSet fontSet = new FontSet();
@@ -73,18 +77,18 @@ namespace CafeApplication
             //}
         }
 
+        public void LoadUser()
+        {
+            lbl_userName.Text = Username;
+            lbl_userRole.Text = UserRole;
+        }
+
 
         public void SetPanelBackColor()
         {
             MainPanel.BackColor = Color.FromArgb(30, 0, 0, 1);
             UserPanel.BackColor = Color.FromArgb(30,0,0,1);
         }
-
-
-
-
-        
-
 
         //---------------------- Timing classes and Events ---------------
         public void SetCurrentTime()
@@ -93,10 +97,6 @@ namespace CafeApplication
             lblDate.Text = $"{gt.GetYear()}/{gt.GetMonth()}/{gt.GetDay()}";
             lblDayTitle.Text = gt.GetDayTitle();
         }
-
-
-
-
 
         private void TimerTimeUpdate_Tick(object sender, EventArgs e)
         {
@@ -277,9 +277,30 @@ namespace CafeApplication
             st.ShowDialog();
         }
 
-        private void radButton1_Click(object sender, EventArgs e)
+
+        private void btn_userManage_Click(object sender, EventArgs e)
         {
-            usersBindingSource.EndEdit();
+            ManageCurrentUser currentUser = new ManageCurrentUser();
+            currentUser.CurrentUser = lbl_userName.Text;
+            currentUser.ShowDialog();
+        }
+
+        private void btn_changeUser_Click(object sender, EventArgs e)
+        {
+            UserLogin login = new UserLogin();
+            login.Show();
+            this.Hide();
+        }
+
+        private void btn_logout_Click(object sender, EventArgs e)
+        {
+            UserLogin login = new UserLogin();
+            login.Show();
+            this.Hide();
+        }
+
+        private void radButton3_Click(object sender, EventArgs e)
+        {
             usersTableAdapter.Update(dsCafe.Users);
         }
     }

@@ -104,12 +104,12 @@
             this.setupTableAdapter = new CafeApplication.Data.DataSet.DsCafeTableAdapters.SetupTableAdapter();
             this.tableAdapterManager = new CafeApplication.Data.DataSet.DsCafeTableAdapters.TableAdapterManager();
             this.pnl_userProps = new System.Windows.Forms.Panel();
-            this.radButton5 = new Telerik.WinControls.UI.RadButton();
-            this.radButton4 = new Telerik.WinControls.UI.RadButton();
-            this.radButton1 = new Telerik.WinControls.UI.RadButton();
+            this.btn_logout = new Telerik.WinControls.UI.RadButton();
+            this.btn_changeUser = new Telerik.WinControls.UI.RadButton();
+            this.btn_userManage = new Telerik.WinControls.UI.RadButton();
             this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.usersTableAdapter = new CafeApplication.Data.DataSet.DsCafeTableAdapters.UsersTableAdapter();
-            this.usersDataGridView = new System.Windows.Forms.DataGridView();
+            this.tbl_users = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -158,11 +158,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.setupBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).BeginInit();
             this.pnl_userProps.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_logout)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_changeUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_userManage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usersDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_users)).BeginInit();
             this.SuspendLayout();
             // 
             // MainPanel
@@ -929,6 +929,7 @@
             this.radButton3.Size = new System.Drawing.Size(112, 98);
             this.radButton3.TabIndex = 11;
             this.radButton3.Text = "-";
+            this.radButton3.Click += new System.EventHandler(this.radButton3_Click);
             // 
             // radButton2
             // 
@@ -1111,69 +1112,71 @@
             // pnl_userProps
             // 
             this.pnl_userProps.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(11)))), ((int)(((byte)(11)))));
-            this.pnl_userProps.Controls.Add(this.radButton5);
-            this.pnl_userProps.Controls.Add(this.radButton4);
-            this.pnl_userProps.Controls.Add(this.radButton1);
+            this.pnl_userProps.Controls.Add(this.btn_logout);
+            this.pnl_userProps.Controls.Add(this.btn_changeUser);
+            this.pnl_userProps.Controls.Add(this.btn_userManage);
             this.pnl_userProps.Location = new System.Drawing.Point(382, 562);
             this.pnl_userProps.Name = "pnl_userProps";
             this.pnl_userProps.Size = new System.Drawing.Size(200, 179);
             this.pnl_userProps.TabIndex = 8;
             this.pnl_userProps.Visible = false;
             // 
-            // radButton5
+            // btn_logout
             // 
-            this.radButton5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.radButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.radButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.radButton5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radButton5.Font = new System.Drawing.Font("Rokh Light", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.radButton5.ForeColor = System.Drawing.Color.White;
-            this.radButton5.Image = ((System.Drawing.Image)(resources.GetObject("radButton5.Image")));
-            this.radButton5.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            this.radButton5.Location = new System.Drawing.Point(10, 120);
-            this.radButton5.Margin = new System.Windows.Forms.Padding(4);
-            this.radButton5.Name = "radButton5";
-            this.radButton5.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
-            this.radButton5.Size = new System.Drawing.Size(181, 49);
-            this.radButton5.TabIndex = 13;
-            this.radButton5.Text = "خروج";
+            this.btn_logout.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_logout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_logout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_logout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_logout.Font = new System.Drawing.Font("Rokh Light", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btn_logout.ForeColor = System.Drawing.Color.White;
+            this.btn_logout.Image = ((System.Drawing.Image)(resources.GetObject("btn_logout.Image")));
+            this.btn_logout.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_logout.Location = new System.Drawing.Point(10, 120);
+            this.btn_logout.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_logout.Name = "btn_logout";
+            this.btn_logout.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
+            this.btn_logout.Size = new System.Drawing.Size(181, 49);
+            this.btn_logout.TabIndex = 13;
+            this.btn_logout.Text = "خروج";
+            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
             // 
-            // radButton4
+            // btn_changeUser
             // 
-            this.radButton4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.radButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.radButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.radButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radButton4.Font = new System.Drawing.Font("Rokh Light", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.radButton4.ForeColor = System.Drawing.Color.White;
-            this.radButton4.Image = ((System.Drawing.Image)(resources.GetObject("radButton4.Image")));
-            this.radButton4.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            this.radButton4.Location = new System.Drawing.Point(10, 65);
-            this.radButton4.Margin = new System.Windows.Forms.Padding(4);
-            this.radButton4.Name = "radButton4";
-            this.radButton4.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
-            this.radButton4.Size = new System.Drawing.Size(181, 49);
-            this.radButton4.TabIndex = 13;
-            this.radButton4.Text = "تغییر کاربر";
+            this.btn_changeUser.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_changeUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_changeUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_changeUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_changeUser.Font = new System.Drawing.Font("Rokh Light", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btn_changeUser.ForeColor = System.Drawing.Color.White;
+            this.btn_changeUser.Image = ((System.Drawing.Image)(resources.GetObject("btn_changeUser.Image")));
+            this.btn_changeUser.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_changeUser.Location = new System.Drawing.Point(10, 65);
+            this.btn_changeUser.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_changeUser.Name = "btn_changeUser";
+            this.btn_changeUser.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
+            this.btn_changeUser.Size = new System.Drawing.Size(181, 49);
+            this.btn_changeUser.TabIndex = 13;
+            this.btn_changeUser.Text = "تغییر کاربر";
+            this.btn_changeUser.Click += new System.EventHandler(this.btn_changeUser_Click);
             // 
-            // radButton1
+            // btn_userManage
             // 
-            this.radButton1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.radButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.radButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.radButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radButton1.Font = new System.Drawing.Font("Rokh Light", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.radButton1.ForeColor = System.Drawing.Color.White;
-            this.radButton1.Image = ((System.Drawing.Image)(resources.GetObject("radButton1.Image")));
-            this.radButton1.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            this.radButton1.Location = new System.Drawing.Point(10, 10);
-            this.radButton1.Margin = new System.Windows.Forms.Padding(4);
-            this.radButton1.Name = "radButton1";
-            this.radButton1.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
-            this.radButton1.Size = new System.Drawing.Size(181, 49);
-            this.radButton1.TabIndex = 12;
-            this.radButton1.Text = "تنظیمات کاربر";
-            this.radButton1.Click += new System.EventHandler(this.radButton1_Click);
+            this.btn_userManage.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_userManage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_userManage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_userManage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_userManage.Font = new System.Drawing.Font("Rokh Light", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btn_userManage.ForeColor = System.Drawing.Color.White;
+            this.btn_userManage.Image = ((System.Drawing.Image)(resources.GetObject("btn_userManage.Image")));
+            this.btn_userManage.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_userManage.Location = new System.Drawing.Point(10, 10);
+            this.btn_userManage.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_userManage.Name = "btn_userManage";
+            this.btn_userManage.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
+            this.btn_userManage.Size = new System.Drawing.Size(181, 49);
+            this.btn_userManage.TabIndex = 12;
+            this.btn_userManage.Text = "تنظیمات کاربر";
+            this.btn_userManage.Click += new System.EventHandler(this.btn_userManage_Click);
             // 
             // usersBindingSource
             // 
@@ -1184,11 +1187,11 @@
             // 
             this.usersTableAdapter.ClearBeforeFill = true;
             // 
-            // usersDataGridView
+            // tbl_users
             // 
-            this.usersDataGridView.AutoGenerateColumns = false;
-            this.usersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.usersDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.tbl_users.AutoGenerateColumns = false;
+            this.tbl_users.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tbl_users.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
@@ -1197,11 +1200,11 @@
             this.dataGridViewTextBoxColumn6,
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewCheckBoxColumn1});
-            this.usersDataGridView.DataSource = this.usersBindingSource;
-            this.usersDataGridView.Location = new System.Drawing.Point(124, 280);
-            this.usersDataGridView.Name = "usersDataGridView";
-            this.usersDataGridView.Size = new System.Drawing.Size(845, 220);
-            this.usersDataGridView.TabIndex = 8;
+            this.tbl_users.DataSource = this.usersBindingSource;
+            this.tbl_users.Location = new System.Drawing.Point(20, 116);
+            this.tbl_users.Name = "tbl_users";
+            this.tbl_users.Size = new System.Drawing.Size(839, 220);
+            this.tbl_users.TabIndex = 8;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -1259,7 +1262,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1509, 757);
-            this.Controls.Add(this.usersDataGridView);
+            this.Controls.Add(this.tbl_users);
             this.Controls.Add(this.pnl_userProps);
             this.Controls.Add(this.lbl_today);
             this.Controls.Add(this.lblDayTitle);
@@ -1321,11 +1324,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.setupBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).EndInit();
             this.pnl_userProps.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.radButton5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_logout)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_changeUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_userManage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usersDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_users)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1405,13 +1408,13 @@
         public Telerik.WinControls.UI.RadButton radButton3;
         public Telerik.WinControls.UI.RadButton radButton2;
         public Telerik.WinControls.UI.RadButton btn_settings;
-        public Telerik.WinControls.UI.RadButton radButton1;
+        public Telerik.WinControls.UI.RadButton btn_userManage;
         private System.Windows.Forms.Panel pnl_userProps;
-        public Telerik.WinControls.UI.RadButton radButton5;
-        public Telerik.WinControls.UI.RadButton radButton4;
+        public Telerik.WinControls.UI.RadButton btn_logout;
+        public Telerik.WinControls.UI.RadButton btn_changeUser;
         private System.Windows.Forms.BindingSource usersBindingSource;
         private Data.DataSet.DsCafeTableAdapters.UsersTableAdapter usersTableAdapter;
-        private System.Windows.Forms.DataGridView usersDataGridView;
+        private System.Windows.Forms.DataGridView tbl_users;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
