@@ -144,5 +144,10 @@ namespace CafeApplication.Forms.UserForms
         {
             usrwrk.ShowHidePass(txt_password, btn_ShowPass);
         }
+
+        private void btn_ShowPass_Click(object sender, EventArgs e)
+        {
+            usrwrk.ShowHidePass(txt_password, btn_ShowPass);
+        }
     }
 }

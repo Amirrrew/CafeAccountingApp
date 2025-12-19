@@ -56,8 +56,11 @@
 <<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.tbl_users)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_ShowPass)).BeginInit();
+<<<<<<< Updated upstream
 =======
 >>>>>>> parent of d20d9b8 (login)
+=======
+>>>>>>> Stashed changes
             this.SuspendLayout();
             // 
             // dsCafe
@@ -155,7 +158,10 @@
             this.txt_password.Name = "txt_password";
             this.txt_password.PasswordChar = '*';
             this.txt_password.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
             this.txt_password.Size = new System.Drawing.Size(395, 42);
             this.txt_password.TabIndex = 1;
 =======
@@ -270,7 +276,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
             this.ClientSize = new System.Drawing.Size(474, 292);
             this.Controls.Add(this.btn_ShowPass);
             this.Controls.Add(this.Cmb_users);
@@ -307,8 +316,11 @@
 <<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.tbl_users)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_ShowPass)).EndInit();
+<<<<<<< Updated upstream
 =======
 >>>>>>> parent of d20d9b8 (login)
+=======
+>>>>>>> Stashed changes
             this.ResumeLayout(false);
             this.PerformLayout();
 
