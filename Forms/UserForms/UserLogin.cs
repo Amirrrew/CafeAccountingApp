@@ -28,6 +28,7 @@ namespace CafeApplication.Forms.UserForms
         BackBlur blur = new BackBlur();
         FontSet font = new FontSet();
         CustomMessage msg = new CustomMessage();
+        UserWork usrwrk = new UserWork();
         int remainingAttemps = 9;
         string password;
         int FindUser;
@@ -46,7 +47,7 @@ namespace CafeApplication.Forms.UserForms
             // TODO: This line of code loads data into the 'dsCafe.Sales' table. You can move, or remove it, as needed.
             this.salesTableAdapter.Fill(this.dsCafe.Sales);
             // TODO: This line of code loads data into the 'dsCafe.Users' table. You can move, or remove it, as needed.
-            this.usersTableAdapter.Fill(this.dsCafe.Users);
+            this.usersTableAdapter.Fill_ActiveUsers(this.dsCafe.Users);
             Cmb_users.DisplayMember = "Username";
             Cmb_users.ValueMember = "Username";
         }
@@ -159,6 +160,11 @@ namespace CafeApplication.Forms.UserForms
             {
                 this.Close();
             }
+        }
+
+        private void btn_ShowPass_Click(object sender, EventArgs e)
+        {
+            usrwrk.ShowHidePass(txt_password, btn_ShowPass);
         }
     }
 }

@@ -20,7 +20,7 @@
     <Shape ID="DesignTable:Suppliers" ZOrder="13" X="876" Y="571" Height="172" Width="198" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="121" />
     <Shape ID="DesignTable:Transactions" ZOrder="11" X="1094" Y="36" Height="191" Width="217" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="140" />
     <Shape ID="DesignTable:TrashBin" ZOrder="7" X="494" Y="622" Height="191" Width="195" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="140" />
-    <Shape ID="DesignTable:Users" ZOrder="1" X="280" Y="587" Height="267" Width="178" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="24" SplitterPosition="178" />
+    <Shape ID="DesignTable:Users" ZOrder="1" X="280" Y="587" Height="305" Width="178" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="24" SplitterPosition="178" />
     <Shape ID="DesignTable:Setup" ZOrder="5" X="1345" Y="235" Height="116" Width="188" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="24" OldDataTableHeight="0" SplitterPosition="46" />
   </Shapes>
   <Connectors>

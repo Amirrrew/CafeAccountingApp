@@ -48,7 +48,6 @@ namespace CafeApplication.Classes.PublicClasses
                 default:
                     cmb.SelectedIndex = 0;
                     break;
-
             }
         }
     }

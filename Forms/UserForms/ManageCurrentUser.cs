@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -95,6 +96,33 @@ namespace CafeApplication.Forms.UserForms
         private void Cmb_users_SelectedIndexChanged(object sender, EventArgs e)
         {
             txt_Role.Text = Cmb_users.Text;
+        }
+
+        private int GetActiveUsers()
+        {
+            using (SqlConnection con = new SqlConnection(usersTableAdapter.Connection.ConnectionString))
+            {
+                con.Open();
+                using (SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM Users WHERE IsActive = 1", con))
+                {
+                    return (int)cmd.ExecuteScalar();
+                }
+            }
+        }
+
+        private void Chk_isActive_Click(object sender, EventArgs e)
+        {
+            int activeUser = GetActiveUsers();
+            if (activeUser < 2)
+            {   
+                msg.NewMessage("ویرایش کاربر", "تعداد کاربران فعال نمیتواند کمتر از یک کاربر باشد.", "Y", "error", null, YesClick: () => { msg.Close(); });
+                Chk_isActive.Checked = true;
+            }
+        }
+
+        private void btn_cancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

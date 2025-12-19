@@ -55,6 +55,7 @@
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbl_users = new System.Windows.Forms.DataGridView();
             this.txt_userrole = new System.Windows.Forms.TextBox();
+            this.btn_ShowPass = new Telerik.WinControls.UI.RadButton();
             ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Login)).BeginInit();
@@ -62,6 +63,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Pic_password)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbl_users)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_ShowPass)).BeginInit();
             this.SuspendLayout();
             // 
             // dsCafe
@@ -135,10 +137,11 @@
             this.txt_password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_password.Font = new System.Drawing.Font("RokhFaNum Normal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_password.ForeColor = System.Drawing.Color.White;
-            this.txt_password.Location = new System.Drawing.Point(13, 172);
+            this.txt_password.Location = new System.Drawing.Point(67, 172);
             this.txt_password.Name = "txt_password";
+            this.txt_password.PasswordChar = '*';
             this.txt_password.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txt_password.Size = new System.Drawing.Size(449, 42);
+            this.txt_password.Size = new System.Drawing.Size(395, 42);
             this.txt_password.TabIndex = 1;
             this.txt_password.TextChanged += new System.EventHandler(this.txt_password_TextChanged);
             this.txt_password.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_password_KeyDown);
@@ -324,12 +327,32 @@
             this.txt_userrole.Size = new System.Drawing.Size(100, 28);
             this.txt_userrole.TabIndex = 18;
             // 
+            // btn_ShowPass
+            // 
+            this.btn_ShowPass.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btn_ShowPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_ShowPass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_ShowPass.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_ShowPass.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
+            this.btn_ShowPass.Font = new System.Drawing.Font("Rokh Light", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btn_ShowPass.ForeColor = System.Drawing.Color.White;
+            this.btn_ShowPass.Image = ((System.Drawing.Image)(resources.GetObject("btn_ShowPass.Image")));
+            this.btn_ShowPass.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_ShowPass.Location = new System.Drawing.Point(14, 172);
+            this.btn_ShowPass.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_ShowPass.Name = "btn_ShowPass";
+            this.btn_ShowPass.Size = new System.Drawing.Size(46, 42);
+            this.btn_ShowPass.TabIndex = 1001;
+            this.btn_ShowPass.Text = "نمایش رمز عبور";
+            this.btn_ShowPass.Click += new System.EventHandler(this.btn_ShowPass_Click);
+            // 
             // UserLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(473, 292);
+            this.ClientSize = new System.Drawing.Size(474, 292);
+            this.Controls.Add(this.btn_ShowPass);
             this.Controls.Add(this.Cmb_users);
             this.Controls.Add(this.tbl_users);
             this.Controls.Add(this.txt_userrole);
@@ -358,6 +381,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Pic_password)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbl_users)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_ShowPass)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -390,5 +414,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridView tbl_users;
         private System.Windows.Forms.TextBox txt_userrole;
+        public Telerik.WinControls.UI.RadButton btn_ShowPass;
     }
 }

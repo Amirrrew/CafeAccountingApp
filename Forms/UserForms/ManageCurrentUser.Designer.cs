@@ -30,13 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Label passwordHashLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageCurrentUser));
             System.Windows.Forms.Label lbl_fullName;
             System.Windows.Forms.Label lbl_createdAt;
-            System.Windows.Forms.Label label1;
-            this.lbl_userName = new System.Windows.Forms.Label();
-            this.dsCafe = new CafeApplication.Data.DataSet.DsCafe();
+            System.Windows.Forms.Label lbl_Role;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageCurrentUser));
             this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dsCafe = new CafeApplication.Data.DataSet.DsCafe();
+            this.lbl_userName = new System.Windows.Forms.Label();
             this.usersTableAdapter = new CafeApplication.Data.DataSet.DsCafeTableAdapters.UsersTableAdapter();
             this.tableAdapterManager = new CafeApplication.Data.DataSet.DsCafeTableAdapters.TableAdapterManager();
             this.tbl_users = new System.Windows.Forms.DataGridView();
@@ -59,9 +59,9 @@
             passwordHashLabel = new System.Windows.Forms.Label();
             lbl_fullName = new System.Windows.Forms.Label();
             lbl_createdAt = new System.Windows.Forms.Label();
-            label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).BeginInit();
+            lbl_Role = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbl_users)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_ShowPass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_cancel)).BeginInit();
@@ -77,6 +77,44 @@
             passwordHashLabel.TabIndex = 2;
             passwordHashLabel.Text = "رمز عبور";
             // 
+            // lbl_fullName
+            // 
+            lbl_fullName.AutoSize = true;
+            lbl_fullName.Location = new System.Drawing.Point(375, 161);
+            lbl_fullName.Name = "lbl_fullName";
+            lbl_fullName.Size = new System.Drawing.Size(114, 21);
+            lbl_fullName.TabIndex = 16;
+            lbl_fullName.Text = "نام کامل (اختیاری)";
+            // 
+            // lbl_createdAt
+            // 
+            lbl_createdAt.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "CreatedAt", true));
+            lbl_createdAt.Location = new System.Drawing.Point(339, 47);
+            lbl_createdAt.Name = "lbl_createdAt";
+            lbl_createdAt.Size = new System.Drawing.Size(150, 21);
+            lbl_createdAt.TabIndex = 18;
+            lbl_createdAt.Text = "----/--/--";
+            lbl_createdAt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // usersBindingSource
+            // 
+            this.usersBindingSource.DataMember = "Users";
+            this.usersBindingSource.DataSource = this.dsCafe;
+            // 
+            // dsCafe
+            // 
+            this.dsCafe.DataSetName = "DsCafe";
+            this.dsCafe.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // lbl_Role
+            // 
+            lbl_Role.AutoSize = true;
+            lbl_Role.Location = new System.Drawing.Point(350, 233);
+            lbl_Role.Name = "lbl_Role";
+            lbl_Role.Size = new System.Drawing.Size(139, 21);
+            lbl_Role.TabIndex = 22;
+            lbl_Role.Text = "نقش کاربر (دسترسی)";
+            // 
             // lbl_userName
             // 
             this.lbl_userName.Font = new System.Drawing.Font("RokhFaNum Normal", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
@@ -87,16 +125,6 @@
             this.lbl_userName.Size = new System.Drawing.Size(484, 47);
             this.lbl_userName.TabIndex = 0;
             this.lbl_userName.Text = "نام کاربری";
-            // 
-            // dsCafe
-            // 
-            this.dsCafe.DataSetName = "DsCafe";
-            this.dsCafe.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // usersBindingSource
-            // 
-            this.usersBindingSource.DataMember = "Users";
-            this.usersBindingSource.DataSource = this.dsCafe;
             // 
             // usersTableAdapter
             // 
@@ -237,15 +265,6 @@
             this.txt_fullName.Size = new System.Drawing.Size(482, 38);
             this.txt_fullName.TabIndex = 15;
             // 
-            // lbl_fullName
-            // 
-            lbl_fullName.AutoSize = true;
-            lbl_fullName.Location = new System.Drawing.Point(375, 161);
-            lbl_fullName.Name = "lbl_fullName";
-            lbl_fullName.Size = new System.Drawing.Size(114, 21);
-            lbl_fullName.TabIndex = 16;
-            lbl_fullName.Text = "نام کامل (اختیاری)";
-            // 
             // txt_Role
             // 
             this.txt_Role.BackColor = System.Drawing.Color.Black;
@@ -259,16 +278,6 @@
             this.txt_Role.Size = new System.Drawing.Size(141, 38);
             this.txt_Role.TabIndex = 17;
             // 
-            // lbl_createdAt
-            // 
-            lbl_createdAt.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "CreatedAt", true));
-            lbl_createdAt.Location = new System.Drawing.Point(339, 47);
-            lbl_createdAt.Name = "lbl_createdAt";
-            lbl_createdAt.Size = new System.Drawing.Size(150, 21);
-            lbl_createdAt.TabIndex = 18;
-            lbl_createdAt.Text = "----/--/--";
-            lbl_createdAt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // Chk_isActive
             // 
             this.Chk_isActive.AutoSize = true;
@@ -281,6 +290,7 @@
             this.Chk_isActive.TabIndex = 20;
             this.Chk_isActive.Text = "کاربر فعال";
             this.Chk_isActive.UseVisualStyleBackColor = true;
+            this.Chk_isActive.Click += new System.EventHandler(this.Chk_isActive_Click);
             // 
             // Cmb_users
             // 
@@ -302,15 +312,6 @@
             this.Cmb_users.TabIndex = 21;
             this.Cmb_users.SelectedIndexChanged += new System.EventHandler(this.Cmb_users_SelectedIndexChanged);
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new System.Drawing.Point(375, 235);
-            label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(114, 21);
-            label1.TabIndex = 22;
-            label1.Text = "نام کامل (اختیاری)";
-            // 
             // btn_cancel
             // 
             this.btn_cancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -326,6 +327,7 @@
             this.btn_cancel.Size = new System.Drawing.Size(57, 55);
             this.btn_cancel.TabIndex = 31;
             this.btn_cancel.Text = "-";
+            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
             // btn_save
             // 
@@ -352,7 +354,7 @@
             this.ClientSize = new System.Drawing.Size(497, 370);
             this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.btn_save);
-            this.Controls.Add(label1);
+            this.Controls.Add(lbl_Role);
             this.Controls.Add(this.Cmb_users);
             this.Controls.Add(this.Chk_isActive);
             this.Controls.Add(lbl_createdAt);
@@ -376,8 +378,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "مدیریت کاربر فعلی";
             this.Load += new System.EventHandler(this.ManageCurrentUser_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbl_users)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_ShowPass)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_cancel)).EndInit();
