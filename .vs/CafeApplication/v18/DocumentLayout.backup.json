@@ -100,9 +100,24 @@
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Hosein\\Documents\\GitHub\\CafeAccountingApp\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
+<<<<<<< Updated upstream
               "ToolTip": "C:\\Users\\Hosein\\Documents\\GitHub\\CafeAccountingApp\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAoAAAAAAAAAA==",
+=======
+              "ToolTip": "C:\\Users\\Hosein\\Documents\\GitHub\\CafeAccountingApp\\Program.cs*",
+              "RelativeToolTip": "Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAsAAAAAAAAAA==",
+=======
+              "DocumentIndex": 3,
+              "Title": "UserLogin.cs",
+              "DocumentMoniker": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\UserForms\\UserLogin.cs",
+              "RelativeDocumentMoniker": "Forms\\UserForms\\UserLogin.cs",
+              "ToolTip": "C:\\Users\\amir\\Desktop\\CafeAccountingApp\\Forms\\UserForms\\UserLogin.cs",
+              "RelativeToolTip": "Forms\\UserForms\\UserLogin.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAgwE4AAAAxAAAAAAAAAA==",
+>>>>>>> parent of d20d9b8 (login)
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-16T22:40:20.854Z",
               "EditorCaption": ""
