@@ -120,11 +120,26 @@
   <metadata name="passwordHashLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
-  <metadata name="dsCafe.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
+  <metadata name="lbl_fullName.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="lbl_createdAt.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
   </metadata>
   <metadata name="usersBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>107, 17</value>
+  </metadata>
+  <metadata name="usersBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>107, 17</value>
+  </metadata>
+  <metadata name="dsCafe.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="dsCafe.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="lbl_Role.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
   </metadata>
   <metadata name="usersTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>265, 17</value>
@@ -135,26 +150,17 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btn_ShowPass.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAGbSURBVDhP1dS/S1dRGMdxlRZtqCFxcqg9iCCHmgTFpSGi
-        JEiLssIiUJB+IEgF0Q+HIi2IqOgH0dhPHJoiQRqioaU/5yVPnAMP51s5+8CBy733vM/neT6fe7u6NnVh
-        J45iChMYw0D73oaFUSzjJZawiNu4hTuYxq52X0dhCxbwCg9wL8Fu4np5Po+rGEZPy/lT6MVjPEmw11jF
-        T3zHZ9zHZcxhFkdCSAvrKa0FsMJW8Bu/8ANr+IoveIgZXMQFHEJ3Bp7F00ZZhn0r997gEz7gBs6XvWew
-        NwNfNDOLNrOyMKi2+Qwfy56AncYJTFZYfzk9GxAzy23GvYBFm4+KyncJdryo7AvgDjxv3AwD8sze4lqJ
-        zfsErLBjBb61qgzncjTCzQqrM4s247quEFFh4fREnuHBEtiaszjgf7A48FKCjWNfBkZszpW2IrRhQETj
-        X7C7CRbrcEfAy1dyEleSARGNcDPmFbOLNltlncHOhaEU2pqz7GaFTWKkQ9nfCoPlLxNfQcShwmKdKsCN
-        fw5tYRt2Yz8OYA+2t+9trloHBa4+VTt9buIAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DwAACw8BkvkDpQAAAZtJREFUOE/V1L9LV1EYx3GVFm2oIXFyqD2IIIeaBMWlIaIkSIuywiJQkH4gSAXR
+        D4ciLYio6AfR2E8cmiJBGqKhpT/nJU+cAw/nWzn7wIHLvfe8z+d5Pp97u7o2dWEnjmIKExjDQPvehoVR
+        LOMllrCI27iFO5jGrnZfR2ELFvAKD3AvwW7ienk+j6sYRk/L+VPoxWM8SbDXWMVPfMdn3MdlzGEWR0JI
+        C+sprQWwwlbwG7/wA2v4ii94iBlcxAUcQncGnsXTRlmGfSv33uATPuAGzpe9Z7A3A180M4s2s7IwqLb5
+        DB/LnoCdxglMVlh/OT0bEDPLbca9gEWbj4rKdwl2vKjsC+AOPG/cDAPyzN7iWonN+wSssGMFvrWqDOdy
+        NMLNCqszizbjuq4QUWHh9ESe4cES2JqzOOB/sDjwUoKNY18GRmzOlbYitGFARONfsLsJFutwR8DLV3IS
+        V5IBEY1wM+YVs4s2W2Wdwc6FoRTamrPsZoVNYqRD2d8Kg+UvE19BxKHCYp0qwI1/Dm1hG3ZjPw5gD7a3
+        722uWgcFrj5VO31u4gAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="lbl_fullName.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="lbl_createdAt.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="label1.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
   <data name="btn_cancel.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL

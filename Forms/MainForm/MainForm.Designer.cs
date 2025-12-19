@@ -109,15 +109,6 @@
             this.btn_userManage = new Telerik.WinControls.UI.RadButton();
             this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.usersTableAdapter = new CafeApplication.Data.DataSet.DsCafeTableAdapters.UsersTableAdapter();
-            this.tbl_users = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.MainPanel.SuspendLayout();
             this.Pnl_Items.SuspendLayout();
             this.InnerPanel.SuspendLayout();
@@ -162,7 +153,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_changeUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_userManage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbl_users)).BeginInit();
             this.SuspendLayout();
             // 
             // MainPanel
@@ -929,7 +919,6 @@
             this.radButton3.Size = new System.Drawing.Size(112, 98);
             this.radButton3.TabIndex = 11;
             this.radButton3.Text = "-";
-            this.radButton3.Click += new System.EventHandler(this.radButton3_Click);
             // 
             // radButton2
             // 
@@ -1187,74 +1176,6 @@
             // 
             this.usersTableAdapter.ClearBeforeFill = true;
             // 
-            // tbl_users
-            // 
-            this.tbl_users.AutoGenerateColumns = false;
-            this.tbl_users.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tbl_users.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewCheckBoxColumn1});
-            this.tbl_users.DataSource = this.usersBindingSource;
-            this.tbl_users.Location = new System.Drawing.Point(20, 116);
-            this.tbl_users.Name = "tbl_users";
-            this.tbl_users.Size = new System.Drawing.Size(839, 220);
-            this.tbl_users.TabIndex = 8;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "UserID";
-            this.dataGridViewTextBoxColumn1.HeaderText = "UserID";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Username";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Username";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "PasswordHash";
-            this.dataGridViewTextBoxColumn3.HeaderText = "PasswordHash";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Salt";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Salt";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "FullName";
-            this.dataGridViewTextBoxColumn5.HeaderText = "FullName";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Role";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Role";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "CreatedAt";
-            this.dataGridViewTextBoxColumn7.HeaderText = "CreatedAt";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewCheckBoxColumn1
-            // 
-            this.dataGridViewCheckBoxColumn1.DataPropertyName = "IsActive";
-            this.dataGridViewCheckBoxColumn1.HeaderText = "IsActive";
-            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
-            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -1262,7 +1183,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1509, 757);
-            this.Controls.Add(this.tbl_users);
             this.Controls.Add(this.pnl_userProps);
             this.Controls.Add(this.lbl_today);
             this.Controls.Add(this.lblDayTitle);
@@ -1328,7 +1248,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_changeUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_userManage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbl_users)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1414,15 +1333,6 @@
         public Telerik.WinControls.UI.RadButton btn_changeUser;
         private System.Windows.Forms.BindingSource usersBindingSource;
         private Data.DataSet.DsCafeTableAdapters.UsersTableAdapter usersTableAdapter;
-        private System.Windows.Forms.DataGridView tbl_users;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
     }
 }
 

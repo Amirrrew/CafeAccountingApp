@@ -298,11 +298,6 @@ namespace CafeApplication
             login.Show();
             this.Hide();
         }
-
-        private void radButton3_Click(object sender, EventArgs e)
-        {
-            usersTableAdapter.Update(dsCafe.Users);
-        }
     }
 }
 

@@ -52,14 +52,13 @@
             this.txt_ProdTax = new System.Windows.Forms.TextBox();
             this.txt_Unit = new System.Windows.Forms.TextBox();
             this.lbl_titele = new System.Windows.Forms.Label();
-            this.Cmb_ProdCategory = new System.Windows.Forms.ComboBox();
             this.categoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lbl_ProdCreated = new System.Windows.Forms.Label();
             this.btn_cancel = new Telerik.WinControls.UI.RadButton();
             this.btn_save = new Telerik.WinControls.UI.RadButton();
             this.btn_GenerateCode = new Telerik.WinControls.UI.RadButton();
             this.categoryIDLabel1 = new System.Windows.Forms.Label();
-            this.productsDataGridView = new System.Windows.Forms.DataGridView();
+            this.tbl_product = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -76,6 +75,12 @@
             this.lbl_unit = new System.Windows.Forms.TextBox();
             this.radButton1 = new Telerik.WinControls.UI.RadButton();
             this.radButton2 = new Telerik.WinControls.UI.RadButton();
+            this.categoriesDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewCheckBoxColumn2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Cmb_ProdCategory = new System.Windows.Forms.ComboBox();
             lbl_ProdID = new System.Windows.Forms.Label();
             lbl_ProdCode = new System.Windows.Forms.Label();
             lbl_ProdName = new System.Windows.Forms.Label();
@@ -94,9 +99,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_cancel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_save)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_GenerateCode)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productsDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_product)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoriesDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_ProdID
@@ -248,7 +254,7 @@
             this.txt_ProdCode.Location = new System.Drawing.Point(408, 129);
             this.txt_ProdCode.Name = "txt_ProdCode";
             this.txt_ProdCode.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txt_ProdCode.Size = new System.Drawing.Size(150, 38);
+            this.txt_ProdCode.Size = new System.Drawing.Size(156, 38);
             this.txt_ProdCode.TabIndex = 4;
             // 
             // txt_ProdName
@@ -328,25 +334,6 @@
             this.lbl_titele.Text = "افزودن کالای جدید";
             this.lbl_titele.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // Cmb_ProdCategory
-            // 
-            this.Cmb_ProdCategory.BackColor = System.Drawing.Color.Black;
-            this.Cmb_ProdCategory.DataBindings.Add(new System.Windows.Forms.Binding("SelectedItem", this.categoriesBindingSource, "Name", true));
-            this.Cmb_ProdCategory.DataSource = this.categoriesBindingSource;
-            this.Cmb_ProdCategory.DisplayMember = "Name";
-            this.Cmb_ProdCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Cmb_ProdCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cmb_ProdCategory.Font = new System.Drawing.Font("RokhFaNum Normal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.Cmb_ProdCategory.ForeColor = System.Drawing.Color.White;
-            this.Cmb_ProdCategory.FormattingEnabled = true;
-            this.Cmb_ProdCategory.Location = new System.Drawing.Point(13, 127);
-            this.Cmb_ProdCategory.Name = "Cmb_ProdCategory";
-            this.Cmb_ProdCategory.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Cmb_ProdCategory.Size = new System.Drawing.Size(181, 39);
-            this.Cmb_ProdCategory.TabIndex = 5;
-            this.Cmb_ProdCategory.ValueMember = "Name";
-            this.Cmb_ProdCategory.SelectedValueChanged += new System.EventHandler(this.Cmb_ProdCategory_SelectedValueChanged);
-            // 
             // categoriesBindingSource
             // 
             this.categoriesBindingSource.DataMember = "Categories";
@@ -373,7 +360,7 @@
             this.btn_cancel.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
             this.btn_cancel.Image = ((System.Drawing.Image)(resources.GetObject("btn_cancel.Image")));
             this.btn_cancel.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_cancel.Location = new System.Drawing.Point(75, 444);
+            this.btn_cancel.Location = new System.Drawing.Point(75, 416);
             this.btn_cancel.Margin = new System.Windows.Forms.Padding(4);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(57, 55);
@@ -390,7 +377,7 @@
             this.btn_save.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
             this.btn_save.Image = ((System.Drawing.Image)(resources.GetObject("btn_save.Image")));
             this.btn_save.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_save.Location = new System.Drawing.Point(13, 444);
+            this.btn_save.Location = new System.Drawing.Point(13, 416);
             this.btn_save.Margin = new System.Windows.Forms.Padding(4);
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(57, 55);
@@ -425,13 +412,13 @@
             this.categoryIDLabel1.TabIndex = 31;
             this.categoryIDLabel1.Text = "label3";
             // 
-            // productsDataGridView
+            // tbl_product
             // 
-            this.productsDataGridView.AllowUserToAddRows = false;
-            this.productsDataGridView.AllowUserToDeleteRows = false;
-            this.productsDataGridView.AutoGenerateColumns = false;
-            this.productsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.productsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.tbl_product.AllowUserToAddRows = false;
+            this.tbl_product.AllowUserToDeleteRows = false;
+            this.tbl_product.AutoGenerateColumns = false;
+            this.tbl_product.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tbl_product.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
@@ -442,12 +429,12 @@
             this.dataGridViewTextBoxColumn8,
             this.dataGridViewCheckBoxColumn1,
             this.dataGridViewTextBoxColumn9});
-            this.productsDataGridView.DataSource = this.productsBindingSource;
-            this.productsDataGridView.Location = new System.Drawing.Point(656, 17);
-            this.productsDataGridView.Name = "productsDataGridView";
-            this.productsDataGridView.ReadOnly = true;
-            this.productsDataGridView.Size = new System.Drawing.Size(580, 220);
-            this.productsDataGridView.TabIndex = 31;
+            this.tbl_product.DataSource = this.productsBindingSource;
+            this.tbl_product.Location = new System.Drawing.Point(656, 17);
+            this.tbl_product.Name = "tbl_product";
+            this.tbl_product.ReadOnly = true;
+            this.tbl_product.Size = new System.Drawing.Size(580, 220);
+            this.tbl_product.TabIndex = 31;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -558,14 +545,14 @@
             // 
             // radButton1
             // 
-            this.radButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.radButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.radButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.radButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.radButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radButton1.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
             this.radButton1.Image = ((System.Drawing.Image)(resources.GetObject("radButton1.Image")));
             this.radButton1.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.radButton1.Location = new System.Drawing.Point(132, 240);
+            this.radButton1.Location = new System.Drawing.Point(131, 240);
             this.radButton1.Margin = new System.Windows.Forms.Padding(4);
             this.radButton1.Name = "radButton1";
             this.radButton1.Size = new System.Drawing.Size(38, 38);
@@ -575,14 +562,14 @@
             // 
             // radButton2
             // 
-            this.radButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.radButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.radButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.radButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.radButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radButton2.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
             this.radButton2.Image = ((System.Drawing.Image)(resources.GetObject("radButton2.Image")));
             this.radButton2.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.radButton2.Location = new System.Drawing.Point(367, 129);
+            this.radButton2.Location = new System.Drawing.Point(366, 129);
             this.radButton2.Margin = new System.Windows.Forms.Padding(4);
             this.radButton2.Name = "radButton2";
             this.radButton2.Size = new System.Drawing.Size(38, 38);
@@ -590,17 +577,80 @@
             this.radButton2.Text = "-";
             this.radButton2.Click += new System.EventHandler(this.radButton2_Click);
             // 
+            // categoriesDataGridView
+            // 
+            this.categoriesDataGridView.AutoGenerateColumns = false;
+            this.categoriesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.categoriesDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12,
+            this.dataGridViewCheckBoxColumn2});
+            this.categoriesDataGridView.DataSource = this.categoriesBindingSource;
+            this.categoriesDataGridView.Location = new System.Drawing.Point(656, 243);
+            this.categoriesDataGridView.Name = "categoriesDataGridView";
+            this.categoriesDataGridView.Size = new System.Drawing.Size(300, 74);
+            this.categoriesDataGridView.TabIndex = 35;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "CategoryID";
+            this.dataGridViewTextBoxColumn10.HeaderText = "CategoryID";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn11.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "ParentID";
+            this.dataGridViewTextBoxColumn12.HeaderText = "ParentID";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            // 
+            // dataGridViewCheckBoxColumn2
+            // 
+            this.dataGridViewCheckBoxColumn2.DataPropertyName = "IsActive";
+            this.dataGridViewCheckBoxColumn2.HeaderText = "IsActive";
+            this.dataGridViewCheckBoxColumn2.Name = "dataGridViewCheckBoxColumn2";
+            // 
+            // Cmb_ProdCategory
+            // 
+            this.Cmb_ProdCategory.BackColor = System.Drawing.Color.Black;
+            this.Cmb_ProdCategory.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.categoriesBindingSource, "Name", true));
+            this.Cmb_ProdCategory.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.categoriesBindingSource, "Name", true));
+            this.Cmb_ProdCategory.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.categoriesBindingSource, "Name", true));
+            this.Cmb_ProdCategory.DataBindings.Add(new System.Windows.Forms.Binding("SelectedItem", this.categoriesBindingSource, "Name", true));
+            this.Cmb_ProdCategory.DataSource = this.categoriesBindingSource;
+            this.Cmb_ProdCategory.DisplayMember = "Name";
+            this.Cmb_ProdCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Cmb_ProdCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cmb_ProdCategory.Font = new System.Drawing.Font("RokhFaNum Normal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Cmb_ProdCategory.ForeColor = System.Drawing.Color.White;
+            this.Cmb_ProdCategory.FormattingEnabled = true;
+            this.Cmb_ProdCategory.Location = new System.Drawing.Point(13, 129);
+            this.Cmb_ProdCategory.Name = "Cmb_ProdCategory";
+            this.Cmb_ProdCategory.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.Cmb_ProdCategory.Size = new System.Drawing.Size(181, 39);
+            this.Cmb_ProdCategory.TabIndex = 36;
+            this.Cmb_ProdCategory.ValueMember = "Name";
+            // 
             // AddProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(577, 501);
+            this.ClientSize = new System.Drawing.Size(1256, 484);
+            this.Controls.Add(this.Cmb_ProdCategory);
+            this.Controls.Add(this.categoriesDataGridView);
             this.Controls.Add(this.radButton2);
             this.Controls.Add(this.radButton1);
             this.Controls.Add(unitLabel1);
             this.Controls.Add(this.lbl_unit);
-            this.Controls.Add(this.productsDataGridView);
+            this.Controls.Add(this.tbl_product);
             this.Controls.Add(this.categoryIDLabel1);
             this.Controls.Add(this.btn_GenerateCode);
             this.Controls.Add(this.btn_cancel);
@@ -609,7 +659,6 @@
             this.Controls.Add(label2);
             this.Controls.Add(label1);
             this.Controls.Add(lbl_title1);
-            this.Controls.Add(this.Cmb_ProdCategory);
             this.Controls.Add(this.lbl_titele);
             this.Controls.Add(lbl_ProdUnit);
             this.Controls.Add(this.txt_Unit);
@@ -645,9 +694,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_cancel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_save)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_GenerateCode)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productsDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_product)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoriesDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -667,7 +717,6 @@
         private System.Windows.Forms.TextBox txt_ProdTax;
         private System.Windows.Forms.TextBox txt_Unit;
         private System.Windows.Forms.Label lbl_titele;
-        public System.Windows.Forms.ComboBox Cmb_ProdCategory;
         private System.Windows.Forms.Label lbl_ProdCreated;
         public Telerik.WinControls.UI.RadButton btn_cancel;
         public Telerik.WinControls.UI.RadButton btn_save;
@@ -675,7 +724,7 @@
         private System.Windows.Forms.BindingSource categoriesBindingSource;
         private Data.DataSet.DsCafeTableAdapters.CategoriesTableAdapter categoriesTableAdapter;
         private System.Windows.Forms.Label categoryIDLabel1;
-        private System.Windows.Forms.DataGridView productsDataGridView;
+        private System.Windows.Forms.DataGridView tbl_product;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
@@ -689,5 +738,11 @@
         private System.Windows.Forms.TextBox lbl_unit;
         public Telerik.WinControls.UI.RadButton radButton1;
         public Telerik.WinControls.UI.RadButton radButton2;
+        private System.Windows.Forms.DataGridView categoriesDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn2;
+        public System.Windows.Forms.ComboBox Cmb_ProdCategory;
     }
 }

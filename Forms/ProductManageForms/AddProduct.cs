@@ -162,7 +162,7 @@ namespace CafeApplication.Forms.ProductManageForms
                 if (txt_ProdName.Text != string.Empty)
                 {
                     this.productsTableAdapter.FillBy_prod_name(this.dsCafe.Products, txt_ProdName.Text);
-                    if (productsDataGridView.Rows.Count >= 1)
+                    if (tbl_product.Rows.Count >= 1)
                     {
                         status = true;
                         Cmb_ProdCategory.Enabled = false;
@@ -188,7 +188,7 @@ namespace CafeApplication.Forms.ProductManageForms
                 if (txt_ProdCode.Text != string.Empty)
                 {
                     this.productsTableAdapter.FillBy_code_user(this.dsCafe.Products, txt_ProdCode.Text);
-                    if (productsDataGridView.Rows.Count >= 1)
+                    if (tbl_product.Rows.Count >= 1)
                     {
                         status = true;
                         Cmb_ProdCategory.Enabled = false;

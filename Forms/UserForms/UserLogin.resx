@@ -208,4 +208,17 @@
   <metadata name="salesTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 54</value>
   </metadata>
+  <data name="btn_ShowPass.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EAAACxABrSO9dQAAAZtJREFUOE/V1L9LV1EYx3GVFm2oIXFyqD2IIIeaBMWlIaIkSIuywiJQkH4gSAXR
+        D4ciLYio6AfR2E8cmiJBGqKhpT/nJU+cAw/nWzn7wIHLvfe8z+d5Pp97u7o2dWEnjmIKExjDQPvehoVR
+        LOMllrCI27iFO5jGrnZfR2ELFvAKD3AvwW7ienk+j6sYRk/L+VPoxWM8SbDXWMVPfMdn3MdlzGEWR0JI
+        C+sprQWwwlbwG7/wA2v4ii94iBlcxAUcQncGnsXTRlmGfSv33uATPuAGzpe9Z7A3A180M4s2s7IwqLb5
+        DB/LnoCdxglMVlh/OT0bEDPLbca9gEWbj4rKdwl2vKjsC+AOPG/cDAPyzN7iWonN+wSssGMFvrWqDOdy
+        NMLNCqszizbjuq4QUWHh9ESe4cES2JqzOOB/sDjwUoKNY18GRmzOlbYitGFARONfsLsJFutwR8DLV3IS
+        V5IBEY1wM+YVs4s2W2Wdwc6FoRTamrPsZoVNYqRD2d8Kg+UvE19BxKHCYp0qwI1/Dm1hG3ZjPw5gD7a3
+        722uWgcFrj5VO31u4gAAAABJRU5ErkJggg==
+</value>
+  </data>
 </root>
