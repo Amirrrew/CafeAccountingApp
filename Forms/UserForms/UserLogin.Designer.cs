@@ -34,6 +34,7 @@
             this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.usersTableAdapter = new CafeApplication.Data.DataSet.DsCafeTableAdapters.UsersTableAdapter();
             this.tableAdapterManager = new CafeApplication.Data.DataSet.DsCafeTableAdapters.TableAdapterManager();
+            this.Cmb_users = new System.Windows.Forms.ComboBox();
             this.lbl_title = new System.Windows.Forms.Label();
             this.lbl_userName = new System.Windows.Forms.Label();
             this.lbl_password = new System.Windows.Forms.Label();
@@ -44,16 +45,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbl_ForgotPass = new System.Windows.Forms.Label();
             this.salesTableAdapter = new CafeApplication.Data.DataSet.DsCafeTableAdapters.SalesTableAdapter();
-            this.Cmb_users = new System.Windows.Forms.ComboBox();
-            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tbl_users = new System.Windows.Forms.DataGridView();
             this.txt_userrole = new System.Windows.Forms.TextBox();
             this.btn_ShowPass = new Telerik.WinControls.UI.RadButton();
             ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).BeginInit();
@@ -62,8 +53,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_Exit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_password)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.tbl_users)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_ShowPass)).BeginInit();
+=======
+>>>>>>> parent of d20d9b8 (login)
             this.SuspendLayout();
             // 
             // dsCafe
@@ -100,6 +94,26 @@
             this.tableAdapterManager.TrashBinTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = CafeApplication.Data.DataSet.DsCafeTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.UsersTableAdapter = this.usersTableAdapter;
+            // 
+            // Cmb_users
+            // 
+            this.Cmb_users.BackColor = System.Drawing.Color.Black;
+            this.Cmb_users.DataBindings.Add(new System.Windows.Forms.Binding("SelectedItem", this.usersBindingSource, "Username", true));
+            this.Cmb_users.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "Username", true));
+            this.Cmb_users.DataSource = this.usersBindingSource;
+            this.Cmb_users.DisplayMember = "Username";
+            this.Cmb_users.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Cmb_users.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cmb_users.Font = new System.Drawing.Font("RokhFaNum Normal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Cmb_users.ForeColor = System.Drawing.Color.White;
+            this.Cmb_users.FormattingEnabled = true;
+            this.Cmb_users.Location = new System.Drawing.Point(11, 91);
+            this.Cmb_users.Name = "Cmb_users";
+            this.Cmb_users.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.Cmb_users.Size = new System.Drawing.Size(450, 43);
+            this.Cmb_users.TabIndex = 2;
+            this.Cmb_users.ValueMember = "Username";
+            this.Cmb_users.Click += new System.EventHandler(this.Cmb_users_Click);
             // 
             // lbl_title
             // 
@@ -141,14 +155,18 @@
             this.txt_password.Name = "txt_password";
             this.txt_password.PasswordChar = '*';
             this.txt_password.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+<<<<<<< HEAD
             this.txt_password.Size = new System.Drawing.Size(395, 42);
             this.txt_password.TabIndex = 1;
+=======
+            this.txt_password.Size = new System.Drawing.Size(447, 42);
+            this.txt_password.TabIndex = 6;
+>>>>>>> parent of d20d9b8 (login)
             this.txt_password.TextChanged += new System.EventHandler(this.txt_password_TextChanged);
-            this.txt_password.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_password_KeyDown);
             // 
             // btn_Login
             // 
-            this.btn_Login.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btn_Login.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_Login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_Login.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_Login.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -156,18 +174,18 @@
             this.btn_Login.ForeColor = System.Drawing.Color.White;
             this.btn_Login.Image = ((System.Drawing.Image)(resources.GetObject("btn_Login.Image")));
             this.btn_Login.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_Login.Location = new System.Drawing.Point(13, 230);
+            this.btn_Login.Location = new System.Drawing.Point(13, 225);
             this.btn_Login.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Login.Name = "btn_Login";
             this.btn_Login.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
             this.btn_Login.Size = new System.Drawing.Size(216, 49);
-            this.btn_Login.TabIndex = 2;
+            this.btn_Login.TabIndex = 13;
             this.btn_Login.Text = "ورود";
             this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
             // 
             // btn_Exit
             // 
-            this.btn_Exit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btn_Exit.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_Exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_Exit.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -175,12 +193,12 @@
             this.btn_Exit.ForeColor = System.Drawing.Color.White;
             this.btn_Exit.Image = ((System.Drawing.Image)(resources.GetObject("btn_Exit.Image")));
             this.btn_Exit.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_Exit.Location = new System.Drawing.Point(237, 230);
+            this.btn_Exit.Location = new System.Drawing.Point(237, 225);
             this.btn_Exit.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Exit.Name = "btn_Exit";
             this.btn_Exit.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
             this.btn_Exit.Size = new System.Drawing.Size(224, 49);
-            this.btn_Exit.TabIndex = 3;
+            this.btn_Exit.TabIndex = 14;
             this.btn_Exit.Text = "انصراف و خروج";
             this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
@@ -220,109 +238,10 @@
             // 
             this.salesTableAdapter.ClearBeforeFill = true;
             // 
-            // Cmb_users
-            // 
-            this.Cmb_users.BackColor = System.Drawing.Color.Black;
-            this.Cmb_users.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "Username", true));
-            this.Cmb_users.DataBindings.Add(new System.Windows.Forms.Binding("SelectedItem", this.usersBindingSource, "Username", true));
-            this.Cmb_users.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.usersBindingSource, "Username", true));
-            this.Cmb_users.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.usersBindingSource, "Username", true));
-            this.Cmb_users.DataSource = this.usersBindingSource;
-            this.Cmb_users.DisplayMember = "Username";
-            this.Cmb_users.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Cmb_users.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cmb_users.Font = new System.Drawing.Font("RokhFaNum Normal", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.Cmb_users.ForeColor = System.Drawing.Color.White;
-            this.Cmb_users.FormattingEnabled = true;
-            this.Cmb_users.Location = new System.Drawing.Point(14, 93);
-            this.Cmb_users.Name = "Cmb_users";
-            this.Cmb_users.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Cmb_users.Size = new System.Drawing.Size(447, 43);
-            this.Cmb_users.TabIndex = 0;
-            this.Cmb_users.ValueMember = "Username";
-            this.Cmb_users.SelectedIndexChanged += new System.EventHandler(this.Cmb_users_SelectedIndexChanged_1);
-            // 
-            // dataGridViewCheckBoxColumn1
-            // 
-            this.dataGridViewCheckBoxColumn1.DataPropertyName = "IsActive";
-            this.dataGridViewCheckBoxColumn1.HeaderText = "IsActive";
-            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
-            this.dataGridViewCheckBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "CreatedAt";
-            this.dataGridViewTextBoxColumn7.HeaderText = "CreatedAt";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Role";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Role";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "FullName";
-            this.dataGridViewTextBoxColumn5.HeaderText = "FullName";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Salt";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Salt";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "PasswordHash";
-            this.dataGridViewTextBoxColumn3.HeaderText = "PasswordHash";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Username";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Username";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "UserID";
-            this.dataGridViewTextBoxColumn1.HeaderText = "UserID";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // tbl_users
-            // 
-            this.tbl_users.AutoGenerateColumns = false;
-            this.tbl_users.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tbl_users.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewCheckBoxColumn1});
-            this.tbl_users.DataSource = this.usersBindingSource;
-            this.tbl_users.Location = new System.Drawing.Point(480, 12);
-            this.tbl_users.MultiSelect = false;
-            this.tbl_users.Name = "tbl_users";
-            this.tbl_users.ReadOnly = true;
-            this.tbl_users.Size = new System.Drawing.Size(300, 220);
-            this.tbl_users.TabIndex = 1000;
-            // 
             // txt_userrole
             // 
             this.txt_userrole.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "Role", true));
-            this.txt_userrole.Location = new System.Drawing.Point(480, 238);
+            this.txt_userrole.Location = new System.Drawing.Point(13, 9);
             this.txt_userrole.Name = "txt_userrole";
             this.txt_userrole.Size = new System.Drawing.Size(100, 28);
             this.txt_userrole.TabIndex = 18;
@@ -351,10 +270,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(474, 292);
             this.Controls.Add(this.btn_ShowPass);
             this.Controls.Add(this.Cmb_users);
             this.Controls.Add(this.tbl_users);
+=======
+            this.ClientSize = new System.Drawing.Size(472, 287);
+>>>>>>> parent of d20d9b8 (login)
             this.Controls.Add(this.txt_userrole);
             this.Controls.Add(this.lbl_ForgotPass);
             this.Controls.Add(this.pictureBox1);
@@ -365,6 +288,7 @@
             this.Controls.Add(this.lbl_password);
             this.Controls.Add(this.lbl_userName);
             this.Controls.Add(this.lbl_title);
+            this.Controls.Add(this.Cmb_users);
             this.Font = new System.Drawing.Font("RokhFaNum Normal", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -380,8 +304,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_Exit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_password)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.tbl_users)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_ShowPass)).EndInit();
+=======
+>>>>>>> parent of d20d9b8 (login)
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -404,15 +331,6 @@
         private System.Windows.Forms.Label lbl_ForgotPass;
         private Data.DataSet.DsCafeTableAdapters.SalesTableAdapter salesTableAdapter;
         public System.Windows.Forms.ComboBox Cmb_users;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridView tbl_users;
         private System.Windows.Forms.TextBox txt_userrole;
         public Telerik.WinControls.UI.RadButton btn_ShowPass;
     }

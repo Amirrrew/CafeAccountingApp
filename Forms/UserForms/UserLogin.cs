@@ -32,7 +32,6 @@ namespace CafeApplication.Forms.UserForms
         int remainingAttemps = 9;
         string password;
         int FindUser;
-        int selectedUser = 0;
 
         private void usersBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
@@ -50,11 +49,6 @@ namespace CafeApplication.Forms.UserForms
             this.usersTableAdapter.Fill_ActiveUsers(this.dsCafe.Users);
             Cmb_users.DisplayMember = "Username";
             Cmb_users.ValueMember = "Username";
-        }
-
-        private void Cmb_users_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //selectedUser = Cmb_users.SelectedIndex;
         }
 
 
@@ -94,8 +88,6 @@ namespace CafeApplication.Forms.UserForms
                     msg.NewMessage("ورود", "رمز عبور اشتباه است. دوباره تلاش کنید.", "warning", "Y", null, YesClick: () => msg.Close());
                     remainingAttemps -= 1;
                     Attemps();
-                    usersTableAdapter.Fill(dsCafe.Users);
-                    Cmb_users.SelectedIndex = selectedUser;
                 }
             }
             else
@@ -128,6 +120,7 @@ namespace CafeApplication.Forms.UserForms
         private void btn_Login_Click(object sender, EventArgs e)
         {
             LoginAttemp();
+
         }
 
         private void txt_password_TextChanged(object sender, EventArgs e)
@@ -142,24 +135,9 @@ namespace CafeApplication.Forms.UserForms
             }
         }
 
-        private void Cmb_users_SelectedIndexChanged_1(object sender, EventArgs e)
+        private void Cmb_users_Click(object sender, EventArgs e)
         {
-            if (Cmb_users.SelectedIndex != -1)
-            {
-                selectedUser = Cmb_users.SelectedIndex;
-            }
-        }
 
-        private void txt_password_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                LoginAttemp();
-            }
-            else if (e.KeyCode == Keys.Escape)
-            {
-                this.Close();
-            }
         }
 
         private void btn_ShowPass_Click(object sender, EventArgs e)

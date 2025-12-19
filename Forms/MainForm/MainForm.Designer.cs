@@ -919,7 +919,6 @@
             this.radButton3.Size = new System.Drawing.Size(112, 98);
             this.radButton3.TabIndex = 11;
             this.radButton3.Text = "-";
-            this.radButton3.Click += new System.EventHandler(this.radButton3_Click);
             // 
             // radButton2
             // 
