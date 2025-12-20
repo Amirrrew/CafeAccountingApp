@@ -250,3 +250,19 @@ C:\Users\Hosein\Documents\GitHub\CafeAccountingApp\obj\Debug\CafeApplication.For
 C:\Users\amir\Desktop\CafeAccountingApp\obj\Debug\CafeApplication.Forms.UserForms.ManageCurrentUser.resources
 C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\userMenu\closeEye-Icon.png
 C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\userMenu\eye-Icon.png
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\userMenu\addUser-Icon (2).png
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\userMenu\editUser-Icon.png
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\userMenu\remove-Icon.png
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\userMenu\userList-Icon.png
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\Assets\Icons\Mainmenu\userMenu\task-Icon.png
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\System.Buffers.dll
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\System.Memory.dll
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\System.Buffers.xml
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\System.Memory.xml
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\amir\Desktop\CafeAccountingApp\obj\Debug\CafeApplication.Forms.UserForms.addUser.resources
