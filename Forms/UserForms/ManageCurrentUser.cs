@@ -42,6 +42,7 @@ namespace CafeApplication.Forms.UserForms
         {
             lbl_userName.Text = CurrentUser;
             usersTableAdapter.GetUsername(dsCafe.Users, lbl_userName.Text);
+            txt_password.ResetText();
         }
 
         private void usersBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -123,6 +124,11 @@ namespace CafeApplication.Forms.UserForms
         private void btn_cancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txt_password_TextChanged(object sender, EventArgs e)
+        {
+            txt_HashedPass.Text = BCrypt.Net.BCrypt.HashPassword(txt_password.Text);
         }
     }
 }

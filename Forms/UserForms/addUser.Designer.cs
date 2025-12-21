@@ -34,10 +34,6 @@
             System.Windows.Forms.Label lbl_FullName;
             System.Windows.Forms.Label lbl_Role;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addUser));
-            this.dsCafe = new CafeApplication.Data.DataSet.DsCafe();
-            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.usersTableAdapter = new CafeApplication.Data.DataSet.DsCafeTableAdapters.UsersTableAdapter();
-            this.tableAdapterManager = new CafeApplication.Data.DataSet.DsCafeTableAdapters.TableAdapterManager();
             this.txt_userID = new System.Windows.Forms.TextBox();
             this.txt_UserName = new System.Windows.Forms.TextBox();
             this.txt_userPassword = new System.Windows.Forms.TextBox();
@@ -52,7 +48,7 @@
             this.Chk_isActive = new System.Windows.Forms.CheckBox();
             this.btn_cancel = new Telerik.WinControls.UI.RadButton();
             this.btn_save = new Telerik.WinControls.UI.RadButton();
-            this.usersDataGridView = new System.Windows.Forms.DataGridView();
+            this.tbl_Users = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,16 +57,20 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dsCafe = new CafeApplication.Data.DataSet.DsCafe();
+            this.usersTableAdapter = new CafeApplication.Data.DataSet.DsCafeTableAdapters.UsersTableAdapter();
+            this.tableAdapterManager = new CafeApplication.Data.DataSet.DsCafeTableAdapters.TableAdapterManager();
             lbl_UserName = new System.Windows.Forms.Label();
             lbl_Password = new System.Windows.Forms.Label();
             lbl_FullName = new System.Windows.Forms.Label();
             lbl_Role = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_ShowPass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_cancel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_save)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usersDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_Users)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_UserName
@@ -109,52 +109,18 @@
             lbl_Role.TabIndex = 24;
             lbl_Role.Text = "نقش کاربر (دسترسی)";
             // 
-            // dsCafe
-            // 
-            this.dsCafe.DataSetName = "DsCafe";
-            this.dsCafe.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // usersBindingSource
-            // 
-            this.usersBindingSource.DataMember = "Users";
-            this.usersBindingSource.DataSource = this.dsCafe;
-            // 
-            // usersTableAdapter
-            // 
-            this.usersTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.CafeTablesTableAdapter = null;
-            this.tableAdapterManager.CategoriesTableAdapter = null;
-            this.tableAdapterManager.CustomersTableAdapter = null;
-            this.tableAdapterManager.EmployeesTableAdapter = null;
-            this.tableAdapterManager.ExpensesTableAdapter = null;
-            this.tableAdapterManager.IncomesTableAdapter = null;
-            this.tableAdapterManager.ProductsTableAdapter = null;
-            this.tableAdapterManager.PurchaseItemsTableAdapter = null;
-            this.tableAdapterManager.PurchasesTableAdapter = null;
-            this.tableAdapterManager.SaleItemsTableAdapter = null;
-            this.tableAdapterManager.SalesTableAdapter = null;
-            this.tableAdapterManager.SetupTableAdapter = null;
-            this.tableAdapterManager.SuppliersTableAdapter = null;
-            this.tableAdapterManager.TransactionsTableAdapter = null;
-            this.tableAdapterManager.TrashBinTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = CafeApplication.Data.DataSet.DsCafeTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.UsersTableAdapter = this.usersTableAdapter;
-            // 
             // txt_userID
             // 
             this.txt_userID.BackColor = System.Drawing.Color.Black;
             this.txt_userID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_userID.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "UserID", true));
+            this.txt_userID.Enabled = false;
             this.txt_userID.Font = new System.Drawing.Font("RokhFaNum Normal", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_userID.ForeColor = System.Drawing.Color.White;
             this.txt_userID.Location = new System.Drawing.Point(708, 278);
             this.txt_userID.Name = "txt_userID";
             this.txt_userID.Size = new System.Drawing.Size(88, 34);
-            this.txt_userID.TabIndex = 2;
+            this.txt_userID.TabIndex = 40000;
             // 
             // txt_UserName
             // 
@@ -167,32 +133,34 @@
             this.txt_UserName.Name = "txt_UserName";
             this.txt_UserName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txt_UserName.Size = new System.Drawing.Size(190, 34);
-            this.txt_UserName.TabIndex = 4;
+            this.txt_UserName.TabIndex = 0;
             // 
             // txt_userPassword
             // 
             this.txt_userPassword.BackColor = System.Drawing.Color.Black;
             this.txt_userPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_userPassword.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "PasswordHash", true));
+            this.txt_userPassword.Enabled = false;
             this.txt_userPassword.Font = new System.Drawing.Font("RokhFaNum Normal", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_userPassword.ForeColor = System.Drawing.Color.White;
             this.txt_userPassword.Location = new System.Drawing.Point(496, 238);
             this.txt_userPassword.Name = "txt_userPassword";
             this.txt_userPassword.Size = new System.Drawing.Size(300, 34);
-            this.txt_userPassword.TabIndex = 6;
+            this.txt_userPassword.TabIndex = 10000;
             // 
             // txt_salt
             // 
             this.txt_salt.BackColor = System.Drawing.Color.Black;
             this.txt_salt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_salt.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "Salt", true));
+            this.txt_salt.Enabled = false;
             this.txt_salt.Font = new System.Drawing.Font("RokhFaNum Normal", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_salt.ForeColor = System.Drawing.Color.White;
             this.txt_salt.Location = new System.Drawing.Point(602, 278);
             this.txt_salt.Name = "txt_salt";
             this.txt_salt.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txt_salt.Size = new System.Drawing.Size(100, 34);
-            this.txt_salt.TabIndex = 8;
+            this.txt_salt.TabIndex = 30000;
             // 
             // txt_FullName
             // 
@@ -205,20 +173,21 @@
             this.txt_FullName.Name = "txt_FullName";
             this.txt_FullName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txt_FullName.Size = new System.Drawing.Size(234, 34);
-            this.txt_FullName.TabIndex = 10;
+            this.txt_FullName.TabIndex = 1;
             // 
             // txt_UserRole
             // 
             this.txt_UserRole.BackColor = System.Drawing.Color.Black;
             this.txt_UserRole.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_UserRole.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "Role", true));
+            this.txt_UserRole.Enabled = false;
             this.txt_UserRole.Font = new System.Drawing.Font("RokhFaNum Normal", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_UserRole.ForeColor = System.Drawing.Color.White;
             this.txt_UserRole.Location = new System.Drawing.Point(496, 278);
             this.txt_UserRole.Name = "txt_UserRole";
             this.txt_UserRole.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txt_UserRole.Size = new System.Drawing.Size(100, 34);
-            this.txt_UserRole.TabIndex = 12;
+            this.txt_UserRole.TabIndex = 20000;
             // 
             // lbl_CreatedAt
             // 
@@ -253,7 +222,7 @@
             this.txt_NoneHashedPass.Name = "txt_NoneHashedPass";
             this.txt_NoneHashedPass.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txt_NoneHashedPass.Size = new System.Drawing.Size(267, 34);
-            this.txt_NoneHashedPass.TabIndex = 18;
+            this.txt_NoneHashedPass.TabIndex = 2;
             this.txt_NoneHashedPass.TextChanged += new System.EventHandler(this.txt_NoneHashedPass_TextChanged);
             // 
             // btn_ShowPass
@@ -270,7 +239,7 @@
             this.btn_ShowPass.Name = "btn_ShowPass";
             this.btn_ShowPass.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
             this.btn_ShowPass.Size = new System.Drawing.Size(156, 34);
-            this.btn_ShowPass.TabIndex = 19;
+            this.btn_ShowPass.TabIndex = 3;
             this.btn_ShowPass.Text = "نمایش رمز عبور";
             // 
             // Cmb_Roles
@@ -290,7 +259,7 @@
             this.Cmb_Roles.Name = "Cmb_Roles";
             this.Cmb_Roles.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Cmb_Roles.Size = new System.Drawing.Size(198, 35);
-            this.Cmb_Roles.TabIndex = 23;
+            this.Cmb_Roles.TabIndex = 4;
             this.Cmb_Roles.SelectedIndexChanged += new System.EventHandler(this.Cmb_Roles_SelectedIndexChanged);
             // 
             // Chk_isActive
@@ -302,7 +271,7 @@
             this.Chk_isActive.Name = "Chk_isActive";
             this.Chk_isActive.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Chk_isActive.Size = new System.Drawing.Size(96, 28);
-            this.Chk_isActive.TabIndex = 25;
+            this.Chk_isActive.TabIndex = 5;
             this.Chk_isActive.Text = "کاربر فعال";
             this.Chk_isActive.UseVisualStyleBackColor = true;
             // 
@@ -319,7 +288,7 @@
             this.btn_cancel.Margin = new System.Windows.Forms.Padding(4);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(57, 55);
-            this.btn_cancel.TabIndex = 33;
+            this.btn_cancel.TabIndex = 7;
             this.btn_cancel.Text = "-";
             // 
             // btn_save
@@ -335,15 +304,15 @@
             this.btn_save.Margin = new System.Windows.Forms.Padding(4);
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(57, 55);
-            this.btn_save.TabIndex = 32;
+            this.btn_save.TabIndex = 6;
             this.btn_save.Text = "-";
             this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
-            // usersDataGridView
+            // tbl_Users
             // 
-            this.usersDataGridView.AutoGenerateColumns = false;
-            this.usersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.usersDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.tbl_Users.AutoGenerateColumns = false;
+            this.tbl_Users.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tbl_Users.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
@@ -352,11 +321,12 @@
             this.dataGridViewTextBoxColumn6,
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewCheckBoxColumn1});
-            this.usersDataGridView.DataSource = this.usersBindingSource;
-            this.usersDataGridView.Location = new System.Drawing.Point(496, 9);
-            this.usersDataGridView.Name = "usersDataGridView";
-            this.usersDataGridView.Size = new System.Drawing.Size(300, 220);
-            this.usersDataGridView.TabIndex = 33;
+            this.tbl_Users.DataSource = this.usersBindingSource;
+            this.tbl_Users.Enabled = false;
+            this.tbl_Users.Location = new System.Drawing.Point(496, 9);
+            this.tbl_Users.Name = "tbl_Users";
+            this.tbl_Users.Size = new System.Drawing.Size(300, 220);
+            this.tbl_Users.TabIndex = 10000;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -407,12 +377,47 @@
             this.dataGridViewCheckBoxColumn1.HeaderText = "IsActive";
             this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
             // 
+            // usersBindingSource
+            // 
+            this.usersBindingSource.DataMember = "Users";
+            this.usersBindingSource.DataSource = this.dsCafe;
+            // 
+            // dsCafe
+            // 
+            this.dsCafe.DataSetName = "DsCafe";
+            this.dsCafe.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // usersTableAdapter
+            // 
+            this.usersTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.CafeTablesTableAdapter = null;
+            this.tableAdapterManager.CategoriesTableAdapter = null;
+            this.tableAdapterManager.CustomersTableAdapter = null;
+            this.tableAdapterManager.EmployeesTableAdapter = null;
+            this.tableAdapterManager.ExpensesTableAdapter = null;
+            this.tableAdapterManager.IncomesTableAdapter = null;
+            this.tableAdapterManager.ProductsTableAdapter = null;
+            this.tableAdapterManager.PurchaseItemsTableAdapter = null;
+            this.tableAdapterManager.PurchasesTableAdapter = null;
+            this.tableAdapterManager.SaleItemsTableAdapter = null;
+            this.tableAdapterManager.SalesTableAdapter = null;
+            this.tableAdapterManager.SetupTableAdapter = null;
+            this.tableAdapterManager.SuppliersTableAdapter = null;
+            this.tableAdapterManager.TransactionsTableAdapter = null;
+            this.tableAdapterManager.TrashBinTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = CafeApplication.Data.DataSet.DsCafeTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UsersTableAdapter = this.usersTableAdapter;
+            // 
             // addUser
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(899, 416);
-            this.Controls.Add(this.usersDataGridView);
+            this.ClientSize = new System.Drawing.Size(446, 416);
+            this.Controls.Add(this.tbl_Users);
             this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.btn_save);
             this.Controls.Add(this.Chk_isActive);
@@ -442,12 +447,12 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "افزودن کاربر جدید";
             this.Load += new System.EventHandler(this.addUser_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_ShowPass)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_cancel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_save)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usersDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_Users)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -473,7 +478,7 @@
         private System.Windows.Forms.CheckBox Chk_isActive;
         public Telerik.WinControls.UI.RadButton btn_cancel;
         public Telerik.WinControls.UI.RadButton btn_save;
-        private System.Windows.Forms.DataGridView usersDataGridView;
+        private System.Windows.Forms.DataGridView tbl_Users;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;

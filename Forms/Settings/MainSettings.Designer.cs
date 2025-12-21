@@ -30,19 +30,20 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainSettings));
             this.pnl_SettingsCategory = new System.Windows.Forms.Panel();
+            this.radButton1 = new Telerik.WinControls.UI.RadButton();
             this.txt_Search = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.object_02d7b4e7_c422_40dc_8cf7_43c97eab1e87 = new Telerik.WinControls.RootRadElement();
             this.Tab_settings = new System.Windows.Forms.TabControl();
             this.tab_UserManage = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btn_RoleManage = new Telerik.WinControls.UI.RadButton();
             this.btn_deleteUser = new Telerik.WinControls.UI.RadButton();
             this.btn_userInfo = new Telerik.WinControls.UI.RadButton();
             this.btn_editUser = new Telerik.WinControls.UI.RadButton();
             this.btn_AddUser = new Telerik.WinControls.UI.RadButton();
-            this.radButton1 = new Telerik.WinControls.UI.RadButton();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.pnl_SettingsCategory.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
             this.Tab_settings.SuspendLayout();
             this.tab_UserManage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_RoleManage)).BeginInit();
@@ -50,7 +51,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_userInfo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_editUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_AddUser)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_SettingsCategory
@@ -64,6 +64,42 @@
             this.pnl_SettingsCategory.Name = "pnl_SettingsCategory";
             this.pnl_SettingsCategory.Size = new System.Drawing.Size(282, 588);
             this.pnl_SettingsCategory.TabIndex = 0;
+            // 
+            // radButton1
+            // 
+            this.radButton1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.radButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.radButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.radButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radButton1.Font = new System.Drawing.Font("Rokh Light", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.radButton1.ForeColor = System.Drawing.Color.White;
+            this.radButton1.Image = ((System.Drawing.Image)(resources.GetObject("radButton1.Image")));
+            this.radButton1.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            this.radButton1.Location = new System.Drawing.Point(10, 94);
+            this.radButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.radButton1.Name = "radButton1";
+            this.radButton1.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
+            // 
+            // 
+            // 
+            this.radButton1.RootElement.FocusBorderWidth = 0;
+            this.radButton1.RootElement.Opacity = 1D;
+            this.radButton1.Size = new System.Drawing.Size(263, 37);
+            this.radButton1.TabIndex = 13;
+            this.radButton1.Text = "مدیریت کاربران";
+            this.radButton1.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            this.radButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            ((Telerik.WinControls.UI.RadButtonElement)(this.radButton1.GetChildAt(0))).Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            ((Telerik.WinControls.UI.RadButtonElement)(this.radButton1.GetChildAt(0))).TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            ((Telerik.WinControls.UI.RadButtonElement)(this.radButton1.GetChildAt(0))).ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            ((Telerik.WinControls.UI.RadButtonElement)(this.radButton1.GetChildAt(0))).TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            ((Telerik.WinControls.UI.RadButtonElement)(this.radButton1.GetChildAt(0))).Text = "مدیریت کاربران";
+            ((Telerik.WinControls.UI.RadButtonElement)(this.radButton1.GetChildAt(0))).Font = new System.Drawing.Font("Rokh Light", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            ((Telerik.WinControls.UI.RadButtonElement)(this.radButton1.GetChildAt(0))).Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
+            ((Telerik.WinControls.Primitives.TextPrimitive)(this.radButton1.GetChildAt(0).GetChildAt(1).GetChildAt(1))).LineLimit = false;
+            ((Telerik.WinControls.Primitives.TextPrimitive)(this.radButton1.GetChildAt(0).GetChildAt(1).GetChildAt(1))).Font = new System.Drawing.Font("Rokh Light", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            ((Telerik.WinControls.Primitives.TextPrimitive)(this.radButton1.GetChildAt(0).GetChildAt(1).GetChildAt(1))).Padding = new System.Windows.Forms.Padding(0, 0, 50, 0);
+            ((Telerik.WinControls.Primitives.TextPrimitive)(this.radButton1.GetChildAt(0).GetChildAt(1).GetChildAt(1))).Alignment = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txt_Search
             // 
@@ -120,16 +156,6 @@
             this.tab_UserManage.TabIndex = 0;
             this.tab_UserManage.Text = "tabPage1";
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 30);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(738, 554);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
             // btn_RoleManage
             // 
             this.btn_RoleManage.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
@@ -140,7 +166,7 @@
             this.btn_RoleManage.ForeColor = System.Drawing.Color.White;
             this.btn_RoleManage.Image = ((System.Drawing.Image)(resources.GetObject("btn_RoleManage.Image")));
             this.btn_RoleManage.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_RoleManage.Location = new System.Drawing.Point(7, 305);
+            this.btn_RoleManage.Location = new System.Drawing.Point(7, 313);
             this.btn_RoleManage.Margin = new System.Windows.Forms.Padding(4);
             this.btn_RoleManage.Name = "btn_RoleManage";
             this.btn_RoleManage.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
@@ -149,6 +175,7 @@
             this.btn_RoleManage.Text = "مدیریت دسترسی برای نقش ها";
             this.btn_RoleManage.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_RoleManage.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btn_RoleManage.Click += new System.EventHandler(this.btn_RoleManage_Click);
             // 
             // btn_deleteUser
             // 
@@ -160,7 +187,7 @@
             this.btn_deleteUser.ForeColor = System.Drawing.Color.White;
             this.btn_deleteUser.Image = ((System.Drawing.Image)(resources.GetObject("btn_deleteUser.Image")));
             this.btn_deleteUser.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_deleteUser.Location = new System.Drawing.Point(7, 222);
+            this.btn_deleteUser.Location = new System.Drawing.Point(7, 230);
             this.btn_deleteUser.Margin = new System.Windows.Forms.Padding(4);
             this.btn_deleteUser.Name = "btn_deleteUser";
             this.btn_deleteUser.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
@@ -169,6 +196,7 @@
             this.btn_deleteUser.Text = "حذف کاربر";
             this.btn_deleteUser.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_deleteUser.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btn_deleteUser.Click += new System.EventHandler(this.btn_deleteUser_Click);
             // 
             // btn_userInfo
             // 
@@ -180,7 +208,7 @@
             this.btn_userInfo.ForeColor = System.Drawing.Color.White;
             this.btn_userInfo.Image = ((System.Drawing.Image)(resources.GetObject("btn_userInfo.Image")));
             this.btn_userInfo.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_userInfo.Location = new System.Drawing.Point(7, 139);
+            this.btn_userInfo.Location = new System.Drawing.Point(7, 147);
             this.btn_userInfo.Margin = new System.Windows.Forms.Padding(4);
             this.btn_userInfo.Name = "btn_userInfo";
             this.btn_userInfo.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
@@ -189,6 +217,7 @@
             this.btn_userInfo.Text = "مشاهده مشخصات کاربران";
             this.btn_userInfo.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_userInfo.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btn_userInfo.Click += new System.EventHandler(this.btn_userInfo_Click);
             // 
             // btn_editUser
             // 
@@ -200,7 +229,7 @@
             this.btn_editUser.ForeColor = System.Drawing.Color.White;
             this.btn_editUser.Image = ((System.Drawing.Image)(resources.GetObject("btn_editUser.Image")));
             this.btn_editUser.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_editUser.Location = new System.Drawing.Point(7, 56);
+            this.btn_editUser.Location = new System.Drawing.Point(7, 64);
             this.btn_editUser.Margin = new System.Windows.Forms.Padding(4);
             this.btn_editUser.Name = "btn_editUser";
             this.btn_editUser.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
@@ -209,6 +238,7 @@
             this.btn_editUser.Text = "ویرایش کاربر";
             this.btn_editUser.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_editUser.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btn_editUser.Click += new System.EventHandler(this.btn_editUser_Click);
             // 
             // btn_AddUser
             // 
@@ -220,7 +250,7 @@
             this.btn_AddUser.ForeColor = System.Drawing.Color.White;
             this.btn_AddUser.Image = ((System.Drawing.Image)(resources.GetObject("btn_AddUser.Image")));
             this.btn_AddUser.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_AddUser.Location = new System.Drawing.Point(7, -27);
+            this.btn_AddUser.Location = new System.Drawing.Point(7, -19);
             this.btn_AddUser.Margin = new System.Windows.Forms.Padding(4);
             this.btn_AddUser.Name = "btn_AddUser";
             this.btn_AddUser.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
@@ -231,41 +261,15 @@
             this.btn_AddUser.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btn_AddUser.Click += new System.EventHandler(this.btn_AddUser_Click);
             // 
-            // radButton1
+            // tabPage2
             // 
-            this.radButton1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.radButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.radButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.radButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radButton1.Font = new System.Drawing.Font("Rokh Light", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.radButton1.ForeColor = System.Drawing.Color.White;
-            this.radButton1.Image = ((System.Drawing.Image)(resources.GetObject("radButton1.Image")));
-            this.radButton1.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            this.radButton1.Location = new System.Drawing.Point(10, 94);
-            this.radButton1.Margin = new System.Windows.Forms.Padding(4);
-            this.radButton1.Name = "radButton1";
-            this.radButton1.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
-            // 
-            // 
-            // 
-            this.radButton1.RootElement.FocusBorderWidth = 0;
-            this.radButton1.RootElement.Opacity = 1D;
-            this.radButton1.Size = new System.Drawing.Size(263, 37);
-            this.radButton1.TabIndex = 13;
-            this.radButton1.Text = "مدیریت کاربران";
-            this.radButton1.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            this.radButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            ((Telerik.WinControls.UI.RadButtonElement)(this.radButton1.GetChildAt(0))).Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            ((Telerik.WinControls.UI.RadButtonElement)(this.radButton1.GetChildAt(0))).TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            ((Telerik.WinControls.UI.RadButtonElement)(this.radButton1.GetChildAt(0))).ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            ((Telerik.WinControls.UI.RadButtonElement)(this.radButton1.GetChildAt(0))).TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            ((Telerik.WinControls.UI.RadButtonElement)(this.radButton1.GetChildAt(0))).Text = "مدیریت کاربران";
-            ((Telerik.WinControls.UI.RadButtonElement)(this.radButton1.GetChildAt(0))).Font = new System.Drawing.Font("Rokh Light", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            ((Telerik.WinControls.UI.RadButtonElement)(this.radButton1.GetChildAt(0))).Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
-            ((Telerik.WinControls.Primitives.TextPrimitive)(this.radButton1.GetChildAt(0).GetChildAt(1).GetChildAt(1))).LineLimit = false;
-            ((Telerik.WinControls.Primitives.TextPrimitive)(this.radButton1.GetChildAt(0).GetChildAt(1).GetChildAt(1))).Font = new System.Drawing.Font("Rokh Light", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            ((Telerik.WinControls.Primitives.TextPrimitive)(this.radButton1.GetChildAt(0).GetChildAt(1).GetChildAt(1))).Padding = new System.Windows.Forms.Padding(0, 0, 50, 0);
-            ((Telerik.WinControls.Primitives.TextPrimitive)(this.radButton1.GetChildAt(0).GetChildAt(1).GetChildAt(1))).Alignment = System.Drawing.ContentAlignment.MiddleRight;
+            this.tabPage2.Location = new System.Drawing.Point(4, 30);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(738, 554);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // MainSettings
             // 
@@ -288,6 +292,7 @@
             this.Text = "تنظیمات";
             this.pnl_SettingsCategory.ResumeLayout(false);
             this.pnl_SettingsCategory.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
             this.Tab_settings.ResumeLayout(false);
             this.tab_UserManage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btn_RoleManage)).EndInit();
@@ -295,7 +300,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_userInfo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_editUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_AddUser)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -77,32 +77,40 @@ namespace CafeApplication.Forms.UserForms
 
         public void LoginAttemp()
         {
-            if (remainingAttemps >= 1)
+            try
             {
-                string userPassowrd = GetPass();
-
-                if (txt_password.Text == userPassowrd)
+                if (remainingAttemps >= 1)
                 {
-                    MainForm mf = new MainForm();
-                    mf.Username = Cmb_users.Text;
-                    mf.UserRole = txt_userrole.Text;
-                    mf.Show();
-                    this.Hide();
+                    string userPassowrd = GetPass();
+
+                    if (BCrypt.Net.BCrypt.Verify(txt_password.Text, userPassowrd) == true)
+                    {
+                        MainForm mf = new MainForm();
+                        mf.Username = Cmb_users.Text;
+                        mf.UserRole = txt_userrole.Text;
+                        mf.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        msg.NewMessage("ورود", "رمز عبور اشتباه است. دوباره تلاش کنید.", "warning", "Y", null, YesClick: () => msg.Close());
+                        remainingAttemps -= 1;
+                        Attemps();
+                        usersTableAdapter.Fill_ActiveUsers(dsCafe.Users);
+                        Cmb_users.SelectedIndex = selectedUser;
+                    }
                 }
                 else
                 {
-                    msg.NewMessage("ورود", "رمز عبور اشتباه است. دوباره تلاش کنید.", "warning", "Y", null, YesClick: () => msg.Close());
-                    remainingAttemps -= 1;
-                    Attemps();
-                    usersTableAdapter.Fill(dsCafe.Users);
-                    Cmb_users.SelectedIndex = selectedUser;
+                    msg.NewMessage("ورود", "نرم افزار به دلیل ورود رمز اشتباه مکرر قفل شد!\n برای فعالسازی و ورود نیاز است شماره سریال آن را وارد کنید.", "error", "Y", null, YesClick: () => msg.Close());
+                    lbl_ForgotPass.Text = "نرم افزار ققل شد!";
+                    btn_Login.Enabled = false;
                 }
             }
-            else
+            catch
             {
-                msg.NewMessage("ورود", "نرم افزار به دلیل ورود رمز اشتباه مکرر قفل شد!\n برای فعالسازی و ورود نیاز است شماره سریال آن را وارد کنید.", "error", "Y", null, YesClick: () => msg.Close());
-                lbl_ForgotPass.Text = "نرم افزار ققل شد!";
-                btn_Login.Enabled = false;
+                msg.NewMessage("ورود", "در ورود به به برنامه مشکلی پیش آمده.\nچنان چه با باز و بسته کردن برنامه مشکل پابرجا ماند با پشتیبانی تماس بگیرید.", "error", "Y", null, YesClick: () => msg.Close());
+                Application.Exit();
             }
         }
 

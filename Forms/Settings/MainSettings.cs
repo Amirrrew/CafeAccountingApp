@@ -44,5 +44,25 @@ namespace CafeApplication.Forms.Settings
             addUser add = new addUser();
             add.ShowDialog();
         }
+
+        private void btn_editUser_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_userInfo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_deleteUser_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_RoleManage_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

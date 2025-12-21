@@ -161,7 +161,7 @@
             this.btn_Login.Name = "btn_Login";
             this.btn_Login.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
             this.btn_Login.Size = new System.Drawing.Size(216, 49);
-            this.btn_Login.TabIndex = 2;
+            this.btn_Login.TabIndex = 3;
             this.btn_Login.Text = "ورود";
             this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
             // 
@@ -180,7 +180,7 @@
             this.btn_Exit.Name = "btn_Exit";
             this.btn_Exit.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
             this.btn_Exit.Size = new System.Drawing.Size(224, 49);
-            this.btn_Exit.TabIndex = 3;
+            this.btn_Exit.TabIndex = 4;
             this.btn_Exit.Text = "انصراف و خروج";
             this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
@@ -312,6 +312,7 @@
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewCheckBoxColumn1});
             this.tbl_users.DataSource = this.usersBindingSource;
+            this.tbl_users.Enabled = false;
             this.tbl_users.Location = new System.Drawing.Point(480, 12);
             this.tbl_users.MultiSelect = false;
             this.tbl_users.Name = "tbl_users";
@@ -322,6 +323,7 @@
             // txt_userrole
             // 
             this.txt_userrole.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "Role", true));
+            this.txt_userrole.Enabled = false;
             this.txt_userrole.Location = new System.Drawing.Point(480, 238);
             this.txt_userrole.Name = "txt_userrole";
             this.txt_userrole.Size = new System.Drawing.Size(100, 28);
@@ -342,7 +344,7 @@
             this.btn_ShowPass.Margin = new System.Windows.Forms.Padding(4);
             this.btn_ShowPass.Name = "btn_ShowPass";
             this.btn_ShowPass.Size = new System.Drawing.Size(46, 42);
-            this.btn_ShowPass.TabIndex = 1001;
+            this.btn_ShowPass.TabIndex = 2;
             this.btn_ShowPass.Text = "نمایش رمز عبور";
             this.btn_ShowPass.Click += new System.EventHandler(this.btn_ShowPass_Click);
             // 
@@ -351,7 +353,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(474, 292);
+            this.ClientSize = new System.Drawing.Size(473, 292);
             this.Controls.Add(this.btn_ShowPass);
             this.Controls.Add(this.Cmb_users);
             this.Controls.Add(this.tbl_users);

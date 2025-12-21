@@ -56,6 +56,7 @@
             this.Cmb_users = new System.Windows.Forms.ComboBox();
             this.btn_cancel = new Telerik.WinControls.UI.RadButton();
             this.btn_save = new Telerik.WinControls.UI.RadButton();
+            this.txt_HashedPass = new System.Windows.Forms.TextBox();
             passwordHashLabel = new System.Windows.Forms.Label();
             lbl_fullName = new System.Windows.Forms.Label();
             lbl_createdAt = new System.Windows.Forms.Label();
@@ -165,10 +166,11 @@
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewCheckBoxColumn1});
             this.tbl_users.DataSource = this.usersBindingSource;
+            this.tbl_users.Enabled = false;
             this.tbl_users.Location = new System.Drawing.Point(517, 13);
             this.tbl_users.Name = "tbl_users";
             this.tbl_users.Size = new System.Drawing.Size(300, 220);
-            this.tbl_users.TabIndex = 2;
+            this.tbl_users.TabIndex = 100000;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -223,7 +225,6 @@
             // 
             this.txt_password.BackColor = System.Drawing.Color.Black;
             this.txt_password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_password.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "PasswordHash", true));
             this.txt_password.Font = new System.Drawing.Font("RokhFaNum Normal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_password.ForeColor = System.Drawing.Color.White;
             this.txt_password.Location = new System.Drawing.Point(183, 111);
@@ -231,7 +232,8 @@
             this.txt_password.PasswordChar = '*';
             this.txt_password.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txt_password.Size = new System.Drawing.Size(306, 38);
-            this.txt_password.TabIndex = 3;
+            this.txt_password.TabIndex = 0;
+            this.txt_password.TextChanged += new System.EventHandler(this.txt_password_TextChanged);
             // 
             // btn_ShowPass
             // 
@@ -248,8 +250,8 @@
             this.btn_ShowPass.Name = "btn_ShowPass";
             this.btn_ShowPass.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
             this.btn_ShowPass.Size = new System.Drawing.Size(169, 38);
-            this.btn_ShowPass.TabIndex = 14;
-            this.btn_ShowPass.Text = "نمایش رمز عبور";
+            this.btn_ShowPass.TabIndex = 1;
+            this.btn_ShowPass.Text = "نمایش رمز";
             this.btn_ShowPass.Click += new System.EventHandler(this.btn_ShowPass_Click);
             // 
             // txt_fullName
@@ -263,20 +265,21 @@
             this.txt_fullName.Name = "txt_fullName";
             this.txt_fullName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txt_fullName.Size = new System.Drawing.Size(482, 38);
-            this.txt_fullName.TabIndex = 15;
+            this.txt_fullName.TabIndex = 2;
             // 
             // txt_Role
             // 
             this.txt_Role.BackColor = System.Drawing.Color.Black;
             this.txt_Role.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Role.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "Role", true));
+            this.txt_Role.Enabled = false;
             this.txt_Role.Font = new System.Drawing.Font("RokhFaNum Normal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_Role.ForeColor = System.Drawing.Color.White;
             this.txt_Role.Location = new System.Drawing.Point(517, 239);
             this.txt_Role.Name = "txt_Role";
             this.txt_Role.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txt_Role.Size = new System.Drawing.Size(141, 38);
-            this.txt_Role.TabIndex = 17;
+            this.txt_Role.TabIndex = 10000;
             // 
             // Chk_isActive
             // 
@@ -287,7 +290,7 @@
             this.Chk_isActive.Name = "Chk_isActive";
             this.Chk_isActive.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Chk_isActive.Size = new System.Drawing.Size(96, 28);
-            this.Chk_isActive.TabIndex = 20;
+            this.Chk_isActive.TabIndex = 4;
             this.Chk_isActive.Text = "کاربر فعال";
             this.Chk_isActive.UseVisualStyleBackColor = true;
             this.Chk_isActive.Click += new System.EventHandler(this.Chk_isActive_Click);
@@ -309,7 +312,7 @@
             this.Cmb_users.Name = "Cmb_users";
             this.Cmb_users.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Cmb_users.Size = new System.Drawing.Size(198, 35);
-            this.Cmb_users.TabIndex = 21;
+            this.Cmb_users.TabIndex = 3;
             this.Cmb_users.SelectedIndexChanged += new System.EventHandler(this.Cmb_users_SelectedIndexChanged);
             // 
             // btn_cancel
@@ -325,7 +328,7 @@
             this.btn_cancel.Margin = new System.Windows.Forms.Padding(4);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(57, 55);
-            this.btn_cancel.TabIndex = 31;
+            this.btn_cancel.TabIndex = 6;
             this.btn_cancel.Text = "-";
             this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
@@ -342,16 +345,31 @@
             this.btn_save.Margin = new System.Windows.Forms.Padding(4);
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(57, 55);
-            this.btn_save.TabIndex = 30;
+            this.btn_save.TabIndex = 5;
             this.btn_save.Text = "-";
             this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
+            // 
+            // txt_HashedPass
+            // 
+            this.txt_HashedPass.BackColor = System.Drawing.Color.Black;
+            this.txt_HashedPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_HashedPass.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "PasswordHash", true));
+            this.txt_HashedPass.Enabled = false;
+            this.txt_HashedPass.Font = new System.Drawing.Font("RokhFaNum Normal", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_HashedPass.ForeColor = System.Drawing.Color.White;
+            this.txt_HashedPass.Location = new System.Drawing.Point(517, 283);
+            this.txt_HashedPass.Name = "txt_HashedPass";
+            this.txt_HashedPass.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txt_HashedPass.Size = new System.Drawing.Size(300, 38);
+            this.txt_HashedPass.TabIndex = 100000;
             // 
             // ManageCurrentUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(497, 370);
+            this.ClientSize = new System.Drawing.Size(498, 370);
+            this.Controls.Add(this.txt_HashedPass);
             this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.btn_save);
             this.Controls.Add(lbl_Role);
@@ -413,5 +431,6 @@
         public System.Windows.Forms.ComboBox Cmb_users;
         public Telerik.WinControls.UI.RadButton btn_cancel;
         public Telerik.WinControls.UI.RadButton btn_save;
+        private System.Windows.Forms.TextBox txt_HashedPass;
     }
 }
