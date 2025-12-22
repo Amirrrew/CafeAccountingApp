@@ -1,6 +1,6 @@
 ﻿namespace CafeApplication.Forms.UserForms
 {
-    partial class ManageCurrentUser
+    partial class EditUser
     {
         /// <summary>
         /// Required designer variable.
@@ -33,7 +33,7 @@
             System.Windows.Forms.Label lbl_fullName;
             System.Windows.Forms.Label lbl_createdAt;
             System.Windows.Forms.Label lbl_Role;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageCurrentUser));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditUser));
             this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dsCafe = new CafeApplication.Data.DataSet.DsCafe();
             this.lbl_userName = new System.Windows.Forms.Label();
@@ -57,6 +57,8 @@
             this.btn_cancel = new Telerik.WinControls.UI.RadButton();
             this.btn_save = new Telerik.WinControls.UI.RadButton();
             this.txt_HashedPass = new System.Windows.Forms.TextBox();
+            this.btn_userUP = new Telerik.WinControls.UI.RadButton();
+            this.btn_userDOWN = new Telerik.WinControls.UI.RadButton();
             passwordHashLabel = new System.Windows.Forms.Label();
             lbl_fullName = new System.Windows.Forms.Label();
             lbl_createdAt = new System.Windows.Forms.Label();
@@ -67,6 +69,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_ShowPass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_cancel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_save)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_userUP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_userDOWN)).BeginInit();
             this.SuspendLayout();
             // 
             // passwordHashLabel
@@ -92,10 +96,11 @@
             lbl_createdAt.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "CreatedAt", true));
             lbl_createdAt.Location = new System.Drawing.Point(339, 47);
             lbl_createdAt.Name = "lbl_createdAt";
+            lbl_createdAt.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             lbl_createdAt.Size = new System.Drawing.Size(150, 21);
             lbl_createdAt.TabIndex = 18;
             lbl_createdAt.Text = "----/--/--";
-            lbl_createdAt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            lbl_createdAt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // usersBindingSource
             // 
@@ -118,12 +123,13 @@
             // 
             // lbl_userName
             // 
+            this.lbl_userName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "Username", true));
             this.lbl_userName.Font = new System.Drawing.Font("RokhFaNum Normal", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lbl_userName.ForeColor = System.Drawing.Color.Silver;
-            this.lbl_userName.Location = new System.Drawing.Point(13, 9);
+            this.lbl_userName.Location = new System.Drawing.Point(43, 9);
             this.lbl_userName.Name = "lbl_userName";
             this.lbl_userName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lbl_userName.Size = new System.Drawing.Size(484, 47);
+            this.lbl_userName.Size = new System.Drawing.Size(454, 47);
             this.lbl_userName.TabIndex = 0;
             this.lbl_userName.Text = "نام کاربری";
             // 
@@ -363,12 +369,50 @@
             this.txt_HashedPass.Size = new System.Drawing.Size(300, 38);
             this.txt_HashedPass.TabIndex = 100000;
             // 
-            // ManageCurrentUser
+            // btn_userUP
+            // 
+            this.btn_userUP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btn_userUP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_userUP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_userUP.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_userUP.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
+            this.btn_userUP.Image = ((System.Drawing.Image)(resources.GetObject("btn_userUP.Image")));
+            this.btn_userUP.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_userUP.Location = new System.Drawing.Point(6, 6);
+            this.btn_userUP.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_userUP.Name = "btn_userUP";
+            this.btn_userUP.Size = new System.Drawing.Size(30, 28);
+            this.btn_userUP.TabIndex = 7;
+            this.btn_userUP.Text = "-";
+            this.btn_userUP.Visible = false;
+            this.btn_userUP.Click += new System.EventHandler(this.btn_userUP_Click);
+            // 
+            // btn_userDOWN
+            // 
+            this.btn_userDOWN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btn_userDOWN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_userDOWN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_userDOWN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_userDOWN.DisplayStyle = Telerik.WinControls.DisplayStyle.Image;
+            this.btn_userDOWN.Image = ((System.Drawing.Image)(resources.GetObject("btn_userDOWN.Image")));
+            this.btn_userDOWN.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_userDOWN.Location = new System.Drawing.Point(6, 39);
+            this.btn_userDOWN.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_userDOWN.Name = "btn_userDOWN";
+            this.btn_userDOWN.Size = new System.Drawing.Size(30, 28);
+            this.btn_userDOWN.TabIndex = 8;
+            this.btn_userDOWN.Text = "-";
+            this.btn_userDOWN.Visible = false;
+            this.btn_userDOWN.Click += new System.EventHandler(this.btn_userDOWN_Click);
+            // 
+            // EditUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(498, 370);
+            this.ClientSize = new System.Drawing.Size(497, 370);
+            this.Controls.Add(this.btn_userDOWN);
+            this.Controls.Add(this.btn_userUP);
             this.Controls.Add(this.txt_HashedPass);
             this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.btn_save);
@@ -390,7 +434,7 @@
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MinimizeBox = false;
-            this.Name = "ManageCurrentUser";
+            this.Name = "EditUser";
             this.Padding = new System.Windows.Forms.Padding(10);
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -402,6 +446,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_ShowPass)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_cancel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_save)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_userUP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_userDOWN)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -432,5 +478,7 @@
         public Telerik.WinControls.UI.RadButton btn_cancel;
         public Telerik.WinControls.UI.RadButton btn_save;
         private System.Windows.Forms.TextBox txt_HashedPass;
+        public Telerik.WinControls.UI.RadButton btn_userUP;
+        public Telerik.WinControls.UI.RadButton btn_userDOWN;
     }
 }

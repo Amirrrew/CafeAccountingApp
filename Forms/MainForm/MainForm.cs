@@ -280,7 +280,7 @@ namespace CafeApplication
 
         private void btn_userManage_Click(object sender, EventArgs e)
         {
-            ManageCurrentUser currentUser = new ManageCurrentUser();
+            EditUser currentUser = new EditUser();
             currentUser.CurrentUser = lbl_userName.Text;
             currentUser.ShowDialog();
         }

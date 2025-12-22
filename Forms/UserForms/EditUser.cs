@@ -14,9 +14,9 @@ using Telerik.WinControls.UI;
 
 namespace CafeApplication.Forms.UserForms
 {
-    public partial class ManageCurrentUser : Form
+    public partial class EditUser : Form
     {
-        public ManageCurrentUser()
+        public EditUser()
         {
             InitializeComponent();
             blur.SetBlurBack(this);
@@ -29,6 +29,7 @@ namespace CafeApplication.Forms.UserForms
         CustomMessage msg = new CustomMessage();
         bool EditCondition = false;
         public string CurrentUser { get; set; }
+        public bool BtnVisible { get; set; }
 
         private void ManageCurrentUser_Load(object sender, EventArgs e)
         {
@@ -41,7 +42,16 @@ namespace CafeApplication.Forms.UserForms
         public void LoadCurrnetUserDetails()
         {
             lbl_userName.Text = CurrentUser;
-            usersTableAdapter.GetUsername(dsCafe.Users, lbl_userName.Text);
+            btn_userDOWN.Visible = BtnVisible;
+            btn_userUP.Visible = BtnVisible;
+            if (BtnVisible == false)
+            {
+                usersTableAdapter.GetUsername(dsCafe.Users, lbl_userName.Text);
+            }
+            else
+            {
+                usersTableAdapter.Fill(dsCafe.Users);
+            }
             txt_password.ResetText();
         }
 
@@ -129,6 +139,27 @@ namespace CafeApplication.Forms.UserForms
         private void txt_password_TextChanged(object sender, EventArgs e)
         {
             txt_HashedPass.Text = BCrypt.Net.BCrypt.HashPassword(txt_password.Text);
+        }
+
+        private void btn_userUP_Click(object sender, EventArgs e)
+        {
+            int index = tbl_users.CurrentRow.Index;
+
+            if (index - 1 >= 0)
+            {
+                tbl_users.CurrentCell = tbl_users.Rows[index - 1].Cells[0];
+            }
+        }
+
+        private void btn_userDOWN_Click(object sender, EventArgs e)
+        {
+            int index = tbl_users.CurrentRow.Index;
+            int max = tbl_users.RowCount;
+
+            if (index + 1 < max)
+            {
+                tbl_users.CurrentCell = tbl_users.Rows[index + 1].Cells[0];
+            }
         }
     }
 }

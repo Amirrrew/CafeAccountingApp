@@ -266,3 +266,5 @@ C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\System.Memory.xml
 C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\amir\Desktop\CafeAccountingApp\obj\Debug\CafeApplication.Forms.UserForms.addUser.resources
+C:\Users\amir\Desktop\CafeAccountingApp\obj\Debug\CafeApplication.Forms.UserForms.EditUser.resources
+C:\Users\amir\Desktop\CafeAccountingApp\obj\Debug\CafeApplication.Forms.UserForms.RemoveUser.resources

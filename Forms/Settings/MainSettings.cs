@@ -47,7 +47,9 @@ namespace CafeApplication.Forms.Settings
 
         private void btn_editUser_Click(object sender, EventArgs e)
         {
-
+            EditUser edit = new EditUser();
+            edit.BtnVisible = true;
+            edit.ShowDialog();
         }
 
         private void btn_userInfo_Click(object sender, EventArgs e)
@@ -57,7 +59,8 @@ namespace CafeApplication.Forms.Settings
 
         private void btn_deleteUser_Click(object sender, EventArgs e)
         {
-
+            RemoveUser remove = new RemoveUser();
+            remove.ShowDialog();
         }
 
         private void btn_RoleManage_Click(object sender, EventArgs e)

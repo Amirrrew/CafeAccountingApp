@@ -90,6 +90,7 @@ namespace CafeApplication.Forms.UserForms
         {
             try
             {
+                txt_CreatedAt.Text = lbl_CreatedAt.Text;
                 bool FinalAddCondition = checkAddingCondition();
                 if (FinalAddCondition == true)
                 {
