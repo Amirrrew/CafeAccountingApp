@@ -268,3 +268,4 @@ C:\Users\amir\Desktop\CafeAccountingApp\bin\Debug\System.Runtime.CompilerService
 C:\Users\amir\Desktop\CafeAccountingApp\obj\Debug\CafeApplication.Forms.UserForms.addUser.resources
 C:\Users\amir\Desktop\CafeAccountingApp\obj\Debug\CafeApplication.Forms.UserForms.EditUser.resources
 C:\Users\amir\Desktop\CafeAccountingApp\obj\Debug\CafeApplication.Forms.UserForms.RemoveUser.resources
+C:\Users\amir\Desktop\CafeAccountingApp\obj\Debug\CafeApplication.Forms.UserForms.ViewUserDetails.resources

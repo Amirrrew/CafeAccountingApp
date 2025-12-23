@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Telerik.WinControls.UI;
 
 namespace CafeApplication.Forms.Settings
 {
@@ -54,7 +55,8 @@ namespace CafeApplication.Forms.Settings
 
         private void btn_userInfo_Click(object sender, EventArgs e)
         {
-
+            ViewUserDetails details = new ViewUserDetails();
+            details.ShowDialog();
         }
 
         private void btn_deleteUser_Click(object sender, EventArgs e)
@@ -66,6 +68,17 @@ namespace CafeApplication.Forms.Settings
         private void btn_RoleManage_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void MainSettings_SizeChanged(object sender, EventArgs e)
+        {
+            foreach (Control ctrl in tab_UserManage.Controls)
+            {
+                if (ctrl is RadButton btn)
+                {
+                    btn.Width = tab_UserManage.Width;
+                }
+            }
         }
     }
 }

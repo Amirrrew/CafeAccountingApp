@@ -166,7 +166,7 @@
             this.btn_RoleManage.ForeColor = System.Drawing.Color.White;
             this.btn_RoleManage.Image = ((System.Drawing.Image)(resources.GetObject("btn_RoleManage.Image")));
             this.btn_RoleManage.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_RoleManage.Location = new System.Drawing.Point(7, 313);
+            this.btn_RoleManage.Location = new System.Drawing.Point(7, 341);
             this.btn_RoleManage.Margin = new System.Windows.Forms.Padding(4);
             this.btn_RoleManage.Name = "btn_RoleManage";
             this.btn_RoleManage.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
@@ -187,7 +187,7 @@
             this.btn_deleteUser.ForeColor = System.Drawing.Color.White;
             this.btn_deleteUser.Image = ((System.Drawing.Image)(resources.GetObject("btn_deleteUser.Image")));
             this.btn_deleteUser.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_deleteUser.Location = new System.Drawing.Point(7, 230);
+            this.btn_deleteUser.Location = new System.Drawing.Point(7, 258);
             this.btn_deleteUser.Margin = new System.Windows.Forms.Padding(4);
             this.btn_deleteUser.Name = "btn_deleteUser";
             this.btn_deleteUser.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
@@ -208,7 +208,7 @@
             this.btn_userInfo.ForeColor = System.Drawing.Color.White;
             this.btn_userInfo.Image = ((System.Drawing.Image)(resources.GetObject("btn_userInfo.Image")));
             this.btn_userInfo.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_userInfo.Location = new System.Drawing.Point(7, 147);
+            this.btn_userInfo.Location = new System.Drawing.Point(7, 175);
             this.btn_userInfo.Margin = new System.Windows.Forms.Padding(4);
             this.btn_userInfo.Name = "btn_userInfo";
             this.btn_userInfo.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
@@ -229,7 +229,7 @@
             this.btn_editUser.ForeColor = System.Drawing.Color.White;
             this.btn_editUser.Image = ((System.Drawing.Image)(resources.GetObject("btn_editUser.Image")));
             this.btn_editUser.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_editUser.Location = new System.Drawing.Point(7, 64);
+            this.btn_editUser.Location = new System.Drawing.Point(7, 92);
             this.btn_editUser.Margin = new System.Windows.Forms.Padding(4);
             this.btn_editUser.Name = "btn_editUser";
             this.btn_editUser.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
@@ -242,7 +242,6 @@
             // 
             // btn_AddUser
             // 
-            this.btn_AddUser.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_AddUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_AddUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_AddUser.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -250,7 +249,7 @@
             this.btn_AddUser.ForeColor = System.Drawing.Color.White;
             this.btn_AddUser.Image = ((System.Drawing.Image)(resources.GetObject("btn_AddUser.Image")));
             this.btn_AddUser.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_AddUser.Location = new System.Drawing.Point(7, -19);
+            this.btn_AddUser.Location = new System.Drawing.Point(7, 9);
             this.btn_AddUser.Margin = new System.Windows.Forms.Padding(4);
             this.btn_AddUser.Name = "btn_AddUser";
             this.btn_AddUser.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
@@ -284,12 +283,12 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.MaximizeBox = false;
             this.Name = "MainSettings";
             this.ShowIcon = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "تنظیمات";
+            this.SizeChanged += new System.EventHandler(this.MainSettings_SizeChanged);
             this.pnl_SettingsCategory.ResumeLayout(false);
             this.pnl_SettingsCategory.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
