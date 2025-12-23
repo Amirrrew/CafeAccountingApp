@@ -24,6 +24,20 @@ namespace CafeApplication.Forms.Settings
             SetTabPanelStyle();
         }
 
+        public void SetButtonSize()
+        {
+            foreach (TabPage tab in Tab_settings.TabPages)
+            {
+                foreach (Control ctrl in tab.Controls)
+                {
+                    if (ctrl is RadButton btn)
+                    {
+                        btn.Width = tab.Width - 15;
+                    }
+                }
+            }
+        }
+
         public void SetTabPanelStyle()
         {
             Tab_settings.Appearance = TabAppearance.FlatButtons;
@@ -70,15 +84,16 @@ namespace CafeApplication.Forms.Settings
 
         }
 
+
+
         private void MainSettings_SizeChanged(object sender, EventArgs e)
         {
-            foreach (Control ctrl in tab_UserManage.Controls)
-            {
-                if (ctrl is RadButton btn)
-                {
-                    btn.Width = tab_UserManage.Width;
-                }
-            }
+            SetButtonSize();
+        }
+
+        private void MainSettings_Load(object sender, EventArgs e)
+        {
+            SetButtonSize();
         }
     }
 }

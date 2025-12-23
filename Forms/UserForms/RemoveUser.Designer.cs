@@ -37,15 +37,15 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btn_Remove = new Telerik.WinControls.UI.RadButton();
             this.tbl_Users = new System.Windows.Forms.DataGridView();
-            this.dsCafe = new CafeApplication.Data.DataSet.DsCafe();
+            this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dsCafe = new CafeApplication.Data.DataSet.DsCafe();
             this.usersTableAdapter = new CafeApplication.Data.DataSet.DsCafeTableAdapters.UsersTableAdapter();
             this.lbl_titele = new System.Windows.Forms.Label();
-            this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Remove)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbl_Users)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_Remove
@@ -134,15 +134,23 @@
             this.tbl_Users.Size = new System.Drawing.Size(344, 397);
             this.tbl_Users.TabIndex = 32;
             // 
-            // dsCafe
+            // usernameDataGridViewTextBoxColumn
             // 
-            this.dsCafe.DataSetName = "DsCafe";
-            this.dsCafe.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.usernameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.usernameDataGridViewTextBoxColumn.DataPropertyName = "Username";
+            this.usernameDataGridViewTextBoxColumn.HeaderText = "نام کاربران";
+            this.usernameDataGridViewTextBoxColumn.Name = "usernameDataGridViewTextBoxColumn";
+            this.usernameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // usersBindingSource
             // 
             this.usersBindingSource.DataMember = "Users";
             this.usersBindingSource.DataSource = this.dsCafe;
+            // 
+            // dsCafe
+            // 
+            this.dsCafe.DataSetName = "DsCafe";
+            this.dsCafe.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // usersTableAdapter
             // 
@@ -161,14 +169,6 @@
             this.lbl_titele.Text = "حذف کاربر";
             this.lbl_titele.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // usernameDataGridViewTextBoxColumn
-            // 
-            this.usernameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.usernameDataGridViewTextBoxColumn.DataPropertyName = "Username";
-            this.usernameDataGridViewTextBoxColumn.HeaderText = "نام کاربران";
-            this.usernameDataGridViewTextBoxColumn.Name = "usernameDataGridViewTextBoxColumn";
-            this.usernameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
             // RemoveUser
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -181,6 +181,7 @@
             this.Font = new System.Drawing.Font("RokhFaNum Normal", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "RemoveUser";
             this.ShowIcon = false;
@@ -189,8 +190,8 @@
             this.Load += new System.EventHandler(this.RemoveUser_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btn_Remove)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbl_Users)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dsCafe)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

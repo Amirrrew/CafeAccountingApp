@@ -433,7 +433,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.MinimizeBox = false;
+            this.MaximizeBox = false;
             this.Name = "EditUser";
             this.Padding = new System.Windows.Forms.Padding(10);
             this.ShowIcon = false;

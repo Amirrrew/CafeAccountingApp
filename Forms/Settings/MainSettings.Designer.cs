@@ -62,7 +62,7 @@
             this.pnl_SettingsCategory.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnl_SettingsCategory.Location = new System.Drawing.Point(746, 0);
             this.pnl_SettingsCategory.Name = "pnl_SettingsCategory";
-            this.pnl_SettingsCategory.Size = new System.Drawing.Size(282, 588);
+            this.pnl_SettingsCategory.Size = new System.Drawing.Size(282, 596);
             this.pnl_SettingsCategory.TabIndex = 0;
             // 
             // radButton1
@@ -138,7 +138,7 @@
             this.Tab_settings.Location = new System.Drawing.Point(0, 0);
             this.Tab_settings.Name = "Tab_settings";
             this.Tab_settings.SelectedIndex = 0;
-            this.Tab_settings.Size = new System.Drawing.Size(746, 588);
+            this.Tab_settings.Size = new System.Drawing.Size(746, 596);
             this.Tab_settings.TabIndex = 1;
             // 
             // tab_UserManage
@@ -152,13 +152,12 @@
             this.tab_UserManage.Location = new System.Drawing.Point(4, 30);
             this.tab_UserManage.Name = "tab_UserManage";
             this.tab_UserManage.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_UserManage.Size = new System.Drawing.Size(738, 554);
+            this.tab_UserManage.Size = new System.Drawing.Size(738, 562);
             this.tab_UserManage.TabIndex = 0;
             this.tab_UserManage.Text = "tabPage1";
             // 
             // btn_RoleManage
             // 
-            this.btn_RoleManage.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_RoleManage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_RoleManage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_RoleManage.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -166,7 +165,7 @@
             this.btn_RoleManage.ForeColor = System.Drawing.Color.White;
             this.btn_RoleManage.Image = ((System.Drawing.Image)(resources.GetObject("btn_RoleManage.Image")));
             this.btn_RoleManage.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_RoleManage.Location = new System.Drawing.Point(7, 341);
+            this.btn_RoleManage.Location = new System.Drawing.Point(7, 310);
             this.btn_RoleManage.Margin = new System.Windows.Forms.Padding(4);
             this.btn_RoleManage.Name = "btn_RoleManage";
             this.btn_RoleManage.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
@@ -179,7 +178,6 @@
             // 
             // btn_deleteUser
             // 
-            this.btn_deleteUser.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_deleteUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_deleteUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_deleteUser.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -187,7 +185,7 @@
             this.btn_deleteUser.ForeColor = System.Drawing.Color.White;
             this.btn_deleteUser.Image = ((System.Drawing.Image)(resources.GetObject("btn_deleteUser.Image")));
             this.btn_deleteUser.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_deleteUser.Location = new System.Drawing.Point(7, 258);
+            this.btn_deleteUser.Location = new System.Drawing.Point(7, 227);
             this.btn_deleteUser.Margin = new System.Windows.Forms.Padding(4);
             this.btn_deleteUser.Name = "btn_deleteUser";
             this.btn_deleteUser.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
@@ -200,7 +198,6 @@
             // 
             // btn_userInfo
             // 
-            this.btn_userInfo.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_userInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_userInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_userInfo.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -208,7 +205,7 @@
             this.btn_userInfo.ForeColor = System.Drawing.Color.White;
             this.btn_userInfo.Image = ((System.Drawing.Image)(resources.GetObject("btn_userInfo.Image")));
             this.btn_userInfo.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_userInfo.Location = new System.Drawing.Point(7, 175);
+            this.btn_userInfo.Location = new System.Drawing.Point(7, 144);
             this.btn_userInfo.Margin = new System.Windows.Forms.Padding(4);
             this.btn_userInfo.Name = "btn_userInfo";
             this.btn_userInfo.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
@@ -221,7 +218,6 @@
             // 
             // btn_editUser
             // 
-            this.btn_editUser.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_editUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_editUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_editUser.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -229,7 +225,7 @@
             this.btn_editUser.ForeColor = System.Drawing.Color.White;
             this.btn_editUser.Image = ((System.Drawing.Image)(resources.GetObject("btn_editUser.Image")));
             this.btn_editUser.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_editUser.Location = new System.Drawing.Point(7, 92);
+            this.btn_editUser.Location = new System.Drawing.Point(7, 61);
             this.btn_editUser.Margin = new System.Windows.Forms.Padding(4);
             this.btn_editUser.Name = "btn_editUser";
             this.btn_editUser.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
@@ -249,7 +245,7 @@
             this.btn_AddUser.ForeColor = System.Drawing.Color.White;
             this.btn_AddUser.Image = ((System.Drawing.Image)(resources.GetObject("btn_AddUser.Image")));
             this.btn_AddUser.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_AddUser.Location = new System.Drawing.Point(7, 9);
+            this.btn_AddUser.Location = new System.Drawing.Point(7, -22);
             this.btn_AddUser.Margin = new System.Windows.Forms.Padding(4);
             this.btn_AddUser.Name = "btn_AddUser";
             this.btn_AddUser.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
@@ -275,19 +271,21 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1028, 588);
+            this.ClientSize = new System.Drawing.Size(1028, 596);
             this.Controls.Add(this.Tab_settings);
             this.Controls.Add(this.pnl_SettingsCategory);
             this.Font = new System.Drawing.Font("RokhFaNum Normal", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.ForeColor = System.Drawing.Color.Gray;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MinimumSize = new System.Drawing.Size(800, 635);
             this.Name = "MainSettings";
             this.ShowIcon = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "تنظیمات";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.MainSettings_Load);
             this.SizeChanged += new System.EventHandler(this.MainSettings_SizeChanged);
             this.pnl_SettingsCategory.ResumeLayout(false);
             this.pnl_SettingsCategory.PerformLayout();
