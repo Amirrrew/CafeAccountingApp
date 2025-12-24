@@ -40,12 +40,12 @@ namespace CafeApplication.Forms.Settings
 
         public void SetTabPanelStyle()
         {
-            Tab_settings.Appearance = TabAppearance.FlatButtons;
-            Tab_settings.ItemSize = new Size(0, 1);
-            Tab_settings.SizeMode = TabSizeMode.Fixed;
-            Tab_settings.Padding = new Point(0, 0);
-            Tab_settings.Multiline = true;
+
+            Tab_settings.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+
         }
+
+
 
         //--------------- import forms and classes ----
         BackBlur blur = new BackBlur();
@@ -94,6 +94,11 @@ namespace CafeApplication.Forms.Settings
         private void MainSettings_Load(object sender, EventArgs e)
         {
             SetButtonSize();
+        }
+
+        private void MainSettings_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

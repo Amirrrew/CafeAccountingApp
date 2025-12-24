@@ -28,6 +28,7 @@ namespace CafeApplication.Forms.UserForms
         UserWork usrwrk = new UserWork();
         CustomMessage msg = new CustomMessage();
         bool EditCondition = false;
+        bool PasswordChanged = false;
         public string CurrentUser { get; set; }
         public bool BtnVisible { get; set; }
 
@@ -70,7 +71,7 @@ namespace CafeApplication.Forms.UserForms
 
         public void IsConditionTrue()
         {
-            if (txt_password.Text.Length < 4)
+            if (txt_password.Text.Length < 4 && PasswordChanged == true)
             {
                 msg.NewMessage("ویرایش کاربر", "رمز عبور باید حداقل شامل 4 کارکتر باشد.", "Y", "warning", null, YesClick: () => { msg.Close(); });
 
@@ -138,6 +139,7 @@ namespace CafeApplication.Forms.UserForms
 
         private void txt_password_TextChanged(object sender, EventArgs e)
         {
+            PasswordChanged = true;
             txt_HashedPass.Text = BCrypt.Net.BCrypt.HashPassword(txt_password.Text);
         }
 
@@ -145,7 +147,7 @@ namespace CafeApplication.Forms.UserForms
         {
             int index = tbl_users.CurrentRow.Index;
 
-            if (index - 1 >= 0)
+            if (index - 1 >= 0 && tbl_users.Rows[tbl_users.CurrentRow.Index - 1].Cells[1].Value != null)
             {
                 tbl_users.CurrentCell = tbl_users.Rows[index - 1].Cells[0];
             }
@@ -156,7 +158,7 @@ namespace CafeApplication.Forms.UserForms
             int index = tbl_users.CurrentRow.Index;
             int max = tbl_users.RowCount;
 
-            if (index + 1 < max)
+            if (index + 1 < max && tbl_users.Rows[tbl_users.CurrentRow.Index + 1].Cells[1].Value != null)
             {
                 tbl_users.CurrentCell = tbl_users.Rows[index + 1].Cells[0];
             }

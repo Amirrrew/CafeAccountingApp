@@ -250,7 +250,7 @@
             this.btn_ShowPass.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
             this.btn_ShowPass.Size = new System.Drawing.Size(156, 34);
             this.btn_ShowPass.TabIndex = 3;
-            this.btn_ShowPass.Text = "نمایش رمز عبور";
+            this.btn_ShowPass.Text = "نمایش رمز";
             // 
             // Cmb_Roles
             // 
@@ -430,7 +430,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(447, 416);
+            this.ClientSize = new System.Drawing.Size(446, 416);
             this.Controls.Add(this.txt_CreatedAt);
             this.Controls.Add(this.tbl_Users);
             this.Controls.Add(this.btn_cancel);
